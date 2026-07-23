@@ -10,23 +10,25 @@
 </p>
 
 <p align="center">
- <a href="https://github.com/elhizazi1/ShizuCoreFetch/releases/latest"><img src="https://img.shields.io/github/v/release/elhizazi1/ShizuCoreFetch?label=Latest%20Release&style=flat-square" alt="Release"></a>
- <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat-square" alt="License"></a>
- <a href="#"><img src="https://img.shields.io/badge/Platform-Android-6A1B9A?style=flat-square&logo=android" alt="Platform"></a>
- <a href="https://github.com/elhizazi1/ShizuCoreFetch"><img src="https://img.shields.io/github/stars/elhizazi1/ShizuCoreFetch?style=flat-square" alt="Stars"></a>
+ <a href="[https://github.com/elhizazi1/ShizuCoreFetch/releases/latest](https://github.com/elhizazi1/ShizuCoreFetch/releases/latest)"><img src="[https://img.shields.io/github/v/release/elhizazi1/ShizuCoreFetch?label=Latest%20Release&style=flat-square](https://img.shields.io/github/v/release/elhizazi1/ShizuCoreFetch?label=Latest%20Release&style=flat-square)" alt="Release"></a>
+ <a href="LICENSE"><img src="[https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat-square](https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat-square)" alt="License"></a>
+ <a href="#"><img src="[https://img.shields.io/badge/Platform-Android-6A1B9A?style=flat-square&logo=android](https://img.shields.io/badge/Platform-Android-6A1B9A?style=flat-square&logo=android)" alt="Platform"></a>
+ <a href="[https://github.com/elhizazi1/ShizuCoreFetch](https://github.com/elhizazi1/ShizuCoreFetch)"><img src="[https://img.shields.io/github/stars/elhizazi1/ShizuCoreFetch?style=flat-square](https://img.shields.io/github/stars/elhizazi1/ShizuCoreFetch?style=flat-square)" alt="Stars"></a>
+ [![Telegram Channel](https://img.shields.io/badge/Telegram-Join%20Channel-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/shizucorefetch)
 </p>
-
-# Shizu CoreFetch
-
-[![Telegram Channel](https://img.shields.io/badge/Telegram-Join%20Channel-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/shizucorefetch)
-
----
-
-# Shizu CoreFetch
 
 📢 **Stay Updated:** [Join our official Telegram Channel](https://t.me/shizucorefetch) for the latest updates, releases, and direct support.
 
-<!-- باقي وصف المشروع الخاص بك هنا -->
+---
+
+## Attention Developers: Stand Out in the Store!
+
+With Shizu CoreFetch rapidly expanding and reaching a large, active user base, now is the perfect time to optimize how your application is presented. Our smart store engine automatically scans for custom metadata. By simply adding a `shizu_store.json` file to the root of your repository, you can display elegant, tailored information, localized descriptions, and custom developer details directly inside the Shizu CoreFetch store. 
+
+While this is entirely optional, organizing your data adds a highly professional and polished touch to your app's listing, making it much more appealing to users. 
+
+*You can find the full documentation and a detailed guide on how to structure your JSON file at the bottom of this README.*
+
 ---
 
 ## 📖 Overview
@@ -160,7 +162,6 @@ A massive thank you to our incredible open-source community! Thanks to your dedi
 Your contributions are what make Shizu CoreFetch a truly global and accessible platform for everyone.
 
 ---
-
 
 ## Acknowledgments & Design Assets
 
