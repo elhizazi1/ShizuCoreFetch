@@ -11,7 +11,7 @@
     <string name="store_title">Shizu repozitář</string>
     <string name="store_btn_install">Instalovat</string>
     <string name="store_developer_prefix">: </string>
-    <string name="store_shizuku_not_running">Shizuku neběží. Prosím, začněte s tím nejdřív.</string>
+    <string name="store_shizuku_not_running">Shizuku neběží. Prosím, nejdříve jej spusťte.</string>
     <string name="store_shizuku_permission_denied">Pro základní operace je vyžadováno povolení Shizuku.</string>
     <string name="store_shizuku_permission_granted">Shizuku se úspěšně spojilo.</string>
     <string name="store_fetch_loading">Načítání aplikací...</string>
