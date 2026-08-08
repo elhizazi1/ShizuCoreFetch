@@ -1,6 +1,7 @@
 {
   "app_name": "ShizuCoreFetch",
   "package_name": "xyz.siwane.shizucorefetch",
+  "category": "System Tools",
   "short_description": "An advanced Shizuku-based Android app manager and installer.",
   "detailed_description": "ShizuCoreFetch is a powerful tool designed to manage and install Android applications seamlessly. Utilizing the Shizuku API, it allows you to bypass standard installation restrictions and manage your apps like a pro.\n\n**Key Features:**\n- Silent and background APK installations via Shizuku.\n- Fetch and download the latest app releases directly from GitHub.\n- Local APK wallet for managing, extracting, and sharing apps.\n- Fast and responsive Material Design UI.",
   
@@ -50,6 +51,7 @@
   ],
   "locales": {
     "ar": {
+      "category": "أدوات النظام",
       "short_description": "أداة متقدمة لإدارة وتثبيت التطبيقات عبر صلاحيات Shizuku.",
       "detailed_description": "تطبيق ShizuCoreFetch هو أداتك الشاملة لإدارة وتثبيت تطبيقات أندرويد بسلاسة. من خلال الاستفادة من صلاحيات Shizuku، يتيح لك التطبيق تجاوز قيود التثبيت التقليدية وإدارة تطبيقاتك باحترافية.\n\n**أهم المميزات:**\n- تثبيت صامت في الخلفية لملفات APK عبر Shizuku.\n- جلب وتنزيل أحدث الإصدارات مباشرة من مستودعات جيتهب.\n- محفظة تخزين محلية لإدارة، استخراج، ومشاركة ملفات التطبيقات.\n- واجهة مستخدم سريعة وعصرية تتوافق مع معايير Material Design.",
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
@@ -57,6 +59,7 @@
       "developer_name": "جمال الحزازي"
     },
     "fr": {
+      "category": "Outils système",
       "short_description": "Un gestionnaire et installateur d'applications Android avancé basé sur Shizuku.",
       "detailed_description": "ShizuCoreFetch est un outil puissant conçu pour gérer et installer des applications Android en toute simplicité. Grâce à l'API Shizuku, il vous permet de contourner les restrictions d'installation standard et de gérer vos applications comme un pro.\n\n**Fonctionnalités principales :**\n- Installations APK silencieuses et en arrière-plan via Shizuku.\n- Récupération et téléchargement des dernières versions d'applications directement depuis GitHub.\n- Portefeuille APK local pour gérer, extraire et partager des applications.\n- Interface Material Design rapide et réactive.",
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
@@ -64,6 +67,7 @@
       "developer_name": "Jamal El Hizazi"
     },
     "es": {
+      "category": "Herramientas del sistema",
       "short_description": "Un avanzado gestor e instalador de aplicaciones Android basado en Shizuku.",
       "detailed_description": "ShizuCoreFetch es una herramienta potente diseñada para gestionar e instalar aplicaciones Android sin problemas. Utilizando la API de Shizuku, te permite eludir las restricciones de instalación estándar y gestionar tus aplicaciones como un profesional.\n\n**Características principales:**\n- Instalaciones silenciosas y en segundo plano de APK mediante Shizuku.\n- Obtén y descarga las últimas versiones de aplicaciones directamente desde GitHub.\n- Cartera local de APK para gestionar, extraer y compartir aplicaciones.\n- Interfaz de usuario rápida y adaptable con Material Design.",
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
@@ -71,6 +75,7 @@
       "developer_name": "Jamal El Hizazi"
     },
     "pt": {
+      "category": "Ferramentas do sistema",
       "short_description": "Um gerenciador e instalador de aplicativos Android avançado baseado no Shizuku.",
       "detailed_description": "ShizuCoreFetch é uma ferramenta poderosa projetada para gerenciar e instalar aplicativos Android de forma simples. Usando a API Shizuku, permite contornar as restrições de instalação padrão e gerenciar seus aplicativos como um profissional.\n\n**Principais funcionalidades:**\n- Instalações silenciosas e em segundo plano de APKs via Shizuku.\n- Busque e baixe as últimas versões de aplicativos diretamente do GitHub.\n- Carteira local de APK para gerenciar, extrair e compartilhar aplicativos.\n- Interface de usuário rápida e responsiva com Material Design.",
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
@@ -78,6 +83,7 @@
       "developer_name": "Jamal El Hizazi"
     },
     "ru": {
+      "category": "Системные инструменты",
       "short_description": "Продвинутый менеджер и установщик приложений Android на основе Shizuku.",
       "detailed_description": "ShizuCoreFetch — это мощный инструмент для удобного управления и установки приложений Android. Используя API Shizuku, он позволяет обходить стандартные ограничения установки и управлять приложениями как профессионал.\n\n**Ключевые возможности:**\n- Тихая и фоновая установка APK через Shizuku.\n- Получение и загрузка последних версий приложений прямо с GitHub.\n- Локальное хранилище APK для управления, извлечения и обмена приложениями.\n- Быстрый и отзывчивый интерфейс в стиле Material Design.",
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
@@ -85,6 +91,7 @@
       "developer_name": "Джамал Эль Хизази"
     },
     "hi": {
+      "category": "सिस्टम टूल्स",
       "short_description": "एक उन्नत Shizuku-आधारित Android ऐप प्रबंधक और इंस्टॉलर।",
       "detailed_description": "ShizuCoreFetch एक शक्तिशाली उपकरण है जो Android एप्लिकेशन को सहजता से प्रबंधित और इंस्टॉल करने के लिए डिज़ाइन किया गया है। Shizuku API का उपयोग करके, यह आपको मानक इंस्टॉलेशन प्रतिबंधों को बायपास करने और एक प्रो की तरह अपने ऐप्स प्रबंधित करने की सुविधा देता है।\n\n**मुख्य विशेषताएं:**\n- Shizuku के माध्यम से मूक और पृष्ठभूमि APK इंस्टॉलेशन।\n- सीधे GitHub से नवीनतम ऐप रिलीज़ प्राप्त करें और डाउनलोड करें।\n- ऐप्स के प्रबंधन, निकालने और साझा करने के लिए स्थानीय APK वॉलेट।\n- तेज़ और प्रतिक्रियाशील Material Design UI।",
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
@@ -92,6 +99,7 @@
       "developer_name": "जमाल एल हिज़ाज़ी"
     },
     "zh": {
+      "category": "系统工具",
       "short_description": "基于 Shizuku 的高级 Android 应用管理与安装工具。",
       "detailed_description": "ShizuCoreFetch 是一款功能强大的工具，旨在无缝管理和安装 Android 应用。利用 Shizuku API，您可以绕过标准安装限制，像专业人士一样管理您的应用。\n\n**主要功能：**\n- 通过 Shizuku 实现 APK 静默后台安装。\n- 直接从 GitHub 获取并下载最新应用版本。\n- 本地 APK 仓库，用于管理、提取和分享应用。\n- 快速响应的 Material Design 用户界面。",
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
@@ -99,6 +107,7 @@
       "developer_name": "贾马尔·埃尔·希扎齐"
     },
     "ja": {
+      "category": "システムツール",
       "short_description": "Shizukuベースの高度なAndroidアプリマネージャー＆インストーラー。",
       "detailed_description": "ShizuCoreFetchは、Androidアプリケーションをシームレスに管理・インストールするために設計された強力なツールです。Shizuku APIを利用して、標準的なインストール制限を回避し、プロのようにアプリを管理できます。\n\n**主な機能:**\n- Shizukuによるサイレント＆バックグラウンドAPKインストール。\n- GitHubから直接最新のアプリリリースを取得・ダウンロード。\n- アプリの管理、抽出、共有のためのローカルAPKウォレット。\n- 高速でレスポンシブなMaterial Design UI。",
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
