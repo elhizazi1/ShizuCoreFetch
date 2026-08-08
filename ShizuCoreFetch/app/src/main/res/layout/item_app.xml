@@ -89,6 +89,27 @@
             app:layout_constraintTop_toBottomOf="@+id/tvAppName"
             tools:text="@string/tools_app_developer" />
 
+        <!-- تم نقل الفئة هنا (أسفل المطور) وتلوينها بالأزرق مع تصغير الخط -->
+        <TextView
+            android:id="@+id/tvAppCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAlignment="viewStart"
+            android:textDirection="locale"
+            android:textColor="#29B6F6" 
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/btnInstall"
+            app:layout_constraintStart_toStartOf="@+id/tvAppName"
+            app:layout_constraintTop_toBottomOf="@+id/tvAppDeveloper"
+            tools:text="Category: System Tools"
+            tools:visibility="visible" />
+
+        <!-- تعديل موضع الوصف ليكون أسفل الفئة -->
         <TextView
             android:id="@+id/tvAppDescription"
             android:layout_width="0dp"
@@ -103,8 +124,43 @@
             android:textSize="12sp"
             app:layout_constraintEnd_toStartOf="@+id/btnInstall"
             app:layout_constraintStart_toStartOf="@+id/tvAppName"
-            app:layout_constraintTop_toBottomOf="@+id/tvAppDeveloper"
+            app:layout_constraintTop_toBottomOf="@+id/tvAppCategory"
             tools:text="@string/tools_app_desc" />
+
+        <!-- حاوية النجوم والتنزيلات (أسفل الوصف) بألوان مختلفة وخط صغير -->
+        <LinearLayout
+            android:id="@+id/llAppStats"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/btnInstall"
+            app:layout_constraintStart_toStartOf="@+id/tvAppName"
+            app:layout_constraintTop_toBottomOf="@+id/tvAppDescription">
+
+            <!-- النجوم باللون الأصفر -->
+            <TextView
+                android:id="@+id/tvAppStars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:textColor="#FFC107"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:text="Repository stars: 268" />
+
+            <!-- التنزيلات باللون الأخضر الفاتح -->
+            <TextView
+                android:id="@+id/tvAppDownloads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#81C784"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:text="Downloads: 17.0K"
+                tools:visibility="visible" />
+        </LinearLayout>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnInstall"

@@ -17,6 +17,7 @@ object LanguageManager {
     const val LANG_HI = "hi"
     const val LANG_ZH = "zh"
     const val LANG_JA = "ja"
+    const val LANG_CS = "cs"
     const val LANG_TR = "tr"
 
     fun applyLanguage(context: Context) {

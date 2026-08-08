@@ -72,58 +72,59 @@ class AccountFragment : Fragment() {
     private fun checkUserStateAndSetupUI() {
         val token = AuthManager.getToken(requireContext())
         
+        binding.layoutAppsSection.visibility = View.VISIBLE
+        binding.btnNavigateToWallet.visibility = View.VISIBLE
+        
         if (token.isNullOrEmpty()) {
             binding.tvAccountName.text = getString(R.string.account_guest_name)
             binding.tvAccountEmail.text = getString(R.string.account_guest_email)
-            binding.layoutAppsSection.visibility = View.GONE
-            binding.btnNavigateToWallet.visibility = View.GONE
             binding.btnLogout.text = getString(R.string.main_login_github)
             binding.btnLogout.setOnClickListener { navigateToLogin(autoStartGithub = true) }
         } else {
-            binding.layoutAppsSection.visibility = View.VISIBLE
-            binding.btnNavigateToWallet.visibility = View.VISIBLE
             binding.btnLogout.text = getString(R.string.account_logout)
             binding.btnLogout.setOnClickListener {
                 AuthManager.saveToken(requireContext(), "")
                 navigateToLogin(autoStartGithub = false)
             }
             
-            binding.btnNavigateToWallet.setOnClickListener {
-                requireActivity().supportFragmentManager.beginTransaction()
-                    .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out)
-                    .replace(R.id.fragmentContainer, WalletFragment())
-                    .addToBackStack(null)
-                    .commit()
+            val savedUsername = AuthManager.getUsername(requireContext())
+            if (!savedUsername.isNullOrEmpty()) {
+                binding.tvAccountName.text = savedUsername
+                binding.tvAccountEmail.text = "@$savedUsername"
             }
             
             fetchGitHubProfile(token)
-            fetchStoreAppsAndAnalyze(token)
         }
+        
+        binding.btnNavigateToWallet.setOnClickListener {
+            requireActivity().supportFragmentManager.beginTransaction()
+                .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out)
+                .replace(R.id.fragmentContainer, WalletFragment())
+                .addToBackStack(null)
+                .commit()
+        }
+        
+        fetchStoreAppsAndAnalyze()
     }
 
-    private fun fetchStoreAppsAndAnalyze(token: String) {
-        // 1. جلب البيانات المحفوظة محلياً فوراً (Offline First)
+    private fun fetchStoreAppsAndAnalyze() {
         val cachedApps = StoreCacheManager.getCachedApps(requireContext())
         if (cachedApps != null && cachedApps.isNotEmpty()) {
-            analyzeAppsInBackground(cachedApps, token)
+            analyzeAppsInBackground(cachedApps)
         }
 
-        // 2. تحديث صامت من الشبكة
         RetrofitClient.instance.getApps(Constants.GAS_URL).enqueue(object : Callback<List<AppModel>> {
             override fun onResponse(call: Call<List<AppModel>>, response: Response<List<AppModel>>) {
                 if (response.isSuccessful && response.body() != null) {
                     val newApps = response.body()!!
-                    
-                    // 3. مقارنة ذكية: حفظ البيانات الجديدة وإعادة الفحص فقط إذا كان هناك تغيير
                     if (cachedApps == null || newApps != cachedApps) {
                         StoreCacheManager.saveApps(requireContext(), newApps)
-                        analyzeAppsInBackground(newApps, token)
+                        analyzeAppsInBackground(newApps)
                     }
                 }
             }
 
             override fun onFailure(call: Call<List<AppModel>>, t: Throwable) {
-                // إظهار الخطأ فقط في حالة عدم وجود بيانات محلية لتشغيل الواجهة
                 if (cachedApps == null && isAdded) {
                     Toast.makeText(requireContext(), getString(R.string.store_fetch_error_network), Toast.LENGTH_SHORT).show()
                 }
@@ -131,7 +132,7 @@ class AccountFragment : Fragment() {
         })
     }
 
-    private fun analyzeAppsInBackground(storeApps: List<AppModel>, token: String) {
+    private fun analyzeAppsInBackground(storeApps: List<AppModel>) {
         val safeContext = context ?: return
         val pm = safeContext.packageManager
 
@@ -180,16 +181,10 @@ class AccountFragment : Fragment() {
                             val installedVersion = pInfo.versionName ?: ""
 
                             val apiUrl = "https://api.github.com/repos/${app.developer}/${app.name}/releases/latest"
-                            val conn = URL(apiUrl).openConnection() as HttpURLConnection
-                            conn.requestMethod = "GET"
-                            if (token.isNotEmpty()) {
-                                conn.setRequestProperty("Authorization", "Bearer $token")
-                            }
-                            conn.setRequestProperty("Accept", "application/vnd.github.v3+json")
+                            val result = GithubClient.get(safeContext, apiUrl, "application/vnd.github.v3+json")
 
-                            if (conn.responseCode == HttpURLConnection.HTTP_OK) {
-                                val responseText = conn.inputStream.bufferedReader().readText()
-                                val json = JSONObject(responseText)
+                            if (result.code == 200 && result.body != null) {
+                                val json = JSONObject(result.body)
                                 val latestVersion = json.getString("tag_name")
 
                                 if (VersionHelper.isVersionNewer(installedVersion, latestVersion)) {
@@ -222,7 +217,6 @@ class AccountFragment : Fragment() {
                     binding.tvNoUpdates.visibility = if (updateAppsList.isEmpty()) View.VISIBLE else View.GONE
                     binding.rvUpdateApps.visibility = if (updateAppsList.isEmpty()) View.GONE else View.VISIBLE
 
-                    // إرسال إشعار ذكي في حال وجود تحديثات متاحة
                     if (updateAppsList.isNotEmpty()) {
                         NotificationHelper.showUpdateAvailableNotification(safeContext, updateAppsList.size)
                     }
@@ -233,36 +227,54 @@ class AccountFragment : Fragment() {
 
     private fun openApp(app: AppModel) {
         val safeContext = context ?: return
-        val packageName = AppCacheManager.getPackageName(safeContext, app.name, app.id)
-        if (packageName.isNotEmpty()) {
-            val intent = safeContext.packageManager.getLaunchIntentForPackage(packageName)
-            if (intent != null) {
-                startActivity(intent)
-            } else {
-                Toast.makeText(safeContext, getString(R.string.store_cannot_open), Toast.LENGTH_SHORT).show()
+        
+        // استدعاء الحزمة بأمان في الخلفية (الطريقة المحدثة)
+        AppCacheManager.getPackageNameAsync(safeContext, app.name, app.id) { packageName ->
+            if (isAdded && packageName.isNotEmpty()) {
+                val intent = safeContext.packageManager.getLaunchIntentForPackage(packageName)
+                if (intent != null) {
+                    startActivity(intent)
+                } else {
+                    Toast.makeText(safeContext, getString(R.string.store_cannot_open), Toast.LENGTH_SHORT).show()
+                }
             }
         }
     }
 
     private fun openAppDetails(appItem: AppModel) {
         val safeContext = context ?: return
-        val packageName = AppCacheManager.getPackageName(safeContext, appItem.name, appItem.id)
         
-        val fragment = AppDetailsFragment.newInstance(
-            appId = appItem.id,
-            appName = appItem.name,
-            developer = appItem.developer,
-            iconUrl = appItem.iconUrl,
-            desc = appItem.description,
-            packageName = packageName
-        )
-        
-        requireActivity().supportFragmentManager.beginTransaction()
-            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out)
-            .replace(R.id.fragmentContainer, fragment) 
-            .addToBackStack(null)
-            .commit()
+        // استدعاء الحزمة بأمان في الخلفية (الطريقة المحدثة)
+        AppCacheManager.getPackageNameAsync(safeContext, appItem.name, appItem.id) { packageName ->
+            if (!isAdded) return@getPackageNameAsync
+            
+            val fragment = AppDetailsFragment.newInstance(
+                appId = appItem.id,
+                appName = appItem.name,
+                developer = appItem.developer,
+                iconUrl = appItem.iconUrl,
+                desc = appItem.description,
+                packageName = packageName,
+                stars = appItem.stars,
+                devMsg = appItem.developerMessage,
+                devMsgAr = appItem.developerMessageAr,
+                devNameAr = appItem.developerNameAr,
+                adApproved = appItem.adApproved,
+                bannerUrl = appItem.bannerUrl,
+                bannerUrlAr = appItem.bannerUrlAr,
+                downloads = appItem.downloads,
+                category = appItem.category,
+                categoryAr = appItem.categoryAr
+            )
+            
+            requireActivity().supportFragmentManager.beginTransaction()
+                .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.fade_in, android.R.anim.fade_out)
+                .replace(R.id.fragmentContainer, fragment) 
+                .addToBackStack(null)
+                .commit()
+        }
     }
+
 
     private fun navigateToLogin(autoStartGithub: Boolean = false) {
         val safeContext = context ?: return
@@ -285,9 +297,12 @@ class AccountFragment : Fragment() {
                     val response = connection.inputStream.bufferedReader().readText()
                     val jsonObject = JSONObject(response)
 
-                    val name = if (jsonObject.has("name") && !jsonObject.isNull("name")) jsonObject.getString("name") else jsonObject.getString("login")
-                    val email = if (jsonObject.has("email") && !jsonObject.isNull("email")) jsonObject.getString("email") else "@${jsonObject.getString("login")}"
+                    val loginUsername = jsonObject.getString("login")
+                    val name = if (jsonObject.has("name") && !jsonObject.isNull("name")) jsonObject.getString("name") else loginUsername
+                    val email = if (jsonObject.has("email") && !jsonObject.isNull("email")) jsonObject.getString("email") else "@$loginUsername"
                     val avatarUrl = if (jsonObject.has("avatar_url")) jsonObject.getString("avatar_url") else ""
+
+                    AuthManager.saveUsername(requireContext(), loginUsername)
 
                     mainHandler.post {
                         if (isAdded && _binding != null) {
@@ -298,8 +313,24 @@ class AccountFragment : Fragment() {
                             }
                         }
                     }
+                } else {
+                    mainHandler.post { loadCachedProfileFallback() }
                 }
             } catch (e: Exception) {
+                mainHandler.post { loadCachedProfileFallback() }
+            }
+        }
+    }
+
+    private fun loadCachedProfileFallback() {
+        if (isAdded && _binding != null) {
+            val savedUsername = AuthManager.getUsername(requireContext())
+            if (!savedUsername.isNullOrEmpty()) {
+                binding.tvAccountName.text = savedUsername
+                binding.tvAccountEmail.text = "@$savedUsername"
+            } else {
+                binding.tvAccountName.text = "مستخدم GitHub"
+                binding.tvAccountEmail.text = "تعذر التحديث"
             }
         }
     }

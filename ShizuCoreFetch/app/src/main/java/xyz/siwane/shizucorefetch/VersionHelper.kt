@@ -30,18 +30,10 @@ object VersionHelper {
         thread {
             try {
                 val apiUrl = "https://api.github.com/repos/$developer/$repoName/releases/latest"
-                val connection = URL(apiUrl).openConnection() as HttpURLConnection
-                connection.requestMethod = "GET"
-                connection.setRequestProperty("Accept", "application/vnd.github.v3+json")
+                val result = GithubClient.get(context, apiUrl, "application/vnd.github.v3+json")
 
-                val token = AuthManager.getToken(context)
-                if (token != null) {
-                    connection.setRequestProperty("Authorization", "Bearer $token")
-                }
-
-                if (connection.responseCode == HttpURLConnection.HTTP_OK) {
-                    val response = connection.inputStream.bufferedReader().readText()
-                    val jsonObject = JSONObject(response)
+                if (result.code == 200 && result.body != null) {
+                    val jsonObject = JSONObject(result.body)
                     val remoteVersion = jsonObject.getString("tag_name")
 
                     val isNewer = isVersionNewer(localVersion, remoteVersion)

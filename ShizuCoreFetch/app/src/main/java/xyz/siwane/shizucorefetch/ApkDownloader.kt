@@ -22,47 +22,66 @@ object ApkDownloader {
         thread {
             try {
                 val apiUrl = "https://api.github.com/repos/$developer/$repoName/releases/latest"
-                val connection = URL(apiUrl).openConnection() as HttpURLConnection
-                connection.requestMethod = "GET"
-                connection.setRequestProperty("Accept", "application/vnd.github.v3+json")
-                
-                val token = AuthManager.getToken(context)
-                if (token != null) {
-                    connection.setRequestProperty("Authorization", "Bearer $token")
-                }
+                val result = GithubClient.get(context, apiUrl, "application/vnd.github.v3+json")
 
-                if (connection.responseCode != HttpURLConnection.HTTP_OK) {
+                // معالجة حظر GitHub (Rate Limit) بدقة لمنع الرسائل الوهمية
+                if (result.code == 403) {
+                    postResult(onResult, false, "عذراً، لقد تجاوزت حد الطلبات المسموح به من GitHub. يرجى تسجيل الدخول أو المحاولة لاحقاً.")
+                    return@thread
+                } else if (result.code != 200 || result.body == null) {
                     postResult(onResult, false, context.getString(R.string.downloader_no_apk))
                     return@thread
                 }
 
-                val response = connection.inputStream.bufferedReader().readText()
-                val jsonObject = JSONObject(response)
+                val jsonObject = JSONObject(result.body)
                 val assets = jsonObject.getJSONArray("assets")
 
-                var downloadUrl: String? = null
-                var fileName: String? = null
-
+                val apkAssets = ArrayList<JSONObject>()
                 for (i in 0 until assets.length()) {
                     val asset = assets.getJSONObject(i)
-                    val name = asset.getString("name")
-                    if (name.endsWith(".apk")) {
-                        downloadUrl = asset.getString("browser_download_url")
-                        fileName = name
-                        break
+                    val name = asset.optString("name", "")
+                    if (name.lowercase().endsWith(".apk")) apkAssets.add(asset)
+                }
+
+                if (apkAssets.isEmpty()) {
+                    postResult(onResult, false, context.getString(R.string.downloader_no_apk))
+                    return@thread
+                }
+
+                val chosenAsset = pickBestApkAsset(apkAssets)
+                val downloadUrl = chosenAsset?.optString("browser_download_url")
+                val fileName = chosenAsset?.optString("name")
+
+                if (downloadUrl.isNullOrEmpty() || fileName.isNullOrEmpty()) {
+                    postResult(onResult, false, context.getString(R.string.downloader_no_apk))
+                    return@thread
+                }
+
+                // 1. استخدام المسار الخارجي لكي ينجح Shizuku (ADB) في الوصول إليه وقراءته
+                val apkFile = File(context.externalCacheDir ?: context.cacheDir, fileName)
+                
+                // 2. التحقق الجذري والذكي من سلامة الملف المتراكم من النسخ السابقة
+                if (apkFile.exists()) {
+                    // نطلب من نظام الأندرويد فحص الملف (هل هو APK سليم ومكتمل أم تالف؟)
+                    val packageInfo = context.packageManager.getPackageArchiveInfo(apkFile.absolutePath, 0)
+                    
+                    if (packageInfo != null) {
+                        // الملف سليم 100% ومكتمل، نمنحه صلاحية القراءة الإجبارية لتفادي أخطاء Shizuku
+                        apkFile.setReadable(true, false)
+                        postProgress(onProgress, "الملف موجود ومكتمل، جاري بدء التثبيت...")
+                        postResult(onResult, true, apkFile.absolutePath)
+                        return@thread
+                    } else {
+                        // الملف موجود ولكنه تالف (بسبب انقطاع تحميل سابق أو خطأ متراكم)
+                        // نقوم بحذف هذا الملف الوهمي فوراً بصمت لكي نعيد تحميل نسخة سليمة
+                        apkFile.delete()
                     }
                 }
 
-                if (downloadUrl == null || fileName == null) {
-                    postResult(onResult, false, context.getString(R.string.downloader_no_apk))
-                    return@thread
-                }
-
+                // 3. بدء التنزيل النظيف بعد التأكد من عدم وجود ملف تالف
                 postProgress(onProgress, context.getString(R.string.downloader_downloading, fileName))
-                // دفع إشعار التقدم الذكي بالنظام عند بدء سحب الحزمة
                 NotificationHelper.showDownloadProgress(context, repoName, context.getString(R.string.downloader_downloading, fileName))
 
-                val apkFile = File(context.cacheDir, fileName)
                 val downloadConnection = URL(downloadUrl).openConnection() as HttpURLConnection
                 downloadConnection.connect()
 
@@ -78,6 +97,9 @@ object ApkDownloader {
                 outputStream.close()
                 inputStream.close()
 
+                // 4. إعطاء صلاحية القراءة الشاملة للملف فور اكتمال التحميل لضمان نجاح التثبيت عبر ADB
+                apkFile.setReadable(true, false)
+
                 postProgress(onProgress, context.getString(R.string.downloader_success))
                 postResult(onResult, true, apkFile.absolutePath)
 
@@ -85,6 +107,44 @@ object ApkDownloader {
                 postResult(onResult, false, context.getString(R.string.downloader_fail, e.message))
             }
         }
+    }
+
+    // كلمات مفتاحية شائعة تُستخدم في أسماء ملفات الـ APK للتمييز بين نسخة الإصدار
+    // ونسخ التطوير/الاختبار. لا تغطي 100% من الحالات لكنها تلتقط الغالبية العظمى منها،
+    // كما اقترح المستخدم في تقرير الأخطاء
+    private val debugKeywords = listOf("debug", "-dev", "_dev", "test", "beta", "alpha", "nightly", "snapshot", "unsigned")
+    private val releaseKeywords = listOf("release", "stable")
+
+    /**
+     * يختار أفضل ملف APK من قائمة الأصول (assets) الخاصة بإصدار GitHub:
+     * - إن وُجد ملف واحد فقط: نستخدمه مباشرة (لا داعي لأي فلترة).
+     * - إن وُجدت عدة ملفات: نُفضّل أي ملف يحتوي كلمة "release/stable" في اسمه،
+     *   ونستبعد أي ملف يحتوي كلمة دالة على نسخة تطوير/اختبار مثل "debug".
+     * - إن لم نجد أي مطابقة واضحة، نرجع لأول ملف كسلوك احتياطي آمن.
+     * ملاحظة: نعتمد فقط على اسم الملف (metadata) بدون تحميله، لأن التحقق من التوقيع
+     * الرقمي يتطلب تنزيل الملف بالكامل أولاً وهو أمر غير عملي قبل اتخاذ قرار التحميل.
+     */
+    private fun pickBestApkAsset(apkAssets: List<JSONObject>): JSONObject? {
+        if (apkAssets.size == 1) return apkAssets[0]
+
+        val withoutDebug = apkAssets.filter { asset ->
+            val name = asset.optString("name", "").lowercase()
+            debugKeywords.none { keyword -> name.contains(keyword) }
+        }
+
+        val candidates = if (withoutDebug.isNotEmpty()) withoutDebug else apkAssets
+
+        val explicitRelease = candidates.firstOrNull { asset ->
+            val name = asset.optString("name", "").lowercase()
+            releaseKeywords.any { keyword -> name.contains(keyword) }
+        }
+        if (explicitRelease != null) return explicitRelease
+
+        // لا توجد كلمة "release" صريحة لكن على الأقل استبعدنا نسخ الـ debug/beta
+        if (withoutDebug.isNotEmpty()) return withoutDebug[0]
+
+        // كل الملفات تحتوي كلمات دالة على debug/test (نادر) - نرجع لأول ملف كخيار أخير
+        return apkAssets.firstOrNull()
     }
 
     private fun postResult(onResult: (Boolean, String?) -> Unit, success: Boolean, result: String?) {

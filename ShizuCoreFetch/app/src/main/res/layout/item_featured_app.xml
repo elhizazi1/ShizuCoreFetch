@@ -6,7 +6,7 @@
     android:layout_width="280dp"
     android:layout_height="180dp"
     android:layout_margin="8dp"
-    app:cardCornerRadius="8dp"
+    app:cardCornerRadius="12dp"
     app:cardElevation="2dp"
     app:strokeWidth="0dp">
 
@@ -14,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <!-- صورة البانر الأساسية -->
         <ImageView
             android:id="@+id/ivFeaturedBanner"
             android:layout_width="match_parent"
@@ -21,26 +22,145 @@
             android:scaleType="centerCrop"
             tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
+        <!-- ظل سفلي أنيق لحماية عنوان التطبيق -->
         <View
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:background="@drawable/gradient_bottom"
             app:layout_constraintBottom_toBottomOf="parent" />
 
-        <TextView
-            android:id="@+id/tvFeaturedAppName"
+        <!-- حاوية النجوم الذكية (الزاوية العلوية البادئة) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvFeaturedStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#B3202020"
+            app:cardCornerRadius="8dp"
+            app:strokeColor="#66FFFFFF"
+            app:strokeWidth="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="4dp">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@android:drawable/star_on"
+                    app:tint="#FFC107" />
+
+                <TextView
+                    android:id="@+id/tvFeaturedStars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    tools:text="1.5K" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- حاوية التنزيلات الذكية (الزاوية العلوية المنتهية) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvFeaturedDownloads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="#B3202020"
+            app:cardCornerRadius="8dp"
+            app:strokeColor="#66FFFFFF"
+            app:strokeWidth="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="4dp">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@android:drawable/stat_sys_download"
+                    app:tint="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/tvFeaturedDownloads"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    tools:text="10M" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- شريط سفلي ذكي يحتوي على الاسم والفئة ويحترم اتجاه اللغة (RTL/LTR) تلقائياً -->
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="12dp"
             android:layout_marginBottom="12dp"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:text="@string/tools_app_name" />
+            app:layout_constraintStart_toStartOf="parent">
+
+            <!-- اسم التطبيق -->
+            <TextView
+                android:id="@+id/tvFeaturedAppName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAlignment="viewStart"
+                android:textDirection="locale"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="@string/tools_app_name" />
+
+            <!-- حاوية الفئة -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvFeaturedCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:cardBackgroundColor="#B3202020"
+                app:cardCornerRadius="6dp"
+                app:strokeColor="#66FFFFFF"
+                app:strokeWidth="1dp">
+
+                <TextView
+                    android:id="@+id/tvFeaturedCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="6dp"
+                    android:paddingVertical="2dp"
+                    android:textColor="#81D4FA"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    tools:text="Tools" />
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

@@ -74,8 +74,10 @@
     <string name="lang_ru">Русский</string>
     <string name="lang_hi">हिन्दी</string>
     <string name="lang_zh">中文</string>
-    <string name="lang_ja">日本語</string>
-    <string name="lang_tr">Türkçe</string> 
+    <string name="lang_ja">日本語</string> 
+    <string name="lang_cs">Čeština</string>
+    <string name="lang_tr">Türkçe</string>
+    <string name="settings_contributors">翻译贡献者</string>
 
     <string name="settings_notif_title">通知</string>
     
@@ -86,7 +88,7 @@
     <string name="settings_about_store">关于商店</string>
     <string name="settings_privacy">隐私政策</string>
     <string name="settings_terms">使用条款</string>
-    <string name="settings_version">版本 1.0.0</string>
+    <string name="settings_version">版本 1.5.0</string>
     <string name="settings_developer">作者：Jamal El Hizazi</string>
 
     <string name="dialog_theme_title">选择主题</string>
@@ -118,4 +120,90 @@
 <string name="wallet_btn_open">外部打开</string>
 <string name="dialog_cancel">取消</string>
 <string name="dialog_confirm">确认</string>
+
+<string name="store_reviews_title">评分与评论</string>
+<string name="store_reviews_empty">成为第一个评价此应用的人！评论系统正在准备中。</string>
+<string name="store_write_review">撰写评价</string>
+<string name="store_developer_info">开发者信息</string>
+<string name="store_rating_count_format">%1$s 条评价</string>
+<string name="store_no_ratings_yet">暂无评分</string>
+<string name="store_comment_dev">评论系统目前正在开发中</string>
+<string name="store_dev_email">电子邮件：</string>
+<string name="store_dev_website">官方网站</string>
+<string name="store_dev_portfolio">作品集</string>
+
+<string name="store_developer_message_title">开发者寄语</string>
+<string name="store_show_all_versions">显示所有版本</string>
+<string name="store_hide_versions">隐藏版本</string>
+
+<string name="store_visit_website">访问官方网站</string>
+<string name="store_calculating_size">正在计算...</string>
+
+<string name="empty_comments_message">暂无评论。快来发表第一条评论吧！</string>
+<string name="hide_comments_previous">隐藏之前的评论</string>
+<string name="show_remaining_comments">显示其余评论（%1$d）</string>
+<string name="comment_posted_success">评论已成功发布！</string>
+<string name="comment_post_failed">评论发布失败</string>
+<string name="login_prompt_comments">请使用您的 GitHub 账户登录以参与讨论。</string>
+<string name="comment_reply_button">回复</string>
+<string name="comment_edit_button">编辑</string>
+<string name="comment_delete_button">删除</string>
+<string name="comment_input_hint">在此输入您的评论...</string>
+<string name="edit_comment_toast_format">将打开窗口以编辑第 %1$d 条评论</string>
+
+<string name="comment_react_button">表态</string>
+<string name="dialog_choose_reaction">选择一个表情反应</string>
+<string name="reaction_added_success">表情反应已添加！</string>
+<string name="reaction_add_failed">添加表情反应失败</string>
+
+<string name="dev_profile_title">开发者资料</string>
+<string name="dev_profile_apps_title">开发者的应用</string>
+<string name="store_dev_email2">电子邮件</string>
+
+<string name="store_trending_apps">热门应用</string>
+<string name="ad_label">广告</string>
+
+<string name="settings_silent_install_title">静默安装</string>
+<string name="silent_install_enabled">静默安装：已启用（Shizuku）</string>
+<string name="silent_install_disabled">静默安装：已禁用（系统安装）</string>
+<string name="settings_silent_install_desc">启用通过 Shizuku 直接安装，无需系统确认</string>
+
+<string name="guest_login_prompt_title">需要登录</string>
+<string name="guest_login_prompt_install_msg">请登录您的 GitHub 账户，以便从商店下载和安装应用。</string>
+<string name="guest_action_login">立即登录</string>
+
+<string name="notice_title">用户重要通知</string>
+<string name="notice_message">欢迎！我们想通知您，无论 Shizuku 是通过 Root 还是 ADB 激活，现在的安装都非常成功且完全稳定。\n\n为了确保商店的稳定性并防止 GitHub 的临时封禁，建议您使用个人帐户登录。如果您遇到任何技术错误，欢迎直接与我联系。\n\n祝您在 ShizuCoreFetch 拥有愉快的体验！</string>
+<string name="notice_button">确定</string>
+
+    <string name="store_github_stars_format">仓库星标：%1$s</string>
+    <string name="store_real_ratings_count">评分：%1$d</string>
+    <string name="store_no_real_ratings_yet">暂无评分</string>
+    <string name="store_rating_success">评分保存成功</string>
+    <string name="store_rating_fail">保存评分时出错</string>
+    <string name="login_prompt_rating">必须登录才能评价应用</string>
+
+    <string name="delete_comment_title">删除评论</string>
+    <string name="delete_comment_message">您确定要永久删除此评论吗？</string>
+    <string name="comment_edit_success">评论编辑成功</string>
+    <string name="comment_delete_success">已从商店中删除评论</string>
+    <string name="comment_protected_blacklist">评论在GitHub上受保护。正在加入黑名单...</string>
+    <string name="comment_delete_no_permission">您没有权限删除此评论</string>
+    <string name="comment_blacklist_success">评论已从商店中永久隐藏</string>
+    <string name="comment_blacklist_fail">屏蔽评论失败，请重试</string>
+
+    <string name="store_developer_format">%1$s %2$s</string>
+    <string name="store_developer_with_category">%1$s %2$s • %3$s</string>
+    <string name="store_downloads_million">%1$sM</string>
+    <string name="store_downloads_thousand">%1$sK</string>
+    <string name="store_rating_combined">%1$s • %2$s</string>
+    <string name="store_default_rating">0.0</string>
+    <string name="store_unknown_size">未知</string>
+    <string name="store_ad_pending">广告（审核中 - 仅您可见）</string>
+    <string name="store_no_description">暂无描述。</string>
+    <string name="store_error_generic">发生错误</string>
+    <string name="store_download_failed">下载失败</string>
+    <string name="store_downloads_count">下载量：%1$s</string>
+    <string name="store_category_prefix">类别：</string>
+
 </resources>

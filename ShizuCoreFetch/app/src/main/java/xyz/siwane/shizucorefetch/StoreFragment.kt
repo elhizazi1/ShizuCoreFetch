@@ -119,7 +119,7 @@ class StoreFragment : Fragment(), Shizuku.OnRequestPermissionResultListener {
 
         searchItem.setOnActionExpandListener(object : MenuItem.OnActionExpandListener {
             override fun onMenuItemActionExpand(item: MenuItem): Boolean {
-                return true // لا نحتاج لإخفاء أي عناوين هنا في المتجر
+                return true
             }
 
             override fun onMenuItemActionCollapse(item: MenuItem): Boolean {
@@ -223,7 +223,17 @@ class StoreFragment : Fragment(), Shizuku.OnRequestPermissionResultListener {
             developer = appItem.developer,
             iconUrl = appItem.iconUrl,
             desc = appItem.description,
-            packageName = packageName
+            packageName = packageName,
+            stars = appItem.stars,
+            devMsg = appItem.developerMessage,
+            devMsgAr = appItem.developerMessageAr,
+            devNameAr = appItem.developerNameAr,
+            adApproved = appItem.adApproved,
+            bannerUrl = appItem.bannerUrl,
+            bannerUrlAr = appItem.bannerUrlAr,
+            downloads = appItem.downloads,
+            category = appItem.category,
+            categoryAr = appItem.categoryAr
         )
         
         requireActivity().supportFragmentManager.beginTransaction()

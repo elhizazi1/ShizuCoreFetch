@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <paths>
+    <!-- المسار القديم: لضمان التوافق مع الملفات السابقة -->
     <cache-path name="cached_apks" path="." />
+    
+    <!-- المسار الجديد: ضروري جداً لتثبيت الملفات عبر Shizuku وللتثبيت العادي -->
+    <external-cache-path name="external_cache" path="." />
 </paths>

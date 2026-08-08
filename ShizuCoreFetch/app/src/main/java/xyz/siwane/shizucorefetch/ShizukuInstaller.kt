@@ -5,11 +5,12 @@ import android.os.Handler
 import android.os.Looper
 import rikka.shizuku.Shizuku
 import java.io.BufferedReader
+import java.io.File
 import java.io.InputStreamReader
 
 object ShizukuInstaller {
 
-    // 1. دالة التثبيت الصامت
+    // 1. دالة التثبيت الصامت (محدثة لتخطي SELinux عبر Streaming)
     fun installApk(context: Context, apkFilePath: String, onResult: (Boolean, String) -> Unit) {
         if (!ShizukuHelper.hasPermission()) {
             postResult(onResult, false, context.getString(R.string.installer_no_permission))
@@ -18,7 +19,14 @@ object ShizukuInstaller {
 
         Thread {
             try {
-                val command = "pm install -r \"$apkFilePath\""
+                val file = File(apkFilePath)
+                if (!file.exists()) {
+                    postResult(onResult, false, "الملف غير موجود")
+                    return@Thread
+                }
+
+                // التغيير الجذري: استخدام -S مع حجم الملف لضخ البيانات وتخطي قراءة المسار
+                val command = "pm install -r -S ${file.length()}"
                 val commandArray = arrayOf("sh", "-c", command)
                 
                 val newProcessMethod = Shizuku::class.java.getDeclaredMethod(
@@ -30,6 +38,14 @@ object ShizukuInstaller {
                 
                 newProcessMethod.isAccessible = true
                 val process = newProcessMethod.invoke(null, commandArray, null, null) as Process
+                
+                // ضخ بيانات الـ APK مباشرة إلى أداة التثبيت لتجاوز جدار الحماية (SELinux) تماماً
+                file.inputStream().use { input ->
+                    process.outputStream.use { output ->
+                        input.copyTo(output)
+                    }
+                }
+                
                 process.waitFor()
                 
                 val isSuccess = process.exitValue() == 0

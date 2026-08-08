@@ -44,6 +44,9 @@
     <string name="home_featured">Featured</string>
     <string name="home_all_apps">All Applications</string>
     <string name="login_guest">Browse as Guest</string>
+    <string name="login_authenticating">Signing you in…</string>
+    <string name="login_retrying">Connection issue, retrying (%1$d/%2$d)…</string>
+    <string name="login_failed_final">Couldn\'t sign in after several attempts. Please check your connection and try again.</string>
     <string name="nav_home">Home</string>
     <string name="nav_store">Store</string>
     <string name="nav_account">Account</string>
@@ -74,9 +77,11 @@
     <string name="lang_ru">Русский</string>
     <string name="lang_hi">हिन्दी</string>
     <string name="lang_zh">中文</string>
-    <string name="lang_ja">日本語</string>
-    <string name="lang_tr">Türkçe</string> 
-    
+    <string name="lang_ja">日本語</string> 
+    <string name="lang_cs">Čeština</string>
+    <string name="lang_tr">Türkçe</string>
+    <string name="settings_contributors">Translation Contributors</string>
+
     <string name="settings_notif_title">Notifications</string>
     
     <string name="settings_permissions_title">Permissions</string>
@@ -86,7 +91,7 @@
     <string name="settings_about_store">About Store</string>
     <string name="settings_privacy">Privacy Policy</string>
     <string name="settings_terms">Terms of Use</string>
-    <string name="settings_version">Version 1.0.0</string>
+    <string name="settings_version">Version 1.5.0</string>
     <string name="settings_developer">By Jamal El Hizazi</string>
 
     <string name="dialog_theme_title">Choose Theme</string>
@@ -119,5 +124,97 @@
     <string name="wallet_btn_open">Open External</string>
     <string name="dialog_cancel">Cancel</string>
     <string name="dialog_confirm">Confirm</string>
+
+    <!-- App Details Strings -->
+    <string name="store_reviews_title">Reviews &amp; Comments</string>
+    <string name="store_reviews_empty">Be the first to review this app! The comment system is being set up.</string>
+    <string name="store_write_review">Write a review</string>
+    <string name="store_developer_info">Developer Info</string>
+    <string name="store_rating_count_format">%1$s ratings</string>
+    <string name="store_no_ratings_yet">No ratings yet</string>
+    <string name="store_comment_dev">Comment system is currently under development</string>
+    <string name="store_dev_email">Email:</string>
+    <string name="store_dev_website">Website</string>
+    <string name="store_dev_portfolio">Portfolio</string>
+
+    <string name="store_developer_message_title">A Word from the Developer</string>
+    <string name="store_show_all_versions">Show all versions</string>
+    <string name="store_hide_versions">Hide versions</string>
+
+    <string name="store_visit_website">Visit the official website</string>
+    <string name="store_calculating_size">Calculating...</string>
+
+    <string name="empty_comments_message">No comments yet. Be the first to comment!</string>
+    <string name="hide_comments_previous">Hide previous comments</string>
+    <string name="show_remaining_comments">Show remaining comments (%1$d)</string>
+    <string name="comment_posted_success">Comment posted successfully!</string>
+    <string name="comment_post_failed">Failed to post comment</string>
+    <string name="login_prompt_comments">Please login with your GitHub account to join the discussion.</string>
+    <string name="comment_reply_button">Reply</string>
+    <string name="comment_edit_button">Edit</string>
+    <string name="comment_delete_button">Delete</string>    
+    <string name="comment_input_hint">Write your comment here…</string>
+    <string name="edit_comment_toast_format">Edit window for comment #%1$d will open soon</string>
+
+    <string name="comment_react_button">React</string>
+    <string name="dialog_choose_reaction">Choose a reaction</string>
+    <string name="reaction_added_success">Reaction added!</string>
+    <string name="reaction_add_failed">Failed to add reaction</string>
+
+    <string name="dev_profile_title">Developer Profile</string>
+    <string name="dev_profile_apps_title">Developer Apps</string>
+    <string name="store_dev_email2">Email</string>
+    
+    <string name="store_trending_apps">Trending Apps</string>
+
+    <string name="ad_label">Ad</string>
+
+<!-- Silent Installation Settings -->
+<string name="settings_silent_install_title">Silent Installation</string>
+<string name="silent_install_enabled">Silent Installation: Enabled (Shizuku)</string>
+<string name="silent_install_disabled">Silent Installation: Disabled (System Installer)</string>
+
+<!-- Guest Mode Texts -->
+<string name="guest_login_prompt_title">Login Required</string>
+<string name="guest_login_prompt_install_msg">Please sign in with your GitHub account to download and install apps from the store.</string>
+<string name="guest_action_login">Sign In Now</string>
+
+<string name="settings_silent_install_desc">Enable direct installation via Shizuku without requiring system confirmation</string>
+
+<string name="notice_title">Important Notice for Users</string>
+<string name="notice_message">Welcome! We would like to inform you that the installation is now successful and completely stable, whether Shizuku is activated via Root or ADB.\n\nTo ensure the store\'s stability and prevent temporary bans from GitHub, it is recommended to log in with your personal account. If you encounter any technical issues, please feel free to contact me directly.\n\nWe wish you an enjoyable experience with ShizuCoreFetch!</string>
+<string name="notice_button">OK</string>
+
+<string name="store_github_stars_format">Repository stars: %1$s</string>
+<string name="store_real_ratings_count">Ratings: %1$d</string>
+<string name="store_no_real_ratings_yet">No ratings yet</string>
+<string name="store_rating_success">Your rating was saved successfully</string>
+<string name="store_rating_fail">An error occurred while saving your rating</string>
+<string name="login_prompt_rating">You must be logged in to rate the app</string>
+
+<!-- Comment System Strings -->
+<string name="delete_comment_title">Delete Comment</string>
+<string name="delete_comment_message">Are you sure you want to permanently delete this comment?</string>
+<string name="comment_edit_success">Comment updated successfully</string>
+<string name="comment_delete_success">Comment deleted from the store</string>
+<string name="comment_protected_blacklist">This comment is protected by GitHub. Adding it to the blacklist...</string>
+<string name="comment_delete_no_permission">You don\'t have permission to delete this comment</string>
+<string name="comment_blacklist_success">Comment permanently hidden from the store</string>
+<string name="comment_blacklist_fail">Unable to block the comment. Please try again.</string>
+
+    <!-- Updated App Details Strings -->
+    <string name="store_developer_format">%1$s %2$s</string>
+    <string name="store_developer_with_category">%1$s %2$s • %3$s</string>
+    <string name="store_downloads_million">%1$sM</string>
+    <string name="store_downloads_thousand">%1$sK</string>
+    <string name="store_rating_combined">%1$s • %2$s</string>
+    <string name="store_default_rating">0.0</string>
+    <string name="store_unknown_size">Unknown</string>
+    <string name="store_ad_pending">Ad (Pending Review - Visible to you only)</string>
+    <string name="store_no_description">No description available.</string>
+    <string name="store_error_generic">An error occurred</string>
+    <string name="store_download_failed">Download failed</string>
+    <string name="store_downloads_count">Downloads: %1$s</string>
+<string name="store_category_prefix">Category:</string>
 
 </resources>

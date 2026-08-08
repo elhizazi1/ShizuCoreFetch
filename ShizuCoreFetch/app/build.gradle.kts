@@ -7,15 +7,15 @@ plugins {
 
 android {
     namespace = "xyz.siwane.shizucorefetch"
-    compileSdk = 35
+    compileSdk = 36
     ndkVersion = "28.2.13676358"
     
     defaultConfig {
         applicationId = "xyz.siwane.shizucorefetch"
         minSdk = 24
-        targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        targetSdk = 36
+        versionCode = 5
+        versionName = "1.5"
         
         vectorDrawables { 
             useSupportLibrary = true
@@ -90,5 +90,7 @@ dependencies {
     implementation("androidx.browser:browser:1.8.0")
     
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+    
+    implementation("com.google.firebase:firebase-firestore")
     
 }

@@ -32,7 +32,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- عنوان قسم: عام -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -98,13 +97,54 @@
                     android:textSize="16sp" />
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/btnSilentInstall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_scanning"
+                    app:tint="?android:attr/textColorSecondary" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_silent_install_title"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/settings_silent_install_desc"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="8dp"
                 android:background="?android:attr/listDivider" />
 
-            <!-- عنوان قسم: الصلاحيات -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -176,7 +216,6 @@
                 android:layout_marginVertical="8dp"
                 android:background="?android:attr/listDivider" />
 
-            <!-- عنوان قسم: حول -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -214,6 +253,35 @@
                     android:textColor="?android:attr/textColorPrimary"
                     android:textSize="16sp" />
             </LinearLayout>
+
+            <!-- تمت إضافة زر شكر المساهمين هنا -->
+            <LinearLayout
+                android:id="@+id/btnContributors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_profile_2user" 
+                    app:tint="?android:attr/textColorSecondary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/settings_contributors"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <!-- نهاية زر شكر المساهمين -->
 
             <LinearLayout
                 android:id="@+id/btnPrivacy"
@@ -257,7 +325,7 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/ic_document_text"
+                    android:src="@drawable/ic_shield_security"
                     app:tint="?android:attr/textColorSecondary" />
 
                 <TextView

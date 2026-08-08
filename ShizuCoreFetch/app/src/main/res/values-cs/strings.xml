@@ -3,7 +3,7 @@
     <!-- النصوص الأساسية -->
     <string name="app_name">Shizu CoreFetch</string>
     <string name="main_title">Shizu CoreFetch</string>
-    <string name="main_description">Pokročilá centralizovaná platforma pro načítání a správu aplikací vyžadujících základní oprávnění .</string>
+    <string name="main_description">Pokročilá centralizovaná platforma pro načítání a správu aplikací vyžadujících základní oprávnění.</string>
     <string name="main_login_github">Přihlásit se přes GitHub</string>
     <string name="main_boredom_title">Vývojářské okno</string>
     <string name="main_boredom_loading">Načítání dat...</string>
@@ -11,7 +11,7 @@
     <string name="store_title">Shizu repozitář</string>
     <string name="store_btn_install">Instalovat</string>
     <string name="store_developer_prefix">: </string>
-    <string name="store_shizuku_not_running">Shizuku neběží. Prosím, nejdříve jej spusťte.</string>
+    <string name="store_shizuku_not_running">Shizuku neběží. Prosím, začněte s tím nejdřív.</string>
     <string name="store_shizuku_permission_denied">Pro základní operace je vyžadováno povolení Shizuku.</string>
     <string name="store_shizuku_permission_granted">Shizuku se úspěšně spojilo.</string>
     <string name="store_fetch_loading">Načítání aplikací...</string>
@@ -51,7 +51,7 @@
     <string name="account_loading">Načítání…</string>
     <string name="account_guest_name">Host</string>
     <string name="account_guest_email">Pro přístup ke všem funkcím se prosím přihlaste</string>
-    <string name="account_installed_apps">Installed applications</string>
+    <string name="account_installed_apps">Nainstalované aplikace</string>
     <string name="account_no_installed_apps">Nebyly dosud nainstalované žádné aplikace z tohoto obchodu.</string>
     <string name="account_updates_available">Dostupné aktualizace</string>
     <string name="account_no_updates">Všechny vaše aplikace jsou aktuální.</string>
@@ -59,11 +59,11 @@
     <string name="screenshots_title">Snímky obrazovky</string>
     <string name="preview_loading_text">Načítám data...</string>
 
-    <!-- نصوص الإعدادات الجديدة (بالإنجليزية للملف الافتراضي) -->
+    <!-- إعدادات التطبيق -->
     <string name="settings_theme_title">Motiv</string>
     <string name="theme_light">Světlý</string>
-    <string name="theme_system">Tmavý</string>
-    <string name="theme_dark">Černý</string>
+    <string name="theme_system">Systém</string>
+    <string name="theme_dark">Tmavý</string>
 
     <string name="settings_lang_title">Jazyk</string>
     <string name="lang_en">Angličtina</string>
@@ -75,7 +75,10 @@
     <string name="lang_hi">Hindština</string>
     <string name="lang_zh">Čínština</string>
     <string name="lang_ja">Japonština</string> 
-    
+    <string name="lang_cs">Čeština</string>
+    <string name="lang_tr">Türkçe</string>
+    <string name="settings_contributors">Přispěvatelé překladu</string>
+
     <string name="settings_notif_title">Notifikace</string>
     
     <string name="settings_permissions_title">Povolení</string>
@@ -85,20 +88,20 @@
     <string name="settings_about_store">O obchodě</string>
     <string name="settings_privacy">Zásady ochrany osobních údajů</string>
     <string name="settings_terms">Podmínky používání</string>
-    <string name="settings_version">Verze 1.0.0</string>
+    <string name="settings_version">Verze 1.5.0</string>
     <string name="settings_developer">Jamal El Hizazi</string>
 
     <string name="dialog_theme_title">Zvolit motiv</string>
     <string name="dialog_lang_title">Zvolit jazyk</string>
 
     <string name="toast_shizuku_granted">Shizuku oprávnění je již uděleno</string>
-    <string name="toast_shizuku_not_running">Shizuku neběží. Prosíme  zapněte jej</string>
+    <string name="toast_shizuku_not_running">Shizuku neběží. Prosíme zapněte jej</string>
     <string name="toast_shizuku_error">Chyba: Shizuku knihovna není dostupná</string>
     
-        <string name="settings_category_general">Obecné</string>
+    <string name="settings_category_general">Obecné</string>
     <string name="settings_category_about">O</string>
 
-    <string name="notif_channel_ops_name">Práce a obchodem</string>
+    <string name="notif_channel_ops_name">Práce s obchodem</string>
     <string name="notif_channel_ops_desc">Notifikace pro stahování na pozadí a technické instalace.</string>
     <string name="notif_channel_updates_name">Dostupné aktualizace</string>
     <string name="notif_channel_updates_desc">Oznamovat, pokud bude dostupná aktualizace pro vaše aplikace.</string>
@@ -118,5 +121,95 @@
     <string name="wallet_btn_open">Otevřít externí</string>
     <string name="dialog_cancel">Zrušit</string>
     <string name="dialog_confirm">Potvrdit</string>
+
+    <!-- App Details Strings (الإضافات الجديدة) -->
+    <string name="store_reviews_title">Recenze a komentáře</string>
+    <string name="store_reviews_empty">Buďte první, kdo ohodnotí tuto aplikaci! Systém komentářů se připravuje.</string>
+    <string name="store_write_review">Napsat recenzi</string>
+    <string name="store_developer_info">Informace o vývojáři</string>
+    <string name="store_rating_count_format">%1$s hodnocení</string>
+    <string name="store_no_ratings_yet">Zatím žádná hodnocení</string>
+    <string name="store_comment_dev">Systém komentářů je momentálně ve vývoji</string>
+    <string name="store_dev_email">E-mail:</string>
+    <string name="store_dev_website">Webová stránka</string>
+    <string name="store_dev_portfolio">Portfolio</string>
+
+    <string name="store_developer_message_title">Slovo od vývojáře</string>
+    <string name="store_show_all_versions">Zobrazit všechny verze</string>
+    <string name="store_hide_versions">Skrýt verze</string>
+
+    <string name="store_visit_website">Navštívit oficiální web</string>
+    <string name="store_calculating_size">Počítání...</string>
+
+    <string name="empty_comments_message">Zatím žádné komentáře. Buďte první, kdo přidá komentář!</string>
+    <string name="hide_comments_previous">Skrýt předchozí komentáře</string>
+    <string name="show_remaining_comments">Zobrazit zbývající komentáře (%1$d)</string>
+    <string name="comment_posted_success">Komentář byl úspěšně přidán!</string>
+    <string name="comment_post_failed">Nepodařilo se přidat komentář</string>
+    <string name="login_prompt_comments">Pro zapojení do diskuze se prosím přihlaste pomocí svého účtu GitHub.</string>
+    <string name="comment_reply_button">Odpovědět</string>
+    <string name="comment_edit_button">Upravit</string>
+    <string name="comment_delete_button">Smazat</string>    
+    <string name="comment_input_hint">Napište svůj komentář sem…</string>
+    <string name="edit_comment_toast_format">Okno pro úpravu komentáře #%1$d se brzy otevře</string>
+
+    <string name="comment_react_button">Reagovat</string>
+    <string name="dialog_choose_reaction">Vyberte reakci</string>
+    <string name="reaction_added_success">Reakce přidána!</string>
+    <string name="reaction_add_failed">Nepodařilo se přidat reakci</string>
+
+    <string name="dev_profile_title">Profil vývojáře</string>
+    <string name="dev_profile_apps_title">Aplikace vývojáře</string>
+    <string name="store_dev_email2">E-mail</string>
+    
+    <string name="store_trending_apps">Populární aplikace</string>
+
+    <string name="ad_label">Reklama</string>
+
+    <!-- Silent Installation Settings -->
+    <string name="settings_silent_install_title">Tichá instalace</string>
+    <string name="silent_install_enabled">Tichá instalace: Povoleno (Shizuku)</string>
+    <string name="silent_install_disabled">Tichá instalace: Zakázáno (Systémový instalátor)</string>
+    <string name="settings_silent_install_desc">Povolit přímou instalaci přes Shizuku bez nutnosti systémového potvrzení</string>
+
+    <!-- Guest Mode Texts -->
+    <string name="guest_login_prompt_title">Vyžadováno přihlášení</string>
+    <string name="guest_login_prompt_install_msg">Pro stahování a instalaci aplikací z obchodu se prosím přihlaste pomocí svého účtu GitHub.</string>
+    <string name="guest_action_login">Přihlásit se nyní</string>
+
+    <!-- Notice texts -->
+    <string name="notice_title">Důležité upozornění pro uživatele</string>
+    <string name="notice_message">Vítejte! Rádi bychom vás informovali, že instalace je nyní úspěšná a zcela stabilní, ať už je Shizuku aktivováno přes Root nebo ADB.\n\nPro zajištění stability obchodu a zamezení dočasným banům od GitHubu doporučujeme přihlásit se pomocí vašeho osobního účtu. Pokud narazíte na jakékoli technické problémy, neváhejte mě přímo kontaktovat.\n\nPřejeme vám příjemný zážitek s ShizuCoreFetch!</string>
+    <string name="notice_button">OK</string>
+
+    <string name="store_github_stars_format">Hvězdy repozitáře: %1$s</string>
+    <string name="store_real_ratings_count">Hodnotitelů: %1$d</string>
+    <string name="store_no_real_ratings_yet">Zatím žádná hodnocení</string>
+    <string name="store_rating_success">Hodnocení úspěšně uloženo</string>
+    <string name="store_rating_fail">Při ukládání hodnocení došlo k chybě</string>
+    <string name="login_prompt_rating">Pro hodnocení aplikace se musíte přihlásit</string>
+
+    <string name="delete_comment_title">Smazat komentář</string>
+    <string name="delete_comment_message">Opravdu chcete tento komentář trvale smazat?</string>
+    <string name="comment_edit_success">Komentář úspěšně upraven</string>
+    <string name="comment_delete_success">Komentář smazán z obchodu</string>
+    <string name="comment_protected_blacklist">Komentář je chráněn na GitHubu. Přidávám na černou listinu...</string>
+    <string name="comment_delete_no_permission">Nemáte oprávnění smazat tento komentář</string>
+    <string name="comment_blacklist_success">Komentář trvale skryt z obchodu</string>
+    <string name="comment_blacklist_fail">Komentář se nepodařilo zablokovat, zkuste to znovu</string>
+
+    <string name="store_developer_format">%1$s %2$s</string>
+    <string name="store_developer_with_category">%1$s %2$s • %3$s</string>
+    <string name="store_downloads_million">%1$sM</string>
+    <string name="store_downloads_thousand">%1$sK</string>
+    <string name="store_rating_combined">%1$s • %2$s</string>
+    <string name="store_default_rating">0.0</string>
+    <string name="store_unknown_size">Neznámé</string>
+    <string name="store_ad_pending">Reklama (Čeká na schválení - viditelné pouze pro vás)</string>
+    <string name="store_no_description">Není k dispozici žádný popis.</string>
+    <string name="store_error_generic">Došlo k chybě</string>
+    <string name="store_download_failed">Stahování selhalo</string>
+    <string name="store_downloads_count">Stažení: %1$s</string>
+    <string name="store_category_prefix">Kategorie:</string>
 
 </resources>

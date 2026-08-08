@@ -73,5 +73,11 @@
         <item name="android:windowSplashScreenBackground">?android:attr/colorBackground</item>
         <item name="android:windowSplashScreenAnimatedIcon">@android:color/transparent</item>
     </style>
+    
+        <style name="CircleImageViewStyle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
 
 </resources>

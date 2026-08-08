@@ -32,7 +32,7 @@
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingBottom="80dp"
+            android:paddingBottom="120dp"
             android:clipToPadding="false">
 
             <LinearLayout
@@ -64,6 +64,7 @@
                             android:id="@+id/iconContainerDetails"
                             android:layout_width="76dp"
                             android:layout_height="76dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
@@ -126,6 +127,7 @@
                             app:layout_constraintStart_toStartOf="@+id/tvDetailsName"
                             app:layout_constraintTop_toBottomOf="@+id/tvDetailsName"
                             tools:text="Developer Name" />
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <LinearLayout
@@ -160,12 +162,124 @@
                             app:cornerRadius="8dp" />
                     </LinearLayout>
 
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clQuickStats"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:id="@+id/tvTopWebsite"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:paddingVertical="8dp"
+                            android:paddingEnd="16dp"
+                            android:text="@string/store_visit_website"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:visibility="visible"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/cvDownloadsBadge"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/cvDownloadsBadge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:visibility="gone"
+                            app:cardBackgroundColor="@color/colorSurface"
+                            app:cardCornerRadius="6dp"
+                            app:cardElevation="0dp"
+                            app:strokeColor="@color/colorDivider"
+                            app:strokeWidth="1dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/cvAppSizeBadge"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/tvAppDownloads"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="4dp"
+                                android:textColor="@color/colorOnSurface"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                tools:text="1.5K" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/cvAppSizeBadge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:cardBackgroundColor="@color/colorPrimary"
+                            app:cardCornerRadius="6dp"
+                            app:cardElevation="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/tvAppSize"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="4dp"
+                                android:text="@string/store_calculating_size"
+                                android:textColor="@android:color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginTop="24dp"
+                        android:layout_marginTop="16dp"
                         android:layout_marginBottom="16dp"
                         android:background="@color/colorDivider" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvAdTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        app:cardBackgroundColor="@color/colorSurface"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="#FFD700"
+                        app:strokeWidth="1dp"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+                        
+                        <ImageView
+                            android:id="@+id/ivAdTopImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:scaleType="centerCrop"
+                            android:background="#E0E0E0" />
+                            
+                        <TextView
+                            android:id="@+id/tvAdTopLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ad_label"
+                            android:textSize="10sp"
+                            android:textColor="@color/colorTextSecondary"
+                            android:background="#80FFFFFF"
+                            android:paddingHorizontal="4dp"
+                            android:layout_gravity="top|end"/>
+                    </com.google.android.material.card.MaterialCardView>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -215,10 +329,235 @@
                             android:orientation="horizontal" />
                     </HorizontalScrollView>
 
-                    <TextView
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvDeveloperMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:visibility="gone"
+                        app:cardBackgroundColor="#0D00D1B2"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/colorPrimary"
+                        app:strokeWidth="1dp"
+                        tools:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/store_developer_message_title"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvDeveloperMessageText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:lineSpacingExtra="4dp"
+                                android:textColor="@color/colorOnSurface"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvRatingContainer"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="24dp"
+                        app:cardBackgroundColor="@color/colorSurface"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/colorDivider"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:id="@+id/tvRatingScore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorOnSurface"
+                                android:textSize="48sp"
+                                android:textStyle="bold"
+                                tools:text="4.8" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.AppCompatRatingBar
+                                    android:id="@+id/rbAppRating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:isIndicator="false"
+                                    android:numStars="5"
+                                    android:progressTint="#FFC107"
+                                    android:stepSize="1.0" />
+
+                                <TextView
+                                    android:id="@+id/tvRatingCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:textColor="@color/colorTextSecondary"
+                                    android:textSize="12sp"
+                                    tools:text="25,986 ratings" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvCommentsSection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:cardBackgroundColor="@color/colorSurface"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/colorDivider"
+                        app:strokeWidth="1dp"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/store_reviews_title"
+                                android:textColor="@color/colorOnSurface"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvComments"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:nestedScrollingEnabled="false" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnToggleComments"
+                                style="@style/Widget.MaterialComponents.Button.TextButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="?attr/colorPrimary"
+                                android:visibility="gone"
+                                tools:visibility="visible"
+                                tools:text="عرض كل التعليقات" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginBottom="12dp"
+                                android:background="@color/colorDivider" />
+
+                            <TextView
+                                android:id="@+id/tvLoginPrompt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/login_prompt_comments"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="13sp"
+                                android:textAlignment="center"
+                                android:visibility="gone"
+                                tools:visibility="visible" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical">
+
+                                <EditText
+                                    android:id="@+id/etCommentInput"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@android:color/transparent"
+                                    android:hint="@string/comment_input_hint"
+                                    android:textSize="14sp"
+                                    android:padding="8dp"
+                                    android:visibility="gone"
+                                    tools:visibility="visible" />
+
+                                <ImageView
+                                    android:id="@+id/btnPostComment"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@android:drawable/ic_menu_send"
+                                    app:tint="@color/colorPrimary"
+                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:padding="6dp"
+                                    android:visibility="gone"
+                                    tools:visibility="visible" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvAdBottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="280dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="16dp"
+                        app:cardBackgroundColor="@color/colorSurface"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="2dp"
+                        app:strokeColor="#FFD700"
+                        app:strokeWidth="1dp"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+                        
+                        <ImageView
+                            android:id="@+id/ivAdBottomImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:background="#E0E0E0" />
+                            
+                        <TextView
+                            android:id="@+id/tvAdBottomLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ad_label"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTextSecondary"
+                            android:background="#D9FFFFFF"
+                            android:paddingVertical="4dp"
+                            android:textAlignment="center"
+                            android:layout_gravity="bottom"/>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
                         android:text="@string/app_versions_title"
                         android:textColor="@color/colorOnSurface"
                         android:textSize="16sp"
@@ -230,6 +569,85 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:nestedScrollingEnabled="false" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnToggleVersions"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/store_show_all_versions"
+                        android:textColor="?attr/colorPrimary"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tvTrendingAppsTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="@string/store_trending_apps"
+                        android:textColor="@color/colorOnSurface"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvTrendingApps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:clipToPadding="false"
+                        android:paddingHorizontal="4dp"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvDeveloperDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="32dp"
+                        android:visibility="gone"
+                        app:cardBackgroundColor="@color/colorSurface"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="@color/colorDivider"
+                        app:strokeWidth="1dp"
+                        tools:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/store_developer_info"
+                                android:textColor="@color/colorOnSurface"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvDevName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:textColor="@color/colorOnSurface"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                tools:text="Developer Name" />
+
+                            <LinearLayout
+                                android:id="@+id/llDevLinks"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
 
                 </LinearLayout>
             </LinearLayout>

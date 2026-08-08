@@ -69,7 +69,8 @@ class WalletFragment : Fragment() {
     }
 
     private fun loadLocalApks() {
-        val cacheDir = requireContext().cacheDir
+        // تحديث المسار ليتطابق مع ApkDownloader (يبحث في المسار الخارجي أولاً)
+        val cacheDir = requireContext().externalCacheDir ?: requireContext().cacheDir
         val apkFiles = cacheDir.listFiles { _, name -> name.endsWith(".apk") } ?: emptyArray()
         
         val pm = requireContext().packageManager

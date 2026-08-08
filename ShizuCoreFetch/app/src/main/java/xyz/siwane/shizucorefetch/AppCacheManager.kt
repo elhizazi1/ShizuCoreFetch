@@ -2,6 +2,10 @@ package xyz.siwane.shizucorefetch
 
 import android.content.Context
 import android.content.pm.PackageManager
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 object AppCacheManager {
     private const val PREFS_NAME = "InstalledAppsCache"
@@ -16,7 +20,7 @@ object AppCacheManager {
         prefs.edit().remove(appId).apply()
     }
 
-    // الدالة السحرية الجديدة: تفحص الذاكرة الدائمة بسرعة البرق
+    // الدالة السريعة (آمنة تماماً على الخيط الرئيسي)
     fun getSavedPackageFast(context: Context, appId: String): String? {
         val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
         val savedPackage = prefs.getString(appId, null)
@@ -24,45 +28,53 @@ object AppCacheManager {
         if (savedPackage != null) {
             return try {
                 context.packageManager.getPackageInfo(savedPackage, 0)
-                savedPackage // نجاح: التطبيق ما زال مثبتاً
+                savedPackage 
             } catch (e: PackageManager.NameNotFoundException) {
-                removePackageName(context, appId) // المستخدم حذفه يدوياً
+                removePackageName(context, appId) 
                 null
             }
         }
         return null
     }
 
-    fun getPackageName(context: Context, appName: String, appId: String): String {
+    // الدالة المحدثة: تعمل في الخلفية ولا تسبب أي تجميد (ANR)
+    fun getPackageNameAsync(context: Context, appName: String, appId: String, onResult: (String) -> Unit) {
         // الفحص السريع أولاً
         val saved = getSavedPackageFast(context, appId)
-        if (saved != null) return saved
+        if (saved != null) {
+            onResult(saved)
+            return
+        }
 
-        try {
-            val pm = context.packageManager
-            val packages = pm.getInstalledApplications(PackageManager.GET_META_DATA)
-            val cleanAppName = appName.replace(" ", "").lowercase()
-            
-            for (appInfo in packages) {
-                val pkgName = appInfo.packageName.lowercase()
-                val label = pm.getApplicationLabel(appInfo).toString().replace(" ", "").lowercase()
+        // نقل المهمة الشاقة إلى الخلفية (IO Thread)
+        CoroutineScope(Dispatchers.IO).launch {
+            var foundPackage = ""
+            try {
+                val pm = context.packageManager
+                val packages = pm.getInstalledApplications(PackageManager.GET_META_DATA)
+                val cleanAppName = appName.replace(" ", "").lowercase()
                 
-                if (pkgName.contains(cleanAppName)) {
-                    savePackageName(context, appId, appInfo.packageName)
-                    return appInfo.packageName
-                }
-                
-                if (label.isNotEmpty() && cleanAppName.isNotEmpty()) {
-                    if (label == cleanAppName || label.contains(cleanAppName) || cleanAppName.contains(label)) {
-                        savePackageName(context, appId, appInfo.packageName)
-                        return appInfo.packageName
+                if (cleanAppName.isNotEmpty()) {
+                    for (appInfo in packages) {
+                        val pkgLastSegment = appInfo.packageName.substringAfterLast('.').lowercase()
+                        val label = pm.getApplicationLabel(appInfo).toString().replace(" ", "").lowercase()
+
+                        val isExactMatch = label == cleanAppName || pkgLastSegment == cleanAppName
+                        if (isExactMatch) {
+                            savePackageName(context, appId, appInfo.packageName)
+                            foundPackage = appInfo.packageName
+                            break
+                        }
                     }
                 }
+            } catch (e: Exception) {
+                e.printStackTrace()
             }
-        } catch (e: Exception) {
-            e.printStackTrace()
+            
+            // إرجاع النتيجة إلى الخيط الرئيسي لتحديث الواجهة بأمان
+            withContext(Dispatchers.Main) {
+                onResult(foundPackage)
+            }
         }
-        
-        return ""
     }
 }

@@ -74,8 +74,10 @@
     <string name="lang_ru">Русский</string>
     <string name="lang_hi">हिन्दी</string>
     <string name="lang_zh">中文</string>
-    <string name="lang_ja">日本語</string>
-    <string name="lang_tr">Türkçe</string> 
+    <string name="lang_ja">日本語</string> 
+    <string name="lang_cs">Čeština</string>
+    <string name="lang_tr">Türkçe</string>
+    <string name="settings_contributors">Участники перевода</string>
 
     <string name="settings_notif_title">Уведомления</string>
     
@@ -86,7 +88,7 @@
     <string name="settings_about_store">О магазине</string>
     <string name="settings_privacy">Политика конфиденциальности</string>
     <string name="settings_terms">Условия использования</string>
-    <string name="settings_version">Версия 1.0.0</string>
+    <string name="settings_version">Версия 1.5.0</string>
     <string name="settings_developer">От Jamal El Hizazi</string>
 
     <string name="dialog_theme_title">Выберите тему</string>
@@ -119,5 +121,90 @@
 <string name="wallet_btn_open">Открыть во внешнем</string>
 <string name="dialog_cancel">Отмена</string>
 <string name="dialog_confirm">Подтвердить</string>
+
+<string name="store_reviews_title">Оценки и отзывы</string>
+<string name="store_reviews_empty">Станьте первым, кто оценит это приложение! Система комментариев сейчас готовится.</string>
+<string name="store_write_review">Написать отзыв</string>
+<string name="store_developer_info">Информация о разработчике</string>
+<string name="store_rating_count_format">%1$s оценка</string>
+<string name="store_no_ratings_yet">Пока нет оценок</string>
+<string name="store_comment_dev">Система комментариев находится в разработке</string>
+<string name="store_dev_email">Эл. почта:</string>
+<string name="store_dev_website">Веб-сайт</string>
+<string name="store_dev_portfolio">Портфолио</string>
+
+<string name="store_developer_message_title">Сообщение от разработчика</string>
+<string name="store_show_all_versions">Показать все версии</string>
+<string name="store_hide_versions">Скрыть версии</string>
+
+<string name="store_visit_website">Посетить официальный сайт</string>
+<string name="store_calculating_size">Вычисление...</string>
+
+<string name="empty_comments_message">Пока нет комментариев. Оставьте комментарий первым!</string>
+<string name="hide_comments_previous">Скрыть предыдущие комментарии</string>
+<string name="show_remaining_comments">Показать остальные комментарии (%1$d)</string>
+<string name="comment_posted_success">Комментарий успешно добавлен!</string>
+<string name="comment_post_failed">Не удалось опубликовать комментарий</string>
+<string name="login_prompt_comments">Войдите через аккаунт GitHub, чтобы участвовать в обсуждении.</string>
+<string name="comment_reply_button">Ответить</string>
+<string name="comment_edit_button">Редактировать</string>
+<string name="comment_delete_button">Удалить</string>
+<string name="comment_input_hint">Напишите комментарий здесь...</string>
+<string name="edit_comment_toast_format">Откроется окно для редактирования комментария № %1$d</string>
+
+<string name="comment_react_button">Реагировать</string>
+<string name="dialog_choose_reaction">Выберите реакцию</string>
+<string name="reaction_added_success">Реакция добавлена!</string>
+<string name="reaction_add_failed">Не удалось добавить реакцию</string>
+
+<string name="dev_profile_title">Профиль разработчика</string>
+<string name="dev_profile_apps_title">Приложения разработчика</string>
+<string name="store_dev_email2">Электронная почта</string>
+
+<string name="store_trending_apps">Популярные приложения</string>
+<string name="ad_label">Реклама</string>
+
+<string name="settings_silent_install_title">Тихая установка</string>
+<string name="silent_install_enabled">Тихая установка: включена (Shizuku)</string>
+<string name="silent_install_disabled">Тихая установка: отключена (системная установка)</string>
+<string name="settings_silent_install_desc">Включить прямую установку через Shizuku без подтверждения системы</string>
+
+<string name="guest_login_prompt_title">Требуется вход</string>
+<string name="guest_login_prompt_install_msg">Войдите в свою учетную запись GitHub, чтобы загружать и устанавливать приложения из магазина.</string>
+<string name="guest_action_login">Войти сейчас</string>
+
+<string name="notice_title">Важное уведомление для пользователей</string>
+<string name="notice_message">Добро пожаловать! Мы хотели бы сообщить вам, что установка теперь проходит успешно и абсолютно стабильно, независимо от того, активирован ли Shizuku через Root или ADB.\n\nЧтобы обеспечить стабильность работы магазина и предотвратить временные блокировки со стороны GitHub, рекомендуется войти в систему с вашей личной учетной записью. Если вы столкнетесь с какой-либо технической ошибкой, пожалуйста, свяжитесь со мной напрямую.\n\nЖелаем вам приятного использования ShizuCoreFetch!</string>
+<string name="notice_button">ОК</string>
+
+    <string name="store_github_stars_format">Звезды репозитория: %1$s</string>
+    <string name="store_real_ratings_count">Оценок: %1$d</string>
+    <string name="store_no_real_ratings_yet">Пока нет оценок</string>
+    <string name="store_rating_success">Оценка успешно сохранена</string>
+    <string name="store_rating_fail">Ошибка при сохранении оценки</string>
+    <string name="login_prompt_rating">Войдите, чтобы оценить приложение</string>
+
+    <string name="delete_comment_title">Удалить комментарий</string>
+    <string name="delete_comment_message">Вы уверены, что хотите навсегда удалить этот комментарий?</string>
+    <string name="comment_edit_success">Комментарий успешно изменен</string>
+    <string name="comment_delete_success">Комментарий удален из магазина</string>
+    <string name="comment_protected_blacklist">Комментарий защищен на GitHub. Добавление в черный список...</string>
+    <string name="comment_delete_no_permission">У вас нет прав на удаление этого комментария</string>
+    <string name="comment_blacklist_success">Комментарий навсегда скрыт из магазина</string>
+    <string name="comment_blacklist_fail">Не удалось заблокировать комментарий, попробуйте еще раз</string>
+
+    <string name="store_developer_format">%1$s %2$s</string>
+    <string name="store_developer_with_category">%1$s %2$s • %3$s</string>
+    <string name="store_downloads_million">%1$sM</string>
+    <string name="store_downloads_thousand">%1$sK</string>
+    <string name="store_rating_combined">%1$s • %2$s</string>
+    <string name="store_default_rating">0.0</string>
+    <string name="store_unknown_size">Неизвестно</string>
+    <string name="store_ad_pending">Реклама (Ожидает проверки - видно только вам)</string>
+    <string name="store_no_description">Описание недоступно.</string>
+    <string name="store_error_generic">Произошла ошибка</string>
+    <string name="store_download_failed">Ошибка скачивания</string>
+    <string name="store_downloads_count">Скачиваний: %1$s</string>
+    <string name="store_category_prefix">Категория:</string>
 
 </resources>

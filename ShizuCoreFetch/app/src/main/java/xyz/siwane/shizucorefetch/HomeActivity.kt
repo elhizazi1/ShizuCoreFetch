@@ -18,6 +18,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updateLayoutParams
 import androidx.fragment.app.Fragment
 import com.google.android.material.color.MaterialColors
+import com.google.android.material.dialog.MaterialAlertDialogBuilder // تم إضافة هذا الاستيراد للرسالة
 import xyz.siwane.shizucorefetch.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
@@ -39,6 +40,9 @@ class HomeActivity : AppCompatActivity() {
         
         setupSolidBackgroundAndInsets()
 
+        // استدعاء رسالة التنبيه الجوهرية (ستظهر لمرة واحدة فقط)
+        showWelcomeNoticeOnce()
+
         if (savedInstanceState == null) {
             loadFragment(HomeFragment(), R.id.nav_home)
         }
@@ -56,6 +60,24 @@ class HomeActivity : AppCompatActivity() {
                 askNotificationPermission()
             }
         }, 1000)
+    }
+
+    // الدالة الجديدة الخاصة برسالة التنبيه
+    private fun showWelcomeNoticeOnce() {
+        val prefs = getSharedPreferences("AppPrefs", MODE_PRIVATE)
+        val hasShownNotice = prefs.getBoolean("has_shown_notice", false)
+
+        if (!hasShownNotice) {
+            MaterialAlertDialogBuilder(this)
+                .setTitle(getString(R.string.notice_title))
+                .setMessage(getString(R.string.notice_message))
+                .setPositiveButton(getString(R.string.notice_button)) { _, _ ->
+                    // وضع علامة بأن المستخدم قد قرأ الرسالة لكي لا تزعجه مجدداً
+                    prefs.edit().putBoolean("has_shown_notice", true).apply()
+                }
+                .setCancelable(false) // منع الإغلاق العشوائي
+                .show()
+        }
     }
 
     private fun askNotificationPermission() {

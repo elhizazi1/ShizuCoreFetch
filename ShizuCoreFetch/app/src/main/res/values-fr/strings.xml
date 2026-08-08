@@ -74,8 +74,10 @@
     <string name="lang_ru">Русский</string>
     <string name="lang_hi">हिन्दी</string>
     <string name="lang_zh">中文</string>
-    <string name="lang_ja">日本語</string>
-    <string name="lang_tr">Türkçe</string> 
+    <string name="lang_ja">日本語</string> 
+    <string name="lang_cs">Čeština</string>
+    <string name="lang_tr">Türkçe</string>
+    <string name="settings_contributors">Contributeurs de traduction</string>
 
     <string name="settings_notif_title">Notifications</string>
     
@@ -86,7 +88,7 @@
     <string name="settings_about_store">À propos de la boutique</string>
     <string name="settings_privacy">Politique de confidentialité</string>
     <string name="settings_terms">Conditions d\'utilisation</string>
-    <string name="settings_version">Version 1.0.0</string>
+    <string name="settings_version">Version 1.5.0</string>
     <string name="settings_developer">Par Jamal El Hizazi</string>
 
     <string name="dialog_theme_title">Choisir un thème</string>
@@ -119,5 +121,90 @@
 <string name="wallet_btn_open">Ouvrir externe</string>
 <string name="dialog_cancel">Annuler</string>
 <string name="dialog_confirm">Confirmer</string>
+
+<string name="store_reviews_title">Notes et avis</string>
+<string name="store_reviews_empty">Soyez le premier à évaluer cette application ! Le système de commentaires est en cours de préparation.</string>
+<string name="store_write_review">Écrire un avis</string>
+<string name="store_developer_info">Informations sur le développeur</string>
+<string name="store_rating_count_format">%1$s évaluation</string>
+<string name="store_no_ratings_yet">Aucune évaluation pour le moment</string>
+<string name="store_comment_dev">Le système de commentaires est actuellement en développement</string>
+<string name="store_dev_email">E-mail :</string>
+<string name="store_dev_website">Site web</string>
+<string name="store_dev_portfolio">Portfolio</string>
+
+<string name="store_developer_message_title">Message du développeur</string>
+<string name="store_show_all_versions">Afficher toutes les versions</string>
+<string name="store_hide_versions">Masquer les versions</string>
+
+<string name="store_visit_website">Visiter le site officiel</string>
+<string name="store_calculating_size">Calcul en cours...</string>
+
+<string name="empty_comments_message">Aucun commentaire pour le moment. Soyez le premier à commenter !</string>
+<string name="hide_comments_previous">Masquer les commentaires précédents</string>
+<string name="show_remaining_comments">Afficher les autres commentaires (%1$d)</string>
+<string name="comment_posted_success">Commentaire ajouté avec succès !</string>
+<string name="comment_post_failed">Échec de la publication du commentaire</string>
+<string name="login_prompt_comments">Veuillez vous connecter avec votre compte GitHub pour participer à la discussion.</string>
+<string name="comment_reply_button">Répondre</string>
+<string name="comment_edit_button">Modifier</string>
+<string name="comment_delete_button">Supprimer</string>
+<string name="comment_input_hint">Écrivez votre commentaire ici...</string>
+<string name="edit_comment_toast_format">Une fenêtre s’ouvrira pour modifier le commentaire n° %1$d</string>
+
+<string name="comment_react_button">Réagir</string>
+<string name="dialog_choose_reaction">Choisissez une réaction</string>
+<string name="reaction_added_success">Réaction ajoutée !</string>
+<string name="reaction_add_failed">Échec de l’ajout de la réaction</string>
+
+<string name="dev_profile_title">Profil du développeur</string>
+<string name="dev_profile_apps_title">Applications du développeur</string>
+<string name="store_dev_email2">Adresse e-mail</string>
+
+<string name="store_trending_apps">Applications populaires</string>
+<string name="ad_label">Annonce</string>
+
+<string name="settings_silent_install_title">Installation silencieuse</string>
+<string name="silent_install_enabled">Installation silencieuse : activée (Shizuku)</string>
+<string name="silent_install_disabled">Installation silencieuse : désactivée (installation système)</string>
+<string name="settings_silent_install_desc">Activer l’installation directe via Shizuku sans confirmation du système</string>
+
+<string name="guest_login_prompt_title">Connexion requise</string>
+<string name="guest_login_prompt_install_msg">Veuillez vous connecter avec votre compte GitHub pour télécharger et installer des applications depuis la boutique.</string>
+<string name="guest_action_login">Se connecter maintenant</string>
+
+<string name="notice_title">Avis important aux utilisateurs</string>
+<string name="notice_message">Bienvenue ! Nous tenons à vous informer que l\'installation est désormais réussie et totalement stable, que Shizuku soit activé via Root ou ADB.\n\nPour garantir la stabilité du magasin et éviter les blocages temporaires de GitHub, il est recommandé de vous connecter avec votre compte personnel. Si vous rencontrez une erreur technique, n\'hésitez pas à me contacter directement.\n\nNous vous souhaitons une agréable expérience avec ShizuCoreFetch !</string>
+<string name="notice_button">OK</string>
+
+    <string name="store_github_stars_format">Étoiles du dépôt : %1$s</string>
+    <string name="store_real_ratings_count">Évaluations : %1$d</string>
+    <string name="store_no_real_ratings_yet">Aucune évaluation pour le moment</string>
+    <string name="store_rating_success">Évaluation enregistrée avec succès</string>
+    <string name="store_rating_fail">Erreur lors de l\'enregistrement de l\'évaluation</string>
+    <string name="login_prompt_rating">Connectez-vous pour évaluer l\'application</string>
+
+    <string name="delete_comment_title">Supprimer le commentaire</string>
+    <string name="delete_comment_message">Êtes-vous sûr de vouloir supprimer définitivement ce commentaire ?</string>
+    <string name="comment_edit_success">Commentaire modifié avec succès</string>
+    <string name="comment_delete_success">Commentaire supprimé de la boutique</string>
+    <string name="comment_protected_blacklist">Commentaire protégé sur GitHub. Ajout à la liste noire...</string>
+    <string name="comment_delete_no_permission">Vous n\'avez pas la permission de supprimer ce commentaire</string>
+    <string name="comment_blacklist_success">Commentaire masqué définitivement de la boutique</string>
+    <string name="comment_blacklist_fail">Impossible de bloquer le commentaire, réessayez</string>
+
+    <string name="store_developer_format">%1$s %2$s</string>
+    <string name="store_developer_with_category">%1$s %2$s • %3$s</string>
+    <string name="store_downloads_million">%1$sM</string>
+    <string name="store_downloads_thousand">%1$sK</string>
+    <string name="store_rating_combined">%1$s • %2$s</string>
+    <string name="store_default_rating">0.0</string>
+    <string name="store_unknown_size">Inconnu</string>
+    <string name="store_ad_pending">Annonce (En attente de révision - visible uniquement par vous)</string>
+    <string name="store_no_description">Aucune description disponible.</string>
+    <string name="store_error_generic">Une erreur est survenue</string>
+    <string name="store_download_failed">Échec du téléchargement</string>
+    <string name="store_downloads_count">Téléchargements : %1$s</string>
+    <string name="store_category_prefix">Catégorie :</string>
 
 </resources>

@@ -51,7 +51,6 @@ class HomeFragment : Fragment() {
         )
         
         binding.swipeRefreshHome.setOnRefreshListener {
-            // إجبار ظهور الدومي تيكست عند السحب اليدوي للحصول على تأثير بصري واضح
             binding.layoutRealContent.visibility = View.GONE
             binding.layoutDummyContent.visibility = View.VISIBLE
             fetchAppsFromNetwork(isManualRefresh = true)
@@ -75,7 +74,6 @@ class HomeFragment : Fragment() {
 
         searchItem.setOnActionExpandListener(object : MenuItem.OnActionExpandListener {
             override fun onMenuItemActionExpand(item: MenuItem): Boolean {
-                // استخدام post لتأخير إخفاء العناصر حتى تبدأ حركة أيقونة البحث بسلاسة تامة
                 binding.root.post {
                     binding.tvFeaturedTitle.visibility = View.GONE
                     binding.rvFeaturedApps.visibility = View.GONE
@@ -136,7 +134,6 @@ class HomeFragment : Fragment() {
                 if (response.isSuccessful && response.body() != null) {
                     val newApps = response.body()!!
                     
-                    // في حال السحب اليدوي، نجبر التحديث وعرض البيانات الجديدة
                     if (isManualRefresh || StoreCacheManager.getCachedApps(requireContext()) != newApps) {
                         StoreCacheManager.saveApps(requireContext(), newApps)
                         displayApps(newApps)
@@ -163,7 +160,7 @@ class HomeFragment : Fragment() {
     private fun handleFetchError(isManualRefresh: Boolean) {
         val cachedApps = StoreCacheManager.getCachedApps(requireContext())
         if (cachedApps != null && cachedApps.isNotEmpty()) {
-            displayApps(cachedApps) // إعادة عرض الكاش القديم لتجنب الشاشة الفارغة
+            displayApps(cachedApps)
             if (isManualRefresh) {
                 Toast.makeText(requireContext(), getString(R.string.store_fetch_error_network), Toast.LENGTH_SHORT).show()
             }
@@ -201,12 +198,22 @@ class HomeFragment : Fragment() {
 
     private fun openAppDetails(appItem: AppModel, packageName: String) {
         val fragment = AppDetailsFragment.newInstance(
-            appId = appItem.id, 
+            appId = appItem.id,
             appName = appItem.name,
             developer = appItem.developer,
             iconUrl = appItem.iconUrl,
             desc = appItem.description,
-            packageName = packageName
+            packageName = packageName,
+            stars = appItem.stars,
+            devMsg = appItem.developerMessage,
+            devMsgAr = appItem.developerMessageAr,
+            devNameAr = appItem.developerNameAr,
+            adApproved = appItem.adApproved,
+            bannerUrl = appItem.bannerUrl,
+            bannerUrlAr = appItem.bannerUrlAr,
+            downloads = appItem.downloads,      // تمرير عدد التنزيلات
+            category = appItem.category,        // تمرير الفئة
+            categoryAr = appItem.categoryAr     // تمرير الفئة بالعربية
         )
         
         requireActivity().supportFragmentManager.beginTransaction()

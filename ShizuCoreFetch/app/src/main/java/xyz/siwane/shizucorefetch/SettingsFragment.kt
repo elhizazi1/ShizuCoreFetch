@@ -26,8 +26,29 @@ class SettingsFragment : Fragment() {
 
         setupThemeDialog()
         setupLanguageDialog()
+        setupSilentInstallToggle()
         setupPermissions()
         setupLinks()
+    }
+
+    private fun setupSilentInstallToggle() {
+        binding.btnSilentInstall.setOnClickListener {
+            val options = arrayOf(
+                getString(R.string.silent_install_enabled),
+                getString(R.string.silent_install_disabled)
+            )
+            val currentIndex = if (SettingsManager.isSilentInstallEnabled(requireContext())) 0 else 1
+
+            MaterialAlertDialogBuilder(requireContext())
+                .setTitle(getString(R.string.settings_silent_install_title))
+                .setSingleChoiceItems(options, currentIndex) { dialog, which ->
+                    val enable = (which == 0)
+                    SettingsManager.setSilentInstallEnabled(requireContext(), enable)
+                    dialog.dismiss()
+                    Toast.makeText(requireContext(), options[which], Toast.LENGTH_SHORT).show()
+                }
+                .show()
+        }
     }
 
     private fun setupThemeDialog() {
@@ -61,7 +82,7 @@ class SettingsFragment : Fragment() {
 
     private fun setupLanguageDialog() {
         binding.btnLanguage.setOnClickListener {
-            val languages = arrayOf("English", "العربية", "Français", "Español", "Português", "Русский", "हिन्दी", "中文", "日本語", "Türkçe")
+            val languages = arrayOf("English", "العربية", "Français", "Español", "Português", "Русский", "हिन्दी", "中文", "日本語", "Čeština", "Türkçe")
             val langCodes = arrayOf(
                 LanguageManager.LANG_EN, 
                 LanguageManager.LANG_AR, 
@@ -72,7 +93,8 @@ class SettingsFragment : Fragment() {
                 LanguageManager.LANG_HI, 
                 LanguageManager.LANG_ZH,
                 LanguageManager.LANG_JA,
-                LanguageManager.LANG_TR
+                LanguageManager.LANG_CS, 
+                LanguageManager.LANG_TR  
             )
 
             val currentLangCode = LanguageManager.getSavedLanguage(requireContext())
@@ -121,6 +143,10 @@ class SettingsFragment : Fragment() {
         binding.btnAbout.setOnClickListener {
             openWebPage("https://shizucorefetch.siwane.xyz")
         }
+        binding.btnContributors.setOnClickListener {
+    // استخدمنا مسار /contributors كمثال، يمكنك تغييره حسب اسم الصفحة التي ستنشئها
+    openWebPage("https://shizucorefetch.siwane.xyz/contributors") 
+}
 
         binding.btnPrivacy.setOnClickListener {
             openWebPage("https://shizucorefetch.siwane.xyz/privacy")

@@ -75,7 +75,9 @@
     <string name="lang_hi">हिन्दी</string>
     <string name="lang_zh">中文</string>
     <string name="lang_ja">日本語</string>
+    <string name="lang_cs">Čeština</string>
     <string name="lang_tr">Türkçe</string>
+    <string name="settings_contributors">翻訳協力者</string>
 
     <string name="settings_notif_title">通知</string>
     
@@ -86,7 +88,7 @@
     <string name="settings_about_store">ストアについて</string>
     <string name="settings_privacy">プライバシーポリシー</string>
     <string name="settings_terms">利用規約</string>
-    <string name="settings_version">バージョン 1.0.0</string>
+    <string name="settings_version">バージョン 1.5.0</string>
     <string name="settings_developer">作成者: Jamal El Hizazi</string>
 
     <string name="dialog_theme_title">テーマを選択</string>
@@ -119,4 +121,90 @@
     <string name="wallet_btn_open">外部で開く</string>
     <string name="dialog_cancel">キャンセル</string>
     <string name="dialog_confirm">確認</string>
+    
+    <string name="store_reviews_title">評価とレビュー</string>
+<string name="store_reviews_empty">このアプリを最初に評価しましょう！レビューシステムは現在準備中です。</string>
+<string name="store_write_review">レビューを書く</string>
+<string name="store_developer_info">開発者情報</string>
+<string name="store_rating_count_format">%1$s 件の評価</string>
+<string name="store_no_ratings_yet">まだ評価はありません</string>
+<string name="store_comment_dev">コメントシステムは現在開発中です</string>
+<string name="store_dev_email">メール:</string>
+<string name="store_dev_website">公式サイト</string>
+<string name="store_dev_portfolio">ポートフォリオ</string>
+
+<string name="store_developer_message_title">開発者からのメッセージ</string>
+<string name="store_show_all_versions">すべてのバージョンを表示</string>
+<string name="store_hide_versions">バージョンを非表示</string>
+
+<string name="store_visit_website">公式サイトを開く</string>
+<string name="store_calculating_size">計算中...</string>
+
+<string name="empty_comments_message">まだコメントはありません。最初のコメントを投稿しましょう！</string>
+<string name="hide_comments_previous">以前のコメントを非表示</string>
+<string name="show_remaining_comments">残りのコメントを表示（%1$d）</string>
+<string name="comment_posted_success">コメントを追加しました！</string>
+<string name="comment_post_failed">コメントの投稿に失敗しました</string>
+<string name="login_prompt_comments">ディスカッションに参加するには、GitHub アカウントでログインしてください。</string>
+<string name="comment_reply_button">返信</string>
+<string name="comment_edit_button">編集</string>
+<string name="comment_delete_button">削除</string>
+<string name="comment_input_hint">ここにコメントを入力してください...</string>
+<string name="edit_comment_toast_format">コメント %1$d を編集するためのウィンドウが開きます</string>
+
+<string name="comment_react_button">リアクション</string>
+<string name="dialog_choose_reaction">リアクションを選択</string>
+<string name="reaction_added_success">リアクションを追加しました！</string>
+<string name="reaction_add_failed">リアクションの追加に失敗しました</string>
+
+<string name="dev_profile_title">開発者プロフィール</string>
+<string name="dev_profile_apps_title">開発者のアプリ</string>
+<string name="store_dev_email2">メールアドレス</string>
+
+<string name="store_trending_apps">人気のアプリ</string>
+<string name="ad_label">広告</string>
+
+<string name="settings_silent_install_title">サイレントインストール</string>
+<string name="silent_install_enabled">サイレントインストール：有効（Shizuku）</string>
+<string name="silent_install_disabled">サイレントインストール：無効（システムインストール）</string>
+<string name="settings_silent_install_desc">システム確認なしで Shizuku による直接インストールを有効にします</string>
+
+<string name="guest_login_prompt_title">ログインが必要です</string>
+<string name="guest_login_prompt_install_msg">ストアからアプリをダウンロードしてインストールするには、GitHub アカウントでログインしてください。</string>
+<string name="guest_action_login">今すぐログイン</string>
+
+<string name="notice_title">ユーザーへの重要なお知らせ</string>
+<string name="notice_message">ようこそ！ShizukuがRootまたはADB経由でアクティブ化されているかどうかにかかわらず、インストールが成功し、完全に安定していることをお知らせします。\n\nストアの安定性を確保し、GitHubからの一時的なブロックを防ぐため、個人のアカウントでログインすることをお勧めします。技術的な問題が発生した場合は、直接ご連絡ください。\n\nShizukuCoreFetchをぜひお楽しみください！</string>
+<string name="notice_button">OK</string>
+
+    <string name="store_github_stars_format">リポジトリのスター: %1$s</string>
+    <string name="store_real_ratings_count">評価: %1$d</string>
+    <string name="store_no_real_ratings_yet">まだ評価はありません</string>
+    <string name="store_rating_success">評価が正常に保存されました</string>
+    <string name="store_rating_fail">評価の保存中にエラーが発生しました</string>
+    <string name="login_prompt_rating">アプリを評価するにはログインする必要があります</string>
+
+    <string name="delete_comment_title">コメントを削除</string>
+    <string name="delete_comment_message">このコメントを完全に削除してもよろしいですか？</string>
+    <string name="comment_edit_success">コメントが正常に編集されました</string>
+    <string name="comment_delete_success">ストアからコメントが削除されました</string>
+    <string name="comment_protected_blacklist">コメントはGitHubで保護されています。ブラックリストに追加しています...</string>
+    <string name="comment_delete_no_permission">このコメントを削除する権限がありません</string>
+    <string name="comment_blacklist_success">コメントはストアから完全に非表示になりました</string>
+    <string name="comment_blacklist_fail">コメントのブロックに失敗しました。再試行してください</string>
+
+    <string name="store_developer_format">%1$s %2$s</string>
+    <string name="store_developer_with_category">%1$s %2$s • %3$s</string>
+    <string name="store_downloads_million">%1$sM</string>
+    <string name="store_downloads_thousand">%1$sK</string>
+    <string name="store_rating_combined">%1$s • %2$s</string>
+    <string name="store_default_rating">0.0</string>
+    <string name="store_unknown_size">不明</string>
+    <string name="store_ad_pending">広告（審査中 - あなたにのみ表示されます）</string>
+    <string name="store_no_description">利用可能な説明はありません。</string>
+    <string name="store_error_generic">エラーが発生しました</string>
+    <string name="store_download_failed">ダウンロードに失敗しました</string>
+    <string name="store_downloads_count">ダウンロード: %1$s</string>
+    <string name="store_category_prefix">カテゴリ:</string>
+
 </resources>

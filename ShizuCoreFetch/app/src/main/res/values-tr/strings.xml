@@ -75,7 +75,9 @@
     <string name="lang_hi">हिन्दी</string>
     <string name="lang_zh">中文</string>
     <string name="lang_ja">日本語</string>
+    <string name="lang_cs">Čeština</string>
     <string name="lang_tr">Türkçe</string>
+    <string name="settings_contributors">Çeviri Katkıda Bulunanlar</string>
     
     <string name="settings_notif_title">Bildirimler</string>
     
@@ -86,7 +88,7 @@
     <string name="settings_about_store">Mağaza Hakkında</string>
     <string name="settings_privacy">Gizlilik Politikası</string>
     <string name="settings_terms">Kullanım Koşulları</string>
-    <string name="settings_version">Sürüm 1.0.0</string>
+    <string name="settings_version">Sürüm 1.5.0</string>
     <string name="settings_developer">Jamal El Hizazi tarafından</string>
 
     <string name="dialog_theme_title">Tema Seç</string>
@@ -119,5 +121,95 @@
     <string name="wallet_btn_open">Harici Aç</string>
     <string name="dialog_cancel">İptal</string>
     <string name="dialog_confirm">Onayla</string>
+
+    <!-- App Details Strings (Yeni Eklemeler) -->
+    <string name="store_reviews_title">İncelemeler ve Yorumlar</string>
+    <string name="store_reviews_empty">Bu uygulamayı ilk inceleyen siz olun! Yorum sistemi kuruluyor.</string>
+    <string name="store_write_review">İnceleme yaz</string>
+    <string name="store_developer_info">Geliştirici Bilgileri</string>
+    <string name="store_rating_count_format">%1$s değerlendirme</string>
+    <string name="store_no_ratings_yet">Henüz değerlendirme yok</string>
+    <string name="store_comment_dev">Yorum sistemi şu anda geliştirme aşamasındadır</string>
+    <string name="store_dev_email">E-posta:</string>
+    <string name="store_dev_website">Web Sitesi</string>
+    <string name="store_dev_portfolio">Portfolyo</string>
+
+    <string name="store_developer_message_title">Geliştiriciden Bir Not</string>
+    <string name="store_show_all_versions">Tüm sürümleri göster</string>
+    <string name="store_hide_versions">Sürümleri gizle</string>
+
+    <string name="store_visit_website">Resmi web sitesini ziyaret et</string>
+    <string name="store_calculating_size">Hesaplanıyor...</string>
+
+    <string name="empty_comments_message">Henüz yorum yok. İlk yorum yapan siz olun!</string>
+    <string name="hide_comments_previous">Önceki yorumları gizle</string>
+    <string name="show_remaining_comments">Kalan yorumları göster (%1$d)</string>
+    <string name="comment_posted_success">Yorum başarıyla gönderildi!</string>
+    <string name="comment_post_failed">Yorum gönderilemedi</string>
+    <string name="login_prompt_comments">Tartışmaya katılmak için lütfen GitHub hesabınızla giriş yapın.</string>
+    <string name="comment_reply_button">Yanıtla</string>
+    <string name="comment_edit_button">Düzenle</string>
+    <string name="comment_delete_button">Sil</string>    
+    <string name="comment_input_hint">Yorumunuzu buraya yazın…</string>
+    <string name="edit_comment_toast_format">%1$d numaralı yorum için düzenleme penceresi yakında açılacak</string>
+
+    <string name="comment_react_button">Tepki ver</string>
+    <string name="dialog_choose_reaction">Bir tepki seçin</string>
+    <string name="reaction_added_success">Tepki eklendi!</string>
+    <string name="reaction_add_failed">Tepki eklenemedi</string>
+
+    <string name="dev_profile_title">Geliştirici Profili</string>
+    <string name="dev_profile_apps_title">Geliştirici Uygulamaları</string>
+    <string name="store_dev_email2">E-posta</string>
+    
+    <string name="store_trending_apps">Trend Uygulamalar</string>
+
+    <string name="ad_label">Reklam</string>
+
+    <!-- Silent Installation Settings -->
+    <string name="settings_silent_install_title">Sessiz Kurulum</string>
+    <string name="silent_install_enabled">Sessiz Kurulum: Etkin (Shizuku)</string>
+    <string name="silent_install_disabled">Sessiz Kurulum: Devre Dışı (Sistem Yükleyicisi)</string>
+    <string name="settings_silent_install_desc">Sistem onayı gerektirmeden Shizuku üzerinden doğrudan kurulumu etkinleştir</string>
+
+    <!-- Guest Mode Texts -->
+    <string name="guest_login_prompt_title">Giriş Gerekiyor</string>
+    <string name="guest_login_prompt_install_msg">Mağazadan uygulama indirmek ve yüklemek için lütfen GitHub hesabınızla giriş yapın.</string>
+    <string name="guest_action_login">Şimdi Giriş Yap</string>
+
+    <!-- Notice texts -->
+    <string name="notice_title">Kullanıcılar İçin Önemli Duyuru</string>
+    <string name="notice_message">Hoş geldiniz! Kurulumun artık başarılı ve tamamen istikrarlı olduğunu bildirmek isteriz, Shizuku ister Root ister ADB üzerinden etkinleştirilmiş olsun.\n\nMağazanın istikrarını sağlamak ve GitHub\'dan geçici yasaklamaları önlemek için kişisel hesabınızla giriş yapmanız önerilir. Herhangi bir teknik sorunla karşılaşırsanız, lütfen benimle doğrudan iletişime geçmekten çekinmeyin.\n\nShizuCoreFetch ile keyifli bir deneyim dileriz!</string>
+    <string name="notice_button">Tamam</string>
+
+    <string name="store_github_stars_format">Repo yıldızları: %1$s</string>
+    <string name="store_real_ratings_count">Değerlendirmeler: %1$d</string>
+    <string name="store_no_real_ratings_yet">Henüz değerlendirme yok</string>
+    <string name="store_rating_success">Değerlendirme başarıyla kaydedildi</string>
+    <string name="store_rating_fail">Değerlendirme kaydedilirken bir hata oluştu</string>
+    <string name="login_prompt_rating">Uygulamayı değerlendirmek için giriş yapmalısınız</string>
+
+    <string name="delete_comment_title">Yorumu sil</string>
+    <string name="delete_comment_message">Bu yorumu kalıcı olarak silmek istediğinizden emin misiniz?</string>
+    <string name="comment_edit_success">Yorum başarıyla düzenlendi</string>
+    <string name="comment_delete_success">Yorum mağazadan silindi</string>
+    <string name="comment_protected_blacklist">Yorum GitHub\'da korunuyor. Kara listeye ekleniyor...</string>
+    <string name="comment_delete_no_permission">Bu yorumu silme izniniz yok</string>
+    <string name="comment_blacklist_success">Yorum mağazadan kalıcı olarak gizlendi</string>
+    <string name="comment_blacklist_fail">Yorum engellenemedi, tekrar deneyin</string>
+
+    <string name="store_developer_format">%1$s %2$s</string>
+    <string name="store_developer_with_category">%1$s %2$s • %3$s</string>
+    <string name="store_downloads_million">%1$sM</string>
+    <string name="store_downloads_thousand">%1$sK</string>
+    <string name="store_rating_combined">%1$s • %2$s</string>
+    <string name="store_default_rating">0.0</string>
+    <string name="store_unknown_size">Bilinmiyor</string>
+    <string name="store_ad_pending">Reklam (İnceleniyor - sadece size görünür)</string>
+    <string name="store_no_description">Kullanılabilir açıklama yok.</string>
+    <string name="store_error_generic">Bir hata oluştu</string>
+    <string name="store_download_failed">İndirme başarısız oldu</string>
+    <string name="store_downloads_count">İndirmeler: %1$s</string>
+    <string name="store_category_prefix">Kategori:</string>
 
 </resources>

@@ -74,8 +74,10 @@
     <string name="lang_ru">Русский</string>
     <string name="lang_hi">हिन्दी</string>
     <string name="lang_zh">中文</string>
-    <string name="lang_ja">日本語</string>
-    <string name="lang_tr">Türkçe</string> 
+    <string name="lang_ja">日本語</string> 
+    <string name="lang_cs">Čeština</string>
+    <string name="lang_tr">Türkçe</string>
+    <string name="settings_contributors">अनुवाद योगदानकर्ता</string>
 
     <string name="settings_notif_title">सूचनाएं</string>
     
@@ -86,7 +88,7 @@
     <string name="settings_about_store">स्टोर के बारे में</string>
     <string name="settings_privacy">गोपनीयता नीति</string>
     <string name="settings_terms">उपयोग की शर्तें</string>
-    <string name="settings_version">संस्करण 1.0.0</string>
+    <string name="settings_version">संस्करण 1.5.0</string>
     <string name="settings_developer">Jamal El Hizazi द्वारा</string>
 
     <string name="dialog_theme_title">थीम चुनें</string>
@@ -119,5 +121,90 @@
 <string name="wallet_btn_open">बाहरी रूप से खोलें</string>
 <string name="dialog_cancel">रद्द करें</string>
 <string name="dialog_confirm">पुष्टि करें</string>
+
+<string name="store_reviews_title">रेटिंग और समीक्षाएँ</string>
+<string name="store_reviews_empty">इस ऐप को रेट करने वाले पहले व्यक्ति बनें! टिप्पणी प्रणाली वर्तमान में तैयार की जा रही है।</string>
+<string name="store_write_review">समीक्षा लिखें</string>
+<string name="store_developer_info">डेवलपर जानकारी</string>
+<string name="store_rating_count_format">%1$s रेटिंग</string>
+<string name="store_no_ratings_yet">अभी तक कोई रेटिंग नहीं</string>
+<string name="store_comment_dev">टिप्पणी प्रणाली वर्तमान में विकासाधीन है</string>
+<string name="store_dev_email">ईमेल:</string>
+<string name="store_dev_website">वेबसाइट</string>
+<string name="store_dev_portfolio">पोर्टफोलियो</string>
+
+<string name="store_developer_message_title">डेवलपर का संदेश</string>
+<string name="store_show_all_versions">सभी संस्करण दिखाएँ</string>
+<string name="store_hide_versions">संस्करण छिपाएँ</string>
+
+<string name="store_visit_website">आधिकारिक वेबसाइट पर जाएँ</string>
+<string name="store_calculating_size">गणना की जा रही है...</string>
+
+<string name="empty_comments_message">अभी तक कोई टिप्पणी नहीं है। सबसे पहले टिप्पणी करें!</string>
+<string name="hide_comments_previous">पिछली टिप्पणियाँ छिपाएँ</string>
+<string name="show_remaining_comments">बाकी टिप्पणियाँ दिखाएँ (%1$d)</string>
+<string name="comment_posted_success">टिप्पणी सफलतापूर्वक जोड़ दी गई!</string>
+<string name="comment_post_failed">टिप्पणी पोस्ट करने में विफल</string>
+<string name="login_prompt_comments">चर्चा में भाग लेने के लिए कृपया अपने GitHub खाते से लॉग इन करें।</string>
+<string name="comment_reply_button">उत्तर दें</string>
+<string name="comment_edit_button">संपादित करें</string>
+<string name="comment_delete_button">हटाएँ</string>
+<string name="comment_input_hint">अपनी टिप्पणी यहाँ लिखें...</string>
+<string name="edit_comment_toast_format">टिप्पणी संख्या %1$d को संपादित करने के लिए एक विंडो खुलेगी</string>
+
+<string name="comment_react_button">प्रतिक्रिया दें</string>
+<string name="dialog_choose_reaction">एक प्रतिक्रिया चुनें</string>
+<string name="reaction_added_success">प्रतिक्रिया जोड़ दी गई!</string>
+<string name="reaction_add_failed">प्रतिक्रिया जोड़ने में विफल</string>
+
+<string name="dev_profile_title">डेवलपर प्रोफ़ाइल</string>
+<string name="dev_profile_apps_title">डेवलपर के ऐप्स</string>
+<string name="store_dev_email2">ईमेल</string>
+
+<string name="store_trending_apps">लोकप्रिय ऐप्स</string>
+<string name="ad_label">विज्ञापन</string>
+
+<string name="settings_silent_install_title">साइलेंट इंस्टॉलेशन</string>
+<string name="silent_install_enabled">साइलेंट इंस्टॉलेशन: सक्षम (Shizuku)</string>
+<string name="silent_install_disabled">साइलेंट इंस्टॉलेशन: अक्षम (सिस्टम इंस्टॉलेशन)</string>
+<string name="settings_silent_install_desc">सिस्टम पुष्टि के बिना Shizuku के माध्यम से सीधे इंस्टॉलेशन को सक्षम करें</string>
+
+<string name="guest_login_prompt_title">लॉगिन आवश्यक है</string>
+<string name="guest_login_prompt_install_msg">स्टोर से ऐप्स डाउनलोड और इंस्टॉल करने के लिए कृपया अपने GitHub खाते से लॉगिन करें।</string>
+<string name="guest_action_login">अभी लॉगिन करें</string>
+
+<string name="notice_title">उपयोगकर्ताओं के लिए महत्वपूर्ण सूचना</string>
+<string name="notice_message">आपका स्वागत है! हम आपको सूचित करना चाहते हैं कि इंस्टॉलेशन अब सफल और पूरी तरह से स्थिर है, चाहे Shizuku, Root या ADB के माध्यम से सक्रिय हो।\n\nस्टोर की स्थिरता सुनिश्चित करने और GitHub से अस्थायी प्रतिबंधों को रोकने के लिए, अपने व्यक्तिगत खाते से लॉग इन करने की अनुशंसा की जाती है। यदि आपको कोई तकनीकी समस्या आती है, तो कृपया मुझसे सीधे संपर्क करें।\n\nहम कामना करते हैं कि ShizuCoreFetch के साथ आपका अनुभव सुखद हो!</string>
+<string name="notice_button">ठीक है</string>
+
+    <string name="store_github_stars_format">रेपो स्टार्स: %1$s</string>
+    <string name="store_real_ratings_count">रेटिंग: %1$d</string>
+    <string name="store_no_real_ratings_yet">अभी तक कोई रेटिंग नहीं</string>
+    <string name="store_rating_success">रेटिंग सफलतापूर्वक सहेजी गई</string>
+    <string name="store_rating_fail">रेटिंग सहेजने में त्रुटि</string>
+    <string name="login_prompt_rating">ऐप को रेट करने के लिए लॉग इन करना होगा</string>
+
+    <string name="delete_comment_title">टिप्पणी हटाएं</string>
+    <string name="delete_comment_message">क्या आप वाकई इस टिप्पणी को स्थायी रूप से हटाना चाहते हैं?</string>
+    <string name="comment_edit_success">टिप्पणी सफलतापूर्वक संपादित की गई</string>
+    <string name="comment_delete_success">स्टोर से टिप्पणी हटा दी गई</string>
+    <string name="comment_protected_blacklist">टिप्पणी GitHub पर सुरक्षित है। ब्लैकलिस्ट में जोड़ा जा रहा है...</string>
+    <string name="comment_delete_no_permission">आपके पास इस टिप्पणी को हटाने की अनुमति नहीं है</string>
+    <string name="comment_blacklist_success">टिप्पणी स्टोर से स्थायी रूप से छिपा दी गई</string>
+    <string name="comment_blacklist_fail">टिप्पणी को ब्लॉक करने में विफल, पुनः प्रयास करें</string>
+
+    <string name="store_developer_format">%1$s %2$s</string>
+    <string name="store_developer_with_category">%1$s %2$s • %3$s</string>
+    <string name="store_downloads_million">%1$sM</string>
+    <string name="store_downloads_thousand">%1$sK</string>
+    <string name="store_rating_combined">%1$s • %2$s</string>
+    <string name="store_default_rating">0.0</string>
+    <string name="store_unknown_size">अज्ञात</string>
+    <string name="store_ad_pending">विज्ञापन (समीक्षा लंबित - केवल आपको दिखाई दे रहा है)</string>
+    <string name="store_no_description">कोई विवरण उपलब्ध नहीं है।</string>
+    <string name="store_error_generic">एक त्रुटि उत्पन्न हुई</string>
+    <string name="store_download_failed">डाउनलोड विफल रहा</string>
+    <string name="store_downloads_count">डाउनलोड: %1$s</string>
+    <string name="store_category_prefix">श्रेणी:</string>
 
 </resources>
