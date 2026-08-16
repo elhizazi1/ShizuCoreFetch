@@ -1,0 +1,7 @@
+{
+  "id": 1,
+  "visible": true,
+  "type": "warning",
+  "message_ar": "نحن نقوم بتحديث خوادم ShizuCoreFetch الآن. قد تلاحظ بعض التأخير في جلب البيانات.",
+  "message_en": "We are currently updating ShizuCoreFetch servers. You may experience some delays."
+}
