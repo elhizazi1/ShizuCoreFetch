@@ -3,6 +3,7 @@
   "app_name": "ShizuCoreFetch",
   "package_name": "xyz.siwane.shizucorefetch",
   "min_sdk": 24,
+  "target_sdk": 37,
   "category": "System Tools",
   "short_description": "An advanced Shizuku-based Android app manager and installer.",
   "detailed_description": "ShizuCoreFetch is a powerful tool designed to manage and install Android applications seamlessly. Utilizing the Shizuku API, it allows you to bypass standard installation restrictions and manage your apps like a pro.\n\n**Key Features:**\n- Silent and background APK installations via Shizuku.\n- Fetch and download the latest app releases directly from GitHub.\n- Local APK wallet for managing, extracting, and sharing apps.\n- Fast and responsive Material Design UI.",
@@ -23,6 +24,7 @@
 
   "app_website": "https://shizucorefetch.siwane.xyz",
   "repo_url": "https://github.com/elhizazi1/ShizuCoreFetch",
+  "download_url": "https://github.com/elhizazi1/ShizuCoreFetch/releases/latest/download/app-release-sign.apk"
 
   "ad": true,
 
@@ -55,6 +57,7 @@
   "donate_url": "https://paypal.me/Elhizazi",
 
   "store_issue_number": 1,
+  "changelog": "•••••••••••••"
 
   "developer": {
     "name": "Jamal El Hizazi",
