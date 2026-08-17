@@ -1,16 +1,37 @@
 {
   "schema_version": 1,
+  
   "app_name": "ShizuCoreFetch",
   "package_name": "xyz.siwane.shizucorefetch",
-  "min_sdk": 24,
-  "target_sdk": 37,
   "category": "System Tools",
   "short_description": "An advanced Shizuku-based Android app manager and installer.",
   "detailed_description": "ShizuCoreFetch is a powerful tool designed to manage and install Android applications seamlessly. Utilizing the Shizuku API, it allows you to bypass standard installation restrictions and manage your apps like a pro.\n\n**Key Features:**\n- Silent and background APK installations via Shizuku.\n- Fetch and download the latest app releases directly from GitHub.\n- Local APK wallet for managing, extracting, and sharing apps.\n- Fast and responsive Material Design UI.",
   "developer_message": "Crafting smart tools that give users full control over their devices. Thank you for your trust and support!",
 
+  "min_sdk": 24,
+  "target_sdk": 37,
+  "license": "GPL-3.0",
+  "requires_shizuku": true,
+  "open_source": true,
+  
+  "store_issue_number": 1,
+  "changelog": "### 🚀 Major Update | The UI Revolution\n\nWe've rebuilt the app from the ground up to deliver an experience you deserve! This update represents a quantum leap in performance, speed, and aesthetics.\n\n#### 🎨 Design Revolution (UI/UX)\n*   ✨ **Goodbye Past:** We abandoned the legacy Fragments architecture, transitioning fully to modern, responsive Compose layouts.\n*   💎 **Material Design 3:** Say goodbye to old outlines! Enjoy dynamic colors, smooth rounded corners, and a visual experience that harmonizes with your system.\n*   📱 **Fluid Animations:** Added elegant shimmer loading effects and seamless transitions between screens.\n\n#### ⚡ Under the Hood\n*   ☁️ **New Cloud Engine:** The store is now powered by smart backend servers connecting directly to GitHub for faster, stable updates.\n*   🛡️ **Silent Install (Shizuku):** Deeper and more stable integration with Shizuku for background app installations.\n*   📢 **Live Announcements:** A built-in communication bridge to inform you instantly about server status.\n\n#### 🔧 Refinements\n*   🔢 **Smart Numbers:** New compact formats for downloads and ratings (e.g., 1.5K, 2M).\n*   🏷️ **Pro Badges:** Redesigned app badges to be smaller, cleaner, and less distracting.\n*   🌍 **Localization:** Enhanced translation system with immediate UI response and perfect RTL/LTR support.\n*   💖 **Developer Support:** Added a dedicated support button in app details.\n*   🔒 **Transparency Dialog:** Added a clear explanation of GitHub API limits to respect your privacy.",
+
+  "tags": [
+    "shizuku",
+    "app-manager",
+    "apk-installer",
+    "apk",
+    "github",
+    "system-tools",
+    "android"
+  ],
+
   "icon_url": "https://shizucorefetch.siwane.xyz/assets/icon.png",
   "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
+  "app_website": "https://shizucorefetch.siwane.xyz",
+  "repo_url": "https://github.com/elhizazi1/ShizuCoreFetch",
+  "download_url": "https://github.com/elhizazi1/ShizuCoreFetch/releases/latest/download/app-release-sign.apk",
 
   "screenshots": [
     "https://shizucorefetch.siwane.xyz/assets/screen/screen1.png",
@@ -21,12 +42,6 @@
     "https://shizucorefetch.siwane.xyz/assets/screen/screen6.png",
     "https://shizucorefetch.siwane.xyz/assets/screen/screen7.png"
   ],
-
-  "app_website": "https://shizucorefetch.siwane.xyz",
-  "repo_url": "https://github.com/elhizazi1/ShizuCoreFetch",
-  "download_url": "https://github.com/elhizazi1/ShizuCoreFetch/releases/latest/download/app-release-sign.apk",
-
-  "ad": true,
 
   "ads": [
     {
@@ -41,24 +56,6 @@
     }
   ],
 
-  "tags": [
-    "shizuku",
-    "app-manager",
-    "apk-installer",
-    "apk",
-    "github",
-    "system-tools",
-    "android"
-  ],
-
-  "license": "GPL-3.0",
-  "requires_shizuku": true,
-  "open_source": true,
-  "donate_url": "https://paypal.me/Elhizazi",
-
-  "store_issue_number": 1,
-  "changelog": "•••••••••••••",
-
   "developer": {
     "name": "Jamal El Hizazi",
     "banner_url": "https://shizucorefetch.siwane.xyz/assets/coverture.jpg",
@@ -66,6 +63,7 @@
     "email": "jamal@elhizazi.me",
     "website": "https://siwane.xyz",
     "portfolio": "https://jamal.elhizazi.me",
+    "donate_url": "https://paypal.me/Elhizazi",
     "socials": {
       "facebook": "https://fb.com/elhizazi2",
       "instagram": "https://instagram.com/elhizazi1",
@@ -83,70 +81,89 @@
       "detailed_description": "تطبيق ShizuCoreFetch هو أداتك الشاملة لإدارة وتثبيت تطبيقات أندرويد بسلاسة. من خلال الاستفادة من صلاحيات Shizuku، يتيح لك التطبيق تجاوز قيود التثبيت التقليدية وإدارة تطبيقاتك باحترافية.\n\n**أهم المميزات:**\n- تثبيت صامت في الخلفية لملفات APK عبر Shizuku.\n- جلب وتنزيل أحدث الإصدارات مباشرة من مستودعات GitHub.\n- محفظة تخزين محلية لإدارة، استخراج، ومشاركة ملفات التطبيقات.\n- واجهة مستخدم سريعة وعصرية تتوافق مع معايير Material Design.",
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "أسعى لصناعة أدوات ذكية تمنح المستخدم تحكماً كاملاً في هاتفه. شكراً لدعمكم وثقتكم!",
-      "developer_name": "جمال الحزازي"
+      "developer_name": "جمال الحزازي",
+      "changelog": "### 🚀 سجل التحديثات | الإصدار الميجر\n\nلقد قمنا بإعادة بناء التطبيق من الصفر تقريباً لتقديم تجربة تليق بك! يمثل هذا التحديث قفزة نوعية في الأداء، السرعة، والجمالية.\n\n#### 🎨 ثورة في التصميم (UI/UX)\n*   ✨ **وداعاً للماضي:** تم التخلي عن نظام الواجهات القديم (Fragments) والانتقال بالكامل إلى تقنيات بناء الواجهات الحديثة.\n*   💎 **تصميم Material Design 3:** قمنا بتوديع الحواف الحادة واستبدالها بواجهة MD3 العصرية. استمتع بألوان ديناميكية وتأثيرات بصرية تريح العين.\n*   📱 **حركات وانتقالات سلسة:** تمت إضافة تأثيرات وميض (Shimmer) أنيقة وانتقالات مرنة بين الشاشات.\n\n#### ⚡ الأداء والمحرك\n*   ☁️ **محرك بيانات سحابي جديد:** المتجر مدعوم الآن بخوادم خلفية تتصل بـ GitHub لضمان وصول التحديثات بسرعة واستقرار.\n*   🛡️ **تثبيت صامت (Shizuku):** تكامل أعمق مع نظام Shizuku لتثبيت التطبيقات في الخلفية.\n*   📢 **نظام تنبيهات حي:** جسر تواصل مباشر لإخبارك فوراً بحالة الخوادم.\n\n#### 🔧 تحسينات دقيقة\n*   🔢 **أرقام ذكية:** تنسيق جديد لعرض التحميلات والتقييمات بصيغ مختصرة.\n*   🏷️ **بادجات احترافية:** إعادة تصميم شارات التطبيقات لتكون أصغر وأرتب.\n*   🌍 **تعدد اللغات:** تحسين نظام الترجمة ليتفاعل فوراً مع لغة التطبيق.\n*   💖 **دعم المطور:** إضافة زر مخصص لمن يرغب في الدعم.\n*   🔒 **نافذة الشفافية:** إضافة توضيح شامل لآلية عمل التطبيق لحماية خصوصيتك."
     },
-
     "fr": {
       "category": "Outils système",
       "short_description": "Un gestionnaire et installateur d'applications Android avancé basé sur Shizuku.",
       "detailed_description": "ShizuCoreFetch est un outil puissant conçu pour gérer et installer des applications Android en toute simplicité. Grâce à l'API Shizuku, il vous permet de contourner les restrictions d'installation standard et de gérer vos applications comme un pro.\n\n**Fonctionnalités principales :**\n- Installations APK silencieuses et en arrière-plan via Shizuku.\n- Récupération et téléchargement des dernières versions d'applications directement depuis GitHub.\n- Portefeuille APK local pour gérer, extraire et partager des applications.\n- Interface Material Design rapide et réactive.",
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "Concevoir des outils intelligents qui donnent aux utilisateurs le contrôle total de leurs appareils. Merci de votre confiance et de votre soutien !",
-      "developer_name": "Jamal El Hizazi"
+      "developer_name": "Jamal El Hizazi",
+      "changelog": "### 🚀 Mise à Jour Majeure | La Révolution de l'Interface\n\nNous avons entièrement reconstruit l'application pour vous offrir une expérience digne de ce nom ! Cette mise à jour représente un bond en avant en termes de performances, de vitesse et d'esthétique.\n\n#### 🎨 Révolution du Design (UI/UX)\n*   ✨ **Adieu le Passé :** Nous avons abandonné l'ancienne architecture (Fragments) pour passer entièrement à des interfaces modernes et fluides.\n*   💎 **Material Design 3 :** Dites adieu aux anciens contours ! Profitez de couleurs dynamiques, de coins arrondis et d'une expérience visuelle harmonieuse.\n*   📱 **Animations Fluides :** Ajout d'effets de chargement élégants (Shimmer) et de transitions fluides entre les écrans.\n\n#### ⚡ Sous le Capot\n*   ☁️ **Nouveau Moteur Cloud :** Le store est désormais propulsé par des serveurs intelligents connectés directement à GitHub.\n*   🛡️ **Installation Silencieuse (Shizuku) :** Intégration plus profonde avec Shizuku pour des installations en arrière-plan.\n*   📢 **Annonces en Direct :** Un pont de communication intégré pour vous informer de l'état des serveurs.\n\n#### 🔧 Améliorations\n*   🔢 **Nombres Intelligents :** Nouveaux formats compacts pour les téléchargements et les notes (ex: 1.5K, 2M).\n*   🏷️ **Badges Pro :** Badges repensés pour être plus petits et plus propres.\n*   🌍 **Localisation :** Système de traduction amélioré répondant immédiatement au changement de langue.\n*   💖 **Soutien au Développeur :** Ajout d'un bouton de soutien dédié.\n*   🔒 **Dialogue de Transparence :** Explication claire des limites de l'API GitHub pour respecter votre vie privée."
     },
-
     "es": {
       "category": "Herramientas del sistema",
       "short_description": "Un avanzado gestor e instalador de aplicaciones Android basado en Shizuku.",
       "detailed_description": "ShizuCoreFetch es una herramienta potente diseñada para gestionar e instalar aplicaciones Android sin problemas. Utilizando la API de Shizuku, te permite eludir las restricciones de instalación estándar y gestionar tus aplicaciones como un profesional.\n\n**Características principales:**\n- Instalaciones silenciosas y en segundo plano de APK mediante Shizuku.\n- Obtén y descarga las últimas versiones de aplicaciones directamente desde GitHub.\n- Cartera local de APK para gestionar, extraer y compartir aplicaciones.\n- Interfaz de usuario rápida y adaptable con Material Design.",
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "Creando herramientas inteligentes que dan a los usuarios control total sobre sus dispositivos. ¡Gracias por tu confianza y apoyo!",
-      "developer_name": "Jamal El Hizazi"
+      "developer_name": "Jamal El Hizazi",
+      "changelog": "### 🚀 Actualización Mayor | La Revolución de la UI\n\n¡Hemos reconstruido la aplicación desde cero para ofrecerte la experiencia que mereces! Esta actualización representa un salto cuántico en rendimiento, velocidad y estética.\n\n#### 🎨 Revolución de Diseño (UI/UX)\n*   ✨ **Adiós al Pasado:** Abandonamos la arquitectura de Fragmentos, pasando completamente a diseños modernos.\n*   💎 **Material Design 3:** ¡Di adiós a los bordes antiguos! Disfruta de colores dinámicos y esquinas redondeadas.\n*   📱 **Animaciones Fluidas:** Efectos de carga elegantes (Shimmer) y transiciones sin fisuras.\n\n#### ⚡ Bajo el Capó\n*   ☁️ **Nuevo Motor en la Nube:** La tienda ahora funciona con servidores inteligentes conectados directamente a GitHub.\n*   🛡️ **Instalación Silenciosa:** Integración más profunda con Shizuku para instalaciones en segundo plano.\n*   📢 **Anuncios en Vivo:** Un puente de comunicación integrado para informarte sobre el estado del servidor.\n\n#### 🔧 Refinamientos\n*   🔢 **Números Inteligentes:** Formatos compactos para descargas y calificaciones (ej. 1.5K, 2M).\n*   🏷️ **Insignias Pro:** Insignias rediseñadas para ser más pequeñas y limpias.\n*   🌍 **Localización:** Sistema de traducción mejorado con respuesta inmediata.\n*   💖 **Apoyo al Desarrollador:** Botón dedicado para apoyar el desarrollo.\n*   🔒 **Diálogo de Transparencia:** Explicación clara de los límites de la API de GitHub."
     },
-
     "pt": {
       "category": "Ferramentas do sistema",
       "short_description": "Um gerenciador e instalador de aplicativos Android avançado baseado no Shizuku.",
       "detailed_description": "ShizuCoreFetch é uma ferramenta poderosa projetada para gerenciar e instalar aplicativos Android de forma simples. Usando a API Shizuku, permite contornar as restrições de instalação padrão e gerenciar seus aplicativos como um profissional.\n\n**Principais funcionalidades:**\n- Instalações silenciosas e em segundo plano de APKs via Shizuku.\n- Busque e baixe as últimas versões de aplicativos diretamente do GitHub.\n- Carteira local de APK para gerenciar, extrair e compartilhar aplicativos.\n- Interface de usuário rápida e responsiva com Material Design.",
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "Criando ferramentas inteligentes que dão aos usuários controle sobre seus dispositivos. Obrigado pela sua confiança e apoio!",
-      "developer_name": "Jamal El Hizazi"
+      "developer_name": "Jamal El Hizazi",
+      "changelog": "### 🚀 Grande Atualização | A Revolução da Interface\n\nReconstruímos o aplicativo do zero para oferecer a experiência que você merece! Esta atualização representa um salto quântico em desempenho e estética.\n\n#### 🎨 Revolução do Design (UI/UX)\n*   ✨ **Adeus Passado:** Abandonamos a arquitetura de Fragments e mudamos totalmente para layouts modernos.\n*   💎 **Material Design 3:** Desfrute de cores dinâmicas, cantos arredondados e uma experiência visual harmoniosa.\n*   📱 **Animações Fluidas:** Adicionamos efeitos de carregamento elegantes e transições perfeitas.\n\n#### ⚡ Sob o Capô\n*   ☁️ **Novo Motor em Nuvem:** A loja agora é alimentada por servidores inteligentes conectados ao GitHub.\n*   🛡️ **Instalação Silenciosa:** Integração mais profunda com Shizuku para instalações em segundo plano.\n*   📢 **Anúncios ao Vivo:** Uma ponte de comunicação para informar sobre o status do servidor.\n\n#### 🔧 Refinamentos\n*   🔢 **Números Inteligentes:** Formatos compactos para downloads (ex: 1.5K, 2M).\n*   🏷️ **Badges Pro:** Badges redesenhados para serem menores e mais limpos.\n*   🌍 **Localização:** Sistema de tradução aprimorado com resposta imediata.\n*   💖 **Apoio ao Desenvolvedor:** Botão dedicado para apoiar o desenvolvimento.\n*   🔒 **Diálogo de Transparência:** Explicação clara dos limites da API do GitHub."
     },
-
     "ru": {
       "category": "Системные инструменты",
       "short_description": "Продвинутый менеджер и установщик приложений Android на основе Shizuku.",
       "detailed_description": "ShizuCoreFetch — это мощный инструмент для удобного управления и установки приложений Android. Используя API Shizuku, он позволяет обходить стандартные ограничения установки и управлять приложениями как профессионал.\n\n**Ключевые возможности:**\n- Тихая и фоновая установка APK через Shizuku.\n- Получение и загрузка последних версий приложений прямо с GitHub.\n- Локальное хранилище APK для управления, извлечения и обмена приложениями.\n- Быстрый и отзывчивый интерфейс в стиле Material Design.",
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "Создаём умные инструменты, дающие пользователям полный контроль над их устройствами. Спасибо за доверие и поддержку!",
-      "developer_name": "Джамал Эль Хизази"
+      "developer_name": "Джамал Эль Хизази",
+      "changelog": "### 🚀 Крупное обновление | Революция интерфейса\n\nМы перестроили приложение с нуля! Это обновление — квантовый скачок в производительности и эстетике.\n\n#### 🎨 Революция дизайна (UI/UX)\n*   ✨ **Прощай, прошлое:** Мы отказались от старой архитектуры Fragments в пользу современных макетов.\n*   💎 **Material Design 3:** Наслаждайтесь динамическими цветами и плавными скругленными углами.\n*   📱 **Плавные анимации:** Добавлены элегантные эффекты загрузки и плавные переходы.\n\n#### ⚡ Под капотом\n*   ☁️ **Новый облачный движок:** Магазин теперь работает на умных серверах, напрямую подключенных к GitHub.\n*   🛡️ **Тихая установка:** Глубокая интеграция с Shizuku для фоновой установки.\n*   📢 **Живые уведомления:** Встроенный мост связи для информирования о состоянии серверов.\n\n#### 🔧 Улучшения\n*   🔢 **Умные числа:** Компактные форматы для загрузок (например, 1.5K, 2M).\n*   🏷️ **Профессиональные значки:** Значки стали меньше и аккуратнее.\n*   🌍 **Локализация:** Улучшенная система перевода с мгновенным откликом.\n*   💖 **Поддержка разработчика:** Добавлена кнопка для поддержки.\n*   🔒 **Диалог прозрачности:** Четкое объяснение ограничений API GitHub."
     },
-
     "hi": {
       "category": "सिस्टम टूल्स",
       "short_description": "एक उन्नत Shizuku-आधारित Android ऐप प्रबंधक और इंस्टॉलर।",
       "detailed_description": "ShizuCoreFetch एक शक्तिशाली उपकरण है जो Android एप्लिकेशन को सहजता से प्रबंधित और इंस्टॉल करने के लिए डिज़ाइन किया गया है। Shizuku API का उपयोग करके, यह आपको मानक इंस्टॉलेशन प्रतिबंधों को बायपास करने और एक प्रो की तरह अपने ऐप्स प्रबंधित करने की सुविधा देता है।\n\n**मुख्य विशेषताएं:**\n- Shizuku के माध्यम से मूक और पृष्ठभूमि APK इंस्टॉलेशन।\n- सीधे GitHub से नवीनतम ऐप रिलीज़ प्राप्त करें और डाउनलोड करें।\n- ऐप्स के प्रबंधन, निकालने और साझा करने के लिए स्थानीय APK वॉलेट।\n- तेज़ और प्रतिक्रियाशील Material Design UI।",
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "ऐसे स्मार्ट उपकरण तैयार करना जो उपयोगकर्ताओं को उनके उपकरणों पर पूर्ण नियंत्रण दें। आपके विश्वास और समर्थन के लिए धन्यवाद!",
-      "developer_name": "जमाल एल हिज़ाज़ी"
+      "developer_name": "जमाल एल हिज़ाज़ी",
+      "changelog": "### 🚀 बड़ा अपडेट | यूआई क्रांति\n\nहमने आपके लिए ऐप को पूरी तरह से फिर से बनाया है! यह अपडेट प्रदर्शन, गति और सौंदर्यशास्त्र में एक बड़ी छलांग का प्रतिनिधित्व करता है।\n\n#### 🎨 डिज़ाइन क्रांति (UI/UX)\n*   ✨ **अतीत को अलविदा:** हमने पुराने Fragments आर्किटेक्चर को छोड़ दिया है।\n*   💎 **Material Design 3:** गतिशील रंगों और सहज गोल कोनों का आनंद लें।\n*   📱 **तरल एनिमेशन:** सुरुचिपूर्ण लोडिंग प्रभाव और स्क्रीन के बीच निर्बाध संक्रमण।\n\n#### ⚡ प्रदर्शन\n*   ☁️ **नया क्लाउड इंजन:** स्टोर अब स्मार्ट बैकएंड सर्वर द्वारा संचालित है।\n*   🛡️ **साइलेंट इंस्टाल (Shizuku):** बैकग्राउंड ऐप इंस्टॉलेशन के लिए गहरा एकीकरण।\n*   📢 **लाइव घोषणाएं:** सर्वर की स्थिति के बारे में आपको तुरंत सूचित करने के लिए।\n\n#### 🔧 सुधार\n*   🔢 **स्मार्ट नंबर:** डाउनलोड के लिए नए कॉम्पैक्ट प्रारूप (जैसे 1.5K, 2M)।\n*   🏷️ **प्रो बैज:** ऐप बैज को छोटा और साफ़ बनाने के लिए फिर से डिज़ाइन किया गया।\n*   🌍 **स्थानीयकरण:** त्वरित यूआई प्रतिक्रिया के साथ उन्नत अनुवाद प्रणाली।\n*   💖 **डेवलपर समर्थन:** ऐप विवरण में एक समर्पित समर्थन बटन जोड़ा गया।\n*   🔒 **पारदर्शिता:** आपकी गोपनीयता का सम्मान करने के लिए GitHub API सीमाओं की स्पष्ट व्याख्या।"
     },
-
     "zh": {
       "category": "系统工具",
       "short_description": "基于 Shizuku 的高级 Android 应用管理与安装工具。",
       "detailed_description": "ShizuCoreFetch 是一款功能强大的工具，旨在无缝管理和安装 Android 应用。利用 Shizuku API，您可以绕过标准安装限制，像专业人士一样管理您的应用。\n\n**主要功能：**\n- 通过 Shizuku 实现 APK 静默后台安装。\n- 直接从 GitHub 获取并下载最新应用版本。\n- 本地 APK 仓库，用于管理、提取和分享应用。\n- 快速响应的 Material Design 用户界面。",
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "打造让用户完全掌控设备的智能工具。感谢您的信任与支持！",
-      "developer_name": "贾马尔·埃尔·希扎齐"
+      "developer_name": "贾马尔·埃尔·希扎齐",
+      "changelog": "### 🚀 重大更新 | 界面革命\n\n我们从头开始重建了应用程序！这次更新代表了性能、速度和美学的巨大飞跃。\n\n#### 🎨 设计革命 (UI/UX)\n*   ✨ **告别过去：** 我们放弃了传统的 Fragments 架构，全面转向现代布局。\n*   💎 **Material Design 3：** 享受动态颜色、平滑的圆角和与系统协调的视觉体验。\n*   📱 **流畅动画：** 添加了优雅的加载效果和屏幕之间的无缝过渡。\n\n#### ⚡ 核心动力\n*   ☁️ **全新云引擎：** 商店现在由直接连接到 GitHub 的智能后端服务器提供支持。\n*   🛡️ **静默安装：** 与 Shizuku 更深度的集成，用于后台应用安装。\n*   📢 **实时公告：** 内置通信桥梁，即时通知您服务器状态。\n\n#### 🔧 细节优化\n*   🔢 **智能数字：** 下载量和评分的全新紧凑格式（例如 1.5K，2M）。\n*   🏷️ **专业徽章：** 重新设计了应用徽章，使其更小、更简洁。\n*   🌍 **本地化：** 增强的翻译系统，具有即时的 UI 响应。\n*   💖 **开发者支持：** 在应用详情中添加了专门的支持按钮。\n*   🔒 **透明度对话框：** 清晰解释了 GitHub API 限制以尊重您的隐私。"
     },
-
     "ja": {
       "category": "システムツール",
       "short_description": "Shizukuベースの高度なAndroidアプリマネージャー＆インストーラー。",
       "detailed_description": "ShizuCoreFetchは、Androidアプリケーションをシームレスに管理・インストールするために設計された強力なツールです。Shizuku APIを利用して、標準的なインストール制限を回避し、プロのようにアプリを管理できます。\n\n**主な機能:**\n- Shizukuによるサイレント＆バックグラウンドAPKインストール。\n- GitHubから直接最新のアプリリリースを取得・ダウンロード。\n- アプリの管理、抽出、共有のためのローカルAPKウォレット。\n- 高速でレスポンシブなMaterial Design UI。",
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "ユーザーがデバイスを完全に制御できるスマートツールを開発しています。信頼とサポートに感謝します！",
-      "developer_name": "ジャマル・エル・ヒザジ"
+      "developer_name": "ジャマル・エル・ヒザジ",
+      "changelog": "### 🚀 メジャーアップデート | UIの革命\n\nアプリをゼロから再構築しました！このアップデートは、パフォーマンス、スピード、美学における飛躍的な進歩を表しています。\n\n#### 🎨 デザインの革命 (UI/UX)\n*   ✨ **過去との決別:** 古いFragmentsアーキテクチャを放棄し、モダンなレイアウトに完全に移行しました。\n*   💎 **Material Design 3:** ダイナミックカラー、滑らかな角丸、システムと調和する視覚体験をお楽しみください。\n*   📱 **滑らかなアニメーション:** エレガントな読み込みエフェクトと画面間のシームレスな遷移を追加しました。\n\n#### ⚡ システムの強化\n*   ☁️ **新しいクラウドエンジン:** ストアは、GitHubに直接接続するスマートなバックエンドサーバーによって駆動されるようになりました。\n*   🛡️ **サイレントインストール:** バックグラウンドインストールのためのShizukuとのより深い統合。\n*   📢 **ライブアナウンス:** サーバーのステータスを即座に通知する組み込みのコミュニケーションブリッジ。\n\n#### 🔧 改善点\n*   🔢 **スマートナンバー:** ダウンロード数と評価の新しいコンパクトフォーマット（例：1.5K、2M）。\n*   🏷️ **プロバッジ:** アプリバッジをより小さく、クリーンに再設計。\n*   🌍 **ローカリゼーション:** 即座のUI応答を備えた強化された翻訳システム。\n*   💖 **開発者サポート:** アプリの詳細に専用のサポートボタンを追加。\n*   🔒 **透明性ダイアログ:** プライバシーを尊重するためのGitHub API制限の明確な説明を追加。"
+    },
+    "tr": {
+      "category": "Sistem Araçları",
+      "short_description": "Gelişmiş Shizuku tabanlı Android uygulama yöneticisi ve yükleyicisi.",
+      "detailed_description": "ShizuCoreFetch, Android uygulamalarını sorunsuz bir şekilde yönetmek ve yüklemek için tasarlanmış güçlü bir araçtır. Shizuku API'sini kullanarak standart yükleme kısıtlamalarını aşmanıza ve uygulamalarınızı bir profesyonel gibi yönetmenize olanak tanır.\n\n**Önemli Özellikler:**\n- Shizuku üzerinden sessiz ve arka planda APK kurulumları.\n- En son uygulama sürümlerini doğrudan GitHub'dan alın ve indirin.\n- Uygulamaları yönetmek, çıkarmak ve paylaşmak için yerel APK cüzdanı.\n- Hızlı ve duyarlı Material Design kullanıcı arayüzü.",
+      "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
+      "developer_message": "Kullanıcılara cihazları üzerinde tam kontrol sağlayan akıllı araçlar üretiyoruz. Güveniniz ve desteğiniz için teşekkür ederiz!",
+      "developer_name": "Jamal El Hizazi",
+      "changelog": "### 🚀 Büyük Güncelleme | Kullanıcı Arayüzü Devrimi\n\nSize hak ettiğiniz deneyimi sunmak için uygulamayı sıfırdan yeniden oluşturduk! Bu güncelleme performans, hız ve estetik açısından büyük bir sıçramayı temsil ediyor.\n\n#### 🎨 Tasarım Devrimi (UI/UX)\n*   ✨ **Geçmişe Veda:** Eski Fragments mimarisini terk ederek tamamen modern ve duyarlı Compose düzenlerine geçiş yaptık.\n*   💎 **Material Design 3:** Eski keskin hatlara elveda deyin! Dinamik renklerin, yumuşak yuvarlatılmış köşelerin ve sisteminizle uyumlu görsel bir deneyimin keyfini çıkarın.\n*   📱 **Akıcı Animasyonlar:** Zarif yükleme (Shimmer) efektleri ve ekranlar arasında kesintisiz geçişler eklendi.\n\n#### ⚡ Kaputun Altında\n*   ☁️ **Yeni Bulut Motoru:** Mağaza artık daha hızlı ve kararlı güncellemeler için doğrudan GitHub'a bağlanan akıllı arka uç sunucuları tarafından destekleniyor.\n*   🛡️ **Sessiz Kurulum (Shizuku):** Arka planda uygulama kurulumları için Shizuku ile daha derin ve daha kararlı entegrasyon.\n*   📢 **Canlı Duyurular:** Sunucu durumu hakkında sizi anında bilgilendirmek için yerleşik bir iletişim köprüsü.\n\n#### 🔧 İyileştirmeler\n*   🔢 **Akıllı Sayılar:** İndirmeler ve derecelendirmeler için yeni kompakt formatlar (ör. 1.5K, 2M).\n*   🏷️ **Pro Rozetleri:** Uygulama rozetleri daha küçük, daha temiz ve daha az dikkat dağıtıcı olacak şekilde yeniden tasarlandı.\n*   🌍 **Yerelleştirme:** Anında UI yanıtı ve mükemmel RTL/LTR desteği ile geliştirilmiş çeviri sistemi.\n*   💖 **Geliştirici Desteği:** Uygulama ayrıntılarına özel bir destek düğmesi eklendi.\n*   🔒 **Şeffaflık İletişim Kutusu:** Gizliliğinize saygı duymak için GitHub API sınırlarının net bir açıklaması eklendi."
+    },
+    "cs": {
+      "category": "Systémové nástroje",
+      "short_description": "Pokročilý správce a instalátor aplikací pro Android založený na Shizuku.",
+      "detailed_description": "ShizuCoreFetch je výkonný nástroj určený k bezproblémové správě a instalaci aplikací pro Android. Využitím Shizuku API vám umožňuje obejít standardní omezení instalace a spravovat vaše aplikace jako profesionál.\n\n**Klíčové vlastnosti:**\n- Tiché instalace APK na pozadí přes Shizuku.\n- Získejte a stáhněte si nejnovější verze aplikací přímo z GitHubu.\n- Místní peněženka APK pro správu, extrahování a sdílení aplikací.\n- Rychlé a citlivé uživatelské rozhraní Material Design.",
+      "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
+      "developer_message": "Vytváříme chytré nástroje, které uživatelům poskytují plnou kontrolu nad jejich zařízeními. Děkujeme za vaši důvěru a podporu!",
+      "developer_name": "Jamal El Hizazi",
+      "changelog": "### 🚀 Velká aktualizace | Revoluce uživatelského rozhraní\n\nAplikaci jsme od základů přestavěli, abychom vám poskytli zážitek, jaký si zasloužíte! Tato aktualizace představuje obrovský skok ve výkonu, rychlosti a estetice.\n\n#### 🎨 Revoluce designu (UI/UX)\n*   ✨ **Sbohem minulosti:** Opustili jsme starou architekturu Fragments a plně jsme přešli na moderní a responzivní rozložení Compose.\n*   💎 **Material Design 3:** Dejte sbohem starým obrysům! Užijte si dynamické barvy, hladké zaoblené rohy a vizuální zážitek, který ladí s vaším systémem.\n*   📱 **Plynulé animace:** Přidány elegantní efekty načítání (Shimmer) a plynulé přechody mezi obrazovkami.\n\n#### ⚡ Pod kapotou\n*   ☁️ **Nový cloudový engine:** Obchod je nyní poháněn chytrými backendovými servery připojenými přímo na GitHub pro rychlejší a stabilnější aktualizace.\n*   🛡️ **Tichá instalace (Shizuku):** Hlubší a stabilnější integrace s Shizuku pro instalace aplikací na pozadí.\n*   📢 **Živá oznámení:** Vestavěný komunikační most, který vás okamžitě informuje o stavu serveru.\n\n#### 🔧 Vylepšení\n*   🔢 **Chytrá čísla:** Nové kompaktní formáty pro stahování a hodnocení (např. 1.5K, 2M).\n*   🏷️ **Pro odznaky:** Odznaky aplikací byly přepracovány, aby byly menší, čistší a méně rušivé.\n*   🌍 **Lokalizace:** Vylepšený systém překladu s okamžitou odezvou uživatelského rozhraní a dokonalou podporou RTL/LTR.\n*   💖 **Podpora vývojářů:** Do podrobností aplikace bylo přidáno vyhrazené tlačítko podpory.\n*   🔒 **Dialog transparentnosti:** Přidáno jasné vysvětlení limitů GitHub API pro respektování vašeho soukromí."
     }
   }
 }
