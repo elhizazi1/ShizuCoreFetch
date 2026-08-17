@@ -24,7 +24,7 @@
 
   "app_website": "https://shizucorefetch.siwane.xyz",
   "repo_url": "https://github.com/elhizazi1/ShizuCoreFetch",
-  "download_url": "https://github.com/elhizazi1/ShizuCoreFetch/releases/latest/download/app-release-sign.apk"
+  "download_url": "https://github.com/elhizazi1/ShizuCoreFetch/releases/latest/download/app-release-sign.apk",
 
   "ad": true,
 
@@ -57,7 +57,7 @@
   "donate_url": "https://paypal.me/Elhizazi",
 
   "store_issue_number": 1,
-  "changelog": "•••••••••••••"
+  "changelog": "•••••••••••••",
 
   "developer": {
     "name": "Jamal El Hizazi",
