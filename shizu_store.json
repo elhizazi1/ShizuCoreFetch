@@ -33,7 +33,7 @@
   "repo_url": "https://github.com/elhizazi1/ShizuCoreFetch",
   "download_url": "https://github.com/elhizazi1/ShizuCoreFetch/releases/latest/download/app-release-sign.apk",
 
-  "screenshots": [
+    "screenshots": [
     "https://shizucorefetch.siwane.xyz/assets/screen/screen1.png",
     "https://shizucorefetch.siwane.xyz/assets/screen/screen2.png",
     "https://shizucorefetch.siwane.xyz/assets/screen/screen3.png",
@@ -43,6 +43,7 @@
     "https://shizucorefetch.siwane.xyz/assets/screen/screen7.png"
   ],
 
+  "has_ads": true,
   "ads": [
     {
       "position": "top",
@@ -52,7 +53,7 @@
     {
       "position": "bottom",
       "image_url": "https://shizucorefetch.siwane.xyz/assets/adbotom.jpeg",
-      "target_url": "https://wa.me/elhizazi1"
+      "target_url": "https://wa.me/si1xyz"
     }
   ],
 
