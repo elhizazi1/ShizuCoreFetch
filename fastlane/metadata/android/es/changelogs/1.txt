@@ -1,0 +1,20 @@
+### 🚀 Actualización Mayor | La Revolución de la UI
+
+¡Hemos reconstruido la aplicación desde cero para ofrecerte la experiencia que mereces! Esta actualización representa un salto cuántico en rendimiento, velocidad y estética.
+
+#### 🎨 Revolución de Diseño (UI/UX)
+*   ✨ **Adiós al Pasado:** Abandonamos la arquitectura de Fragmentos, pasando completamente a diseños modernos.
+*   💎 **Material Design 3:** ¡Di adiós a los bordes antiguos! Disfruta de colores dinámicos y esquinas redondeadas.
+*   📱 **Animaciones Fluidas:** Efectos de carga elegantes (Shimmer) y transiciones sin fisuras.
+
+#### ⚡ Bajo el Capó
+*   ☁️ **Nuevo Motor en la Nube:** La tienda ahora funciona con servidores inteligentes conectados directamente a GitHub.
+*   🛡️ **Instalación Silenciosa:** Integración más profunda con Shizuku para instalaciones en segundo plano.
+*   📢 **Anuncios en Vivo:** Un puente de comunicación integrado para informarte sobre el estado del servidor.
+
+#### 🔧 Refinamientos
+*   🔢 **Números Inteligentes:** Formatos compactos para descargas y calificaciones (ej. 1.5K, 2M).
+*   🏷️ **Insignias Pro:** Insignias rediseñadas para ser más pequeñas y limpias.
+*   🌍 **Localización:** Sistema de traducción mejorado con respuesta inmediata.
+*   💖 **Apoyo al Desarrollador:** Botón dedicado para apoyar el desarrollo.
+*   🔒 **Diálogo de Transparencia:** Explicación clara de los límites de la API de GitHub.

@@ -1,0 +1,7 @@
+ShizuCoreFetch est un outil puissant conçu pour gérer et installer des applications Android en toute simplicité. Grâce à l'API Shizuku, il vous permet de contourner les restrictions d'installation standard et de gérer vos applications comme un pro.
+
+**Fonctionnalités principales :**
+- Installations APK silencieuses et en arrière-plan via Shizuku.
+- Récupération et téléchargement des dernières versions d'applications directement depuis GitHub.
+- Portefeuille APK local pour gérer, extraire et partager des applications.
+- Interface Material Design rapide et réactive.

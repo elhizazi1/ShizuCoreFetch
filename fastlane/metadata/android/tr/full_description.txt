@@ -1,0 +1,7 @@
+ShizuCoreFetch, Android uygulamalarını sorunsuz bir şekilde yönetmek ve yüklemek için tasarlanmış güçlü bir araçtır. Shizuku API'sini kullanarak standart yükleme kısıtlamalarını aşmanıza ve uygulamalarınızı bir profesyonel gibi yönetmenize olanak tanır.
+
+**Önemli Özellikler:**
+- Shizuku üzerinden sessiz ve arka planda APK kurulumları.
+- En son uygulama sürümlerini doğrudan GitHub'dan alın ve indirin.
+- Uygulamaları yönetmek, çıkarmak ve paylaşmak için yerel APK cüzdanı.
+- Hızlı ve duyarlı Material Design kullanıcı arayüzü.

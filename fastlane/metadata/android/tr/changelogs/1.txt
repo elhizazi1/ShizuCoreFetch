@@ -1,0 +1,20 @@
+### 🚀 Büyük Güncelleme | Kullanıcı Arayüzü Devrimi
+
+Size hak ettiğiniz deneyimi sunmak için uygulamayı sıfırdan yeniden oluşturduk! Bu güncelleme performans, hız ve estetik açısından büyük bir sıçramayı temsil ediyor.
+
+#### 🎨 Tasarım Devrimi (UI/UX)
+*   ✨ **Geçmişe Veda:** Eski Fragments mimarisini terk ederek tamamen modern ve duyarlı Compose düzenlerine geçiş yaptık.
+*   💎 **Material Design 3:** Eski keskin hatlara elveda deyin! Dinamik renklerin, yumuşak yuvarlatılmış köşelerin ve sisteminizle uyumlu görsel bir deneyimin keyfini çıkarın.
+*   📱 **Akıcı Animasyonlar:** Zarif yükleme (Shimmer) efektleri ve ekranlar arasında kesintisiz geçişler eklendi.
+
+#### ⚡ Kaputun Altında
+*   ☁️ **Yeni Bulut Motoru:** Mağaza artık daha hızlı ve kararlı güncellemeler için doğrudan GitHub'a bağlanan akıllı arka uç sunucuları tarafından destekleniyor.
+*   🛡️ **Sessiz Kurulum (Shizuku):** Arka planda uygulama kurulumları için Shizuku ile daha derin ve daha kararlı entegrasyon.
+*   📢 **Canlı Duyurular:** Sunucu durumu hakkında sizi anında bilgilendirmek için yerleşik bir iletişim köprüsü.
+
+#### 🔧 İyileştirmeler
+*   🔢 **Akıllı Sayılar:** İndirmeler ve derecelendirmeler için yeni kompakt formatlar (ör. 1.5K, 2M).
+*   🏷️ **Pro Rozetleri:** Uygulama rozetleri daha küçük, daha temiz ve daha az dikkat dağıtıcı olacak şekilde yeniden tasarlandı.
+*   🌍 **Yerelleştirme:** Anında UI yanıtı ve mükemmel RTL/LTR desteği ile geliştirilmiş çeviri sistemi.
+*   💖 **Geliştirici Desteği:** Uygulama ayrıntılarına özel bir destek düğmesi eklendi.
+*   🔒 **Şeffaflık İletişim Kutusu:** Gizliliğinize saygı duymak için GitHub API sınırlarının net bir açıklaması eklendi.

@@ -1,0 +1,1 @@
+Pokročilý správce a instalátor aplikací pro Android založený na Shizuku.

@@ -1,0 +1,20 @@
+### 🚀 Velká aktualizace | Revoluce uživatelského rozhraní
+
+Aplikaci jsme od základů přestavěli, abychom vám poskytli zážitek, jaký si zasloužíte! Tato aktualizace představuje obrovský skok ve výkonu, rychlosti a estetice.
+
+#### 🎨 Revoluce designu (UI/UX)
+*   ✨ **Sbohem minulosti:** Opustili jsme starou architekturu Fragments a plně jsme přešli na moderní a responzivní rozložení Compose.
+*   💎 **Material Design 3:** Dejte sbohem starým obrysům! Užijte si dynamické barvy, hladké zaoblené rohy a vizuální zážitek, který ladí s vaším systémem.
+*   📱 **Plynulé animace:** Přidány elegantní efekty načítání (Shimmer) a plynulé přechody mezi obrazovkami.
+
+#### ⚡ Pod kapotou
+*   ☁️ **Nový cloudový engine:** Obchod je nyní poháněn chytrými backendovými servery připojenými přímo na GitHub pro rychlejší a stabilnější aktualizace.
+*   🛡️ **Tichá instalace (Shizuku):** Hlubší a stabilnější integrace s Shizuku pro instalace aplikací na pozadí.
+*   📢 **Živá oznámení:** Vestavěný komunikační most, který vás okamžitě informuje o stavu serveru.
+
+#### 🔧 Vylepšení
+*   🔢 **Chytrá čísla:** Nové kompaktní formáty pro stahování a hodnocení (např. 1.5K, 2M).
+*   🏷️ **Pro odznaky:** Odznaky aplikací byly přepracovány, aby byly menší, čistší a méně rušivé.
+*   🌍 **Lokalizace:** Vylepšený systém překladu s okamžitou odezvou uživatelského rozhraní a dokonalou podporou RTL/LTR.
+*   💖 **Podpora vývojářů:** Do podrobností aplikace bylo přidáno vyhrazené tlačítko podpory.
+*   🔒 **Dialog transparentnosti:** Přidáno jasné vysvětlení limitů GitHub API pro respektování vašeho soukromí.

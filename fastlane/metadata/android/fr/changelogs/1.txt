@@ -1,0 +1,20 @@
+### 🚀 Mise à Jour Majeure | La Révolution de l'Interface
+
+Nous avons entièrement reconstruit l'application pour vous offrir une expérience digne de ce nom ! Cette mise à jour représente un bond en avant en termes de performances, de vitesse et d'esthétique.
+
+#### 🎨 Révolution du Design (UI/UX)
+*   ✨ **Adieu le Passé :** Nous avons abandonné l'ancienne architecture (Fragments) pour passer entièrement à des interfaces modernes et fluides.
+*   💎 **Material Design 3 :** Dites adieu aux anciens contours ! Profitez de couleurs dynamiques, de coins arrondis et d'une expérience visuelle harmonieuse.
+*   📱 **Animations Fluides :** Ajout d'effets de chargement élégants (Shimmer) et de transitions fluides entre les écrans.
+
+#### ⚡ Sous le Capot
+*   ☁️ **Nouveau Moteur Cloud :** Le store est désormais propulsé par des serveurs intelligents connectés directement à GitHub.
+*   🛡️ **Installation Silencieuse (Shizuku) :** Intégration plus profonde avec Shizuku pour des installations en arrière-plan.
+*   📢 **Annonces en Direct :** Un pont de communication intégré pour vous informer de l'état des serveurs.
+
+#### 🔧 Améliorations
+*   🔢 **Nombres Intelligents :** Nouveaux formats compacts pour les téléchargements et les notes (ex: 1.5K, 2M).
+*   🏷️ **Badges Pro :** Badges repensés pour être plus petits et plus propres.
+*   🌍 **Localisation :** Système de traduction amélioré répondant immédiatement au changement de langue.
+*   💖 **Soutien au Développeur :** Ajout d'un bouton de soutien dédié.
+*   🔒 **Dialogue de Transparence :** Explication claire des limites de l'API GitHub pour respecter votre vie privée.

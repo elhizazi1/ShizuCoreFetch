@@ -1,0 +1,1 @@
+Um gerenciador e instalador de aplicativos Android avançado baseado no Shizuku.

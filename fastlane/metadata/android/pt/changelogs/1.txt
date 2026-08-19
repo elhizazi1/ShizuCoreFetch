@@ -1,0 +1,20 @@
+### 🚀 Grande Atualização | A Revolução da Interface
+
+Reconstruímos o aplicativo do zero para oferecer a experiência que você merece! Esta atualização representa um salto quântico em desempenho e estética.
+
+#### 🎨 Revolução do Design (UI/UX)
+*   ✨ **Adeus Passado:** Abandonamos a arquitetura de Fragments e mudamos totalmente para layouts modernos.
+*   💎 **Material Design 3:** Desfrute de cores dinâmicas, cantos arredondados e uma experiência visual harmoniosa.
+*   📱 **Animações Fluidas:** Adicionamos efeitos de carregamento elegantes e transições perfeitas.
+
+#### ⚡ Sob o Capô
+*   ☁️ **Novo Motor em Nuvem:** A loja agora é alimentada por servidores inteligentes conectados ao GitHub.
+*   🛡️ **Instalação Silenciosa:** Integração mais profunda com Shizuku para instalações em segundo plano.
+*   📢 **Anúncios ao Vivo:** Uma ponte de comunicação para informar sobre o status do servidor.
+
+#### 🔧 Refinamentos
+*   🔢 **Números Inteligentes:** Formatos compactos para downloads (ex: 1.5K, 2M).
+*   🏷️ **Badges Pro:** Badges redesenhados para serem menores e mais limpos.
+*   🌍 **Localização:** Sistema de tradução aprimorado com resposta imediata.
+*   💖 **Apoio ao Desenvolvedor:** Botão dedicado para apoiar o desenvolvimento.
+*   🔒 **Diálogo de Transparência:** Explicação clara dos limites da API do GitHub.

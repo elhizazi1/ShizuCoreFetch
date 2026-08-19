@@ -1,0 +1,20 @@
+### 🚀 Major Update | The UI Revolution
+
+We've rebuilt the app from the ground up to deliver an experience you deserve! This update represents a quantum leap in performance, speed, and aesthetics.
+
+#### 🎨 Design Revolution (UI/UX)
+*   ✨ **Goodbye Past:** We abandoned the legacy Fragments architecture, transitioning fully to modern, responsive Compose layouts.
+*   💎 **Material Design 3:** Say goodbye to old outlines! Enjoy dynamic colors, smooth rounded corners, and a visual experience that harmonizes with your system.
+*   📱 **Fluid Animations:** Added elegant shimmer loading effects and seamless transitions between screens.
+
+#### ⚡ Under the Hood
+*   ☁️ **New Cloud Engine:** The store is now powered by smart backend servers connecting directly to GitHub for faster, stable updates.
+*   🛡️ **Silent Install (Shizuku):** Deeper and more stable integration with Shizuku for background app installations.
+*   📢 **Live Announcements:** A built-in communication bridge to inform you instantly about server status.
+
+#### 🔧 Refinements
+*   🔢 **Smart Numbers:** New compact formats for downloads and ratings (e.g., 1.5K, 2M).
+*   🏷️ **Pro Badges:** Redesigned app badges to be smaller, cleaner, and less distracting.
+*   🌍 **Localization:** Enhanced translation system with immediate UI response and perfect RTL/LTR support.
+*   💖 **Developer Support:** Added a dedicated support button in app details.
+*   🔒 **Transparency Dialog:** Added a clear explanation of GitHub API limits to respect your privacy.
