@@ -20,10 +20,10 @@
     },
     {
       "id": 2,
-      "visible": false,
+      "visible": true,
       "type": "warning",
       "is_compact": true,
-      "is_outlined": false,
+      "is_outlined": true,
       "en": "Server maintenance tonight. The store might be slow.",
       "ar": "ستتم صيانة السيرفرات الليلة، قد تواجه بطئاً في المتجر.",
       "fr": "Maintenance du serveur ce soir.",
@@ -38,7 +38,7 @@
     },
     {
       "id": 3,
-      "visible": true,
+      "visible": false,
       "type": "success",
       "is_compact": true,
       "is_outlined": false,
