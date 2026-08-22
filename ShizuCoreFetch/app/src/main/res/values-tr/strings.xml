@@ -1,215 +1,336 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Temel metinler -->
-    <string name="app_name">Shizu CoreFetch</string>
-    <string name="main_title">Shizu CoreFetch</string>
-    <string name="main_description">Temel izinler gerektiren uygulamaları getirmek ve yönetmek için gelişmiş merkezi bir platform.</string>
-    <string name="main_login_github">GitHub ile Giriş Yap</string>
-    <string name="main_boredom_title">Geliştirici Penceresi</string>
-    <string name="main_boredom_loading">Veriler yükleniyor...</string>
-    <string name="main_boredom_initial_quote">Temiz kod her zaman iyi yazılmış bir düzyazı gibi okunur. - Robert C. Martin</string>
-    <string name="store_title">Shizu Deposu</string>
-    <string name="store_btn_install">Yükle</string>
-    <string name="store_developer_prefix">Yapan: </string>
-    <string name="store_shizuku_not_running">Shizuku motoru çalışmıyor. Lütfen önce başlatın.</string>
-    <string name="store_shizuku_permission_denied">Temel işlemler için Shizuku izni gereklidir.</string>
-    <string name="store_shizuku_permission_granted">Shizuku motoru başarıyla bağlandı.</string>
-    <string name="store_fetch_loading">Uygulamalar ağdan getiriliyor...</string>
-    <string name="store_fetch_failed_parse">Veri ayrıştırılamadı</string>
-    <string name="store_fetch_error_network">Ağ hatası:</string>
-    <string name="installer_no_permission">Kurulum için Shizuku izni yok.</string>
-    <string name="installer_success">Başarıyla yüklendi!</string>
-    <string name="installer_fail">Kurulum başarısız: %1$s</string>
-    <string name="installer_error">Hata oluştu: %1$s</string>
-    <string name="downloader_searching">En son sürüm aranıyor...</string>
-    <string name="downloader_no_apk">Bu depoda APK bulunamadı.</string>
-    <string name="downloader_downloading">%1$s indiriliyor...</string>
-    <string name="downloader_success">İndirme tamamlandı, sessiz kurulum başlatılıyor...</string>
-    <string name="downloader_fail">İndirme başarısız: %1$s</string>
-    <string name="store_requesting_permission">Shizuku izni isteniyor...</string>
-    <string name="install_button">Yükle</string>
-    <string name="open_button">Aç</string>
-    <string name="store_cannot_open">Bu uygulama açılamıyor</string>
-    <string name="tools_app_name">Uygulama Adı</string>
-    <string name="tools_app_developer">Geliştirici Adı</string>
-    <string name="tools_app_desc">Uygulamanın temel özelliklerini net ve düzenli bir şekilde gösteren kısa bir açıklama.</string>
-    <string name="installing_button">Yükleniyor…</string>
-    <string name="uninstall_button">Kaldır</string>
-    <string name="update_button">Güncelle</string>
-    <string name="app_description_title">Bu uygulama hakkında</string>
-    <string name="app_versions_title">Sürümler</string>
-    <string name="uninstall_success">Başarıyla kaldırıldı</string>
-    <string name="uninstall_fail">Kaldırma başarısız: %1$s</string>
-    <string name="store_search_hint">Uygulama ara…</string>
-    <string name="home_featured">Öne Çıkanlar</string>
-    <string name="home_all_apps">Tüm Uygulamalar</string>
-    <string name="login_guest">Misafir Olarak Göz At</string>
-    <string name="nav_home">Ana Sayfa</string>
+    <!-- App & Navigation -->
+    <string name="app_name">ShizuCoreFetch</string>
+    <string name="store_name">CoreFetch</string>
     <string name="nav_store">Mağaza</string>
-    <string name="nav_account">Hesap</string>
+    <string name="nav_shizuku">Shizuku</string>
+    <string name="nav_library">Kitaplık</string>
     <string name="nav_settings">Ayarlar</string>
-    <string name="account_loading">Yükleniyor…</string>
-    <string name="account_guest_name">Misafir</string>
-    <string name="account_guest_email">Tüm özelliklere erişmek için lütfen giriş yapın</string>
-    <string name="account_installed_apps">Yüklü Uygulamalar</string>
-    <string name="account_no_installed_apps">Mağazadan henüz uygulama yüklenmemiş.</string>
-    <string name="account_updates_available">Güncellemeler Mevcut</string>
-    <string name="account_no_updates">Tüm uygulamalarınız güncel.</string>
-    <string name="account_logout">Çıkış Yap</string>
-    <string name="screenshots_title">Ekran Görüntüleri</string>
-    <string name="preview_loading_text">Veriler yükleniyor...</string>
 
-    <!-- Ayarlar metinleri -->
-    <string name="settings_theme_title">Tema</string>
+    <string name="search_placeholder">Uygulamaları ve modülleri ara...</string>
+
+    <!-- Shizuku Status -->
+    <string name="shizuku_active">Aktif</string>
+    <string name="shizuku_stopped">Durduruldu</string>
+    <string name="shizuku_needed">Gerekli</string>
+    <string name="shizuku_granted">İzin verildi</string>
+    <string name="shizuku_label">Shizuku</string>
+    <string name="shizucorefetch_label">ShizuCoreFetch</string>
+
+    <!-- Authentication -->
+    <string name="github_login">Giriş Yap</string>
+    <string name="github_logout">Çıkış Yap</string>
+
+    <!-- Settings Labels -->
+    <string name="settings_theme_mode">Tema Modu</string>
     <string name="theme_light">Açık</string>
-    <string name="theme_system">Sistem</string>
     <string name="theme_dark">Koyu</string>
+    <string name="theme_system">Sistem</string>
+    <string name="settings_custom_hex">Özel Hex</string>
+    <string name="settings_ui_scale">Arayüz Ölçeği</string>
+    <string name="settings_about">Uygulama Hakkında</string>
 
-    <string name="settings_lang_title">Dil</string>
-    <string name="lang_en">English</string>
-    <string name="lang_ar">العربية</string>
-    <string name="lang_fr">Français</string>
-    <string name="lang_es">Español</string>
-    <string name="lang_pt">Português</string>
-    <string name="lang_ru">Русский</string>
-    <string name="lang_hi">हिन्दी</string>
-    <string name="lang_zh">中文</string>
-    <string name="lang_ja">日本語</string>
-    <string name="lang_cs">Čeština</string>
-    <string name="lang_tr">Türkçe</string>
-    <string name="settings_contributors">Çeviri Katkıda Bulunanlar</string>
-    
-    <string name="settings_notif_title">Bildirimler</string>
-    
-    <string name="settings_permissions_title">İzinler</string>
-    <string name="settings_perm_apps">Yüklü Uygulama Bilgisi</string>
-    <string name="settings_perm_shizuku">Shizuku İzni</string>
+    <!-- App Details (Base) -->
+    <string name="details_install">Yükle</string>
+    <string name="details_download">İndir</string>
+    <string name="details_github_link">GitHub</string>
+    <string name="app_details_title">Uygulama Detayları</string>
+    <string name="stats_stars">Yıldızlar</string>
+    <string name="stats_downloads">İndirmeler</string>
+    <string name="stats_category">Kategori</string>
+    <string name="stats_size">Boyut</string>
+    <string name="btn_github">GitHub</string>
+    <string name="overview_title">Genel Bakış</string>
+    <string name="recent_releases_title">Sürümler</string>
+    <string name="featured_badge">ÖNE ÇIKAN</string>
+    <string name="install_service">Yükleme Servisi</string>
+    <string name="empty_no_repos">Depo Bulunamadı</string>
+    <string name="retry">Yeniden Dene</string>
 
-    <string name="settings_about_store">Mağaza Hakkında</string>
-    <string name="settings_privacy">Gizlilik Politikası</string>
-    <string name="settings_terms">Kullanım Koşulları</string>
-    <string name="settings_version">Sürüm 1.5.0</string>
-    <string name="settings_developer">Jamal El Hizazi tarafından</string>
+    <!-- Shizuku Hub -->
+    <string name="shizuku_permission_req_title">Shizuku İzni Gerekli</string>
+    <string name="shizuku_permission_req_desc">Bu uygulamanın düzgün çalışması ve modül yükleyebilmesi için Shizuku üzerinden gelişmiş sistem yetkilerine ihtiyacı vardır.</string>
+    <string name="hub_status_running">Shizuku Servisi Çalışıyor</string>
+    <string name="hub_status_stopped">Shizuku Servisi Durduruldu</string>
+    <string name="hub_permission_label">İzin Durumu</string>
+    <string name="hub_binder_label">Binder Arayüzü</string>
+    <string name="hub_guide_title">Kablosuz Hata Ayıklama Kılavuzu</string>
+    <string name="hub_guide_step1"> Android cihazınızın ayarlarından Geliştirici Seçeneklerini etkinleştirin.</string>
+    <string name="hub_guide_step2"> Geliştirici Seçenekleri içindeki Kablosuz Hata Ayıklamayı açın.</string>
+    <string name="hub_guide_step3"> Shizuku uygulamasını açın ve cihazınızı eşleştirin.</string>
+    <string name="refresh">Yenile</string>
 
-    <string name="dialog_theme_title">Tema Seç</string>
-    <string name="dialog_lang_title">Dil Seç</string>
+    <!-- Library -->
+    <string name="library_title">Kaydedilenler</string>
+    <string name="library_empty_title">Kitaplığınız Boş</string>
+    <string name="library_empty_desc">Mağazadaki favori Shizuku araçlarınızı ve depolarınızı kaydederek buraya hızlıca erişebilirsiniz.</string>
 
-    <string name="toast_shizuku_granted">Shizuku izni zaten verilmiş</string>
-    <string name="toast_shizuku_not_running">Shizuku çalışmıyor, lütfen başlatın</string>
-    <string name="toast_shizuku_error">Hata: Shizuku kütüphanesi mevcut değil</string>
-    
-    <string name="settings_category_general">Genel</string>
-    <string name="settings_category_about">Hakkında</string>
+    <!-- Settings Explanations -->
+    <string name="settings_appearance">Görünüm ve Tema</string>
+    <string name="settings_preset_color">Ana Tema Rengi</string>
+    <string name="settings_gas_title">Worker API ve Yük Dengeleyici</string>
+    <string name="settings_gas_endpoint">Cloudflare Worker (GAS\'a bağlı):</string>
+    <string name="settings_gas_active">Çevrimiçi</string>
+    <string name="settings_gas_inactive">Çevrimdışı</string>
+    <string name="settings_gas_checking">Kontrol ediliyor…</string>
+    <string name="settings_quota_title">GitHub API Kotası</string>
+    <string name="settings_quota_loading">Gerçek kota verileri yükleniyor…</string>
+    <string name="settings_quota_used">%1$d / %2$d kullanıldı</string>
+    <string name="settings_quota_remaining">%1$d kaldı</string>
+    <string name="settings_quota_reset">%1$s saatinde sıfırlanır</string>
+    <string name="github_auth_title">GitHub Kimlik Doğrulaması</string>
+    <string name="github_auth_desc">API sınırlarını atlamak ve depoları özgürce keşfetmek için GitHub hesabınızı veya Kişisel Erişim Jetonunuzu (PAT) bağlayın.</string>
+    <string name="about_version">ShizuCoreFetch v%1$s</string>
+    <string name="about_package">xyz.siwane.shizucorefetch</string>
+    <string name="theme_mode_title">Ekran Modu</string>
+    <string name="main_theme_color_title">Renk Paleti</string>
 
-    <string name="notif_channel_ops_name">Mağaza İşlemleri</string>
-    <string name="notif_channel_ops_desc">Arka planda indirme ve teknik kurulum bildirimleri.</string>
-    <string name="notif_channel_updates_name">Mevcut Güncellemeler</string>
-    <string name="notif_channel_updates_desc">Yüklü uygulamalarınız için yeni sürümler mevcut olduğunda uyarılar.</string>
-    <string name="notif_updates_available_title">Güncellemeler Bulundu</string>
-    <string name="notif_updates_available_msg">İşlenmeye hazır %1$d uygulama güncellemesi var.</string>
+    <!-- Colors -->
+    <string name="color_amethyst">Ametist</string>
+    <string name="color_emerald">Zümrüt</string>
+    <string name="color_sapphire">Safir</string>
+    <string name="color_siwane">Siwane</string>
+    <string name="color_crimson">Kızıl</string>
+    <string name="color_sunset">Gün Batımı</string>
 
-    <string name="nav_wallet">Yerel Depolama Cüzdanı</string>
-    <string name="wallet_empty">Yerel önbellekte şu anda depolanmış uygulama dosyası yok.</string>
-    <string name="wallet_delete_title">Silmeyi Onayla</string>
-    <string name="wallet_delete_msg">%1$s için kurulum paketini kalıcı olarak silmek istediğinize emin misiniz?</string>
-    <string name="wallet_delete_success">Paket başarıyla silindi.</string>
-    <string name="wallet_share_title">Uygulama Paketini Paylaş</string>
-    <string name="wallet_no_editor_found">Bu cihazda uyumlu bir paket görüntüleyici veya düzenleyici bulunamadı.</string>
-    <string name="wallet_error_action">İstenen dosya işlemi başlatılamadı.</string>
-    <string name="wallet_btn_delete">Sil</string>
-    <string name="wallet_btn_share">Paylaş</string>
-    <string name="wallet_btn_open">Harici Aç</string>
-    <string name="dialog_cancel">İptal</string>
-    <string name="dialog_confirm">Onayla</string>
+    <!-- UI Controls -->
+    <string name="btn_dynamic_m3">Dinamik M3</string>
+    <string name="btn_custom_hex">Özel Hex</string>
+    <string name="ui_scale_title">Arayüz ve Yazı Tipi Ölçeği</string>
+    <string name="ui_scale_desc_text">En iyi göz rahatlığı ve kullanılabilirlik için arayüz öğelerinin ve yazı tiplerinin boyutunu ayarlayın.</string>
+    <string name="settings_language">Uygulama Dili</string>
 
-    <!-- App Details Strings (Yeni Eklemeler) -->
-    <string name="store_reviews_title">İncelemeler ve Yorumlar</string>
-    <string name="store_reviews_empty">Bu uygulamayı ilk inceleyen siz olun! Yorum sistemi kuruluyor.</string>
-    <string name="store_write_review">İnceleme yaz</string>
-    <string name="store_developer_info">Geliştirici Bilgileri</string>
-    <string name="store_rating_count_format">%1$s değerlendirme</string>
-    <string name="store_no_ratings_yet">Henüz değerlendirme yok</string>
-    <string name="store_comment_dev">Yorum sistemi şu anda geliştirme aşamasındadır</string>
-    <string name="store_dev_email">E-posta:</string>
-    <string name="store_dev_website">Web Sitesi</string>
-    <string name="store_dev_portfolio">Portfolyo</string>
+    <!-- Developer & Support -->
+    <string name="dev_support_title">Geliştirici ve Destek</string>
+    <string name="dev_name">Jamal El Hizazi</string>
+    <string name="dev_website">siwane.xyz - Resmi Site</string>
+    <string name="dev_github">GitHub - elhizazi1</string>
+    <string name="dev_email">jamal@elhizazi.me</string>
+    <string name="about_app_title">Uygulama Hakkında</string>
+    <string name="about_privacy">Gizlilik Politikası</string>
+    <string name="about_terms">Kullanım Koşulları</string>
+    <string name="about_share">Uygulamayı Paylaş</string>
+    <string name="about_update">Güncellemeleri Kontrol Et</string>
 
-    <string name="store_developer_message_title">Geliştiriciden Bir Not</string>
-    <string name="store_show_all_versions">Tüm sürümleri göster</string>
-    <string name="store_hide_versions">Sürümleri gizle</string>
+    <!-- For Developers -->
+    <string name="for_developers_title">Geliştiriciler İçin</string>
+    <string name="for_developers_desc">Shizuku uygulamanızın Mağazamızda otomatik olarak dizine eklenmesi için bu etiketleri GitHub deponuza ekleyin:</string>
+    <string name="topic_shizuku">shizuku</string>
+    <string name="topic_shizucorefetch">shizucorefetch</string>
 
-    <string name="store_visit_website">Resmi web sitesini ziyaret et</string>
-    <string name="store_calculating_size">Hesaplanıyor...</string>
+    <!-- Custom Hex Popup -->
+    <string name="custom_hex_title">Özel Tema Rengi</string>
+    <string name="custom_hex_label">HEX Kodu (örn. #FF0055)</string>
+    <string name="custom_hex_apply">Rengi Uygula</string>
+    <string name="custom_hex_invalid">Geçersiz HEX Kodu</string>
+    <string name="color_picker_hint">Kusursuz rengi seçmek için renk tekerleğinde herhangi bir yere dokunun veya sürükleyin.</string>
 
-    <string name="empty_comments_message">Henüz yorum yok. İlk yorum yapan siz olun!</string>
-    <string name="hide_comments_previous">Önceki yorumları gizle</string>
-    <string name="show_remaining_comments">Kalan yorumları göster (%1$d)</string>
-    <string name="comment_posted_success">Yorum başarıyla gönderildi!</string>
-    <string name="comment_post_failed">Yorum gönderilemedi</string>
-    <string name="login_prompt_comments">Tartışmaya katılmak için lütfen GitHub hesabınızla giriş yapın.</string>
-    <string name="comment_reply_button">Yanıtla</string>
-    <string name="comment_edit_button">Düzenle</string>
-    <string name="comment_delete_button">Sil</string>    
-    <string name="comment_input_hint">Yorumunuzu buraya yazın…</string>
-    <string name="edit_comment_toast_format">%1$d numaralı yorum için düzenleme penceresi yakında açılacak</string>
+    <!-- Store Categories -->
+    <string name="cat_all">Tümü</string>
+    <string name="action_retry">Yeniden Dene</string>
+    <string name="store_no_results">Uygulama bulunamadı</string>
+    <string name="cat_system">Sistem</string>
+    <string name="cat_utility">Araçlar</string>
+    <string name="cat_development">Geliştirme</string>
+    <string name="cat_customization">Özelleştirme</string>
 
-    <string name="comment_react_button">Tepki ver</string>
-    <string name="dialog_choose_reaction">Bir tepki seçin</string>
-    <string name="reaction_added_success">Tepki eklendi!</string>
-    <string name="reaction_add_failed">Tepki eklenemedi</string>
+    <!-- App Details Actions & Sections -->
+    <string name="action_open">Aç</string>
+    <string name="action_update">Güncelle</string>
+    <string name="action_uninstall">Kaldır</string>
+    <string name="action_website">Web Sitesi</string>
+    <string name="app_description_title">Bu uygulama hakkında</string>
+    <string name="version_history_title">Sürüm geçmişi</string>
+    <string name="version_current_badge">Mevcut</string>
+    <string name="app_screenshots">Ekran Görüntüleri</string>
+
+    <!-- Rating and Comments -->
+    <string name="app_rating_title">Uygulamayı puanla</string>
+    <string name="app_rating_desc">Fikrinizi başkalarıyla paylaşın</string>
+    <string name="comments_title">Puanlar ve incelemeler</string>
+    <string name="write_comment_hint">Bir yorum yazın...</string>
+    <string name="post_comment">Gönder</string>
+
+    <!-- Ads and Suggestions -->
+    <string name="ad_label">Sponsorlu</string>
+    <string name="popular_apps_title">Popüler Uygulamalar</string>
+
+    <!-- GitHub Authentication -->
+    <string name="github_sheet_title">GitHub Kimlik Doğrulaması</string>
+    <string name="github_sheet_desc">API limitinizi saatte 5.000 isteğe çıkarmak için giriş yapın.</string>
+    <string name="github_oauth_btn">GitHub ile Giriş Yap</string>
+    <string name="github_token_label">Kişisel Erişim Jetonu (PAT)</string>
+    <string name="github_token_hint">ghp_xxxxxxxxxxxx</string>
+    <string name="github_token_btn">Jeton ile Giriş Yap</string>
+    <string name="github_or_divider">VEYA</string>
+    <string name="github_logged_in_as">Giriş yapıldı:</string>
+    <string name="github_rate_limit">API Limiti: 5000 / 5000</string>
+
+    <!-- Account & Token Status -->
+    <string name="token_status_active">Aktif</string>
+    <string name="token_status_inactive">Pasif</string>
+    <string name="btn_delete_token">Jetonu Sil</string>
+    <string name="btn_my_account">Hesabım</string>
+    <string name="github_token_status">Jeton Durumu:</string>
+    <string name="account_details_brief">Profilinizi ve depolarınızı yönetin.</string>
+
+    <!-- My Account Screen -->
+    <string name="account_title">Profilim</string>
+    <string name="account_repos">Depolar</string>
+    <string name="account_followers">Takipçiler</string>
+    <string name="account_following">Takip Edilenler</string>
+    <string name="account_section_repos">Herkese Açık Depolar</string>
+    <string name="btn_view_github">GitHub\'da Gör</string>
+    <string name="already_on_account">Şu anda zaten hesap profilinizi görüntülüyorsunuz.</string>
+
+    <!-- Library & APK Manager -->
+    <string name="lib_updates_title">Güncellemeler</string>
+    <string name="lib_installed_title">Yüklü Olanlar</string>
+    <string name="lib_bookmarks_title">Kaydedilenler</string>
+    <string name="apk_manager_title">İndirilen APK\'lar</string>
+    <string name="apk_manager_desc">İndirilen kurulum dosyalarını yönetin.</string>
+    <string name="apk_manager_empty">Henüz indirilmiş APK dosyası yok.</string>
+    <string name="apk_manager_open_failed">Uygulama açılamadı.</string>
+    <string name="apk_manager_install_success">Başarıyla yüklendi.</string>
+    <string name="apk_manager_delete_title">Dosyayı sil</string>
+    <string name="apk_manager_delete_confirm">\"%1$s\" bu cihazdan silinsin mi? Bu işlem geri alınamaz.</string>
+    <string name="apk_manager_delete_failed">Dosya silinemedi.</string>
+    <string name="apk_manager_open">Aç</string>
+    <string name="apk_manager_install">Yükle</string>
+    <string name="action_cancel">İptal</string>
+    <string name="toast_installed">Başarıyla yüklendi.</string>
+    <string name="toast_uninstalled">Başarıyla kaldırıldı.</string>
+    <string name="toast_updated">Başarıyla güncellendi.</string>
+    <string name="toast_opened">Açıldı.</string>
+    <string name="store_cannot_open">Uygulama açılamadı.</string>
+    <string name="store_download_failed">Şu anda bu uygulama için geçerli bir indirme bağlantısı yok.</string>
+    <string name="store_error_generic">Bir şeyler ters gitti. Lütfen tekrar deneyin.</string>
+    <string name="apk_path">Yol: Download/shizucorefetch</string>
+    <string name="apk_action_delete">Sil</string>
+    <string name="action_back">Geri</string>
+    <string name="action_share">Paylaş</string>
+    <string name="action_open_folder">Klasörü Aç</string>
+    <string name="error_open_folder">Dosya yöneticisi açılamadı.</string>
+    <string name="toast_download_complete">İndirme tamamlandı: %1$s</string>
+    <string name="toast_download_failed">İndirme başarısız: %1$s</string>
+
+    <string name="hub_action_check_permission">İzni Kontrol Et</string>
+    <string name="hub_silent_install_title">Yükleme Yöntemi</string>
+    <string name="hub_silent_install_enabled">Sessiz Yükleme : Etkin (Shizuku)</string>
+    <string name="hub_silent_install_disabled">Sessiz Yükleme : Devre Dışı (Sistem)</string>
+    <string name="hub_warning_permissions">Shizuku\'nun ve sessiz yüklemenin kusursuz çalışmasını garanti etmek için sistem ayarlarında gerekli tüm izinlerin verildiğinden emin olun.</string>
+    <string name="hub_action_open_settings">Uygulama Ayarları</string>
 
     <string name="dev_profile_title">Geliştirici Profili</string>
-    <string name="dev_profile_apps_title">Geliştirici Uygulamaları</string>
-    <string name="store_dev_email2">E-posta</string>
-    
-    <string name="store_trending_apps">Trend Uygulamalar</string>
+    <string name="dev_role_subtitle">Android Geliştiricisi ve UI/UX Tasarımcısı</string>
+    <string name="dev_info_title">İletişim Bilgileri</string>
+    <string name="dev_email_label">E-posta</string>
+    <string name="dev_website_label">Web Sitesi</string>
+    <string name="dev_portfolio_label">Portfolyo</string>
+    <string name="dev_social_title">Sosyal Medya</string>
+    <string name="dev_apps_title">Geliştirici Uygulamaları</string>
 
-    <string name="ad_label">Reklam</string>
+    <string name="rating_login_warning">Bu uygulamayı puanlamak için lütfen GitHub ile giriş yapın.</string>
+    <string name="comments_login_warning">Yorum bırakmak için lütfen GitHub ile giriş yapın.</string>
+    <string name="comments_empty">Henüz yorum yok. İlk yorum yapan siz olun!</string>
+    <string name="comment_reply">Yanıtla</string>
+    <string name="comment_delete">Sil</string>
+    <string name="comment_edit">Düzenle</string>
+    <string name="comment_save">Kaydet</string>
+    <string name="comment_cancel">İptal</string>
+    <string name="comment_admin_hide">Mağazadan Gizle</string>
+    <string name="comment_admin_unhide">Göster</string>
+    <string name="comment_hidden_badge">Gizli (yalnızca yönetici)</string>
 
-    <!-- Silent Installation Settings -->
-    <string name="settings_silent_install_title">Sessiz Kurulum</string>
-    <string name="silent_install_enabled">Sessiz Kurulum: Etkin (Shizuku)</string>
-    <string name="silent_install_disabled">Sessiz Kurulum: Devre Dışı (Sistem Yükleyicisi)</string>
-    <string name="settings_silent_install_desc">Sistem onayı gerektirmeden Shizuku üzerinden doğrudan kurulumu etkinleştir</string>
+    <string name="dev_word_title">Geliştiricinin Notu</string>
+    <string name="dev_word_desc">Uygulamalarıma gösterdiğiniz ilgi için teşekkürler! Bu uygulama, yüksek performans ve modern tasarıma odaklanarak Shizuku kullanıcıları için mümkün olan en iyi deneyimi sunmak amacıyla geliştirilmiştir.</string>
+    <string name="dev_bio_title">Geliştirici Hakkında</string>
+    <string name="dev_bio_desc">Android uygulama geliştirme ve modern UI/UX tasarımı alanında uzmanlaşmış bir yazılım mühendisi. Temiz kod yazmaya ve yenilikçi yazılım çözümleri üretmeye derinden tutkulu.</string>
 
-    <!-- Guest Mode Texts -->
-    <string name="guest_login_prompt_title">Giriş Gerekiyor</string>
-    <string name="guest_login_prompt_install_msg">Mağazadan uygulama indirmek ve yüklemek için lütfen GitHub hesabınızla giriş yapın.</string>
-    <string name="guest_action_login">Şimdi Giriş Yap</string>
+    <string name="github_login_title">github.com</string>
+    <string name="github_error_connection">GitHub\'a bağlanılamadı. İnternet bağlantınızı kontrol edin.</string>
+    <string name="github_error_state_mismatch">Güvenlik doğrulaması başarısız (durum uyumsuzluğu). Korumak amacıyla işlem iptal edildi.</string>
+    <string name="github_error_no_code">Yetkilendirme kodu GitHub\'dan alınamadı.</string>
 
-    <!-- Notice texts -->
-    <string name="notice_title">Kullanıcılar İçin Önemli Duyuru</string>
-    <string name="notice_message">Hoş geldiniz! Kurulumun artık başarılı ve tamamen istikrarlı olduğunu bildirmek isteriz, Shizuku ister Root ister ADB üzerinden etkinleştirilmiş olsun.\n\nMağazanın istikrarını sağlamak ve GitHub\'dan geçici yasaklamaları önlemek için kişisel hesabınızla giriş yapmanız önerilir. Herhangi bir teknik sorunla karşılaşırsanız, lütfen benimle doğrudan iletişime geçmekten çekinmeyin.\n\nShizuCoreFetch ile keyifli bir deneyim dileriz!</string>
-    <string name="notice_button">Tamam</string>
+    <string name="chooser_share_apk">APK Paylaş</string>
+    <string name="chooser_open_folder">Klasörü Aç</string>
 
-    <string name="store_github_stars_format">Repo yıldızları: %1$s</string>
-    <string name="store_real_ratings_count">Değerlendirmeler: %1$d</string>
-    <string name="store_no_real_ratings_yet">Henüz değerlendirme yok</string>
-    <string name="store_rating_success">Değerlendirme başarıyla kaydedildi</string>
-    <string name="store_rating_fail">Değerlendirme kaydedilirken bir hata oluştu</string>
-    <string name="login_prompt_rating">Uygulamayı değerlendirmek için giriş yapmalısınız</string>
-
-    <string name="delete_comment_title">Yorumu sil</string>
-    <string name="delete_comment_message">Bu yorumu kalıcı olarak silmek istediğinizden emin misiniz?</string>
-    <string name="comment_edit_success">Yorum başarıyla düzenlendi</string>
-    <string name="comment_delete_success">Yorum mağazadan silindi</string>
-    <string name="comment_protected_blacklist">Yorum GitHub\'da korunuyor. Kara listeye ekleniyor...</string>
-    <string name="comment_delete_no_permission">Bu yorumu silme izniniz yok</string>
-    <string name="comment_blacklist_success">Yorum mağazadan kalıcı olarak gizlendi</string>
-    <string name="comment_blacklist_fail">Yorum engellenemedi, tekrar deneyin</string>
-
-    <string name="store_developer_format">%1$s %2$s</string>
-    <string name="store_developer_with_category">%1$s %2$s • %3$s</string>
-    <string name="store_downloads_million">%1$sM</string>
-    <string name="store_downloads_thousand">%1$sK</string>
-    <string name="store_rating_combined">%1$s • %2$s</string>
-    <string name="store_default_rating">0.0</string>
-    <string name="store_unknown_size">Bilinmiyor</string>
-    <string name="store_ad_pending">Reklam (İnceleniyor - sadece size görünür)</string>
-    <string name="store_no_description">Kullanılabilir açıklama yok.</string>
-    <string name="store_error_generic">Bir hata oluştu</string>
-    <string name="store_download_failed">İndirme başarısız oldu</string>
-    <string name="store_downloads_count">İndirmeler: %1$s</string>
-    <string name="store_category_prefix">Kategori:</string>
+    <!-- Dynamic sections and popup -->
+    <string name="section_top_downloads">En Çok İndirilenler</string>
+    <string name="section_top_rated">En Yüksek Puanlılar</string>
+    <string name="section_trusted_apps">Güvenilir Uygulamalar (ShizuCoreFetch)</string>
+    <string name="section_all_apps">Tüm Uygulamalar</string>
+    <string name="comments_show_more">Daha fazla yorum göster (%1$d)</string>
+    <string name="comments_hide">Yorumları gizle</string>
+    <string name="ad_external_link_desc">Aşağıdaki harici bağlantıya gitmek istediğinize emin misiniz?\n\n%1$s</string>
+    <string name="action_continue">Devam Et</string>
+    <string name="action_go_to_library">Kitaplığa Git</string>
+    <string name="apk_delete_dialog_title">APK Dosyasını Sil</string>
+    <string name="apk_delete_dialog_msg">\"%1$s\" dosyasını silmek istediğinize emin misiniz? Bu işlem geri alınamaz.</string>
+    <string name="account_no_android_repos_title">Henüz Android Deposu Yok!</string>
+    <string name="account_no_android_repos_desc">Öğrenmeye devam ettiğiniz sürece hiçbir şey çok zor değildir. Android geliştirme dünyasına dalmak isterseniz, Siwane Blog (siwanex.xyz) yolculuğunuz için mükemmel bir başlangıç noktası sunar.</string>
+    <string name="action_visit_blog">Blog\'u Ziyaret Et</string>
+    <string name="hub_binder_root_warning">11\'den eski Binder sürümlerinin düzgün çalışması için kesinlikle Root izni gerekir.</string>
+    <string name="hub_silent_install_requires_shizuku">Önce Shizuku\'nun etkinleştirilmesi gerekir</string>
+    <string name="hub_guide_main_title">Shizuku Etkinleştirme Yöntemleri</string>
+    <string name="hub_guide_wireless_title">Kablosuz Hata Ayıklama (PC\'siz)</string>
+    <string name="hub_guide_wireless_step1">Cihaz ayarlarınızdan Geliştirici Seçeneklerini açın.</string>
+    <string name="hub_guide_wireless_step2">\'Kablosuz Hata Ayıklama\'yı etkinleştirin.</string>
+    <string name="hub_guide_wireless_step3">Resmi Shizuku uygulamasını açın ve \'Eşleştirme\'ye dokunun.</string>
+    <string name="hub_guide_pc_title">Bilgisayar Üzerinden (ADB)</string>
+    <string name="hub_guide_pc_step1">Geliştirici Seçeneklerinden \'USB Hata Ayıklama\'yı etkinleştirin.</string>
+    <string name="hub_guide_pc_step2">Telefonunuzu PC\'ye bağlayın ve Terminali açın.</string>
+    <string name="hub_guide_pc_step3">Etkinleştirme komutunu resmi Shizuku uygulamasından kopyalayıp terminale yapıştırın.</string>
+    <string name="hub_guide_root_title">Root İzinleri Üzerinden</string>
+    <string name="hub_guide_root_step1">Resmi Shizuku uygulamasını açın.</string>
+    <string name="hub_guide_root_step2">Root bölümünün altındaki \'Başlat\'a dokunun.</string>
+    <string name="hub_guide_root_step3">Magisk veya KernelSU aracılığıyla uygulamaya root izinleri verin.</string>
+    <string name="dev_paypal">PayPal</string>
+    <string name="share_subject">ShizuCoreFetch Uygulaması</string>
+    <string name="share_text">ShizuCoreFetch\'in en son sürümünü indirin:\nhttps://github.com/elhizazi1/ShizuCoreFetch/releases/latest</string>
+    <string name="share_chooser_title">Uygulamayı şununla paylaş...</string>
+    <string name="worker_error_prefix">Bağlantı başarısız: %1$s</string>
+    <string name="update_available">Mevcut en son sürüm: %1$s</string>
+    <string name="update_error_http">Güncellemeler kontrol edilemedi (HTTP %1$d).</string>
+    <string name="update_error_connection">Güncellemeler kontrol edilirken bağlantı hatası.</string>
+    <string name="filter_default">Varsayılan</string>
+    <string name="filter_top_rated">En Yüksek Puanlılar</string>
+    <string name="filter_top_downloads">En Çok İndirilenler</string>
+    <string name="filter_trusted">Güvenilir</string>
+    <string name="notif_channel_ops_name">Mağaza İşlemleri</string>
+    <string name="notif_channel_ops_desc">İndirme, yükleme ve kaldırma bildirimleri</string>
+    <string name="notif_channel_updates_name">Uygulama Güncellemeleri</string>
+    <string name="notif_channel_updates_desc">Yeni uygulama güncellemeleri mevcut olduğunda verilecek uyarılar</string>
+    <string name="notif_download_progress">İndiriliyor: %1$d%%</string>
+    <string name="notif_installing">Arka planda yükleniyor...</string>
+    <string name="notif_updates_available_title">Yeni Güncellemeler Mevcut</string>
+    <string name="notif_updates_available_msg">%1$d uygulamanın güncellenmesi gerekiyor</string>
+    <!-- GitHub API Explanation Dialog -->
+    <string name="github_explanation_title">Şeffaflık ve GitHub API Sınırları</string>
+    <string name="github_explanation_body">ShizuCoreFetch veri çekmek için GitHub sunucularına dayanır. Giriş yapmadan, GitHub cihazınızı saatte 60 istekle sınırlar. Giriş yapmak size saatte 5.000 istek kotası verir.\n\nUygulamanın neden yetkilendirmeye ihtiyacı var?\nYorum gönderebilmek (Sorun/Issue olarak), onlarla etkileşim kurabilmek ve herkese açık depolardan Shizuku uygulama dizinlerini çekebilmek için genel depolara (public_repo) erişim gerektiren klasik bir (OAuth App) kullanıyoruz. Verilerinizi hiçbir şekilde toplamıyoruz ve giriş yapmak, verileri verimli bir şekilde çekmek ve bırakmak için standart ve gerekli bir prosedürdür.\n\nBu sınırlamalar uygulamamız tarafından değil, GitHub\'ın kendisi tarafından dayatılmaktadır.</string>
+    <string name="github_explanation_agree">Anladım, Kabul Ediyorum</string>
+    <string name="github_explanation_contact">Geliştirici ile İletişime Geç</string>
+    <string name="details_tech_tags">Etiketler</string>
+    <string name="details_tech_min_sdk">Min SDK</string>
+    <string name="details_tech_license">Lisans</string>
+    <string name="details_tech_source">Kaynak</string>
+    <string name="details_tech_open_source">Açık Kaynak</string>
+    <string name="details_tech_privilege">Ayrıcalık</string>
+    <string name="details_tech_requires_shizuku">Shizuku Gerektirir</string>
+    <string name="dev_donate">Destek Ol &amp; Bağış Yap</string>
+    <string name="details_tech_target_sdk">Hedef SDK</string>
+    <string name="details_changelog_title">Neler Yeni</string>
+    <string name="online_status">Çevrimiçi</string>
+    <string name="offline_status">Çevrimdışı</string>
+    <string name="store_offline_message">Çevrimdışısınız. Bağlantınızı kontrol edip tekrar deneyin.</string>
+    <string name="proxy_info_title">Şeffaflık: Nasıl çalışır</string>
+    <string name="proxy_info_desc">Misafirlere hizmet etmek için dönüşümlü olarak çalışan 5 yedek jeton (token) havuzu kullanıyoruz. Çok yoğun kullanıldığında, IP\'nize bağlı 60 istek kotasına geri dönüyoruz.\n\nİpucu: Kendi devasa kotanızı (5000 istek) talep etmek ve bu sınırları atlamak için GitHub ile giriş yapın!</string>
+    <string name="settings_clear_cache">Uygulama Önbelleğini Temizle</string>
+    <string name="settings_clear_cache_ready">Şu an uygun! Önbelleği temizleyebilirsiniz.</string>
+    <string name="settings_clear_cache_wait">Sunucuları korumak için, yalnızca %1$s. dakikada kullanılabilir.</string>
+    <string name="shortcut_library">Kütüphane</string>
+    <string name="shortcut_apk_manager">APK Dosyaları</string>
+    <string name="shortcut_settings">Ayarlar</string>
 
 </resources>

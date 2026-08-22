@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="shortcut_library"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_library"
+        android:shortcutShortLabel="@string/shortcut_library">
+        <intent
+            android:action="ACTION_OPEN_LIBRARY"
+            android:targetPackage="xyz.siwane.shizucorefetch"
+            android:targetClass="xyz.siwane.shizucorefetch.MainActivity" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="shortcut_apk_manager"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_apk"
+        android:shortcutShortLabel="@string/shortcut_apk_manager">
+        <intent
+            android:action="ACTION_OPEN_APK_MANAGER"
+            android:targetPackage="xyz.siwane.shizucorefetch"
+            android:targetClass="xyz.siwane.shizucorefetch.MainActivity" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="shortcut_settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_settings"
+        android:shortcutShortLabel="@string/shortcut_settings">
+        <intent
+            android:action="ACTION_OPEN_SETTINGS"
+            android:targetPackage="xyz.siwane.shizucorefetch"
+            android:targetClass="xyz.siwane.shizucorefetch.MainActivity" />
+    </shortcut>
+
+</shortcuts>

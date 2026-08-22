@@ -1,210 +1,336 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Textos básicos -->
-    <string name="app_name">Shizu CoreFetch</string>
-    <string name="main_title">Shizu CoreFetch</string>
-    <string name="main_description">Uma plataforma centralizada avançada para buscar e gerenciar aplicativos que requerem permissões principais (core).</string>
-    <string name="main_login_github">Entrar com GitHub</string>
-    <string name="main_boredom_title">Janela do Desenvolvedor</string>
-    <string name="main_boredom_loading">Carregando dados...</string>
-    <string name="main_boredom_initial_quote">Código limpo sempre se lê como uma prosa bem escrita. - Robert C. Martin</string>
-    <string name="store_title">Repositório Shizu</string>
-    <string name="store_btn_install">Instalar</string>
-    <string name="store_developer_prefix">Por: </string>
-    <string name="store_shizuku_not_running">O motor Shizuku não está em execução. Por favor, inicie-o primeiro.</string>
-    <string name="store_shizuku_permission_denied">A permissão do Shizuku é necessária para operações principais.</string>
-    <string name="store_shizuku_permission_granted">Motor Shizuku vinculado com sucesso.</string>
-    <string name="store_fetch_loading">Buscando aplicativos da rede...</string>
-    <string name="store_fetch_failed_parse">Falha ao analisar dados</string>
-    <string name="store_fetch_error_network">Erro de rede:</string>
-    <string name="installer_no_permission">Sem permissão do Shizuku para instalação.</string>
-    <string name="installer_success">Instalado com sucesso!</string>
-    <string name="installer_fail">Falha na instalação: %1$s</string>
-    <string name="installer_error">Ocorreu um erro: %1$s</string>
-    <string name="downloader_searching">Buscando o lançamento mais recente...</string>
-    <string name="downloader_no_apk">Nenhum APK encontrado neste repositório.</string>
-    <string name="downloader_downloading">Baixando %1$s...</string>
-    <string name="downloader_success">Download concluído, iniciando instalação silenciosa...</string>
-    <string name="downloader_fail">Falha no download: %1$s</string>
-    <string name="store_requesting_permission">Solicitando permissão do Shizuku...</string>
-    <string name="install_button">Instalar</string>
-    <string name="open_button">Abrir</string>
-    <string name="store_cannot_open">Não é possível abrir este aplicativo</string>
-    <string name="tools_app_name">Nome do Aplicativo</string>
-    <string name="tools_app_developer">Nome do Desenvolvedor</string>
-    <string name="tools_app_desc">Uma breve descrição do aplicativo exibindo seus principais recursos de forma clara e organizada.</string>
-    <string name="installing_button">Instalando…</string>
-    <string name="uninstall_button">Desinstalar</string>
-    <string name="update_button">Atualizar</string>
-    <string name="app_description_title">Sobre este aplicativo</string>
-    <string name="app_versions_title">Versões</string>
-    <string name="uninstall_success">Desinstalado com sucesso</string>
-    <string name="uninstall_fail">Falha ao desinstalar: %1$s</string>
-    <string name="store_search_hint">Pesquisar aplicativos…</string>
-    <string name="home_featured">Destaque</string>
-    <string name="home_all_apps">Todos os Aplicativos</string>
-    <string name="login_guest">Navegar como Visitante</string>
-    <string name="nav_home">Início</string>
+    <!-- App & Navigation -->
+    <string name="app_name">ShizuCoreFetch</string>
+    <string name="store_name">CoreFetch</string>
     <string name="nav_store">Loja</string>
-    <string name="nav_account">Conta</string>
+    <string name="nav_shizuku">Shizuku</string>
+    <string name="nav_library">Biblioteca</string>
     <string name="nav_settings">Configurações</string>
-    <string name="account_loading">Carregando…</string>
-    <string name="account_guest_name">Visitante</string>
-    <string name="account_guest_email">Faça login para acessar todos os recursos</string>
-    <string name="account_installed_apps">Aplicativos Instalados</string>
-    <string name="account_no_installed_apps">Nenhum aplicativo instalado da loja ainda.</string>
-    <string name="account_updates_available">Atualizações Disponíveis</string>
-    <string name="account_no_updates">Todos os seus aplicativos estão atualizados.</string>
-    <string name="account_logout">Sair</string>
-    <string name="screenshots_title">Capturas de tela</string>
-    <string name="preview_loading_text">Carregando dados...</string>
 
-    <!-- Textos de configurações -->
-    <string name="settings_theme_title">Tema</string>
+    <string name="search_placeholder">Pesquisar aplicativos e módulos...</string>
+
+    <!-- Shizuku Status -->
+    <string name="shizuku_active">Ativo</string>
+    <string name="shizuku_stopped">Parado</string>
+    <string name="shizuku_needed">Necessário</string>
+    <string name="shizuku_granted">Concedido</string>
+    <string name="shizuku_label">Shizuku</string>
+    <string name="shizucorefetch_label">ShizuCoreFetch</string>
+
+    <!-- Authentication -->
+    <string name="github_login">Entrar</string>
+    <string name="github_logout">Sair</string>
+
+    <!-- Settings Labels -->
+    <string name="settings_theme_mode">Modo do Tema</string>
     <string name="theme_light">Claro</string>
-    <string name="theme_system">Sistema</string>
     <string name="theme_dark">Escuro</string>
+    <string name="theme_system">Sistema</string>
+    <string name="settings_custom_hex">Hex Personalizado</string>
+    <string name="settings_ui_scale">Escala da Interface</string>
+    <string name="settings_about">Sobre o App</string>
 
-    <string name="settings_lang_title">Idioma</string>
-    <string name="lang_en">English</string>
-    <string name="lang_ar">العربية</string>
-    <string name="lang_fr">Français</string>
-    <string name="lang_es">Español</string>
-    <string name="lang_pt">Português</string>
-    <string name="lang_ru">Русский</string>
-    <string name="lang_hi">हिन्दी</string>
-    <string name="lang_zh">中文</string>
-    <string name="lang_ja">日本語</string> 
-    <string name="lang_cs">Čeština</string>
-    <string name="lang_tr">Türkçe</string>
-    <string name="settings_contributors">Colaboradores de Tradução</string>
+    <!-- App Details (Base) -->
+    <string name="details_install">Instalar</string>
+    <string name="details_download">Baixar</string>
+    <string name="details_github_link">GitHub</string>
+    <string name="app_details_title">Detalhes do App</string>
+    <string name="stats_stars">Estrelas</string>
+    <string name="stats_downloads">Downloads</string>
+    <string name="stats_category">Categoria</string>
+    <string name="stats_size">Tamanho</string>
+    <string name="btn_github">GitHub</string>
+    <string name="overview_title">Visão Geral</string>
+    <string name="recent_releases_title">Lançamentos</string>
+    <string name="featured_badge">DESTAQUE</string>
+    <string name="install_service">Serviço de Instalação</string>
+    <string name="empty_no_repos">Nenhum repositório encontrado</string>
+    <string name="retry">Tentar Novamente</string>
 
-    <string name="settings_notif_title">Notificações</string>
-    
-    <string name="settings_permissions_title">Permissões</string>
-    <string name="settings_perm_apps">Informações de Apps Instalados</string>
-    <string name="settings_perm_shizuku">Permissão Shizuku</string>
+    <!-- Shizuku Hub -->
+    <string name="shizuku_permission_req_title">Permissão do Shizuku Necessária</string>
+    <string name="shizuku_permission_req_desc">Este aplicativo requer privilégios elevados de sistema via Shizuku para funcionar corretamente e instalar módulos.</string>
+    <string name="hub_status_running">Serviço Shizuku em Execução</string>
+    <string name="hub_status_stopped">Serviço Shizuku Parado</string>
+    <string name="hub_permission_label">Status da Permissão</string>
+    <string name="hub_binder_label">Interface Binder</string>
+    <string name="hub_guide_title">Guia de Depuração Sem Fio</string>
+    <string name="hub_guide_step1"> Ative as Opções do Desenvolvedor nas configurações do seu dispositivo Android.</string>
+    <string name="hub_guide_step2"> Ative a Depuração Sem Fio dentro das Opções do Desenvolvedor.</string>
+    <string name="hub_guide_step3"> Abra o app Shizuku e pareie seu dispositivo usando a Depuração Sem Fio.</string>
+    <string name="refresh">Atualizar</string>
 
-    <string name="settings_about_store">Sobre a Loja</string>
-    <string name="settings_privacy">Política de Privacidade</string>
-    <string name="settings_terms">Termos de Uso</string>
-    <string name="settings_version">Versão 1.5.0</string>
-    <string name="settings_developer">Por Jamal El Hizazi</string>
+    <!-- Library -->
+    <string name="library_title">Biblioteca Salva</string>
+    <string name="library_empty_title">Sua biblioteca está vazia</string>
+    <string name="library_empty_desc">Salve suas ferramentas e repositórios Shizuku favoritos da Loja para acessá-los de forma rápida e fácil aqui.</string>
 
-    <string name="dialog_theme_title">Escolher Tema</string>
-    <string name="dialog_lang_title">Escolher Idioma</string>
+    <!-- Settings Explanations -->
+    <string name="settings_appearance">Aparência e Tema Visual</string>
+    <string name="settings_preset_color">Cor Principal do Tema</string>
+    <string name="settings_gas_title">API Worker e Balanceador de Carga</string>
+    <string name="settings_gas_endpoint">Endpoint do Cloudflare Worker (Conectado ao GAS):</string>
+    <string name="settings_gas_active">Online</string>
+    <string name="settings_gas_inactive">Offline</string>
+    <string name="settings_gas_checking">Verificando…</string>
+    <string name="settings_quota_title">Cota da API do GitHub</string>
+    <string name="settings_quota_loading">Carregando dados reais de cota…</string>
+    <string name="settings_quota_used">%1$d / %2$d usados</string>
+    <string name="settings_quota_remaining">%1$d restantes</string>
+    <string name="settings_quota_reset">Redefine às %1$s</string>
+    <string name="github_auth_title">Autenticação de Conta do GitHub</string>
+    <string name="github_auth_desc">Vincule sua conta do GitHub ou Token de Acesso Pessoal (PAT) para ignorar limites de API e explorar repositórios livremente.</string>
+    <string name="about_version">ShizuCoreFetch v%1$s</string>
+    <string name="about_package">xyz.siwane.shizucorefetch</string>
+    <string name="theme_mode_title">Modo de Exibição</string>
+    <string name="main_theme_color_title">Paleta de Cores</string>
 
-    <string name="toast_shizuku_granted">A permissão do Shizuku já foi concedida</string>
-    <string name="toast_shizuku_not_running">O Shizuku não está em execução, por favor inicie-o</string>
-    <string name="toast_shizuku_error">Erro: Biblioteca Shizuku não disponível</string>
-    
-    <string name="settings_category_general">Geral</string>
-    <string name="settings_category_about">Sobre</string>
+    <!-- Colors -->
+    <string name="color_amethyst">Ametista</string>
+    <string name="color_emerald">Esmeralda</string>
+    <string name="color_sapphire">Safira</string>
+    <string name="color_siwane">Siwane</string>
+    <string name="color_crimson">Carmesim</string>
+    <string name="color_sunset">Pôr do Sol</string>
 
-<string name="notif_channel_ops_name">Operações da loja</string>
-<string name="notif_channel_ops_desc">Notificações para downloads em segundo plano e instalações técnicas.</string>
-<string name="notif_channel_updates_name">Atualizações disponíveis</string>
-<string name="notif_channel_updates_desc">Alertas quando novas versões estão disponíveis para seus aplicativos instalados.</string>
-<string name="notif_updates_available_title">Atualizações encontradas</string>
-<string name="notif_updates_available_msg">Há %1$d atualizações de aplicativos prontas para processamento.</string>
+    <!-- UI Controls -->
+    <string name="btn_dynamic_m3">M3 Dinâmico</string>
+    <string name="btn_custom_hex">Hex Personalizado</string>
+    <string name="ui_scale_title">Escala de Interface e Fontes</string>
+    <string name="ui_scale_desc_text">Ajuste a escala dos elementos da interface e fontes para um conforto visual ideal e melhor usabilidade.</string>
+    <string name="settings_language">Idioma do Aplicativo</string>
 
-<string name="nav_wallet">Carteira de armazenamento local</string>
-<string name="wallet_empty">Nenhum arquivo de aplicativo armazenado atualmente no cache local.</string>
-<string name="wallet_delete_title">Confirmar exclusão</string>
-<string name="wallet_delete_msg">Tem certeza de que deseja remover permanentemente o pacote de instalação de %1$s?</string>
-<string name="wallet_delete_success">Pacote removido com sucesso.</string>
-<string name="wallet_share_title">Compartilhar pacote de aplicativo</string>
-<string name="wallet_no_editor_found">Nenhum visualizador ou editor de pacotes compatível encontrado neste dispositivo.</string>
-<string name="wallet_error_action">Falha ao iniciar a operação de arquivo solicitada.</string>
-<string name="wallet_btn_delete">Excluir</string>
-<string name="wallet_btn_share">Compartilhar</string>
-<string name="wallet_btn_open">Abrir externo</string>
-<string name="dialog_cancel">Cancelar</string>
-<string name="dialog_confirm">Confirmar</string>
+    <!-- Developer & Support -->
+    <string name="dev_support_title">Desenvolvedor e Suporte</string>
+    <string name="dev_name">Jamal El Hizazi</string>
+    <string name="dev_website">siwane.xyz - Site Oficial</string>
+    <string name="dev_github">GitHub - elhizazi1</string>
+    <string name="dev_email">jamal@elhizazi.me</string>
+    <string name="about_app_title">Sobre o Aplicativo</string>
+    <string name="about_privacy">Política de Privacidade</string>
+    <string name="about_terms">Termos de Uso</string>
+    <string name="about_share">Compartilhar o App</string>
+    <string name="about_update">Verificar Atualizações</string>
 
-<string name="store_reviews_title">Avaliações e comentários</string>
-<string name="store_reviews_empty">Seja o primeiro a avaliar este aplicativo! O sistema de comentários está sendo preparado.</string>
-<string name="store_write_review">Escrever uma avaliação</string>
-<string name="store_developer_info">Informações do desenvolvedor</string>
-<string name="store_rating_count_format">%1$s avaliação</string>
-<string name="store_no_ratings_yet">Ainda não há avaliações</string>
-<string name="store_comment_dev">O sistema de comentários está atualmente em desenvolvimento</string>
-<string name="store_dev_email">E-mail:</string>
-<string name="store_dev_website">Site oficial</string>
-<string name="store_dev_portfolio">Portfólio</string>
+    <!-- For Developers -->
+    <string name="for_developers_title">Para Desenvolvedores</string>
+    <string name="for_developers_desc">Adicione esses tópicos exatos ao seu repositório do GitHub para que seu app Shizuku seja indexado automaticamente em nossa Loja:</string>
+    <string name="topic_shizuku">shizuku</string>
+    <string name="topic_shizucorefetch">shizucorefetch</string>
 
-<string name="store_developer_message_title">Mensagem do desenvolvedor</string>
-<string name="store_show_all_versions">Mostrar todas as versões</string>
-<string name="store_hide_versions">Ocultar versões</string>
+    <!-- Custom Hex Popup -->
+    <string name="custom_hex_title">Cor do Tema Personalizado</string>
+    <string name="custom_hex_label">Código HEX (ex. #FF0055)</string>
+    <string name="custom_hex_apply">Aplicar Cor</string>
+    <string name="custom_hex_invalid">Código HEX inválido</string>
+    <string name="color_picker_hint">Toque ou arraste em qualquer lugar da roda de cores para escolher sua cor perfeitamente.</string>
 
-<string name="store_visit_website">Visitar site oficial</string>
-<string name="store_calculating_size">Calculando...</string>
+    <!-- Store Categories -->
+    <string name="cat_all">Tudo</string>
+    <string name="action_retry">Tentar Novamente</string>
+    <string name="store_no_results">Nenhum app encontrado</string>
+    <string name="cat_system">Sistema</string>
+    <string name="cat_utility">Utilidades</string>
+    <string name="cat_development">Desenvolvimento</string>
+    <string name="cat_customization">Personalização</string>
 
-<string name="empty_comments_message">Ainda não há comentários. Seja o primeiro a comentar!</string>
-<string name="hide_comments_previous">Ocultar comentários anteriores</string>
-<string name="show_remaining_comments">Mostrar comentários restantes (%1$d)</string>
-<string name="comment_posted_success">Comentário adicionado com sucesso!</string>
-<string name="comment_post_failed">Falha ao publicar o comentário</string>
-<string name="login_prompt_comments">Faça login com sua conta do GitHub para participar da discussão.</string>
-<string name="comment_reply_button">Responder</string>
-<string name="comment_edit_button">Editar</string>
-<string name="comment_delete_button">Excluir</string>
-<string name="comment_input_hint">Escreva seu comentário aqui...</string>
-<string name="edit_comment_toast_format">Uma janela será aberta para editar o comentário nº %1$d</string>
+    <!-- App Details Actions & Sections -->
+    <string name="action_open">Abrir</string>
+    <string name="action_update">Atualizar</string>
+    <string name="action_uninstall">Desinstalar</string>
+    <string name="action_website">Site</string>
+    <string name="app_description_title">Sobre este app</string>
+    <string name="version_history_title">Histórico de versões</string>
+    <string name="version_current_badge">Atual</string>
+    <string name="app_screenshots">Capturas de tela</string>
 
-<string name="comment_react_button">Reagir</string>
-<string name="dialog_choose_reaction">Escolha uma reação</string>
-<string name="reaction_added_success">Reação adicionada!</string>
-<string name="reaction_add_failed">Falha ao adicionar a reação</string>
+    <!-- Rating and Comments -->
+    <string name="app_rating_title">Avalie este app</string>
+    <string name="app_rating_desc">Diga aos outros o que você acha</string>
+    <string name="comments_title">Avaliações e comentários</string>
+    <string name="write_comment_hint">Escreva um comentário...</string>
+    <string name="post_comment">Publicar</string>
 
-<string name="dev_profile_title">Perfil do desenvolvedor</string>
-<string name="dev_profile_apps_title">Aplicativos do desenvolvedor</string>
-<string name="store_dev_email2">E-mail</string>
+    <!-- Ads and Suggestions -->
+    <string name="ad_label">Patrocinado</string>
+    <string name="popular_apps_title">Apps Populares</string>
 
-<string name="store_trending_apps">Aplicativos em destaque</string>
-<string name="ad_label">Anúncio</string>
+    <!-- GitHub Authentication -->
+    <string name="github_sheet_title">Autenticação do GitHub</string>
+    <string name="github_sheet_desc">Faça login para aumentar seu limite da API para 5.000 requisições por hora.</string>
+    <string name="github_oauth_btn">Entrar com GitHub</string>
+    <string name="github_token_label">Token de Acesso Pessoal (PAT)</string>
+    <string name="github_token_hint">ghp_xxxxxxxxxxxx</string>
+    <string name="github_token_btn">Entrar com Token</string>
+    <string name="github_or_divider">OU</string>
+    <string name="github_logged_in_as">Logado como</string>
+    <string name="github_rate_limit">Limite da API: 5000 / 5000</string>
 
-<string name="settings_silent_install_title">Instalação silenciosa</string>
-<string name="silent_install_enabled">Instalação silenciosa: ativada (Shizuku)</string>
-<string name="silent_install_disabled">Instalação silenciosa: desativada (instalação do sistema)</string>
-<string name="settings_silent_install_desc">Ativar a instalação direta via Shizuku sem necessidade de confirmação do sistema</string>
+    <!-- Account & Token Status -->
+    <string name="token_status_active">Ativo</string>
+    <string name="token_status_inactive">Inativo</string>
+    <string name="btn_delete_token">Remover Token</string>
+    <string name="btn_my_account">Minha Conta</string>
+    <string name="github_token_status">Status do Token:</string>
+    <string name="account_details_brief">Gerencie seu perfil e repositórios.</string>
 
-<string name="guest_login_prompt_title">Login necessário</string>
-<string name="guest_login_prompt_install_msg">Faça login com sua conta do GitHub para baixar e instalar aplicativos da loja.</string>
-<string name="guest_action_login">Entrar agora</string>
+    <!-- My Account Screen -->
+    <string name="account_title">Meu Perfil</string>
+    <string name="account_repos">Repositórios</string>
+    <string name="account_followers">Seguidores</string>
+    <string name="account_following">Seguindo</string>
+    <string name="account_section_repos">Repositórios Públicos</string>
+    <string name="btn_view_github">Ver no GitHub</string>
+    <string name="already_on_account">Você já está visualizando o perfil da sua conta.</string>
 
-<string name="notice_title">Aviso importante para os usuários</string>
-<string name="notice_message">Bem-vindo! Gostaríamos de informar que a instalação agora é bem-sucedida e totalmente estável, seja o Shizuku ativado via Root ou ADB.\n\nPara garantir a estabilidade da loja e evitar bloqueios temporários do GitHub, é recomendável fazer o login com sua conta pessoal. Se você encontrar algum erro técnico, não hesite em me contatar diretamente.\n\nDesejamos a você uma experiência agradável com o ShizuCoreFetch!</string>
-<string name="notice_button">OK</string>
+    <!-- Library & APK Manager -->
+    <string name="lib_updates_title">Atualizações</string>
+    <string name="lib_installed_title">Instalados</string>
+    <string name="lib_bookmarks_title">Salvos</string>
+    <string name="apk_manager_title">APKs Baixados</string>
+    <string name="apk_manager_desc">Gerencie os arquivos de instalação baixados.</string>
+    <string name="apk_manager_empty">Ainda não há arquivos APK baixados.</string>
+    <string name="apk_manager_open_failed">Não foi possível abrir o app.</string>
+    <string name="apk_manager_install_success">Instalado com sucesso.</string>
+    <string name="apk_manager_delete_title">Excluir arquivo</string>
+    <string name="apk_manager_delete_confirm">Excluir \"%1$s\" deste dispositivo? Isso não pode ser desfeito.</string>
+    <string name="apk_manager_delete_failed">Não foi possível excluir o arquivo.</string>
+    <string name="apk_manager_open">Abrir</string>
+    <string name="apk_manager_install">Instalar</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="toast_installed">Instalado com sucesso.</string>
+    <string name="toast_uninstalled">Desinstalado com sucesso.</string>
+    <string name="toast_updated">Atualizado com sucesso.</string>
+    <string name="toast_opened">Aberto.</string>
+    <string name="store_cannot_open">Não foi possível abrir o app.</string>
+    <string name="store_download_failed">Nenhum link de download válido está disponível para este app no momento.</string>
+    <string name="store_error_generic">Algo deu errado. Por favor, tente novamente.</string>
+    <string name="apk_path">Caminho: Download/shizucorefetch</string>
+    <string name="apk_action_delete">Excluir</string>
+    <string name="action_back">Voltar</string>
+    <string name="action_share">Compartilhar</string>
+    <string name="action_open_folder">Abrir pasta</string>
+    <string name="error_open_folder">Não foi possível abrir o gerenciador de arquivos.</string>
+    <string name="toast_download_complete">Download concluído: %1$s</string>
+    <string name="toast_download_failed">Falha no download: %1$s</string>
 
-    <string name="store_github_stars_format">Estrelas do repo: %1$s</string>
-    <string name="store_real_ratings_count">Avaliações: %1$d</string>
-    <string name="store_no_real_ratings_yet">Ainda sem avaliações</string>
-    <string name="store_rating_success">Avaliação salva com sucesso</string>
-    <string name="store_rating_fail">Erro ao salvar a avaliação</string>
-    <string name="login_prompt_rating">Você deve fazer login para avaliar o aplicativo</string>
+    <string name="hub_action_check_permission">Verificar Permissão</string>
+    <string name="hub_silent_install_title">Método de Instalação</string>
+    <string name="hub_silent_install_enabled">Instalação Silenciosa: Ativada (Shizuku)</string>
+    <string name="hub_silent_install_disabled">Instalação Silenciosa: Desativada (Sistema)</string>
+    <string name="hub_warning_permissions">Garanta que todas as permissões necessárias estejam concedidas nas configurações do sistema para garantir que o Shizuku e a instalação silenciosa funcionem perfeitamente.</string>
+    <string name="hub_action_open_settings">Configurações do App</string>
 
-    <string name="delete_comment_title">Excluir comentário</string>
-    <string name="delete_comment_message">Tem certeza de que deseja excluir este comentário permanentemente?</string>
-    <string name="comment_edit_success">Comentário editado com sucesso</string>
-    <string name="comment_delete_success">Comentário excluído da loja</string>
-    <string name="comment_protected_blacklist">Comentário protegido no GitHub. Adicionando à lista negra...</string>
-    <string name="comment_delete_no_permission">Você não tem permissão para excluir este comentário</string>
-    <string name="comment_blacklist_success">Comentário oculto permanentemente da loja</string>
-    <string name="comment_blacklist_fail">Falha ao bloquear o comentário, tente novamente</string>
+    <string name="dev_profile_title">Perfil do Desenvolvedor</string>
+    <string name="dev_role_subtitle">Desenvolvedor Android e Designer UI/UX</string>
+    <string name="dev_info_title">Informações de Contato</string>
+    <string name="dev_email_label">Email</string>
+    <string name="dev_website_label">Site</string>
+    <string name="dev_portfolio_label">Portfólio</string>
+    <string name="dev_social_title">Redes Sociais</string>
+    <string name="dev_apps_title">Apps do Desenvolvedor</string>
 
-    <string name="store_developer_format">%1$s %2$s</string>
-    <string name="store_developer_with_category">%1$s %2$s • %3$s</string>
-    <string name="store_downloads_million">%1$sM</string>
-    <string name="store_downloads_thousand">%1$sK</string>
-    <string name="store_rating_combined">%1$s • %2$s</string>
-    <string name="store_default_rating">0.0</string>
-    <string name="store_unknown_size">Desconhecido</string>
-    <string name="store_ad_pending">Anúncio (Revisão pendente - visível apenas para você)</string>
-    <string name="store_no_description">Nenhuma descrição disponível.</string>
-    <string name="store_error_generic">Ocorreu um erro</string>
-    <string name="store_download_failed">Falha no download</string>
-    <string name="store_downloads_count">Downloads: %1$s</string>
-    <string name="store_category_prefix">Categoria:</string>
+    <string name="rating_login_warning">Faça login com o GitHub para avaliar este app.</string>
+    <string name="comments_login_warning">Faça login com o GitHub para deixar um comentário.</string>
+    <string name="comments_empty">Ainda não há comentários. Seja o primeiro a comentar!</string>
+    <string name="comment_reply">Responder</string>
+    <string name="comment_delete">Excluir</string>
+    <string name="comment_edit">Editar</string>
+    <string name="comment_save">Salvar</string>
+    <string name="comment_cancel">Cancelar</string>
+    <string name="comment_admin_hide">Ocultar da loja</string>
+    <string name="comment_admin_unhide">Exibir</string>
+    <string name="comment_hidden_badge">Oculto (apenas admin)</string>
+
+    <string name="dev_word_title">Nota do Desenvolvedor</string>
+    <string name="dev_word_desc">Obrigado pelo seu interesse em meus aplicativos! Este app foi criado para entregar a melhor experiência possível para usuários do Shizuku, com forte foco em alto desempenho e design moderno.</string>
+    <string name="dev_bio_title">Sobre o Desenvolvedor</string>
+    <string name="dev_bio_desc">Um engenheiro de software especializado no desenvolvimento de aplicativos Android e design UI/UX moderno. Profundamente apaixonado por escrever códigos limpos e criar soluções de software inovadoras.</string>
+
+    <string name="github_login_title">github.com</string>
+    <string name="github_error_connection">Falha ao conectar-se ao GitHub. Verifique sua conexão com a internet.</string>
+    <string name="github_error_state_mismatch">A verificação de segurança falhou (incompatibilidade de estado). Operação cancelada para sua proteção.</string>
+    <string name="github_error_no_code">O código de autorização não foi recebido do GitHub.</string>
+
+    <string name="chooser_share_apk">Compartilhar APK</string>
+    <string name="chooser_open_folder">Abrir Pasta</string>
+
+    <!-- Dynamic sections and popup -->
+    <string name="section_top_downloads">Mais Baixados</string>
+    <string name="section_top_rated">Mais Bem Avaliados</string>
+    <string name="section_trusted_apps">Apps de Confiança (ShizuCoreFetch)</string>
+    <string name="section_all_apps">Todos os Aplicativos</string>
+    <string name="comments_show_more">Mostrar mais comentários (%1$d)</string>
+    <string name="comments_hide">Ocultar comentários</string>
+    <string name="ad_external_link_desc">Tem certeza que deseja navegar para o seguinte link externo?\n\n%1$s</string>
+    <string name="action_continue">Continuar</string>
+    <string name="action_go_to_library">Ir para a Biblioteca</string>
+    <string name="apk_delete_dialog_title">Excluir Arquivo APK</string>
+    <string name="apk_delete_dialog_msg">Tem certeza que deseja excluir \"%1$s\"? Esta ação não pode ser desfeita.</string>
+    <string name="account_no_android_repos_title">Ainda não há repositórios Android!</string>
+    <string name="account_no_android_repos_desc">Nada é difícil demais quando você continua aprendendo. Se você quer mergulhar na criatividade do desenvolvimento Android, o Blog Siwane (siwanex.xyz) oferece um ponto de partida perfeito para sua jornada.</string>
+    <string name="action_visit_blog">Visitar Blog</string>
+    <string name="hub_binder_root_warning">As versões do Binder anteriores à 11 exigem estritamente permissões Root para funcionarem corretamente.</string>
+    <string name="hub_silent_install_requires_shizuku">Requer que o Shizuku seja ativado primeiro</string>
+    <string name="hub_guide_main_title">Métodos de Ativação do Shizuku</string>
+    <string name="hub_guide_wireless_title">Depuração Sem Fio (Sem PC)</string>
+    <string name="hub_guide_wireless_step1">Abra as Opções do Desenvolvedor nas configurações do dispositivo.</string>
+    <string name="hub_guide_wireless_step2">Ative a \'Depuração Sem Fio\'.</string>
+    <string name="hub_guide_wireless_step3">Abra o app oficial do Shizuku e toque em \'Parear\'.</string>
+    <string name="hub_guide_pc_title">Via Computador (ADB)</string>
+    <string name="hub_guide_pc_step1">Ative a \'Depuração USB\' nas Opções do Desenvolvedor.</string>
+    <string name="hub_guide_pc_step2">Conecte seu celular ao PC e abra o Terminal.</string>
+    <string name="hub_guide_pc_step3">Copie o comando de ativação do app oficial do Shizuku e cole-o no terminal.</string>
+    <string name="hub_guide_root_title">Via Permissões Root</string>
+    <string name="hub_guide_root_step1">Abra o aplicativo oficial do Shizuku.</string>
+    <string name="hub_guide_root_step2">Na seção Root, toque em \'Iniciar\'.</string>
+    <string name="hub_guide_root_step3">Conceda permissões root ao app via Magisk ou KernelSU.</string>
+    <string name="dev_paypal">PayPal</string>
+    <string name="share_subject">Aplicativo ShizuCoreFetch</string>
+    <string name="share_text">Baixe a versão mais recente do ShizuCoreFetch:\nhttps://github.com/elhizazi1/ShizuCoreFetch/releases/latest</string>
+    <string name="share_chooser_title">Compartilhar App via...</string>
+    <string name="worker_error_prefix">Falha na conexão: %1$s</string>
+    <string name="update_available">Última versão disponível: %1$s</string>
+    <string name="update_error_http">Falha ao buscar atualizações (HTTP %1$d).</string>
+    <string name="update_error_connection">Erro de conexão ao buscar atualizações.</string>
+    <string name="filter_default">Padrão</string>
+    <string name="filter_top_rated">Bem Avaliados</string>
+    <string name="filter_top_downloads">Mais Baixados</string>
+    <string name="filter_trusted">Confiáveis</string>
+    <string name="notif_channel_ops_name">Operações da Loja</string>
+    <string name="notif_channel_ops_desc">Notificações de download, instalação e desinstalação</string>
+    <string name="notif_channel_updates_name">Atualizações de Apps</string>
+    <string name="notif_channel_updates_desc">Alertas quando houver novas atualizações de apps disponíveis</string>
+    <string name="notif_download_progress">Baixando: %1$d%%</string>
+    <string name="notif_installing">Instalando em segundo plano...</string>
+    <string name="notif_updates_available_title">Novas Atualizações Disponíveis</string>
+    <string name="notif_updates_available_msg">%1$d aplicativos precisam ser atualizados</string>
+    <!-- GitHub API Explanation Dialog -->
+    <string name="github_explanation_title">Transparência e Limites da API do GitHub</string>
+    <string name="github_explanation_body">O ShizuCoreFetch depende dos servidores do GitHub para buscar dados. Sem fazer login, o GitHub limita seu dispositivo a 60 requisições por hora. Fazer login lhe concede uma cota de 5.000 requisições por hora.\n\nPor que o app precisa de autorização?\nNós usamos uma clássica (OAuth App) que requer acesso a repositórios públicos (public_repo) para ser capaz de publicar comentários (como Problemas/Issues), interagir com eles e buscar os índices de apps Shizuku de repositórios públicos. Não coletamos seus dados de forma alguma, e o login é um procedimento padrão e necessário para buscar e enviar dados eficientemente.\n\nEssas limitações são impostas pelo próprio GitHub, não pelo nosso app.</string>
+    <string name="github_explanation_agree">Entendi, Eu Concordo</string>
+    <string name="github_explanation_contact">Contatar o Desenvolvedor</string>
+    <string name="details_tech_tags">Tags</string>
+    <string name="details_tech_min_sdk">SDK Mín</string>
+    <string name="details_tech_license">Licença</string>
+    <string name="details_tech_source">Código Fonte</string>
+    <string name="details_tech_open_source">Código Aberto</string>
+    <string name="details_tech_privilege">Privilégio</string>
+    <string name="details_tech_requires_shizuku">Requer Shizuku</string>
+    <string name="dev_donate">Apoiar e Doar</string>
+    <string name="details_tech_target_sdk">SDK Alvo</string>
+    <string name="details_changelog_title">O Que Há de Novo</string>
+    <string name="online_status">Online</string>
+    <string name="offline_status">Offline</string>
+    <string name="store_offline_message">Você está offline. Verifique sua conexão e tente novamente.</string>
+    <string name="proxy_info_title">Transparência: Como Funciona</string>
+    <string name="proxy_info_desc">Usamos um pool de 5 tokens de backup que rotacionam para servir os convidados. Se for muito usado, nós regredimos para a cota de 60 requisições vinculada ao seu IP.\n\nDica: Faça login com o GitHub para reivindicar sua própria cota massiva (5000 requisições) e contornar esses limites!</string>
+    <string name="settings_clear_cache">Limpar Cache do App</string>
+    <string name="settings_clear_cache_ready">Disponível agora! Você pode limpar o cache.</string>
+    <string name="settings_clear_cache_wait">Para proteger os servidores, disponível apenas no minuto %1$s.</string>
+    <string name="shortcut_library">Biblioteca</string>
+    <string name="shortcut_apk_manager">Arquivos APK</string>
+    <string name="shortcut_settings">Configurações</string>
 
 </resources>

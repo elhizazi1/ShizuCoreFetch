@@ -1,69 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorOnPrimary">@color/colorOnPrimary</item>
-        <item name="colorPrimaryContainer">@color/colorPrimary</item>
-        <item name="colorOnPrimaryContainer">@color/colorOnPrimary</item>
-        <item name="colorSecondary">@color/colorPrimary</item>
-        <item name="colorSecondaryContainer">#3380CBC4</item>
-        <item name="colorOnSecondaryContainer">@color/colorPrimary</item>
-
-        <item name="android:colorBackground">@color/colorBackground</item>
-        <item name="colorSurface">@color/colorSurface</item>
-        <item name="colorOnSurface">@color/colorOnSurface</item>
-        <item name="android:textColorPrimary">@color/colorOnSurface</item>
-        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
-
-        <item name="android:statusBarColor">@color/colorBackground</item>
-        <item name="android:navigationBarColor">@color/colorBackground</item>
-        <item name="android:windowLightStatusBar">false</item>
-        <item name="android:windowLightNavigationBar">false</item>
-        <item name="android:listDivider">@color/colorDivider</item>
-
-        <item name="bottomNavigationStyle">@style/Widget.Custom.BottomNavigationView</item>
-        <item name="itemActiveIndicatorStyle">@style/Widget.Custom.ActiveIndicator</item>
-
-        <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.Dialog</item>
-    </style>
-
-    <style name="Widget.Custom.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
-        <item name="android:background">@android:color/transparent</item>
-        <item name="itemIconSize">22dp</item>
-        <item name="labelVisibilityMode">labeled</item>
-        <item name="itemTextAppearanceActive">@style/TextAppearance.Custom.NavTextActive</item>
-        <item name="itemTextAppearanceInactive">@style/TextAppearance.Custom.NavTextInactive</item>
-        <item name="itemIconTint">@color/nav_item_color</item>
-        <item name="itemTextColor">@color/nav_item_color</item>
-    </style>
-
-    <style name="Widget.Custom.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">#33FFFFFF</item> 
-        <item name="marginHorizontal">16dp</item>
-        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.Full</item>
-    </style>
-
-    <style name="TextAppearance.Custom.NavTextActive" parent="TextAppearance.Material3.LabelMedium">
-        <item name="android:textSize">11sp</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="TextAppearance.Custom.NavTextInactive" parent="TextAppearance.Material3.LabelMedium">
-        <item name="android:textSize">10sp</item>
-    </style>
-
-    <style name="ThemeOverlay.App.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
-        <item name="elevationOverlayEnabled">false</item>
-        <item name="alertDialogStyle">@style/Widget.App.Dialog</item>
-    </style>
-
-    <style name="Widget.App.Dialog" parent="MaterialAlertDialog.Material3">
-        <item name="backgroundTint">@color/colorBackground</item>
-        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.App.Dialog</item>
-    </style>
-
-    <style name="ShapeAppearance.App.Dialog" parent="">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">8dp</item>
+    <style name="Theme.AppSplash" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">#121212</item>
+        <item name="android:windowSplashScreenBackground">#121212</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_icon_padded</item>
     </style>
 </resources>

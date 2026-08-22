@@ -1,215 +1,336 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- النصوص الأساسية -->
-    <string name="app_name">Shizu CoreFetch</string>
-    <string name="main_title">Shizu CoreFetch</string>
-    <string name="main_description">Pokročilá centralizovaná platforma pro načítání a správu aplikací vyžadujících základní oprávnění.</string>
-    <string name="main_login_github">Přihlásit se přes GitHub</string>
-    <string name="main_boredom_title">Vývojářské okno</string>
-    <string name="main_boredom_loading">Načítání dat...</string>
-    <string name="main_boredom_initial_quote">Čistý kód vždy působí jako dobře napsaný styl. - Robert C. Martin</string>
-    <string name="store_title">Shizu repozitář</string>
-    <string name="store_btn_install">Instalovat</string>
-    <string name="store_developer_prefix">: </string>
-    <string name="store_shizuku_not_running">Shizuku neběží. Prosím, začněte s tím nejdřív.</string>
-    <string name="store_shizuku_permission_denied">Pro základní operace je vyžadováno povolení Shizuku.</string>
-    <string name="store_shizuku_permission_granted">Shizuku se úspěšně spojilo.</string>
-    <string name="store_fetch_loading">Načítání aplikací...</string>
-    <string name="store_fetch_failed_parse">Nepodařilo se analyzovat data</string>
-    <string name="store_fetch_error_network">Chyba sítě:</string>
-    <string name="installer_no_permission">Žádné povolení Shizuku k instalaci.</string>
-    <string name="installer_success">Úspěšně nainstalováno!</string>
-    <string name="installer_fail">Instalace selhala: %1$s</string>
-    <string name="installer_error">Chyba: %1$s</string>
-    <string name="downloader_searching">Vyhledávání posledního vydání...</string>
-    <string name="downloader_no_apk">Žádné APK v tomto repozitáři nenalezeno.</string>
-    <string name="downloader_downloading">Stahování %1$s...</string>
-    <string name="downloader_success">Stahování dokončeno, zahájení tiché instalace...</string>
-    <string name="downloader_fail">Stahování selhalo: %1$s</string>
-    <string name="store_requesting_permission">Žádost o povolení Shizuku...</string>
-    <string name="install_button">Instalovat</string>
-    <string name="open_button">Otevřít</string>
-    <string name="store_cannot_open">Tuto aplikaci nelze otevřít</string>
-    <string name="tools_app_name">Název aplikace</string>
-    <string name="tools_app_developer">Jméno vývojáře</string>
-    <string name="tools_app_desc">Žádost o povolení Shizuku pro aplikaci jasně a úhledně zobrazující její hlavní funkce.</string>
-    <string name="installing_button">Instalování…</string>
-    <string name="uninstall_button">Odinstalovat</string>
-    <string name="update_button">Aktualizovat</string>
-    <string name="app_description_title">O této aplikaci</string>
-    <string name="app_versions_title">Verze</string>
-    <string name="uninstall_success">Úspěšně odinstalováno</string>
-    <string name="uninstall_fail">Odinstalace selhala: %1$s</string>
-    <string name="store_search_hint">Hledání aplikací…</string>
-    <string name="home_featured">Vybrané</string>
-    <string name="home_all_apps">Všechny aplikace</string>
-    <string name="login_guest">Procházet jako host</string>
-    <string name="nav_home">Domů</string>
+    <!-- App & Navigation -->
+    <string name="app_name">ShizuCoreFetch</string>
+    <string name="store_name">CoreFetch</string>
     <string name="nav_store">Obchod</string>
-    <string name="nav_account">Účet</string>
+    <string name="nav_shizuku">Shizuku</string>
+    <string name="nav_library">Knihovna</string>
     <string name="nav_settings">Nastavení</string>
-    <string name="account_loading">Načítání…</string>
-    <string name="account_guest_name">Host</string>
-    <string name="account_guest_email">Pro přístup ke všem funkcím se prosím přihlaste</string>
-    <string name="account_installed_apps">Nainstalované aplikace</string>
-    <string name="account_no_installed_apps">Nebyly dosud nainstalované žádné aplikace z tohoto obchodu.</string>
-    <string name="account_updates_available">Dostupné aktualizace</string>
-    <string name="account_no_updates">Všechny vaše aplikace jsou aktuální.</string>
-    <string name="account_logout">Odhlásit</string>
-    <string name="screenshots_title">Snímky obrazovky</string>
-    <string name="preview_loading_text">Načítám data...</string>
 
-    <!-- إعدادات التطبيق -->
-    <string name="settings_theme_title">Motiv</string>
+    <string name="search_placeholder">Hledat aplikace a moduly...</string>
+
+    <!-- Shizuku Status -->
+    <string name="shizuku_active">Aktivní</string>
+    <string name="shizuku_stopped">Zastaveno</string>
+    <string name="shizuku_needed">Vyžadováno</string>
+    <string name="shizuku_granted">Uděleno</string>
+    <string name="shizuku_label">Shizuku</string>
+    <string name="shizucorefetch_label">ShizuCoreFetch</string>
+
+    <!-- Authentication -->
+    <string name="github_login">Přihlásit se</string>
+    <string name="github_logout">Odhlásit se</string>
+
+    <!-- Settings Labels -->
+    <string name="settings_theme_mode">Režim motivu</string>
     <string name="theme_light">Světlý</string>
-    <string name="theme_system">Systém</string>
     <string name="theme_dark">Tmavý</string>
+    <string name="theme_system">Systém</string>
+    <string name="settings_custom_hex">Vlastní Hex</string>
+    <string name="settings_ui_scale">Měřítko rozhraní</string>
+    <string name="settings_about">O aplikaci</string>
 
-    <string name="settings_lang_title">Jazyk</string>
-    <string name="lang_en">Angličtina</string>
-    <string name="lang_ar">Arabština</string>
-    <string name="lang_fr">Francouzština</string>
-    <string name="lang_es">Španělština</string>
-    <string name="lang_pt">Portugalština</string>
-    <string name="lang_ru">Ruština</string>
-    <string name="lang_hi">Hindština</string>
-    <string name="lang_zh">Čínština</string>
-    <string name="lang_ja">Japonština</string> 
-    <string name="lang_cs">Čeština</string>
-    <string name="lang_tr">Türkçe</string>
-    <string name="settings_contributors">Přispěvatelé překladu</string>
+    <!-- App Details (Base) -->
+    <string name="details_install">Instalovat</string>
+    <string name="details_download">Stáhnout</string>
+    <string name="details_github_link">GitHub</string>
+    <string name="app_details_title">Detaily aplikace</string>
+    <string name="stats_stars">Hvězdy</string>
+    <string name="stats_downloads">Stažení</string>
+    <string name="stats_category">Kategorie</string>
+    <string name="stats_size">Velikost</string>
+    <string name="btn_github">GitHub</string>
+    <string name="overview_title">Přehled</string>
+    <string name="recent_releases_title">Vydání</string>
+    <string name="featured_badge">DOPORUČENÉ</string>
+    <string name="install_service">Instalační služba</string>
+    <string name="empty_no_repos">Nenalezena žádná úložiště</string>
+    <string name="retry">Opakovat</string>
 
-    <string name="settings_notif_title">Notifikace</string>
-    
-    <string name="settings_permissions_title">Povolení</string>
-    <string name="settings_perm_apps">Informace o instalovaných aplikacích</string>
-    <string name="settings_perm_shizuku">Shizuku oprávnění</string>
+    <!-- Shizuku Hub -->
+    <string name="shizuku_permission_req_title">Vyžadováno oprávnění Shizuku</string>
+    <string name="shizuku_permission_req_desc">Tato aplikace vyžaduje ke správnému fungování a instalaci modulů zvýšená systémová oprávnění prostřednictvím rozhraní Shizuku.</string>
+    <string name="hub_status_running">Služba Shizuku běží</string>
+    <string name="hub_status_stopped">Služba Shizuku zastavena</string>
+    <string name="hub_permission_label">Stav oprávnění</string>
+    <string name="hub_binder_label">Rozhraní Binder</string>
+    <string name="hub_guide_title">Průvodce bezdrátovým laděním</string>
+    <string name="hub_guide_step1"> Povolte Možnosti pro vývojáře v nastavení vašeho zařízení Android.</string>
+    <string name="hub_guide_step2"> Zapněte Bezdrátové ladění v Možnostech pro vývojáře.</string>
+    <string name="hub_guide_step3"> Otevřete aplikaci Shizuku a spárujte zařízení pomocí bezdrátového ladění.</string>
+    <string name="refresh">Obnovit</string>
 
-    <string name="settings_about_store">O obchodě</string>
-    <string name="settings_privacy">Zásady ochrany osobních údajů</string>
-    <string name="settings_terms">Podmínky používání</string>
-    <string name="settings_version">Verze 1.5.0</string>
-    <string name="settings_developer">Jamal El Hizazi</string>
+    <!-- Library -->
+    <string name="library_title">Uložená knihovna</string>
+    <string name="library_empty_title">Vaše knihovna je prázdná</string>
+    <string name="library_empty_desc">Uložte si své oblíbené nástroje a úložiště Shizuku z Obchodu, abyste k nim zde měli rychlý a snadný přístup.</string>
 
-    <string name="dialog_theme_title">Zvolit motiv</string>
-    <string name="dialog_lang_title">Zvolit jazyk</string>
+    <!-- Settings Explanations -->
+    <string name="settings_appearance">Vzhled a vizuální motiv</string>
+    <string name="settings_preset_color">Hlavní barva motivu</string>
+    <string name="settings_gas_title">Worker API a Load Balancer</string>
+    <string name="settings_gas_endpoint">Endpoint Cloudflare Worker (Připojeno k GAS):</string>
+    <string name="settings_gas_active">Online</string>
+    <string name="settings_gas_inactive">Offline</string>
+    <string name="settings_gas_checking">Kontrola…</string>
+    <string name="settings_quota_title">Kvóta GitHub API</string>
+    <string name="settings_quota_loading">Načítání údajů o kvótě…</string>
+    <string name="settings_quota_used">Využito %1$d / %2$d</string>
+    <string name="settings_quota_remaining">Zbývá %1$d</string>
+    <string name="settings_quota_reset">Obnovuje se v %1$s</string>
+    <string name="github_auth_title">Ověření účtu GitHub</string>
+    <string name="github_auth_desc">Propojte svůj účet GitHub nebo osobní přístupový token (PAT), abyste obešli limity API a mohli volně procházet úložiště.</string>
+    <string name="about_version">ShizuCoreFetch v%1$s</string>
+    <string name="about_package">xyz.siwane.shizucorefetch</string>
+    <string name="theme_mode_title">Režim zobrazení</string>
+    <string name="main_theme_color_title">Paleta barev</string>
 
-    <string name="toast_shizuku_granted">Shizuku oprávnění je již uděleno</string>
-    <string name="toast_shizuku_not_running">Shizuku neběží. Prosíme zapněte jej</string>
-    <string name="toast_shizuku_error">Chyba: Shizuku knihovna není dostupná</string>
-    
-    <string name="settings_category_general">Obecné</string>
-    <string name="settings_category_about">O</string>
+    <!-- Colors -->
+    <string name="color_amethyst">Ametyst</string>
+    <string name="color_emerald">Smaragd</string>
+    <string name="color_sapphire">Safír</string>
+    <string name="color_siwane">Siwane</string>
+    <string name="color_crimson">Karmazínová</string>
+    <string name="color_sunset">Západ slunce</string>
 
-    <string name="notif_channel_ops_name">Práce s obchodem</string>
-    <string name="notif_channel_ops_desc">Notifikace pro stahování na pozadí a technické instalace.</string>
-    <string name="notif_channel_updates_name">Dostupné aktualizace</string>
-    <string name="notif_channel_updates_desc">Oznamovat, pokud bude dostupná aktualizace pro vaše aplikace.</string>
-    <string name="notif_updates_available_title">Dostupná aktualizace</string>
-    <string name="notif_updates_available_msg">Je dostupných %1$d aktualizací aplikací ke zpracování.</string>
+    <!-- UI Controls -->
+    <string name="btn_dynamic_m3">Dynamické M3</string>
+    <string name="btn_custom_hex">Vlastní Hex</string>
+    <string name="ui_scale_title">Měřítko rozhraní a písma</string>
+    <string name="ui_scale_desc_text">Upravte měřítko prvků rozhraní a písma pro optimální pohodlí očí a lepší použitelnost.</string>
+    <string name="settings_language">Jazyk aplikace</string>
 
-    <string name="nav_wallet">Lokální úložiště souborů</string>
-    <string name="wallet_empty">Žádné soubory aplikace se aktuálně nenachází v lokální cache.</string>
-    <string name="wallet_delete_title">Potvrdit smazání</string>
-    <string name="wallet_delete_msg">Opravdu chcete permanentně odstranit instalační balíček pro %1$s?</string>
-    <string name="wallet_delete_success">Balíček úspěšně odebrán.</string>
-    <string name="wallet_share_title">Sdílet balíček aplikace</string>
-    <string name="wallet_no_editor_found">Na tomto zařízení nebyl nalezen žádný kompatibilní prohlížeč balíčků ani editor.</string>
-    <string name="wallet_error_action">Selhalo zahájení operace požadavku souboru.</string>
-    <string name="wallet_btn_delete">Smazat</string>
-    <string name="wallet_btn_share">Sdílet</string>
-    <string name="wallet_btn_open">Otevřít externí</string>
-    <string name="dialog_cancel">Zrušit</string>
-    <string name="dialog_confirm">Potvrdit</string>
+    <!-- Developer & Support -->
+    <string name="dev_support_title">Vývojář a podpora</string>
+    <string name="dev_name">Jamal El Hizazi</string>
+    <string name="dev_website">siwane.xyz - Oficiální web</string>
+    <string name="dev_github">GitHub - elhizazi1</string>
+    <string name="dev_email">jamal@elhizazi.me</string>
+    <string name="about_app_title">O aplikaci</string>
+    <string name="about_privacy">Zásady ochrany osobních údajů</string>
+    <string name="about_terms">Podmínky použití</string>
+    <string name="about_share">Sdílet aplikaci</string>
+    <string name="about_update">Zkontrolovat aktualizace</string>
 
-    <!-- App Details Strings (الإضافات الجديدة) -->
-    <string name="store_reviews_title">Recenze a komentáře</string>
-    <string name="store_reviews_empty">Buďte první, kdo ohodnotí tuto aplikaci! Systém komentářů se připravuje.</string>
-    <string name="store_write_review">Napsat recenzi</string>
-    <string name="store_developer_info">Informace o vývojáři</string>
-    <string name="store_rating_count_format">%1$s hodnocení</string>
-    <string name="store_no_ratings_yet">Zatím žádná hodnocení</string>
-    <string name="store_comment_dev">Systém komentářů je momentálně ve vývoji</string>
-    <string name="store_dev_email">E-mail:</string>
-    <string name="store_dev_website">Webová stránka</string>
-    <string name="store_dev_portfolio">Portfolio</string>
+    <!-- For Developers -->
+    <string name="for_developers_title">Pro vývojáře</string>
+    <string name="for_developers_desc">Přidejte tato přesná témata do svého úložiště na GitHubu, aby se vaše aplikace Shizuku automaticky indexovala v našem obchodě:</string>
+    <string name="topic_shizuku">shizuku</string>
+    <string name="topic_shizucorefetch">shizucorefetch</string>
 
-    <string name="store_developer_message_title">Slovo od vývojáře</string>
-    <string name="store_show_all_versions">Zobrazit všechny verze</string>
-    <string name="store_hide_versions">Skrýt verze</string>
+    <!-- Custom Hex Popup -->
+    <string name="custom_hex_title">Vlastní barva motivu</string>
+    <string name="custom_hex_label">HEX Kód (např. #FF0055)</string>
+    <string name="custom_hex_apply">Použít barvu</string>
+    <string name="custom_hex_invalid">Neplatný kód HEX</string>
+    <string name="color_picker_hint">Klepnutím nebo tažením kdekoli na barevném kruhu dokonale vyberete požadovanou barvu.</string>
 
-    <string name="store_visit_website">Navštívit oficiální web</string>
-    <string name="store_calculating_size">Počítání...</string>
+    <!-- Store Categories -->
+    <string name="cat_all">Vše</string>
+    <string name="action_retry">Opakovat</string>
+    <string name="store_no_results">Nenalezeny žádné aplikace</string>
+    <string name="cat_system">Systém</string>
+    <string name="cat_utility">Nástroje</string>
+    <string name="cat_development">Vývoj</string>
+    <string name="cat_customization">Přizpůsobení</string>
 
-    <string name="empty_comments_message">Zatím žádné komentáře. Buďte první, kdo přidá komentář!</string>
-    <string name="hide_comments_previous">Skrýt předchozí komentáře</string>
-    <string name="show_remaining_comments">Zobrazit zbývající komentáře (%1$d)</string>
-    <string name="comment_posted_success">Komentář byl úspěšně přidán!</string>
-    <string name="comment_post_failed">Nepodařilo se přidat komentář</string>
-    <string name="login_prompt_comments">Pro zapojení do diskuze se prosím přihlaste pomocí svého účtu GitHub.</string>
-    <string name="comment_reply_button">Odpovědět</string>
-    <string name="comment_edit_button">Upravit</string>
-    <string name="comment_delete_button">Smazat</string>    
-    <string name="comment_input_hint">Napište svůj komentář sem…</string>
-    <string name="edit_comment_toast_format">Okno pro úpravu komentáře #%1$d se brzy otevře</string>
+    <!-- App Details Actions & Sections -->
+    <string name="action_open">Otevřít</string>
+    <string name="action_update">Aktualizovat</string>
+    <string name="action_uninstall">Odinstalovat</string>
+    <string name="action_website">Web</string>
+    <string name="app_description_title">O této aplikaci</string>
+    <string name="version_history_title">Historie verzí</string>
+    <string name="version_current_badge">Aktuální</string>
+    <string name="app_screenshots">Snímky obrazovky</string>
 
-    <string name="comment_react_button">Reagovat</string>
-    <string name="dialog_choose_reaction">Vyberte reakci</string>
-    <string name="reaction_added_success">Reakce přidána!</string>
-    <string name="reaction_add_failed">Nepodařilo se přidat reakci</string>
+    <!-- Rating and Comments -->
+    <string name="app_rating_title">Ohodnotit aplikaci</string>
+    <string name="app_rating_desc">Řekněte ostatním, co si myslíte</string>
+    <string name="comments_title">Hodnocení a recenze</string>
+    <string name="write_comment_hint">Napište komentář...</string>
+    <string name="post_comment">Odeslat</string>
+
+    <!-- Ads and Suggestions -->
+    <string name="ad_label">Sponzorováno</string>
+    <string name="popular_apps_title">Populární aplikace</string>
+
+    <!-- GitHub Authentication -->
+    <string name="github_sheet_title">Ověření přes GitHub</string>
+    <string name="github_sheet_desc">Přihlaste se, abyste zvýšili limit své API na 5 000 požadavků za hodinu.</string>
+    <string name="github_oauth_btn">Přihlásit se přes GitHub</string>
+    <string name="github_token_label">Osobní přístupový token (PAT)</string>
+    <string name="github_token_hint">ghp_xxxxxxxxxxxx</string>
+    <string name="github_token_btn">Přihlásit se pomocí tokenu</string>
+    <string name="github_or_divider">NEBO</string>
+    <string name="github_logged_in_as">Přihlášen jako</string>
+    <string name="github_rate_limit">Limit API: 5000 / 5000</string>
+
+    <!-- Account & Token Status -->
+    <string name="token_status_active">Aktivní</string>
+    <string name="token_status_inactive">Neaktivní</string>
+    <string name="btn_delete_token">Odstranit token</string>
+    <string name="btn_my_account">Můj účet</string>
+    <string name="github_token_status">Stav tokenu:</string>
+    <string name="account_details_brief">Spravujte svůj profil a úložiště.</string>
+
+    <!-- My Account Screen -->
+    <string name="account_title">Můj profil</string>
+    <string name="account_repos">Úložiště</string>
+    <string name="account_followers">Sledující</string>
+    <string name="account_following">Sleduji</string>
+    <string name="account_section_repos">Veřejná úložiště</string>
+    <string name="btn_view_github">Zobrazit na GitHubu</string>
+    <string name="already_on_account">Právě si prohlížíte profil svého účtu.</string>
+
+    <!-- Library & APK Manager -->
+    <string name="lib_updates_title">Dostupné aktualizace</string>
+    <string name="lib_installed_title">Nainstalováno</string>
+    <string name="lib_bookmarks_title">Uloženo</string>
+    <string name="apk_manager_title">Stažené soubory APK</string>
+    <string name="apk_manager_desc">Správa stažených instalačních souborů.</string>
+    <string name="apk_manager_empty">Zatím žádné stažené soubory APK.</string>
+    <string name="apk_manager_open_failed">Aplikaci nelze otevřít.</string>
+    <string name="apk_manager_install_success">Úspěšně nainstalováno.</string>
+    <string name="apk_manager_delete_title">Odstranit soubor</string>
+    <string name="apk_manager_delete_confirm">Odstranit \"%1$s\" z tohoto zařízení? Tuto akci nelze vrátit zpět.</string>
+    <string name="apk_manager_delete_failed">Soubor se nepodařilo odstranit.</string>
+    <string name="apk_manager_open">Otevřít</string>
+    <string name="apk_manager_install">Instalovat</string>
+    <string name="action_cancel">Zrušit</string>
+    <string name="toast_installed">Úspěšně nainstalováno.</string>
+    <string name="toast_uninstalled">Úspěšně odinstalováno.</string>
+    <string name="toast_updated">Úspěšně aktualizováno.</string>
+    <string name="toast_opened">Otevřeno.</string>
+    <string name="store_cannot_open">Aplikaci se nepodařilo otevřít.</string>
+    <string name="store_download_failed">Pro tuto aplikaci momentálně není k dispozici žádný platný odkaz ke stažení.</string>
+    <string name="store_error_generic">Něco se pokazilo. Zkuste to prosím znovu.</string>
+    <string name="apk_path">Cesta: Download/shizucorefetch</string>
+    <string name="apk_action_delete">Odstranit</string>
+    <string name="action_back">Zpět</string>
+    <string name="action_share">Sdílet</string>
+    <string name="action_open_folder">Otevřít složku</string>
+    <string name="error_open_folder">Správce souborů nelze otevřít.</string>
+    <string name="toast_download_complete">Stahování dokončeno: %1$s</string>
+    <string name="toast_download_failed">Stahování selhalo: %1$s</string>
+
+    <string name="hub_action_check_permission">Zkontrolovat oprávnění</string>
+    <string name="hub_silent_install_title">Způsob instalace</string>
+    <string name="hub_silent_install_enabled">Tichá instalace : Povoleno (Shizuku)</string>
+    <string name="hub_silent_install_disabled">Tichá instalace : Zakázáno (Systém)</string>
+    <string name="hub_warning_permissions">Ujistěte se, že jsou v nastavení systému udělena všechna požadovaná oprávnění, aby Shizuku a tichá instalace fungovaly bezchybně.</string>
+    <string name="hub_action_open_settings">Nastavení aplikace</string>
 
     <string name="dev_profile_title">Profil vývojáře</string>
-    <string name="dev_profile_apps_title">Aplikace vývojáře</string>
-    <string name="store_dev_email2">E-mail</string>
-    
-    <string name="store_trending_apps">Populární aplikace</string>
+    <string name="dev_role_subtitle">Vývojář Androidu a UI/UX Designer</string>
+    <string name="dev_info_title">Kontaktní informace</string>
+    <string name="dev_email_label">E-mail</string>
+    <string name="dev_website_label">Web</string>
+    <string name="dev_portfolio_label">Portfolio</string>
+    <string name="dev_social_title">Sociální sítě</string>
+    <string name="dev_apps_title">Aplikace vývojáře</string>
 
-    <string name="ad_label">Reklama</string>
+    <string name="rating_login_warning">Pro ohodnocení této aplikace se prosím přihlaste přes GitHub.</string>
+    <string name="comments_login_warning">Chcete-li zanechat komentář, přihlaste se přes GitHub.</string>
+    <string name="comments_empty">Zatím žádné komentáře. Buďte první, kdo něco napíše!</string>
+    <string name="comment_reply">Odpovědět</string>
+    <string name="comment_delete">Odstranit</string>
+    <string name="comment_edit">Upravit</string>
+    <string name="comment_save">Uložit</string>
+    <string name="comment_cancel">Zrušit</string>
+    <string name="comment_admin_hide">Skrýt z obchodu</string>
+    <string name="comment_admin_unhide">Odkrýt</string>
+    <string name="comment_hidden_badge">Skryto (pouze pro adminy)</string>
 
-    <!-- Silent Installation Settings -->
-    <string name="settings_silent_install_title">Tichá instalace</string>
-    <string name="silent_install_enabled">Tichá instalace: Povoleno (Shizuku)</string>
-    <string name="silent_install_disabled">Tichá instalace: Zakázáno (Systémový instalátor)</string>
-    <string name="settings_silent_install_desc">Povolit přímou instalaci přes Shizuku bez nutnosti systémového potvrzení</string>
+    <string name="dev_word_title">Poznámka vývojáře</string>
+    <string name="dev_word_desc">Děkuji za váš zájem o mé aplikace! Tato aplikace byla vytvořena s cílem poskytnout nejlepší možný zážitek uživatelům Shizuku se silným zaměřením na vysoký výkon a moderní design.</string>
+    <string name="dev_bio_title">O vývojáři</string>
+    <string name="dev_bio_desc">Softwarový inženýr se specializací na vývoj aplikací pro Android a moderní UI/UX design. Má velkou vášeň pro psaní čistého kódu a vytváření inovativních softwarových řešení.</string>
 
-    <!-- Guest Mode Texts -->
-    <string name="guest_login_prompt_title">Vyžadováno přihlášení</string>
-    <string name="guest_login_prompt_install_msg">Pro stahování a instalaci aplikací z obchodu se prosím přihlaste pomocí svého účtu GitHub.</string>
-    <string name="guest_action_login">Přihlásit se nyní</string>
+    <string name="github_login_title">github.com</string>
+    <string name="github_error_connection">Nepodařilo se připojit k GitHubu. Zkontrolujte své připojení k internetu.</string>
+    <string name="github_error_state_mismatch">Ověření bezpečnosti selhalo (nesoulad stavu). Operace byla pro vaši ochranu zrušena.</string>
+    <string name="github_error_no_code">Autorizační kód z GitHubu nebyl přijat.</string>
 
-    <!-- Notice texts -->
-    <string name="notice_title">Důležité upozornění pro uživatele</string>
-    <string name="notice_message">Vítejte! Rádi bychom vás informovali, že instalace je nyní úspěšná a zcela stabilní, ať už je Shizuku aktivováno přes Root nebo ADB.\n\nPro zajištění stability obchodu a zamezení dočasným banům od GitHubu doporučujeme přihlásit se pomocí vašeho osobního účtu. Pokud narazíte na jakékoli technické problémy, neváhejte mě přímo kontaktovat.\n\nPřejeme vám příjemný zážitek s ShizuCoreFetch!</string>
-    <string name="notice_button">OK</string>
+    <string name="chooser_share_apk">Sdílet APK</string>
+    <string name="chooser_open_folder">Otevřít složku</string>
 
-    <string name="store_github_stars_format">Hvězdy repozitáře: %1$s</string>
-    <string name="store_real_ratings_count">Hodnotitelů: %1$d</string>
-    <string name="store_no_real_ratings_yet">Zatím žádná hodnocení</string>
-    <string name="store_rating_success">Hodnocení úspěšně uloženo</string>
-    <string name="store_rating_fail">Při ukládání hodnocení došlo k chybě</string>
-    <string name="login_prompt_rating">Pro hodnocení aplikace se musíte přihlásit</string>
-
-    <string name="delete_comment_title">Smazat komentář</string>
-    <string name="delete_comment_message">Opravdu chcete tento komentář trvale smazat?</string>
-    <string name="comment_edit_success">Komentář úspěšně upraven</string>
-    <string name="comment_delete_success">Komentář smazán z obchodu</string>
-    <string name="comment_protected_blacklist">Komentář je chráněn na GitHubu. Přidávám na černou listinu...</string>
-    <string name="comment_delete_no_permission">Nemáte oprávnění smazat tento komentář</string>
-    <string name="comment_blacklist_success">Komentář trvale skryt z obchodu</string>
-    <string name="comment_blacklist_fail">Komentář se nepodařilo zablokovat, zkuste to znovu</string>
-
-    <string name="store_developer_format">%1$s %2$s</string>
-    <string name="store_developer_with_category">%1$s %2$s • %3$s</string>
-    <string name="store_downloads_million">%1$sM</string>
-    <string name="store_downloads_thousand">%1$sK</string>
-    <string name="store_rating_combined">%1$s • %2$s</string>
-    <string name="store_default_rating">0.0</string>
-    <string name="store_unknown_size">Neznámé</string>
-    <string name="store_ad_pending">Reklama (Čeká na schválení - viditelné pouze pro vás)</string>
-    <string name="store_no_description">Není k dispozici žádný popis.</string>
-    <string name="store_error_generic">Došlo k chybě</string>
-    <string name="store_download_failed">Stahování selhalo</string>
-    <string name="store_downloads_count">Stažení: %1$s</string>
-    <string name="store_category_prefix">Kategorie:</string>
+    <!-- Dynamic sections and popup -->
+    <string name="section_top_downloads">Nejstahovanější</string>
+    <string name="section_top_rated">Nejlépe hodnocené</string>
+    <string name="section_trusted_apps">Ověřené aplikace (ShizuCoreFetch)</string>
+    <string name="section_all_apps">Všechny aplikace</string>
+    <string name="comments_show_more">Zobrazit další komentáře (%1$d)</string>
+    <string name="comments_hide">Skrýt komentáře</string>
+    <string name="ad_external_link_desc">Opravdu chcete přejít na následující externí odkaz?\n\n%1$s</string>
+    <string name="action_continue">Pokračovat</string>
+    <string name="action_go_to_library">Přejít do Knihovny</string>
+    <string name="apk_delete_dialog_title">Odstranit soubor APK</string>
+    <string name="apk_delete_dialog_msg">Opravdu chcete odstranit \"%1$s\"? Tuto akci nelze vrátit zpět.</string>
+    <string name="account_no_android_repos_title">Zatím žádná úložiště pro Android!</string>
+    <string name="account_no_android_repos_desc">Nic není příliš těžké, když se neustále učíte. Pokud se chcete ponořit do kreativity vývoje pro Android, Siwane Blog (siwanex.xyz) nabízí perfektní výchozí bod pro vaši cestu.</string>
+    <string name="action_visit_blog">Navštívit Blog</string>
+    <string name="hub_binder_root_warning">Verze rozhraní Binder starší než 11 vyžadují ke správnému fungování výhradně oprávnění Root.</string>
+    <string name="hub_silent_install_requires_shizuku">Vyžaduje nejprve povolení služby Shizuku</string>
+    <string name="hub_guide_main_title">Metody aktivace Shizuku</string>
+    <string name="hub_guide_wireless_title">Bezdrátové ladění (Bez PC)</string>
+    <string name="hub_guide_wireless_step1">Otevřete Možnosti pro vývojáře v nastavení zařízení.</string>
+    <string name="hub_guide_wireless_step2">Povolte \'Bezdrátové ladění\'.</string>
+    <string name="hub_guide_wireless_step3">Otevřete oficiální aplikaci Shizuku a klepněte na \'Párování\'.</string>
+    <string name="hub_guide_pc_title">Přes Počítač (ADB)</string>
+    <string name="hub_guide_pc_step1">Povolte \'Ladění USB\' z Možností pro vývojáře.</string>
+    <string name="hub_guide_pc_step2">Připojte telefon k PC a otevřete Terminál.</string>
+    <string name="hub_guide_pc_step3">Zkopírujte aktivační příkaz z oficiální aplikace Shizuku a vložte jej do terminálu.</string>
+    <string name="hub_guide_root_title">Přes oprávnění Root</string>
+    <string name="hub_guide_root_step1">Otevřete oficiální aplikaci Shizuku.</string>
+    <string name="hub_guide_root_step2">V sekci Root klepněte na \'Spustit\'.</string>
+    <string name="hub_guide_root_step3">Udělte aplikaci práva root přes Magisk nebo KernelSU.</string>
+    <string name="dev_paypal">PayPal</string>
+    <string name="share_subject">Aplikace ShizuCoreFetch</string>
+    <string name="share_text">Stáhněte si nejnovější verzi ShizuCoreFetch:\nhttps://github.com/elhizazi1/ShizuCoreFetch/releases/latest</string>
+    <string name="share_chooser_title">Sdílet aplikaci přes...</string>
+    <string name="worker_error_prefix">Připojení selhalo: %1$s</string>
+    <string name="update_available">Dostupná nejnovější verze: %1$s</string>
+    <string name="update_error_http">Nepodařilo se zkontrolovat aktualizace (HTTP %1$d).</string>
+    <string name="update_error_connection">Chyba připojení při kontrole aktualizací.</string>
+    <string name="filter_default">Výchozí</string>
+    <string name="filter_top_rated">Nejlépe hodnocené</string>
+    <string name="filter_top_downloads">Nejstahovanější</string>
+    <string name="filter_trusted">Ověřené</string>
+    <string name="notif_channel_ops_name">Operace obchodu</string>
+    <string name="notif_channel_ops_desc">Upozornění na stahování, instalaci a odinstalaci</string>
+    <string name="notif_channel_updates_name">Aktualizace aplikací</string>
+    <string name="notif_channel_updates_desc">Upozornění, když jsou k dispozici nové aktualizace aplikací</string>
+    <string name="notif_download_progress">Stahování: %1$d %%</string>
+    <string name="notif_installing">Instalace na pozadí...</string>
+    <string name="notif_updates_available_title">K dispozici jsou nové aktualizace</string>
+    <string name="notif_updates_available_msg">%1$d aplikací je potřeba aktualizovat</string>
+    <!-- GitHub API Explanation Dialog -->
+    <string name="github_explanation_title">Transparentnost a limity GitHub API</string>
+    <string name="github_explanation_body">ShizuCoreFetch se při získávání dat spoléhá na servery GitHubu. Bez přihlášení omezí GitHub vaše zařízení na 60 požadavků za hodinu. Přihlášením získáte kvótu 5 000 požadavků za hodinu.\n\nProč aplikace potřebuje autorizaci?\nPoužíváme klasickou (OAuth App), která vyžaduje přístup k veřejným úložištím (public_repo), aby mohla publikovat komentáře (jako Issues), interagovat s nimi a získávat indexy aplikací Shizuku z veřejných repozitářů. V žádném případě neshromažďujeme vaše data a přihlášení je standardní a nezbytný postup pro efektivní načítání a ukládání dat.\n\nTato omezení ukládá samotný GitHub, nikoli naše aplikace.</string>
+    <string name="github_explanation_agree">Rozumím, Souhlasím</string>
+    <string name="github_explanation_contact">Kontaktovat vývojáře</string>
+    <string name="details_tech_tags">Štítky</string>
+    <string name="details_tech_min_sdk">Minimální SDK</string>
+    <string name="details_tech_license">Licence</string>
+    <string name="details_tech_source">Zdrojový kód</string>
+    <string name="details_tech_open_source">Open Source</string>
+    <string name="details_tech_privilege">Oprávnění</string>
+    <string name="details_tech_requires_shizuku">Vyžaduje Shizuku</string>
+    <string name="dev_donate">Podpořit a přispět</string>
+    <string name="details_tech_target_sdk">Cílové SDK</string>
+    <string name="details_changelog_title">Co je nového</string>
+    <string name="online_status">Online</string>
+    <string name="offline_status">Offline</string>
+    <string name="store_offline_message">Jste offline. Zkontrolujte připojení a zkuste to znovu.</string>
+    <string name="proxy_info_title">Transparentnost: Jak to funguje</string>
+    <string name="proxy_info_desc">Používáme skupinu 5 záložních tokenů, které se střídají při obsluze hostů. V případě velkého vytížení se vracíme na kvótu 60 požadavků vázanou na vaši IP adresu.\n\nTip: Přihlaste se pomocí GitHubu, získejte svou vlastní masivní kvótu (5000 požadavků) a obejděte tyto limity!</string>
+    <string name="settings_clear_cache">Vymazat mezipaměť aplikace</string>
+    <string name="settings_clear_cache_ready">K dispozici nyní! Můžete vymazat mezipaměť.</string>
+    <string name="settings_clear_cache_wait">Z důvodu ochrany serverů k dispozici pouze v minutě %1$s.</string>
+    <string name="shortcut_library">Knihovna</string>
+    <string name="shortcut_apk_manager">Soubory APK</string>
+    <string name="shortcut_settings">Nastavení</string>
 
 </resources>

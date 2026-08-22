@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <paths>
-    <!-- المسار القديم: لضمان التوافق مع الملفات السابقة -->
+    <!-- المسار القديم: لضمان التوافق مع الملفات السابقة المخبأة في النظام -->
     <cache-path name="cached_apks" path="." />
     
-    <!-- المسار الجديد: ضروري جداً لتثبيت الملفات عبر Shizuku وللتثبيت العادي -->
+    <!-- المسار الإضافي: ضروري جداً لتثبيت الملفات عبر Shizuku وللتثبيت العادي -->
     <external-cache-path name="external_cache" path="." />
+
+    <!-- مجلدات التطبيق الخارجية الخاصة به (اختياري كدعم احتياطي) -->
+    <external-files-path name="app_external_files" path="." />
+
+    <!-- 🚀 المسار الأهم للتحديث الجديد: يمنح الصلاحية لمجلد التنزيلات العام (Download) الحقيقي -->
+    <external-path name="public_downloads" path="Download/" />
 </paths>

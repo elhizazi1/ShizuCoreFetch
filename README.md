@@ -34,27 +34,29 @@ While this is entirely optional, organizing your data adds a highly professional
 
 ## 📖 Overview
 
-**Shizu CoreFetch** is a next‑generation application manager for Android that leverages the **Shizuku** API to perform silent installs, uninstalls, and background updates without requiring root access. It comes bundled with a local **APK wallet**, a centralized repository browser, GitHub authentication, and real‑time notifications — all wrapped in a clean, modern interface that supports light/dark themes and 9 languages.
+**Shizu CoreFetch** is a next‑generation application manager for Android that leverages the **Shizuku** API to perform silent installs, uninstalls, and background updates without requiring root access. Completely rebuilt from the ground up, the latest architecture features a standalone background engine, intelligent device scanning, and a stunning new UI built entirely with Jetpack Compose. 
+
+It comes bundled with a local **APK wallet**, a centralized repository browser, real‑time notifications, and full GitHub integration — all wrapped in a clean, modern interface that supports 11 languages.
 
 > ⚡ Perfect for power users, developers, and anyone tired of manual package management.
 
 ---
 
-> ⚠️ **Notice for Developers:** The source code currently available in this repository reflects stable version **1.0.0**. The latest ecosystem features of version **1.2.0** (such as Zero-Quota Architecture, the Comment System, App Ratings, and Whitelisted Banner Ads) are currently available exclusively in the compiled APK on the [Releases](https://github.com/elhizazi1/ShizuCoreFetch/releases) page. The repository source code will be fully synced soon.
+> ⚠️ **Notice for Developers:** The source code currently available in this repository reflects the massive **v2.1.0** architecture upgrade. It includes the complete migration from legacy Fragments to Jetpack Compose, the new Persistent Download Engine, and the Smart Detection backend. 
 
 ---
 
 ## ✨ Key Features
 
-- **Silent Operations with Shizuku:** Install, uninstall, and update apps directly at system level — fully supports both **Root** and Wireless Debugging (**ADB**).
-- **Zero-Quota Architecture:** Browse and download seamlessly without hitting GitHub API rate limits. The store handles high traffic effortlessly.
-- **Centralized Repository:** Browse and fetch applications from a curated repository. Each app includes screenshots, description, developer info, and version history.
-- **Local Storage Wallet:** Store downloaded APKs locally, share them via any app, or open them with external file viewers. Delete packages with a single tap to free up space.
-- **Update Notifications:** Receive alerts when new versions of your installed apps become available. Background checks ensure you never miss an update.
-- **GitHub Integration:** Sign in with your GitHub account or continue as a guest. Your installed apps and update status are tied to your profile (optional).
-- **Multi‑Language:** Available in 11 languages: العربية, English, Français, Español, Português, Русский, हिन्दी, 中文, 日本語, Türkçe, Čeština.
-- **Dynamic Theming:** Switch between Light, Dark, and System‑follow modes on the fly.
-- **Privacy First:** 100% offline‑first architecture. No tracking, no analytics, no data collection. Your apps and data stay on your device.
+- 🎯 **Smart App Matching:** A new deep device scanner intelligently maps all apps directly from the repo tree without extra API calls, ensuring action buttons (Install/Update/Open) are always 100% accurate.
+- ⚡ **Persistent Background Engine:** Downloads and installations run on a standalone Foreground Service. Switch screens, minimize the app, or lock your phone, and the process continues flawlessly.
+- 🎨 **Modern Compose UI:** Rebuilt from the ground up with Jetpack Compose and Material Design 3 for fluid shimmer animations, dynamic colors, and seamless screen transitions.
+- 🛡️ **Silent Operations with Shizuku:** Install, uninstall, and update apps directly at system level — fully supports **Root**, Wireless Debugging (**ADB**), and Test-Only packages.
+- ☁️ **Zero-Quota Architecture:** Browse and download seamlessly without hitting GitHub API rate limits. The smart cloud engine handles high traffic effortlessly.
+- 📦 **Local Storage Wallet:** Store downloaded APKs locally, share them via any app, or open them with external file viewers. Delete packages with a single tap to free up space.
+- 🔔 **Update Notifications:** Receive alerts when new versions of your installed apps become available. Background checks ensure you never miss an update.
+- 🌍 **Multi‑Language:** Available in 11 languages with automatic system language detection: العربية, English, Français, Español, Português, Русский, हिन्दी, 中文, 日本語, Türkçe, Čeština.
+- 🔒 **Privacy First:** 100% offline‑first architecture. No hidden tracking, no analytics, no data collection. Your apps and data stay on your device.
 
 ---
 
@@ -131,13 +133,13 @@ All user‑facing strings are translated into the following languages:
 ## 🛠️ Tech Stack
 
 - **Language:** Kotlin
-- **UI Architecture:** XML Layouts + ViewBinding + Material Design 3 Components
-- **Networking:** Retrofit 2 + OkHttp + Java HttpURLConnection (for direct GitHub REST API operations)
-- **Local Caching & Storage:** SharedPreferences Architecture (via custom managers)
-- **Concurrency:** Native Kotlin Threads + Android Main Looper Handlers
+- **UI Architecture:** Jetpack Compose + Material Design 3 Components (Migrated from legacy XML/Fragments)
+- **Networking:** Retrofit 2 + OkHttp + Java HttpURLConnection
+- **Local Caching & Storage:** SharedPreferences Architecture (via custom managers with instant load cache)
+- **Concurrency:** Native Kotlin Threads + Standalone DownloadForegroundService
 - **Rich Text Rendering:** Markwon Markdown Library (for Readme displaying)
 - **Image Loading:** Coil (with custom rounded corner transformations)
-- **Cloud Backend:** Google Apps Script + Google Sheets API (for central catalog and blacklists)
+- **Cloud Backend:** Google Apps Script + Google Sheets API (for central catalog and smart package mapping)
 - **Build System:** Gradle
 
 ---
@@ -159,6 +161,7 @@ A massive thank you to our incredible open-source community! Thanks to your dedi
 
 * **Turkish (Türkçe):** Translated by [AhmetCanArslan](https://github.com/AhmetCanArslan)
 * **Czech (Čeština):** Translated by [Jakub K. (@kouzelnik3)](https://github.com/kouzelnik3)
+* **Testing & Feedback (v2.1.0):** Huge thanks to [@blecaplol](https://github.com/blecaplol) for instrumental feedback during the architecture upgrade!
 
 Your contributions are what make Shizu CoreFetch a truly global and accessible platform for everyone.
 

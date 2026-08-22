@@ -56,7 +56,7 @@
     },
     {
       "id": 4,
-      "visible": true,
+      "visible": false,
       "type": "info",
       "is_compact": true,
       "is_outlined": true,
@@ -74,7 +74,7 @@
     },
     {
       "id": 5,
-      "visible": false,
+      "visible": true,
       "type": "update",
       "is_compact": false,
       "is_outlined": true,

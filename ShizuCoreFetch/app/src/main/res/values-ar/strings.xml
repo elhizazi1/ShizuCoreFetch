@@ -1,222 +1,336 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Shizu CoreFetch</string>
-    <string name="main_title">Shizu CoreFetch</string>
-    <string name="main_description">منصة مركزية متقدمة لجلب وإدارة التطبيقات التي تتطلب صلاحيات النظام الأساسية.</string>
-    <string name="main_login_github">تسجيل الدخول باستخدام GitHub</string>
-    <string name="main_boredom_title">نافذة المطور</string>
-    <string name="main_boredom_loading">جاري تحميل البيانات...</string>
-    <string name="main_boredom_initial_quote">الكود النظيف يُقرأ دائماً كأنه نثر مكتوب بعناية. - روبرت سي. مارتن</string>
-    
-    <string name="store_title">مستودع Shizu</string>
-    <string name="store_btn_install">تثبيت</string>
-    <string name="store_developer_prefix">بواسطة: </string>
-    <string name="store_shizuku_not_running">محرك Shizuku لا يعمل. يرجى تشغيله أولاً.</string>
-    <string name="store_shizuku_permission_denied">صلاحية Shizuku مطلوبة للعمليات الأساسية.</string>
-    <string name="store_shizuku_permission_granted">تم ربط محرك Shizuku بنجاح.</string>
-    <string name="store_fetch_loading">جاري جلب التطبيقات من الشبكة...</string>
-    <string name="store_fetch_failed_parse">فشل في تحليل البيانات</string>
-    <string name="store_fetch_error_network">خطأ في الشبكة: </string>
-    <string name="installer_no_permission">لا توجد صلاحية Shizuku للتثبيت.</string>
-    <string name="installer_success">تم التثبيت بنجاح!</string>
-    <string name="installer_fail">فشل التثبيت: %1$s</string>
-    <string name="installer_error">حدث خطأ: %1$s</string>
-    
-    <string name="downloader_searching">جاري البحث عن أحدث إصدار...</string>
-    <string name="downloader_no_apk">لم يتم العثور على ملف APK في هذا المستودع.</string>
-    <string name="downloader_downloading">جاري تحميل %1$s...</string>
-    <string name="downloader_success">اكتمل التحميل، جاري بدء التثبيت الصامت...</string>
-    <string name="downloader_fail">فشل التحميل: %1$s</string>
-    
-    <string name="store_requesting_permission">جاري طلب صلاحية Shizuku...</string>
-    <string name="install_button">تثبيت</string>
-    <string name="open_button">فتح</string>
-    <string name="store_cannot_open">لا يمكن فتح هذا التطبيق</string>
-    <string name="tools_app_name">اسم التطبيق</string>
-    <string name="tools_app_developer">اسم المطور</string>
-    <string name="tools_app_desc">وصف قصير للتطبيق يعرض ميزاته الرئيسية بشكل واضح ومنسق.</string>
-    <string name="installing_button">جاري التثبيت…</string>
-    <string name="uninstall_button">إلغاء التثبيت</string>
-    <string name="update_button">تحديث</string>
-    <string name="app_description_title">حول هذا التطبيق</string>
-    <string name="app_versions_title">الإصدارات</string>
-    <string name="uninstall_success">تم إلغاء التثبيت بنجاح</string>
-    <string name="uninstall_fail">فشل إلغاء التثبيت: %1$s</string>
-    <string name="store_search_hint">البحث عن تطبيقات…</string>
-    <string name="home_featured">مميز</string>
-    <string name="home_all_apps">جميع التطبيقات</string>
-    
-    <string name="login_guest">تصفح كضيف</string>
-    <string name="login_authenticating">جارٍ تسجيل الدخول…</string>
-    <string name="login_retrying">مشكلة في الاتصال، إعادة المحاولة (%1$d/%2$d)…</string>
-    <string name="login_failed_final">تعذّر تسجيل الدخول بعد عدة محاولات. يرجى التحقق من الاتصال والمحاولة مجدداً.</string>
-    <string name="account_loading">جاري التحميل…</string>
-    <string name="account_guest_name">ضيف</string>
-    <string name="account_guest_email">يرجى تسجيل الدخول للوصول إلى جميع الميزات</string>
-    <string name="account_installed_apps">التطبيقات المثبتة</string>
-    <string name="account_no_installed_apps">لا توجد تطبيقات مثبتة من المتجر بعد.</string>
-    <string name="account_updates_available">التحديثات المتاحة</string>
-    <string name="account_no_updates">جميع تطبيقاتك محدثة.</string>
-    <string name="account_logout">تسجيل الخروج</string>
-    <string name="screenshots_title">لقطات الشاشة</string>
-    <string name="preview_loading_text">جاري تحميل البيانات...</string>
-    
-    <string name="nav_home">الرئيسية</string>
+    <!-- App & Navigation -->
+    <string name="app_name">شيزوكورفيتش</string>
+    <string name="store_name">كورفيتش</string>
     <string name="nav_store">المتجر</string>
-    <string name="nav_account">الحساب</string>
+    <string name="nav_shizuku">شيزوكو</string>
+    <string name="nav_library">المكتبة</string>
     <string name="nav_settings">الإعدادات</string>
 
-    <string name="settings_theme_title">المظهر</string>
+    <string name="search_placeholder">البحث عن التطبيقات والإضافات...</string>
+
+    <!-- Shizuku Status -->
+    <string name="shizuku_active">نشط</string>
+    <string name="shizuku_stopped">متوقف</string>
+    <string name="shizuku_needed">مطلوب</string>
+    <string name="shizuku_granted">ممنوح</string>
+    <string name="shizuku_label">شيزوكو</string>
+    <string name="shizucorefetch_label">ShizuCoreFetch</string>
+
+    <!-- Authentication -->
+    <string name="github_login">تسجيل الدخول</string>
+    <string name="github_logout">تسجيل الخروج</string>
+
+    <!-- Settings Labels -->
+    <string name="settings_theme_mode">مظهر التطبيق</string>
     <string name="theme_light">فاتح</string>
-    <string name="theme_system">حسب النظام</string>
     <string name="theme_dark">داكن</string>
+    <string name="theme_system">النظام</string>
+    <string name="settings_custom_hex">لون مخصص</string>
+    <string name="settings_ui_scale">حجم الواجهة</string>
+    <string name="settings_about">حول التطبيق</string>
 
-    <string name="settings_lang_title">اللغة</string>
-    <string name="lang_en">English</string>
-    <string name="lang_ar">العربية</string>
-    <string name="lang_fr">Français</string>
-    <string name="lang_es">Español</string>
-    <string name="lang_pt">Português</string>
-    <string name="lang_ru">Русский</string>
-    <string name="lang_hi">हिन्दी</string>
-    <string name="lang_zh">中文</string>
-    <string name="lang_ja">日本語</string> 
-    <string name="lang_cs">Čeština</string>
-    <string name="lang_tr">Türkçe</string>
-    <string name="settings_contributors">المساهمون في الترجمة</string>
+    <!-- App Details (Base) -->
+    <string name="details_install">تثبيت</string>
+    <string name="details_download">تنزيل</string>
+    <string name="details_github_link">جيتهب</string>
+    <string name="app_details_title">تفاصيل التطبيق</string>
+    <string name="stats_stars">النجوم</string>
+    <string name="stats_downloads">التنزيلات</string>
+    <string name="stats_category">الفئة</string>
+    <string name="stats_size">الحجم</string>
+    <string name="btn_github">جيتهب</string>
+    <string name="overview_title">نظرة عامة</string>
+    <string name="recent_releases_title">الإصدارات</string>
+    <string name="featured_badge">مميز</string>
+    <string name="install_service">خدمة التثبيت</string>
+    <string name="empty_no_repos">لم يتم العثور على مستودعات</string>
+    <string name="retry">إعادة المحاولة</string>
 
-    <string name="settings_notif_title">الإشعارات</string>
-    
-    <string name="settings_permissions_title">الصلاحيات</string>
-    <string name="settings_perm_apps">معلومات التطبيقات المثبتة</string>
-    <string name="settings_perm_shizuku">صلاحية شيزوكو</string>
+    <!-- Shizuku Hub -->
+    <string name="shizuku_permission_req_title">صلاحية شيزوكو مطلوبة</string>
+    <string name="shizuku_permission_req_desc">يتطلب هذا التطبيق صلاحيات نظام متقدمة عبر خدمة Shizuku ليعمل بشكل صحيح ويثبت الإضافات.</string>
+    <string name="hub_status_running">خدمة شيزوكو قيد التشغيل</string>
+    <string name="hub_status_stopped">خدمة شيزوكو متوقفة</string>
+    <string name="hub_permission_label">حالة الصلاحية</string>
+    <string name="hub_binder_label">واجهة Binder</string>
+    <string name="hub_guide_title">دليل إعداد التصحيح اللاسلكي</string>
+    <string name="hub_guide_step1"> قم بتمكين خيارات المطور في إعدادات جهازك الأندرويد.</string>
+    <string name="hub_guide_step2"> قم بتشغيل التصحيح اللاسلكي داخل خيارات المطور.</string>
+    <string name="hub_guide_step3"> افتح تطبيق Shizuku وقم بإقران جهازك باستخدام التصحيح اللاسلكي.</string>
+    <string name="refresh">تحديث</string>
 
-    <string name="settings_about_store">حول المتجر</string>
-    <string name="settings_privacy">سياسة الخصوصية</string>
-    <string name="settings_terms">شروط الاستخدام</string>
-    <string name="settings_version">الإصدار 1.5.0</string>
-    <string name="settings_developer">بواسطة جمال الحزازي</string>
+    <!-- Library -->
+    <string name="library_title">المكتبة المحفوظة</string>
+    <string name="library_empty_title">مكتبتك فارغة</string>
+    <string name="library_empty_desc">قم بحفظ أدوات ومستودعات Shizuku المفضلة لديك من المتجر للوصول إليها بسرعة وسهولة هنا.</string>
 
-    <string name="dialog_theme_title">اختر المظهر</string>
-    <string name="dialog_lang_title">اختر اللغة</string>
+    <!-- Settings Explanations -->
+    <string name="settings_appearance">المظهر والسمة البصرية</string>
+    <string name="settings_preset_color">لون السمة الأساسي</string>
+    <string name="settings_gas_title">واجهة Worker وموازن الحمل</string>
+    <string name="settings_gas_endpoint">رابط Cloudflare Worker (متصل بـ GAS):</string>
+    <string name="settings_gas_active">متصل</string>
+    <string name="settings_gas_inactive">غير متصل</string>
+    <string name="settings_gas_checking">جاري التحقق…</string>
+    <string name="settings_quota_title">حصة GitHub API</string>
+    <string name="settings_quota_loading">جاري تحميل بيانات الحصة الحقيقية…</string>
+    <string name="settings_quota_used">%1$d / %2$d مستخدم</string>
+    <string name="settings_quota_remaining">%1$d متبقي</string>
+    <string name="settings_quota_reset">تتجدد في %1$s</string>
+    <string name="github_auth_title">مصادقة حساب جيتهب</string>
+    <string name="github_auth_desc">اربط حسابك على جيتهب أو رمز الوصول الشخصي (PAT) لتجاوز قيود حصة API واستكشاف المستودعات بحرية.</string>
+    <string name="about_version">ShizuCoreFetch الإصدار %1$s</string>
+    <string name="about_package">xyz.siwane.shizucorefetch</string>
+    <string name="theme_mode_title">وضع العرض</string>
+    <string name="main_theme_color_title">لوحة الألوان</string>
 
-    <string name="toast_shizuku_granted">صلاحية شيزوكو ممنوحة بالفعل</string>
-    <string name="toast_shizuku_not_running">تطبيق Shizuku لا يعمل حالياً، يرجى تشغيله</string>
-    <string name="toast_shizuku_error">حدث خطأ: مكتبة Shizuku غير متوفرة</string>
-    
-    <string name="settings_category_general">عام</string>
-    <string name="settings_category_about">حول</string>
+    <!-- Colors -->
+    <string name="color_amethyst">أرجواني</string>
+    <string name="color_emerald">زمردي</string>
+    <string name="color_sapphire">ياقوتي</string>
+    <string name="color_siwane">صوان</string>
+    <string name="color_crimson">قرمزي</string>
+    <string name="color_sunset">غروب</string>
 
-    <string name="notif_channel_ops_name">عمليات المتجر</string>
-    <string name="notif_channel_ops_desc">إشعارات عمليات التحميل في الخلفية والتثبيت التقني.</string>
-    <string name="notif_channel_updates_name">التحديثات المتوفرة</string>
-    <string name="notif_channel_updates_desc">تنبيهات عند توفر إصدارات جديدة للتطبيقات المثبتة لديك.</string>
-    <string name="notif_updates_available_title">تحديثات متوفرة</string>
-    <string name="notif_updates_available_msg">يوجد %1$d تحديثات جديدة جاهزة للمعالجة.</string>
+    <!-- UI Controls -->
+    <string name="btn_dynamic_m3">ديناميكي M3</string>
+    <string name="btn_custom_hex">لون مخصص</string>
+    <string name="ui_scale_title">حجم الواجهة والخطوط</string>
+    <string name="ui_scale_desc_text">قم بضبط حجم عناصر الواجهة والخطوط لراحة مثالية للعين واستخدام أفضل.</string>
+    <string name="settings_language">لغة التطبيق</string>
 
-    <string name="nav_wallet">محفظة التخزين المحلي</string>
-    <string name="wallet_empty">لا توجد ملفات حزم تطبيقات مخزنة في الذاكرة المؤقتة حالياً.</string>
-    <string name="wallet_delete_title">تأكيد الحذف</string>
-    <string name="wallet_delete_msg">هل أنت متأكد من رغبتك في حذف حزمة التثبيت الخاصة بتطبيق %1$s نهائياً؟</string>
-    <string name="wallet_delete_success">تم حذف الملف بنجاح لتوفير مساحة.</string>
-    <string name="wallet_share_title">مشاركة حزمة التطبيق</string>
-    <string name="wallet_no_editor_found">لم يتم العثور على تطبيق متوافق أو محرر ملفات لفتح الحزمة.</string>
-    <string name="wallet_error_action">تعذر تنفيذ الإجراء المطلوب على الملف.</string>
-    <string name="wallet_btn_delete">مسح</string>
-    <string name="wallet_btn_share">مشاركة</string>
-    <string name="wallet_btn_open">فتح خارجي</string>
-    <string name="dialog_cancel">إلغاء</string>
-    <string name="dialog_confirm">تأكيد</string>
+    <!-- Developer & Support -->
+    <string name="dev_support_title">المطور والدعم</string>
+    <string name="dev_name">جمال الحزازي</string>
+    <string name="dev_website">موقع صوان الرسمي - siwane.xyz</string>
+    <string name="dev_github">حساب جيتهب - elhizazi1</string>
+    <string name="dev_email">jamal@elhizazi.me</string>
+    <string name="about_app_title">حول التطبيق</string>
+    <string name="about_privacy">سياسة الخصوصية</string>
+    <string name="about_terms">شروط الاستخدام</string>
+    <string name="about_share">مشاركة التطبيق</string>
+    <string name="about_update">التحقق من التحديثات</string>
 
-    <string name="store_reviews_title">التقييمات والتعليقات</string>
-    <string name="store_reviews_empty">كن أول من يقيم هذا التطبيق! يتم الآن تجهيز نظام التعليقات.</string>
-    <string name="store_write_review">اكتب تقييماً</string>
-    <string name="store_developer_info">بيانات المطور</string>
-    <string name="store_rating_count_format">%1$s تقييم</string>
-    <string name="store_no_ratings_yet">لا توجد تقييمات بعد</string>
-    <string name="store_comment_dev">نظام التعليقات قيد التطوير حالياً</string>
-    <string name="store_dev_email">البريد:</string>
-    <string name="store_dev_website">الموقع الإلكتروني</string>
-    <string name="store_dev_portfolio">معرض الأعمال</string>
+    <!-- For Developers -->
+    <string name="for_developers_title">للمطورين</string>
+    <string name="for_developers_desc">أضف هذه المواضيع (topics) إلى مستودع جيتهب الخاص بك ليتم أرشفة تطبيق شيزوكو الخاص بك تلقائياً في متجرنا:</string>
+    <string name="topic_shizuku">shizuku</string>
+    <string name="topic_shizucorefetch">shizucorefetch</string>
 
-    <string name="store_developer_message_title">كلمة من المطور</string>
-    <string name="store_show_all_versions">عرض جميع الإصدارات</string>
-    <string name="store_hide_versions">إخفاء الإصدارات</string>
+    <!-- Custom Hex Popup -->
+    <string name="custom_hex_title">لون سمة مخصص</string>
+    <string name="custom_hex_label">رمز اللون (مثال: #FF0055)</string>
+    <string name="custom_hex_apply">تطبيق اللون</string>
+    <string name="custom_hex_invalid">رمز غير صالح</string>
+    <string name="color_picker_hint">انقر أو اسحب على عجلة الألوان لاختيار لونك المفضل بدقة.</string>
 
-    <string name="store_visit_website">زيارة الموقع الرسمي</string>
-    <string name="store_calculating_size">جاري الحساب...</string>
+    <!-- Store Categories -->
+    <string name="cat_all">الكل</string>
+    <string name="action_retry">إعادة المحاولة</string>
+    <string name="store_no_results">لم يتم العثور على تطبيقات</string>
+    <string name="cat_system">النظام</string>
+    <string name="cat_utility">أدوات</string>
+    <string name="cat_development">تطوير</string>
+    <string name="cat_customization">تخصيص</string>
 
-    <string name="empty_comments_message">لا توجد تعليقات حتى الآن. كن أول من يعلق!</string>
-    <string name="hide_comments_previous">إخفاء التعليقات السابقة</string>
-    <string name="show_remaining_comments">عرض باقي التعليقات (%1$d)</string>
-    <string name="comment_posted_success">تم إضافة التعليق بنجاح!</string>
-    <string name="comment_post_failed">فشل نشر التعليق</string>
-    <string name="login_prompt_comments">يرجى تسجيل الدخول بحساب GitHub للمشاركة في النقاش.</string>
-    <string name="comment_reply_button">رد</string>
-    <string name="comment_edit_button">تعديل</string>
-    <string name="comment_delete_button">حذف</string> 
-    <string name="comment_input_hint">اكتب تعليقك هنا...</string>
-    <string name="edit_comment_toast_format">سيتم فتح نافذة لتعديل التعليق رقم %1$d</string>
+    <!-- App Details Actions & Sections -->
+    <string name="action_open">فتح</string>
+    <string name="action_update">تحديث</string>
+    <string name="action_uninstall">إزالة التثبيت</string>
+    <string name="action_website">الموقع الإلكتروني</string>
+    <string name="app_description_title">حول هذا التطبيق</string>
+    <string name="version_history_title">سجل الإصدارات</string>
+    <string name="version_current_badge">الحالي</string>
+    <string name="app_screenshots">لقطات الشاشة</string>
 
-    <string name="comment_react_button">تفاعل</string>
-    <string name="dialog_choose_reaction">اختر تفاعلاً</string>
-    <string name="reaction_added_success">تمت إضافة التفاعل!</string>
-    <string name="reaction_add_failed">فشل إضافة التفاعل</string>
+    <!-- Rating and Comments -->
+    <string name="app_rating_title">قيّم هذا التطبيق</string>
+    <string name="app_rating_desc">أخبر الآخرين برأيك</string>
+    <string name="comments_title">التقييمات والمراجعات</string>
+    <string name="write_comment_hint">اكتب تعليقاً...</string>
+    <string name="post_comment">نشر</string>
 
-    <string name="dev_profile_title">حساب المطور</string>
-    <string name="dev_profile_apps_title">تطبيقات المطور</string>
-   <string name="store_dev_email2">البريد الإلكتروني</string>
-   
-   <string name="store_trending_apps">تطبيقات شائعة</string>
-    <string name="ad_label">إعلان</string>
-    
-    <!-- إعدادات التثبيت الصامت -->
-<string name="settings_silent_install_title">التثبيت الصامت</string>
-<string name="silent_install_enabled">التثبيت الصامت: مفعل (شيزوكو)</string>
-<string name="silent_install_disabled">التثبيت الصامت: معطل (تثبيت النظام)</string>
+    <!-- Ads and Suggestions -->
+    <string name="ad_label">إعلان ممول</string>
+    <string name="popular_apps_title">تطبيقات شائعة</string>
 
-<string name="settings_silent_install_desc">تفعيل التثبيت المباشر عبر شيزوكو دون الحاجة لتأكيد النظام</string>
+    <!-- GitHub Authentication -->
+    <string name="github_sheet_title">مصادقة حساب جيتهب</string>
+    <string name="github_sheet_desc">قم بتسجيل الدخول لزيادة حصة طلبات API إلى 5000 طلب في الساعة.</string>
+    <string name="github_oauth_btn">الدخول عبر جيتهب</string>
+    <string name="github_token_label">رمز الوصول الشخصي (PAT)</string>
+    <string name="github_token_hint">ghp_xxxxxxxxxxxx</string>
+    <string name="github_token_btn">الدخول بالرمز</string>
+    <string name="github_or_divider">أو</string>
+    <string name="github_logged_in_as">مسجل الدخول كـ</string>
+    <string name="github_rate_limit">حصة API: 5000 / 5000</string>
 
+    <!-- Account & Token Status -->
+    <string name="token_status_active">نشط</string>
+    <string name="token_status_inactive">غير نشط</string>
+    <string name="btn_delete_token">إزالة الرمز</string>
+    <string name="btn_my_account">حسابي</string>
+    <string name="github_token_status">حالة الرمز:</string>
+    <string name="account_details_brief">إدارة ملفك الشخصي ومستودعاتك.</string>
 
-<!-- نصوص وضع الضيف -->
-<string name="guest_login_prompt_title">تسجيل الدخول مطلوب</string>
-<string name="guest_login_prompt_install_msg">يرجى تسجيل الدخول باستخدام حساب جيتهب الخاص بك لتتمكن من تنزيل وتثبيت التطبيقات من المتجر.</string>
-<string name="guest_action_login">تسجيل الدخول الآن</string>
+    <!-- My Account Screen -->
+    <string name="account_title">ملفي الشخصي</string>
+    <string name="account_repos">المستودعات</string>
+    <string name="account_followers">المتابعون</string>
+    <string name="account_following">يتابع</string>
+    <string name="account_section_repos">المستودعات العامة</string>
+    <string name="btn_view_github">العرض على جيتهب</string>
+    <string name="already_on_account">أنت تقوم حالياً بعرض ملفك الشخصي.</string>
 
-<string name="notice_title">ملاحظة هامة للمستخدمين</string>
-<string name="notice_message">أهلاً بك! نود إعلامك أن التثبيت الآن ناجح ومستقر تماماً سواء كان Shizuku مفعلاً عبر Root أو عبر ADB.\n\nلضمان استقرار المتجر ومنع الحظر المؤقت من GitHub، يُفضل تسجيل الدخول بحسابك الشخصي. إذا واجهت أي خطأ تقني، يسعدني تواصلك معي مباشرة.\n\nنتمنى لك تجربة ممتعة مع ShizuCoreFetch!</string>
-<string name="notice_button">حسناً</string>
+    <!-- Library & APK Manager -->
+    <string name="lib_updates_title">تحديثات متاحة</string>
+    <string name="lib_installed_title">تطبيقات مثبتة</string>
+    <string name="lib_bookmarks_title">محفوظة في المكتبة</string>
+    <string name="apk_manager_title">ملفات APK المنزلة</string>
+    <string name="apk_manager_desc">إدارة ملفات التثبيت التي تم تنزيلها.</string>
+    <string name="apk_manager_empty">لا توجد ملفات APK منزلة بعد.</string>
+    <string name="apk_manager_open_failed">تعذر فتح التطبيق.</string>
+    <string name="apk_manager_install_success">تم التثبيت بنجاح.</string>
+    <string name="apk_manager_delete_title">حذف الملف</string>
+    <string name="apk_manager_delete_confirm">هل تريد حذف \"%1$s\" من هذا الجهاز؟ لا يمكن التراجع عن هذا الإجراء.</string>
+    <string name="apk_manager_delete_failed">تعذر حذف الملف.</string>
+    <string name="apk_manager_open">فتح</string>
+    <string name="apk_manager_install">تثبيت</string>
+    <string name="action_cancel">إلغاء</string>
+    <string name="toast_installed">تم التثبيت بنجاح.</string>
+    <string name="toast_uninstalled">تمت إزالة التثبيت بنجاح.</string>
+    <string name="toast_updated">تم التحديث بنجاح.</string>
+    <string name="toast_opened">تم الفتح.</string>
+    <string name="store_cannot_open">تعذر فتح التطبيق.</string>
+    <string name="store_download_failed">لا يتوفر رابط تنزيل صالح لهذا التطبيق حالياً.</string>
+    <string name="store_error_generic">حدث خطأ ما. يرجى المحاولة مرة أخرى.</string>
+    <string name="apk_path">المسار: Download/shizucorefetch</string>
+    <string name="apk_action_delete">حذف</string>
+    <string name="action_back">رجوع</string>
+    <string name="action_share">مشاركة</string>
+    <string name="action_open_folder">فتح المجلد</string>
+    <string name="error_open_folder">تعذر فتح مدير الملفات.</string>
+    <string name="toast_download_complete">اكتمل التنزيل: %1$s</string>
+    <string name="toast_download_failed">فشل التنزيل: %1$s</string>
 
-<string name="store_github_stars_format">نجوم المستودع: %1$s</string>
-<string name="store_real_ratings_count">المقيمين: %1$d</string>
-<string name="store_no_real_ratings_yet">لا يوجد تقييمات بعد</string>
-<string name="store_rating_success">تم حفظ تقييمك بنجاح</string>
-<string name="store_rating_fail">حدث خطأ أثناء حفظ التقييم</string>
-<string name="login_prompt_rating">يجب تسجيل الدخول لتقييم التطبيق</string>
+    <string name="hub_action_check_permission">التحقق من الصلاحية</string>
+    <string name="hub_silent_install_title">طريقة التثبيت</string>
+    <string name="hub_silent_install_enabled">تثبيت صامت: مفعل (Shizuku)</string>
+    <string name="hub_silent_install_disabled">تثبيت صامت: معطل (النظام)</string>
+    <string name="hub_warning_permissions">تأكد من منح كافة الصلاحيات المطلوبة في إعدادات النظام لضمان عمل Shizuku والتثبيت الصامت بشكل مثالي.</string>
+    <string name="hub_action_open_settings">فتح إعدادات التطبيق</string>
 
-    <!-- نصوص نظام التعليقات -->
-    <string name="delete_comment_title">حذف التعليق</string>
-    <string name="delete_comment_message">هل أنت متأكد من حذف هذا التعليق نهائياً؟</string>
-    <string name="comment_edit_success">تم تعديل التعليق بنجاح</string>
-    <string name="comment_delete_success">تم حذف التعليق من المتجر</string>
-    <string name="comment_protected_blacklist">التعليق محمي بجيتهب. جاري إضافته للقائمة السوداء...</string>
-    <string name="comment_delete_no_permission">لا تملك صلاحية حذف هذا التعليق</string>
-    <string name="comment_blacklist_success">تم إخفاء التعليق نهائياً من المتجر</string>
-    <string name="comment_blacklist_fail">تعذر حظر التعليق، حاول مجدداً</string>
+    <string name="dev_profile_title">ملف المطور</string>
+    <string name="dev_role_subtitle">مطور أندرويد ومصمم واجهات</string>
+    <string name="dev_info_title">معلومات الاتصال</string>
+    <string name="dev_email_label">البريد الإلكتروني</string>
+    <string name="dev_website_label">الموقع الإلكتروني</string>
+    <string name="dev_portfolio_label">معرض الأعمال</string>
+    <string name="dev_social_title">وسائل التواصل الاجتماعي</string>
+    <string name="dev_apps_title">تطبيقات المطور</string>
 
-    <!-- نصوص تفاصيل التطبيق المحدثة -->
-    <string name="store_developer_format">%1$s %2$s</string>
-    <string name="store_developer_with_category">%1$s %2$s • %3$s</string>
-    <string name="store_downloads_million">%1$sM</string>
-    <string name="store_downloads_thousand">%1$sK</string>
-    <string name="store_rating_combined">%1$s • %2$s</string>
-    <string name="store_default_rating">0.0</string>
-    <string name="store_unknown_size">غير معروف</string>
-    <string name="store_ad_pending">إعلان (قيد المراجعة - يظهر لك فقط)</string>
-    <string name="store_no_description">لا يوجد وصف متاح.</string>
-    <string name="store_error_generic">حدث خطأ</string>
-    <string name="store_download_failed">فشل التنزيل</string>
-    <string name="store_downloads_count">تنزيل: %1$s</string>
-<string name="store_category_prefix">الفئة:</string>
+    <string name="rating_login_warning">يرجى تسجيل الدخول بحساب جيتهب لتقييم التطبيق.</string>
+    <string name="comments_login_warning">يرجى تسجيل الدخول بحساب جيتهب لترك تعليق.</string>
+    <string name="comments_empty">لا توجد تعليقات بعد. كن أول من يعلق!</string>
+    <string name="comment_reply">رد</string>
+    <string name="comment_delete">حذف</string>
+    <string name="comment_edit">تعديل</string>
+    <string name="comment_save">حفظ</string>
+    <string name="comment_cancel">إلغاء</string>
+    <string name="comment_admin_hide">إخفاء من المتجر</string>
+    <string name="comment_admin_unhide">إلغاء الإخفاء</string>
+    <string name="comment_hidden_badge">مخفي (للمشرفين فقط)</string>
+
+    <string name="dev_word_title">كلمة المطور</string>
+    <string name="dev_word_desc">شكراً لاهتمامك بتطبيقاتي! تم بناء هذا التطبيق لتقديم أفضل تجربة ممكنة لمستخدمي Shizuku، مع تركيز كبير على الأداء العالي والتصميم العصري.</string>
+    <string name="dev_bio_title">نبذة عن المطور</string>
+    <string name="dev_bio_desc">مهندس برمجيات متخصص في تطوير تطبيقات أندرويد وتصميم واجهات المستخدم الحديثة (UI/UX). شغوف جداً بكتابة كود نظيف وصناعة حلول برمجية مبتكرة.</string>
+
+    <string name="github_login_title">github.com</string>
+    <string name="github_error_connection">فشل الاتصال بـ جيتهب. تحقق من اتصالك بالإنترنت.</string>
+    <string name="github_error_state_mismatch">فشل التحقق الأمني. تم إلغاء العملية لحمايتك.</string>
+    <string name="github_error_no_code">لم يتم استلام رمز التفويض من جيتهب.</string>
+
+    <string name="chooser_share_apk">مشاركة الـ APK</string>
+    <string name="chooser_open_folder">فتح المجلد</string>
+
+    <!-- Dynamic sections and popup -->
+    <string name="section_top_downloads">الأكثر تنزيلاً</string>
+    <string name="section_top_rated">الأعلى تقييماً</string>
+    <string name="section_trusted_apps">تطبيقات موثوقة (ShizuCoreFetch)</string>
+    <string name="section_all_apps">جميع التطبيقات</string>
+    <string name="comments_show_more">عرض المزيد من التعليقات (%1$d)</string>
+    <string name="comments_hide">إخفاء التعليقات</string>
+    <string name="ad_external_link_desc">هل أنت متأكد أنك تريد الانتقال إلى الرابط الخارجي التالي؟\n\n%1$s</string>
+    <string name="action_continue">متابعة</string>
+    <string name="action_go_to_library">الانتقال للمكتبة</string>
+    <string name="apk_delete_dialog_title">حذف ملف APK</string>
+    <string name="apk_delete_dialog_msg">هل أنت متأكد من أنك تريد حذف \"%1$s\"؟ لا يمكن التراجع عن هذا الإجراء.</string>
+    <string name="account_no_android_repos_title">لا توجد مستودعات أندرويد بعد!</string>
+    <string name="account_no_android_repos_desc">لا شيء صعب مع التعلم. إذا كنت شغوفاً بخوض غمار الإبداع وتطوير تطبيقات الأندرويد، فإن مدونة صوان (siwanex.xyz) توفر لك نقطة انطلاق ممتازة لتبدأ رحلتك.</string>
+    <string name="action_visit_blog">زيارة المدونة</string>
+    <string name="hub_binder_root_warning">إصدارات Binder الأقدم من 11 تتطلب صلاحيات Root حصراً لتعمل بشكل صحيح.</string>
+    <string name="hub_silent_install_requires_shizuku">يتطلب تفعيل شيزوكو أولاً</string>
+    <string name="hub_guide_main_title">طرق تفعيل Shizuku</string>
+    <string name="hub_guide_wireless_title">التصحيح اللاسلكي (بدون كمبيوتر)</string>
+    <string name="hub_guide_wireless_step1">افتح خيارات المطور في إعدادات جهازك.</string>
+    <string name="hub_guide_wireless_step2">فعّل ميزة \'تصحيح أخطاء اللاسلكي\' (Wireless Debugging).</string>
+    <string name="hub_guide_wireless_step3">افتح تطبيق Shizuku الرسمي واضغط على \'إقران\' (Pairing).</string>
+    <string name="hub_guide_pc_title">عبر الكمبيوتر (ADB)</string>
+    <string name="hub_guide_pc_step1">فعّل \'تصحيح أخطاء USB\' من خيارات المطور.</string>
+    <string name="hub_guide_pc_step2">قم بتوصيل هاتفك بالكمبيوتر وافتح سطر الأوامر (Terminal).</string>
+    <string name="hub_guide_pc_step3">انسخ أمر التفعيل من تطبيق Shizuku الرسمي والصقه في سطر الأوامر.</string>
+    <string name="hub_guide_root_title">عبر صلاحيات الروت (Root)</string>
+    <string name="hub_guide_root_step1">افتح تطبيق Shizuku الرسمي.</string>
+    <string name="hub_guide_root_step2">في قسم البدء عبر Root، اضغط على زر \'بدء\'.</string>
+    <string name="hub_guide_root_step3">امنح صلاحيات الروت للتطبيق عبر Magisk أو KernelSU.</string>
+<string name="dev_paypal">PayPal</string>
+<string name="share_subject">تطبيق ShizuCoreFetch</string>
+<string name="share_text">حمل أحدث إصدار من تطبيق ShizuCoreFetch:\nhttps://github.com/elhizazi1/ShizuCoreFetch/releases/latest</string>
+<string name="share_chooser_title">مشاركة التطبيق عبر...</string>
+<string name="worker_error_prefix">تعذر الوصول: %1$s</string>
+<string name="update_available">أحدث إصدار متوفر هو: %1$s</string>
+<string name="update_error_http">تعذر التحقق من التحديثات (HTTP %1$d).</string>
+<string name="update_error_connection">خطأ في الاتصال أثناء البحث عن التحديثات.</string>
+<string name="filter_default">الافتراضي</string>
+<string name="filter_top_rated">الأعلى تقييماً</string>
+<string name="filter_top_downloads">الأكثر تنزيلاً</string>
+<string name="filter_trusted">الموثوقة</string>
+<string name="notif_channel_ops_name">عمليات المتجر</string>
+<string name="notif_channel_ops_desc">إشعارات التحميل، التثبيت، والحذف</string>
+<string name="notif_channel_updates_name">تحديثات التطبيقات</string>
+<string name="notif_channel_updates_desc">تنبيهات عند توفر تحديثات جديدة للتطبيقات</string>
+<string name="notif_download_progress">جاري التنزيل: %1$d%%</string>
+<string name="notif_installing">جاري التثبيت في الخلفية...</string>
+<string name="notif_updates_available_title">تحديثات جديدة متاحة</string>
+<string name="notif_updates_available_msg">يوجد %1$d تطبيق بحاجة إلى تحديث</string>
+    <!-- GitHub API Explanation Dialog -->
+    <string name="github_explanation_title">تنبيه الشفافية وقيود جيتهب (GitHub)</string>
+    <string name="github_explanation_body">يعتمد تطبيق ShizuCoreFetch على خوادم GitHub لجلب البيانات. بدون تسجيل الدخول، يفرض GitHub قيداً بـ 60 طلباً في الساعة لجهازك. تسجيل الدخول يمنحك حصة 5000 طلب في الساعة.\n\nلماذا يطلب التطبيق صلاحيات؟\nنستخدم (OAuth App) الكلاسيكي الذي يتطلب صلاحية الوصول للمستودعات العامة (public_repo) ليتمكن من نشر التعليقات (على شكل مسائل Issues) والتفاعل معها، وجلب بيانات فهرس تطبيقات شيزوكو من المستودعات العامة. نحن لا نجمع بياناتك بأي شكل من الأشكال، وتسجيل الدخول هو إجراء طبيعي وضروري لعمل التطبيق بكفاءة.\n\nهذه القيود مفروضة من GitHub نفسه وليس من التطبيق.</string>
+    <string name="github_explanation_agree">حسنا، أوافق</string>
+    <string name="github_explanation_contact">تواصل مع المطور</string>
+    <string name="details_tech_tags">العلامات (Tags)</string>
+    <string name="details_tech_min_sdk">إصدار النظام (Min SDK)</string>
+    <string name="details_tech_license">الترخيص (License)</string>
+    <string name="details_tech_source">المصدر (Source)</string>
+    <string name="details_tech_open_source">مفتوح المصدر (Open Source)</string>
+    <string name="details_tech_privilege">الصلاحيات (Privilege)</string>
+    <string name="details_tech_requires_shizuku">يتطلب Shizuku</string>
+    <string name="dev_donate">الدعم والتبرع (Donate)</string>
+    <string name="details_tech_target_sdk">الإصدار المستهدف (Target SDK)</string>
+    <string name="details_changelog_title">ما الجديد (Changelog)</string>
+    <string name="online_status">متصل</string>
+    <string name="offline_status">غير متصل</string>
+    <string name="store_offline_message">أنت غير متصل بالإنترنت. تحقق من اتصالك وحاول مرة أخرى.</string>
+    <string name="proxy_info_title">الشفافية: كيف نعمل؟</string>
+    <string name="proxy_info_desc">نستخدم حوضاً يضم 5 توكنات احتياطية تتناوب لتوفير الخدمة للزوار. في حال الضغط واستهلاكها، نمرر طلبك مباشرة كخطة طوارئ بحصة 60 طلباً لعنوان IP الخاص بك.\n\nنصيحة: سجل دخولك بحساب جيتهب للحصول على حصتك الخاصة (5000 طلب) وتجاوز هذه القيود!</string>
+    <string name="settings_clear_cache">تنظيف الكاش</string>
+    <string name="settings_clear_cache_ready">متاح الآن! يمكنك تنظيف البيانات المؤقتة.</string>
+    <string name="settings_clear_cache_wait">لحماية الخوادم، متاح فقط عند الدقيقة %1$s.</string>
+    <string name="shortcut_library">المكتبة</string>
+    <string name="shortcut_apk_manager">ملفات APK</string>
+    <string name="shortcut_settings">الإعدادات</string>
 
 </resources>

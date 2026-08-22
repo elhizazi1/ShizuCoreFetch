@@ -4,39 +4,63 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="QueryAllPackagesPermission" />
-
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
-
+    
+    <!-- صلاحية الإشعارات لأندرويد 13+ -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
-    <uses-permission android:name="moe.shizuku.manager.permission.API_V23" />
+    <!-- صلاحيات التخزين للأجهزة القديمة (أندرويد 10 وما دون) -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29" />
 
-    <queries>
-        <package android:name="moe.shizuku.privileged.api" />
-        <package android:name="bin.mt.plus" />
-        <package android:name="ru.zdevs.zarchiver" />
-        <package android:name="ru.zdevs.zarchiver.pro" />
-        <package android:name="com.mixplorer" />
-        <package android:name="pl.solidexplorer2" />
-        <package android:name="com.google.android.apps.nbu.files" />
-        <package android:name="com.android.documentsui" />
-    </queries>
+    <!-- خدمة أمامية باش يكمل التحميل/التثبيت حتى لو غادر المستخدم التطبيق -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
 
-    <application 
-        android:name=".ShizuApp"
-        android:allowBackup="true" 
-        android:icon="@mipmap/ic_launcher" 
-        android:roundIcon="@mipmap/ic_launcher" 
-        android:label="@string/app_name" 
-        android:supportsRtl="true" 
-        android:theme="@style/AppTheme"
-        android:requestLegacyExternalStorage="true"
-        android:hardwareAccelerated="true"
-        android:usesCleartextTraffic="true">
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppSplash">
+        
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppSplash">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="shizufetch"
+                    android:host="callback" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+            
+        </activity>
 
+        <!-- خدمة أمامية بسيطة: تخلي التحميل/التثبيت مستمر خارج التطبيق -->
+        <service
+            android:name=".apkmanager.DownloadForegroundService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <!-- مزوّد Shizuku الحقيقي -->
         <provider
             android:name="rikka.shizuku.ShizukuProvider"
             android:authorities="${applicationId}.shizuku"
@@ -45,36 +69,7 @@
             android:exported="true"
             android:permission="android.permission.INTERACT_ACROSS_USERS_FULL" />
 
-        <activity
-            android:name=".SplashActivity"
-            android:exported="true"
-            android:theme="@style/Theme.SplashSeamless">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        
-        <activity
-            android:name=".LoginActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustResize"
-            android:launchMode="singleTask">
-            
-            <intent-filter android:autoVerify="true">
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="shizufetch" android:host="callback" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".HomeActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustPan"
-            android:theme="@style/AppTheme" />
-            
+        <!-- FileProvider حقيقي -->
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"
@@ -86,4 +81,5 @@
         </provider>
 
     </application>
+
 </manifest>

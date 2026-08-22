@@ -1,209 +1,336 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- 基础文本 -->
-    <string name="app_name">Shizu CoreFetch</string>
-    <string name="main_title">Shizu CoreFetch</string>
-    <string name="main_description">一个高级的集中式平台，用于获取和管理需要核心权限的应用程序。</string>
-    <string name="main_login_github">使用 GitHub 登录</string>
-    <string name="main_boredom_title">开发者窗口</string>
-    <string name="main_boredom_loading">正在加载数据...</string>
-    <string name="main_boredom_initial_quote">整洁的代码读起来总是像写得很好的散文。 - Robert C. Martin</string>
-    <string name="store_title">Shizu 仓库</string>
-    <string name="store_btn_install">安装</string>
-    <string name="store_developer_prefix">作者：</string>
-    <string name="store_shizuku_not_running">Shizuku 引擎未运行。请先启动它。</string>
-    <string name="store_shizuku_permission_denied">核心操作需要 Shizuku 权限。</string>
-    <string name="store_shizuku_permission_granted">Shizuku 引擎已成功连接。</string>
-    <string name="store_fetch_loading">正在从网络获取应用...</string>
-    <string name="store_fetch_failed_parse">解析数据失败</string>
-    <string name="store_fetch_error_network">网络错误：</string>
-    <string name="installer_no_permission">没有用于安装的 Shizuku 权限。</string>
-    <string name="installer_success">安装成功！</string>
-    <string name="installer_fail">安装失败：%1$s</string>
-    <string name="installer_error">发生错误：%1$s</string>
-    <string name="downloader_searching">正在寻找最新版本...</string>
-    <string name="downloader_no_apk">在此仓库中未找到 APK。</string>
-    <string name="downloader_downloading">正在下载 %1$s...</string>
-    <string name="downloader_success">下载完成，开始静默安装...</string>
-    <string name="downloader_fail">下载失败：%1$s</string>
-    <string name="store_requesting_permission">正在请求 Shizuku 权限...</string>
-    <string name="install_button">安装</string>
-    <string name="open_button">打开</string>
-    <string name="store_cannot_open">无法打开此应用</string>
-    <string name="tools_app_name">应用名称</string>
-    <string name="tools_app_developer">开发者名称</string>
-    <string name="tools_app_desc">应用的简短描述，清晰整洁地展示其主要功能。</string>
-    <string name="installing_button">正在安装…</string>
-    <string name="uninstall_button">卸载</string>
-    <string name="update_button">更新</string>
-    <string name="app_description_title">关于此应用</string>
-    <string name="app_versions_title">版本</string>
-    <string name="uninstall_success">卸载成功</string>
-    <string name="uninstall_fail">卸载失败：%1$s</string>
-    <string name="store_search_hint">搜索应用…</string>
-    <string name="home_featured">精选</string>
-    <string name="home_all_apps">所有应用</string>
-    <string name="login_guest">以访客身份浏览</string>
-    <string name="nav_home">首页</string>
+    <!-- App & Navigation -->
+    <string name="app_name">ShizuCoreFetch</string>
+    <string name="store_name">CoreFetch</string>
     <string name="nav_store">商店</string>
-    <string name="nav_account">账户</string>
+    <string name="nav_shizuku">Shizuku</string>
+    <string name="nav_library">库</string>
     <string name="nav_settings">设置</string>
-    <string name="account_loading">正在加载…</string>
-    <string name="account_guest_name">访客</string>
-    <string name="account_guest_email">请登录以访问所有功能</string>
-    <string name="account_installed_apps">已安装应用</string>
-    <string name="account_no_installed_apps">尚未安装来自商店的任何应用。</string>
-    <string name="account_updates_available">可用更新</string>
-    <string name="account_no_updates">您的所有应用都是最新版本。</string>
-    <string name="account_logout">登出</string>
-    <string name="screenshots_title">屏幕截图</string>
-    <string name="preview_loading_text">正在加载数据...</string>
 
-    <!-- 设置文本 -->
-    <string name="settings_theme_title">主题</string>
+    <string name="search_placeholder">搜索应用和模块...</string>
+
+    <!-- Shizuku Status -->
+    <string name="shizuku_active">已激活</string>
+    <string name="shizuku_stopped">已停止</string>
+    <string name="shizuku_needed">需要</string>
+    <string name="shizuku_granted">已授权</string>
+    <string name="shizuku_label">Shizuku</string>
+    <string name="shizucorefetch_label">ShizuCoreFetch</string>
+
+    <!-- Authentication -->
+    <string name="github_login">登录</string>
+    <string name="github_logout">登出</string>
+
+    <!-- Settings Labels -->
+    <string name="settings_theme_mode">主题模式</string>
     <string name="theme_light">浅色</string>
-    <string name="theme_system">跟随系统</string>
     <string name="theme_dark">深色</string>
+    <string name="theme_system">跟随系统</string>
+    <string name="settings_custom_hex">自定义 Hex</string>
+    <string name="settings_ui_scale">界面缩放</string>
+    <string name="settings_about">关于应用</string>
 
-    <string name="settings_lang_title">语言</string>
-    <string name="lang_en">English</string>
-    <string name="lang_ar">العربية</string>
-    <string name="lang_fr">Français</string>
-    <string name="lang_es">Español</string>
-    <string name="lang_pt">Português</string>
-    <string name="lang_ru">Русский</string>
-    <string name="lang_hi">हिन्दी</string>
-    <string name="lang_zh">中文</string>
-    <string name="lang_ja">日本語</string> 
-    <string name="lang_cs">Čeština</string>
-    <string name="lang_tr">Türkçe</string>
-    <string name="settings_contributors">翻译贡献者</string>
+    <!-- App Details (Base) -->
+    <string name="details_install">安装</string>
+    <string name="details_download">下载</string>
+    <string name="details_github_link">GitHub</string>
+    <string name="app_details_title">应用详情</string>
+    <string name="stats_stars">星标</string>
+    <string name="stats_downloads">下载量</string>
+    <string name="stats_category">分类</string>
+    <string name="stats_size">大小</string>
+    <string name="btn_github">GitHub</string>
+    <string name="overview_title">概述</string>
+    <string name="recent_releases_title">版本发布</string>
+    <string name="featured_badge">精选</string>
+    <string name="install_service">安装服务</string>
+    <string name="empty_no_repos">未找到仓库</string>
+    <string name="retry">重试</string>
 
-    <string name="settings_notif_title">通知</string>
-    
-    <string name="settings_permissions_title">权限</string>
-    <string name="settings_perm_apps">已安装应用信息</string>
-    <string name="settings_perm_shizuku">Shizuku 权限</string>
+    <!-- Shizuku Hub -->
+    <string name="shizuku_permission_req_title">需要 Shizuku 权限</string>
+    <string name="shizuku_permission_req_desc">此应用需要通过 Shizuku 绑定器获取高级系统权限，方可正常运行并安装模块。</string>
+    <string name="hub_status_running">Shizuku 服务运行中</string>
+    <string name="hub_status_stopped">Shizuku 服务已停止</string>
+    <string name="hub_permission_label">权限状态</string>
+    <string name="hub_binder_label">Binder 接口</string>
+    <string name="hub_guide_title">无线调试设置指南</string>
+    <string name="hub_guide_step1"> 在 Android 设备设置中启用开发者选项。</string>
+    <string name="hub_guide_step2"> 在开发者选项内开启“无线调试”。</string>
+    <string name="hub_guide_step3"> 打开 Shizuku 应用，通过无线调试配对您的设备。</string>
+    <string name="refresh">刷新</string>
 
-    <string name="settings_about_store">关于商店</string>
-    <string name="settings_privacy">隐私政策</string>
-    <string name="settings_terms">使用条款</string>
-    <string name="settings_version">版本 1.5.0</string>
-    <string name="settings_developer">作者：Jamal El Hizazi</string>
+    <!-- Library -->
+    <string name="library_title">已保存的库</string>
+    <string name="library_empty_title">您的库是空的</string>
+    <string name="library_empty_desc">从商店中收藏您喜爱的 Shizuku 工具和仓库，以便在此处快速轻松地访问。</string>
 
-    <string name="dialog_theme_title">选择主题</string>
-    <string name="dialog_lang_title">选择语言</string>
+    <!-- Settings Explanations -->
+    <string name="settings_appearance">外观与视觉主题</string>
+    <string name="settings_preset_color">主主题颜色</string>
+    <string name="settings_gas_title">Worker API 与负载均衡</string>
+    <string name="settings_gas_endpoint">Cloudflare Worker 端点 (已连接 GAS):</string>
+    <string name="settings_gas_active">在线</string>
+    <string name="settings_gas_inactive">离线</string>
+    <string name="settings_gas_checking">正在检查…</string>
+    <string name="settings_quota_title">GitHub API 配额</string>
+    <string name="settings_quota_loading">正在加载实际配额数据…</string>
+    <string name="settings_quota_used">已使用 %1$d / %2$d</string>
+    <string name="settings_quota_remaining">剩余 %1$d</string>
+    <string name="settings_quota_reset">%1$s 重置</string>
+    <string name="github_auth_title">GitHub 账号认证</string>
+    <string name="github_auth_desc">绑定您的 GitHub 账号或个人访问令牌 (PAT) 以绕过 API 速率限制并自由探索仓库。</string>
+    <string name="about_version">ShizuCoreFetch v%1$s</string>
+    <string name="about_package">xyz.siwane.shizucorefetch</string>
+    <string name="theme_mode_title">显示模式</string>
+    <string name="main_theme_color_title">调色板</string>
 
-    <string name="toast_shizuku_granted">Shizuku 权限已被授予</string>
-    <string name="toast_shizuku_not_running">Shizuku 未运行，请启动它</string>
-    <string name="toast_shizuku_error">错误：Shizuku 库不可用</string>
-    
-    <string name="settings_category_general">常规</string>
-    <string name="settings_category_about">关于</string>
-<string name="notif_channel_ops_name">商店运营</string>
-<string name="notif_channel_ops_desc">后台下载和技术安装的通知。</string>
-<string name="notif_channel_updates_name">可用更新</string>
-<string name="notif_channel_updates_desc">当您安装的应用程序有新版本可用时发出提醒。</string>
-<string name="notif_updates_available_title">发现更新</string>
-<string name="notif_updates_available_msg">有 %1$d 个应用程序更新等待处理。</string>
+    <!-- Colors -->
+    <string name="color_amethyst">紫水晶</string>
+    <string name="color_emerald">祖母绿</string>
+    <string name="color_sapphire">蓝宝石</string>
+    <string name="color_siwane">Siwane</string>
+    <string name="color_crimson">绯红</string>
+    <string name="color_sunset">日落</string>
 
-<string name="nav_wallet">本地存储钱包</string>
-<string name="wallet_empty">本地缓存中当前没有存储任何应用程序文件。</string>
-<string name="wallet_delete_title">确认删除</string>
-<string name="wallet_delete_msg">您确定要永久删除 %1$s 的安装包吗？</string>
-<string name="wallet_delete_success">包已成功移除。</string>
-<string name="wallet_share_title">分享应用程序包</string>
-<string name="wallet_no_editor_found">此设备上未发现兼容的包查看器或编辑器。</string>
-<string name="wallet_error_action">启动请求的文件操作失败。</string>
-<string name="wallet_btn_delete">删除</string>
-<string name="wallet_btn_share">分享</string>
-<string name="wallet_btn_open">外部打开</string>
-<string name="dialog_cancel">取消</string>
-<string name="dialog_confirm">确认</string>
+    <!-- UI Controls -->
+    <string name="btn_dynamic_m3">动态 M3</string>
+    <string name="btn_custom_hex">自定义 Hex</string>
+    <string name="ui_scale_title">界面与字体缩放</string>
+    <string name="ui_scale_desc_text">调整界面元素和字体的缩放比例，以获得最佳的视觉舒适度与更好的易用性。</string>
+    <string name="settings_language">应用语言</string>
 
-<string name="store_reviews_title">评分与评论</string>
-<string name="store_reviews_empty">成为第一个评价此应用的人！评论系统正在准备中。</string>
-<string name="store_write_review">撰写评价</string>
-<string name="store_developer_info">开发者信息</string>
-<string name="store_rating_count_format">%1$s 条评价</string>
-<string name="store_no_ratings_yet">暂无评分</string>
-<string name="store_comment_dev">评论系统目前正在开发中</string>
-<string name="store_dev_email">电子邮件：</string>
-<string name="store_dev_website">官方网站</string>
-<string name="store_dev_portfolio">作品集</string>
+    <!-- Developer & Support -->
+    <string name="dev_support_title">开发者与支持</string>
+    <string name="dev_name">Jamal El Hizazi</string>
+    <string name="dev_website">siwane.xyz - 官方网站</string>
+    <string name="dev_github">GitHub - elhizazi1</string>
+    <string name="dev_email">jamal@elhizazi.me</string>
+    <string name="about_app_title">关于应用</string>
+    <string name="about_privacy">隐私政策</string>
+    <string name="about_terms">使用条款</string>
+    <string name="about_share">分享应用</string>
+    <string name="about_update">检查更新</string>
 
-<string name="store_developer_message_title">开发者寄语</string>
-<string name="store_show_all_versions">显示所有版本</string>
-<string name="store_hide_versions">隐藏版本</string>
+    <!-- For Developers -->
+    <string name="for_developers_title">开发者专区</string>
+    <string name="for_developers_desc">在您的 GitHub 仓库中添加以下准确的主题标签，以便您的 Shizuku 应用自动收录进我们的商店：</string>
+    <string name="topic_shizuku">shizuku</string>
+    <string name="topic_shizucorefetch">shizucorefetch</string>
 
-<string name="store_visit_website">访问官方网站</string>
-<string name="store_calculating_size">正在计算...</string>
+    <!-- Custom Hex Popup -->
+    <string name="custom_hex_title">自定义主题颜色</string>
+    <string name="custom_hex_label">HEX 代码 (例如 #FF0055)</string>
+    <string name="custom_hex_apply">应用颜色</string>
+    <string name="custom_hex_invalid">无效的 HEX 代码</string>
+    <string name="color_picker_hint">在色轮上的任意位置点击或拖动以完美选择您喜爱的颜色。</string>
 
-<string name="empty_comments_message">暂无评论。快来发表第一条评论吧！</string>
-<string name="hide_comments_previous">隐藏之前的评论</string>
-<string name="show_remaining_comments">显示其余评论（%1$d）</string>
-<string name="comment_posted_success">评论已成功发布！</string>
-<string name="comment_post_failed">评论发布失败</string>
-<string name="login_prompt_comments">请使用您的 GitHub 账户登录以参与讨论。</string>
-<string name="comment_reply_button">回复</string>
-<string name="comment_edit_button">编辑</string>
-<string name="comment_delete_button">删除</string>
-<string name="comment_input_hint">在此输入您的评论...</string>
-<string name="edit_comment_toast_format">将打开窗口以编辑第 %1$d 条评论</string>
+    <!-- Store Categories -->
+    <string name="cat_all">全部</string>
+    <string name="action_retry">重试</string>
+    <string name="store_no_results">未找到应用</string>
+    <string name="cat_system">系统</string>
+    <string name="cat_utility">工具</string>
+    <string name="cat_development">开发</string>
+    <string name="cat_customization">个性化</string>
 
-<string name="comment_react_button">表态</string>
-<string name="dialog_choose_reaction">选择一个表情反应</string>
-<string name="reaction_added_success">表情反应已添加！</string>
-<string name="reaction_add_failed">添加表情反应失败</string>
+    <!-- App Details Actions & Sections -->
+    <string name="action_open">打开</string>
+    <string name="action_update">更新</string>
+    <string name="action_uninstall">卸载</string>
+    <string name="action_website">网站</string>
+    <string name="app_description_title">关于此应用</string>
+    <string name="version_history_title">版本历史</string>
+    <string name="version_current_badge">当前</string>
+    <string name="app_screenshots">屏幕截图</string>
 
-<string name="dev_profile_title">开发者资料</string>
-<string name="dev_profile_apps_title">开发者的应用</string>
-<string name="store_dev_email2">电子邮件</string>
+    <!-- Rating and Comments -->
+    <string name="app_rating_title">评价此应用</string>
+    <string name="app_rating_desc">告诉其他人您的想法</string>
+    <string name="comments_title">评分与评论</string>
+    <string name="write_comment_hint">写一条评论...</string>
+    <string name="post_comment">发布</string>
 
-<string name="store_trending_apps">热门应用</string>
-<string name="ad_label">广告</string>
+    <!-- Ads and Suggestions -->
+    <string name="ad_label">赞助</string>
+    <string name="popular_apps_title">热门应用</string>
 
-<string name="settings_silent_install_title">静默安装</string>
-<string name="silent_install_enabled">静默安装：已启用（Shizuku）</string>
-<string name="silent_install_disabled">静默安装：已禁用（系统安装）</string>
-<string name="settings_silent_install_desc">启用通过 Shizuku 直接安装，无需系统确认</string>
+    <!-- GitHub Authentication -->
+    <string name="github_sheet_title">GitHub 认证</string>
+    <string name="github_sheet_desc">登录以将您的 API 速率限制提升至每小时 5,000 次请求。</string>
+    <string name="github_oauth_btn">通过 GitHub 登录</string>
+    <string name="github_token_label">个人访问令牌 (PAT)</string>
+    <string name="github_token_hint">ghp_xxxxxxxxxxxx</string>
+    <string name="github_token_btn">使用令牌登录</string>
+    <string name="github_or_divider">或</string>
+    <string name="github_logged_in_as">已登录为</string>
+    <string name="github_rate_limit">API 速率限制: 5000 / 5000</string>
 
-<string name="guest_login_prompt_title">需要登录</string>
-<string name="guest_login_prompt_install_msg">请登录您的 GitHub 账户，以便从商店下载和安装应用。</string>
-<string name="guest_action_login">立即登录</string>
+    <!-- Account & Token Status -->
+    <string name="token_status_active">有效</string>
+    <string name="token_status_inactive">无效</string>
+    <string name="btn_delete_token">移除令牌</string>
+    <string name="btn_my_account">我的账号</string>
+    <string name="github_token_status">令牌状态:</string>
+    <string name="account_details_brief">管理您的个人资料与仓库。</string>
 
-<string name="notice_title">用户重要通知</string>
-<string name="notice_message">欢迎！我们想通知您，无论 Shizuku 是通过 Root 还是 ADB 激活，现在的安装都非常成功且完全稳定。\n\n为了确保商店的稳定性并防止 GitHub 的临时封禁，建议您使用个人帐户登录。如果您遇到任何技术错误，欢迎直接与我联系。\n\n祝您在 ShizuCoreFetch 拥有愉快的体验！</string>
-<string name="notice_button">确定</string>
+    <!-- My Account Screen -->
+    <string name="account_title">我的个人资料</string>
+    <string name="account_repos">仓库</string>
+    <string name="account_followers">关注者</string>
+    <string name="account_following">正在关注</string>
+    <string name="account_section_repos">公开仓库</string>
+    <string name="btn_view_github">在 GitHub 上查看</string>
+    <string name="already_on_account">您当前正在查看您的账号个人资料。</string>
 
-    <string name="store_github_stars_format">仓库星标：%1$s</string>
-    <string name="store_real_ratings_count">评分：%1$d</string>
-    <string name="store_no_real_ratings_yet">暂无评分</string>
-    <string name="store_rating_success">评分保存成功</string>
-    <string name="store_rating_fail">保存评分时出错</string>
-    <string name="login_prompt_rating">必须登录才能评价应用</string>
+    <!-- Library & APK Manager -->
+    <string name="lib_updates_title">可用更新</string>
+    <string name="lib_installed_title">已安装的应用</string>
+    <string name="lib_bookmarks_title">已保存到库</string>
+    <string name="apk_manager_title">已下载的 APK</string>
+    <string name="apk_manager_desc">管理下载的安装文件。</string>
+    <string name="apk_manager_empty">暂无下载的 APK 文件。</string>
+    <string name="apk_manager_open_failed">无法打开应用。</string>
+    <string name="apk_manager_install_success">安装成功。</string>
+    <string name="apk_manager_delete_title">删除文件</string>
+    <string name="apk_manager_delete_confirm">从该设备中删除 \"%1$s\" 吗？此操作无法撤销。</string>
+    <string name="apk_manager_delete_failed">无法删除文件。</string>
+    <string name="apk_manager_open">打开</string>
+    <string name="apk_manager_install">安装</string>
+    <string name="action_cancel">取消</string>
+    <string name="toast_installed">安装成功。</string>
+    <string name="toast_uninstalled">卸载成功。</string>
+    <string name="toast_updated">更新成功。</string>
+    <string name="toast_opened">已打开。</string>
+    <string name="store_cannot_open">无法打开应用。</string>
+    <string name="store_download_failed">当前没有可用于此应用的有效下载链接。</string>
+    <string name="store_error_generic">出错了，请重试。</string>
+    <string name="apk_path">路径: Download/shizucorefetch</string>
+    <string name="apk_action_delete">删除</string>
+    <string name="action_back">返回</string>
+    <string name="action_share">分享</string>
+    <string name="action_open_folder">打开文件夹</string>
+    <string name="error_open_folder">无法打开文件管理器。</string>
+    <string name="toast_download_complete">下载完成: %1$s</string>
+    <string name="toast_download_failed">下载失败: %1$s</string>
 
-    <string name="delete_comment_title">删除评论</string>
-    <string name="delete_comment_message">您确定要永久删除此评论吗？</string>
-    <string name="comment_edit_success">评论编辑成功</string>
-    <string name="comment_delete_success">已从商店中删除评论</string>
-    <string name="comment_protected_blacklist">评论在GitHub上受保护。正在加入黑名单...</string>
-    <string name="comment_delete_no_permission">您没有权限删除此评论</string>
-    <string name="comment_blacklist_success">评论已从商店中永久隐藏</string>
-    <string name="comment_blacklist_fail">屏蔽评论失败，请重试</string>
+    <string name="hub_action_check_permission">检查权限</string>
+    <string name="hub_silent_install_title">安装方式</string>
+    <string name="hub_silent_install_enabled">静默安装 : 已启用 (Shizuku)</string>
+    <string name="hub_silent_install_disabled">静默安装 : 已禁用 (系统)</string>
+    <string name="hub_warning_permissions">请确保在系统设置中授予了所有必需的权限，以保证 Shizuku 和静默安装完美运行。</string>
+    <string name="hub_action_open_settings">打开应用设置</string>
 
-    <string name="store_developer_format">%1$s %2$s</string>
-    <string name="store_developer_with_category">%1$s %2$s • %3$s</string>
-    <string name="store_downloads_million">%1$sM</string>
-    <string name="store_downloads_thousand">%1$sK</string>
-    <string name="store_rating_combined">%1$s • %2$s</string>
-    <string name="store_default_rating">0.0</string>
-    <string name="store_unknown_size">未知</string>
-    <string name="store_ad_pending">广告（审核中 - 仅您可见）</string>
-    <string name="store_no_description">暂无描述。</string>
-    <string name="store_error_generic">发生错误</string>
-    <string name="store_download_failed">下载失败</string>
-    <string name="store_downloads_count">下载量：%1$s</string>
-    <string name="store_category_prefix">类别：</string>
+    <string name="dev_profile_title">开发者个人资料</string>
+    <string name="dev_role_subtitle">Android 开发者 &amp; UI/UX 设计师</string>
+    <string name="dev_info_title">联系信息</string>
+    <string name="dev_email_label">电子邮件</string>
+    <string name="dev_website_label">网站</string>
+    <string name="dev_portfolio_label">作品集</string>
+    <string name="dev_social_title">社交媒体</string>
+    <string name="dev_apps_title">开发者应用</string>
+
+    <string name="rating_login_warning">请使用 GitHub 登录以评价此应用。</string>
+    <string name="comments_login_warning">请使用 GitHub 登录以发表评论。</string>
+    <string name="comments_empty">暂无评论。快来抢沙发吧！</string>
+    <string name="comment_reply">回复</string>
+    <string name="comment_delete">删除</string>
+    <string name="comment_edit">编辑</string>
+    <string name="comment_save">保存</string>
+    <string name="comment_cancel">取消</string>
+    <string name="comment_admin_hide">从商店隐藏</string>
+    <string name="comment_admin_unhide">取消隐藏</string>
+    <string name="comment_hidden_badge">已隐藏 (仅限管理员)</string>
+
+    <string name="dev_word_title">开发者寄语</string>
+    <string name="dev_word_desc">感谢您对我的应用的关注！本应用旨在为 Shizuku 用户提供最佳的使用体验，并高度专注于高性能与现代设计。</string>
+    <string name="dev_bio_title">关于开发者</string>
+    <string name="dev_bio_desc">一名专注于 Android 应用开发和现代 UI/UX 设计的软件工程师。对编写整洁代码和创造创新的软件解决方案充满热情。</string>
+
+    <string name="github_login_title">github.com</string>
+    <string name="github_error_connection">连接 GitHub 失败，请检查您的网络连接。</string>
+    <string name="github_error_state_mismatch">安全验证失败 (状态不匹配)。为了您的安全，操作已取消。</string>
+    <string name="github_error_no_code">未收到来自 GitHub 的授权码。</string>
+
+    <string name="chooser_share_apk">分享 APK</string>
+    <string name="chooser_open_folder">打开文件夹</string>
+
+    <!-- Dynamic sections and popup -->
+    <string name="section_top_downloads">热门下载</string>
+    <string name="section_top_rated">最高评分</string>
+    <string name="section_trusted_apps">受信任的应用 (ShizuCoreFetch)</string>
+    <string name="section_all_apps">所有应用</string>
+    <string name="comments_show_more">显示更多评论 (%1$d)</string>
+    <string name="comments_hide">收起评论</string>
+    <string name="ad_external_link_desc">您确定要访问以下外部链接吗？\n\n%1$s</string>
+    <string name="action_continue">继续</string>
+    <string name="action_go_to_library">转到库</string>
+    <string name="apk_delete_dialog_title">删除 APK 文件</string>
+    <string name="apk_delete_dialog_msg">您确定要删除 \"%1$s\" 吗？此操作无法撤销。</string>
+    <string name="account_no_android_repos_title">暂无 Android 仓库！</string>
+    <string name="account_no_android_repos_desc">只要持续学习，一切皆有可能。如果您想深入探索 Android 开发的创意世界，Siwane 博客 (siwanex.xyz) 将为您提供绝佳的起点。</string>
+    <string name="action_visit_blog">访问博客</string>
+    <string name="hub_binder_root_warning">11 之前的 Binder 版本严格要求 Root 权限才能正常运行。</string>
+    <string name="hub_silent_install_requires_shizuku">需要先启用 Shizuku</string>
+    <string name="hub_guide_main_title">Shizuku 激活方法</string>
+    <string name="hub_guide_wireless_title">无线调试 (无需电脑)</string>
+    <string name="hub_guide_wireless_step1">打开设备设置中的开发者选项。</string>
+    <string name="hub_guide_wireless_step2">启用“无线调试”。</string>
+    <string name="hub_guide_wireless_step3">打开官方 Shizuku 应用并点击“配对”。</string>
+    <string name="hub_guide_pc_title">通过电脑 (ADB)</string>
+    <string name="hub_guide_pc_step1">在开发者选项中启用“USB 调试”。</string>
+    <string name="hub_guide_pc_step2">将手机连接至电脑并打开终端。</string>
+    <string name="hub_guide_pc_step3">从官方 Shizuku 应用中复制激活命令并粘贴到终端中。</string>
+    <string name="hub_guide_root_title">通过 Root 权限</string>
+    <string name="hub_guide_root_step1">打开官方 Shizuku 应用。</string>
+    <string name="hub_guide_root_step2">在 Root 部分，点击“启动”。</string>
+    <string name="hub_guide_root_step3">通过 Magisk 或 KernelSU 授予应用 Root 权限。</string>
+    <string name="dev_paypal">PayPal</string>
+    <string name="share_subject">ShizuCoreFetch 应用</string>
+    <string name="share_text">下载最新版本的 ShizuCoreFetch：\nhttps://github.com/elhizazi1/ShizuCoreFetch/releases/latest</string>
+    <string name="share_chooser_title">通过以下方式分享应用...</string>
+    <string name="worker_error_prefix">连接失败: %1$s</string>
+    <string name="update_available">可用最新版本: %1$s</string>
+    <string name="update_error_http">检查更新失败 (HTTP %1$d)。</string>
+    <string name="update_error_connection">检查更新时发生连接错误。</string>
+    <string name="filter_default">默认</string>
+    <string name="filter_top_rated">最高评分</string>
+    <string name="filter_top_downloads">热门下载</string>
+    <string name="filter_trusted">受信任</string>
+    <string name="notif_channel_ops_name">商店操作</string>
+    <string name="notif_channel_ops_desc">下载、安装和卸载通知</string>
+    <string name="notif_channel_updates_name">应用更新</string>
+    <string name="notif_channel_updates_desc">当有新应用更新可用时发出警报</string>
+    <string name="notif_download_progress">正在下载: %1$d%%</string>
+    <string name="notif_installing">正在后台安装...</string>
+    <string name="notif_updates_available_title">有可用的新更新</string>
+    <string name="notif_updates_available_msg">有 %1$d 个应用需要更新</string>
+    <!-- GitHub API Explanation Dialog -->
+    <string name="github_explanation_title">透明度与 GitHub API 限制</string>
+    <string name="github_explanation_body">ShizuCoreFetch 依赖 GitHub 服务器来获取数据。未登录时，GitHub 会将您的设备限制为每小时 60 次请求。登录后可获得每小时 5,000 次请求的配额。\n\n为什么应用需要授权？\n我们使用经典的 (OAuth App) 模式，需要公开仓库访问权限 (public_repo) 才能发布评论 (作为 Issues)、与它们互动，并从公开仓库中获取 Shizuku 应用索引。我们绝不以任何方式收集您的数据，登录是高效获取和提交数据的标准且必要的步骤。\n\n这些限制由 GitHub 自身施加，而非本应用所致。</string>
+    <string name="github_explanation_agree">明白了，我同意</string>
+    <string name="github_explanation_contact">联系开发者</string>
+    <string name="details_tech_tags">标签</string>
+    <string name="details_tech_min_sdk">最低 SDK</string>
+    <string name="details_tech_license">许可证</string>
+    <string name="details_tech_source">源码</string>
+    <string name="details_tech_open_source">开源</string>
+    <string name="details_tech_privilege">特权</string>
+    <string name="details_tech_requires_shizuku">需要 Shizuku</string>
+    <string name="dev_donate">支持与捐赠</string>
+    <string name="details_tech_target_sdk">目标 SDK</string>
+    <string name="details_changelog_title">更新日志</string>
+    <string name="online_status">在线</string>
+    <string name="offline_status">离线</string>
+    <string name="store_offline_message">你已离线。请检查网络连接后重试。</string>
+    <string name="proxy_info_title">透明度：工作原理</string>
+    <string name="proxy_info_desc">我们使用一组包含 5 个轮换的备用令牌来服务访客。如果使用量过大，我们将回退到绑定至您 IP 的 60 次请求配额。\n\n提示：使用 GitHub 登录以认领您自己的超大配额 (5000 次请求) 并突破这些限制！</string>
+    <string name="settings_clear_cache">清理应用缓存</string>
+    <string name="settings_clear_cache_ready">现已可用！您可以清理缓存。</string>
+    <string name="settings_clear_cache_wait">为保护服务器，仅在第 %1$s 分钟可用。</string>
+    <string name="shortcut_library">库</string>
+    <string name="shortcut_apk_manager">APK 文件</string>
+    <string name="shortcut_settings">设置</string>
 
 </resources>
