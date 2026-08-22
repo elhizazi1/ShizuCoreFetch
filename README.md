@@ -46,6 +46,18 @@ It comes bundled with a local **APK wallet**, a centralized repository browser, 
 
 ---
 
+## 📺 Featured On
+
+We are incredibly proud to have **Shizu CoreFetch** recognized and reviewed by amazing tech creators across the globe:
+
+- 🇺🇸 **[HowToMen](https://youtu.be/mDQ8o4JlXjM)** – *Top 15 Best Shizuku Apps to Use in 2026!*
+- 🌍 **[TechyNoob](https://youtu.be/PMiUF1b26yY)** – *Top 3 Shizuku Apps to Unlock Android's True Power!*
+- 🇲🇦 **[Mounir Tech](https://youtu.be/yiRi87Yieo8)** – *افضل 7 تطبيقات الجيل الجديد 2026 | تطبيقات شيزوكو*
+
+A huge thank you to these creators for showcasing the power of our Shizuku app store to their audiences!
+
+---
+
 ## ✨ Key Features
 
 - 🎯 **Smart App Matching:** A new deep device scanner intelligently maps all apps directly from the repo tree without extra API calls, ensuring action buttons (Install/Update/Open) are always 100% accurate.
