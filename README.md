@@ -167,9 +167,9 @@ Your contributions are what make Shizu CoreFetch a truly global and accessible p
 
 ---
 
-## Acknowledgments & Design Assets
+## 🎨 Design & Architecture
 
-The user interface of Shizu CoreFetch relies on clean and professional iconography. The icons used throughout the application are sourced from the **[Iconsax](https://github.com/glenthemes/iconsax/tree/gh-pages)** library. To ensure optimal performance, crisp scaling across all screen densities, and memory efficiency on Android, all utilized icons were converted from their original formats into native Android Vector Drawable (XML) formats.
+The user interface of Shizu CoreFetch is built entirely using **Jetpack Compose**, ensuring a clean, modern, and highly performant design. All iconography and UI components are native to Compose and Material Design 3, completely eliminating external asset dependencies. This approach guarantees crisp scaling across all screen densities, fluid animations, and maximum memory efficiency on Android.
 
 ---
 
