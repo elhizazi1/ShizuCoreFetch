@@ -50,12 +50,19 @@ It comes bundled with a local **APK wallet**, a centralized repository browser, 
 
 We are incredibly proud to have **Shizu CoreFetch** recognized and reviewed by amazing tech creators across the globe:
 
-- 🌟 **[HowToMen](https://youtu.be/mDQ8o4JlXjM)** *(First to discover & feature)* – **[Watch the Review](https://youtu.be/mDQ8o4JlXjM)** – *Top 15 Best Shizuku Apps to Use in 2026!*
+<p align="center">
+  <a href="https://youtu.be/mDQ8o4JlXjM">
+    <img src="https://img.youtube.com/vi/mDQ8o4JlXjM/hqdefault.jpg" width="400" style="border-radius:10px; margin:5px" alt="HowToMen Review"/>
+  </a>
+</p>
+<p align="center">
+  <strong>HowToMen</strong> – <em>Top 15 Best Shizuku Apps to Use in 2026!</em>
+</p>
+
 - 🌍 **[TechyNoob](https://youtu.be/PMiUF1b26yY)** – *Top 3 Shizuku Apps to Unlock Android's True Power!*
 - 🇲🇦 **[Mounir Tech](https://youtu.be/yiRi87Yieo8)** – *افضل 7 تطبيقات الجيل الجديد 2026 | تطبيقات شيزوكو*
 
 A huge thank you to these creators for showcasing the power of our Shizuku app store to their audiences!
-
 
 ---
 
