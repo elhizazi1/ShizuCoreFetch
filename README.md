@@ -157,11 +157,12 @@ We welcome contributions! If you’d like to improve Shizu CoreFetch, please fol
 Read the full Contribution Guidelines for details on coding conventions and localization.
 
 ### 🌟 Community Shoutout
-A massive thank you to our incredible open-source community! Thanks to your dedicated efforts, we have recently expanded our global reach with full native support for new languages. Special thanks to:
+A massive thank you to our incredible open-source community! To everyone who has opened an issue, suggested a feature, or tested a release—thank you. (Individual credits for testing and feedback are always highlighted in our [Release Notes](https://github.com/elhizazi1/ShizuCoreFetch/releases)).
+
+Thanks to your dedicated efforts, we have recently expanded our global reach with full native support for new languages. Special thanks to:
 
 * **Turkish (Türkçe):** Translated by [AhmetCanArslan](https://github.com/AhmetCanArslan)
 * **Czech (Čeština):** Translated by [Jakub K. (@kouzelnik3)](https://github.com/kouzelnik3)
-* **Testing & Feedback (v2.1.0):** Huge thanks to [@blecaplol](https://github.com/blecaplol) for instrumental feedback during the architecture upgrade!
 
 Your contributions are what make Shizu CoreFetch a truly global and accessible platform for everyone.
 
