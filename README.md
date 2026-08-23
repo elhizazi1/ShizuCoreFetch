@@ -1,125 +1,123 @@
-# Shizu CoreFetch
+<div align="center">
 
-<p align="center">
- <img src="assets/favicon.png" alt="Shizu CoreFetch Icon" width="120"/>
-</p>
+  <img src="assets/favicon.png" alt="Shizu CoreFetch Icon" width="140"/>
 
-<p align="center">
- <strong>An advanced, Shizuku-powered application hub for Android.</strong><br>
- Fetch, manage, and silently update your apps with system-level privileges — entirely open source.
-</p>
+  # 🌟 Shizu CoreFetch 🌟
+  
+  **An advanced, Shizuku-powered application hub for Android.**<br>
+  *Fetch, manage, and silently update your apps with system-level privileges — entirely open source.*
 
-<p align="center">
- <a href="https://github.com/elhizazi1/ShizuCoreFetch/releases/latest"><img src="https://img.shields.io/github/v/release/elhizazi1/ShizuCoreFetch?label=Latest%20Release&style=flat-square" alt="Release"></a>
- <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat-square" alt="License"></a>
- <a href="#"><img src="https://img.shields.io/badge/Platform-Android-6A1B9A?style=flat-square&logo=android" alt="Platform"></a>
- <a href="https://github.com/elhizazi1/ShizuCoreFetch"><img src="https://img.shields.io/github/stars/elhizazi1/ShizuCoreFetch?style=flat-square" alt="Stars"></a>
- <a href="https://t.me/shizucorefetch"><img src="https://img.shields.io/badge/Telegram-Join%20Channel-2CA5E0?style=flat-square&logo=telegram&logoColor=white" alt="Telegram Channel"></a>
-</p>
+  <br>
 
-📢 **Stay Updated:** [Join our official Telegram Channel](https://t.me/shizucorefetch) for the latest updates, releases, and direct support.
+  <!-- Project Stats & License -->
+  <a href="https://github.com/elhizazi1/ShizuCoreFetch/releases"><img src="https://img.shields.io/github/downloads/elhizazi1/ShizuCoreFetch/total?style=for-the-badge&color=00C853" alt="Downloads"></a>
+  <a href="https://github.com/elhizazi1/ShizuCoreFetch/stargazers"><img src="https://img.shields.io/github/stars/elhizazi1/ShizuCoreFetch?style=for-the-badge&color=FFD700" alt="Stars"></a>
+  <a href="https://github.com/elhizazi1/ShizuCoreFetch/network/members"><img src="https://img.shields.io/github/forks/elhizazi1/ShizuCoreFetch?style=for-the-badge&color=FF8C00" alt="Forks"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge&color=4CAF50" alt="License"></a>
+  
+  <br><br>
 
+  <!-- Tech Stack & Platform -->
+  <img src="https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin">
+  <img src="https://img.shields.io/badge/Jetpack_Compose-4285F4?style=for-the-badge&logo=android&logoColor=white" alt="Jetpack Compose">
+  <img src="https://img.shields.io/badge/Material%203-757575?style=for-the-badge&logo=material-design&logoColor=white" alt="Material Design 3">
+  <img src="https://img.shields.io/badge/Platform-Android-6A1B9A?style=for-the-badge&color=6A1B9A&logo=android" alt="Platform">
 
----
+  <br><br>
 
-## Attention Developers: Stand Out in the Store!
+  <!-- Community -->
+  <a href="https://t.me/shizucorefetch"><img src="https://img.shields.io/badge/Join%20Our%20Community-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Channel"></a>
 
-With Shizu CoreFetch rapidly expanding and reaching a large, active user base, now is the perfect time to optimize how your application is presented. Our smart store engine automatically scans for custom metadata. By simply adding a `shizu_store.json` file to the root of your repository, you can display elegant, tailored information, localized descriptions, and custom developer details directly inside the Shizu CoreFetch store. 
+</div>
 
-While this is entirely optional, organizing your data adds a highly professional and polished touch to your app's listing, making it much more appealing to users. 
-
-*You can find the full documentation and a detailed guide on how to structure your JSON file at the bottom of this README.*
-
----
-
-## 📖 Overview
-
-**Shizu CoreFetch** is a next‑generation application manager for Android that leverages the **Shizuku** API to perform silent installs, uninstalls, and background updates without requiring root access. Completely rebuilt from the ground up, the latest architecture features a standalone background engine, intelligent device scanning, and a stunning new UI built entirely with Jetpack Compose. 
-
-It comes bundled with a local **APK wallet**, a centralized repository browser, real‑time notifications, and full GitHub integration — all wrapped in a clean, modern interface that supports 11 languages.
-
-> ⚡ Perfect for power users, developers, and anyone tired of manual package management.
+<br>
 
 ---
 
-> ⚠️ **Notice for Developers:** The source code currently available in this repository reflects the massive **v2.1.0** architecture upgrade. It includes the complete migration from legacy Fragments to Jetpack Compose, the new Persistent Download Engine, and the Smart Detection backend. 
+## 📢 Attention Developers: Stand Out in the Store!
+
+With Shizu CoreFetch rapidly expanding, now is the perfect time to optimize how your application is presented. Our smart store engine automatically scans for custom metadata. By simply adding a `shizu_store.json` file to the root of your repository, you can display elegant, tailored information, localized descriptions, and custom developer details directly inside our store. 
+
+*Find the full documentation on how to structure your JSON file at the bottom of this page.*
 
 ---
 
 ## 📺 Featured On
 
-We are incredibly proud to have **Shizu CoreFetch** recognized and reviewed by amazing tech creators across the globe:
-
-<p align="center">
+<div align="center">
+  <p>We are incredibly proud to have <b>Shizu CoreFetch</b> discovered and reviewed by:</p>
   <a href="https://youtu.be/mDQ8o4JlXjM">
-    <img src="https://img.youtube.com/vi/mDQ8o4JlXjM/hqdefault.jpg" width="400" style="border-radius:10px; margin:5px" alt="HowToMen Review"/>
+    <img src="https://img.youtube.com/vi/mDQ8o4JlXjM/hqdefault.jpg" width="450" style="border-radius:12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="HowToMen Review"/>
   </a>
-</p>
-<p align="center">
-  <strong>HowToMen</strong> – <em>Top 15 Best Shizuku Apps to Use in 2026!</em>
-</p>
+  <br>
+  <strong>HowToMen</strong><br>
+  <em>"Top 15 Best Shizuku Apps to Use in 2026!"</em>
+</div>
+
+<br>
+
+<details>
+<summary><b>🌍 Click to see more amazing reviews from our global community</b></summary>
+<br>
 
 - 🇪🇸 **[El Androide Feliz](https://youtu.be/NjFIz_oBKEs)** – *10 NUEVAS APKs para SHIZUKU que ponen tu Android al 100%*
 - 🌍 **[TechyNoob](https://youtu.be/PMiUF1b26yY)** – *Top 3 Shizuku Apps to Unlock Android's True Power!*
 - 🇲🇦 **[Mounir Tech](https://youtu.be/yiRi87Yieo8)** – *افضل 7 تطبيقات الجيل الجديد 2026 | تطبيقات شيزوكو*
 
-A huge thank you to these creators for showcasing the power of our Shizuku app store to their audiences!
+</details>
 
 ---
 
-## ✨ Key Features
+## ✨ Next-Generation Features
 
-- 🎯 **Smart App Matching:** A new deep device scanner intelligently maps all apps directly from the repo tree without extra API calls, ensuring action buttons (Install/Update/Open) are always 100% accurate.
-- ⚡ **Persistent Background Engine:** Downloads and installations run on a standalone Foreground Service. Switch screens, minimize the app, or lock your phone, and the process continues flawlessly.
-- 🎨 **Modern Compose UI:** Rebuilt from the ground up with Jetpack Compose and Material Design 3 for fluid shimmer animations, dynamic colors, and seamless screen transitions.
-- 🛡️ **Silent Operations with Shizuku:** Install, uninstall, and update apps directly at system level — fully supports **Root**, Wireless Debugging (**ADB**), and Test-Only packages.
-- ☁️ **Zero-Quota Architecture:** Browse and download seamlessly without hitting GitHub API rate limits. The smart cloud engine handles high traffic effortlessly.
-- 📦 **Local Storage Wallet:** Store downloaded APKs locally, share them via any app, or open them with external file viewers. Delete packages with a single tap to free up space.
-- 🔔 **Update Notifications:** Receive alerts when new versions of your installed apps become available. Background checks ensure you never miss an update.
-- 🌍 **Multi‑Language:** Available in 11 languages with automatic system language detection: العربية, English, Français, Español, Português, Русский, हिन्दी, 中文, 日本語, Türkçe, Čeština.
-- 🔒 **Privacy First:** 100% offline‑first architecture. No hidden tracking, no analytics, no data collection. Your apps and data stay on your device.
-
----
-
-## 📱 Screenshots
-
-<p align="center">
- <img src="assets/screen/screen1.png" width="180">
- <img src="assets/screen/screen2.png" width="180">
-</p>
-
----
-
-## 📦 Requirements
-
-- Android 8.0+ (API 26)
-- [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api) installed and running on your device
-- Network permission (for fetching app data from the repository)
-- Storage permission (for saving and sharing APK files)
-
-> Root access is **not** required.
-
----
-
-## 🚀 Installation
-
-1. **Download the latest APK** from the [Releases page](https://github.com/elhizazi1/ShizuCoreFetch/releases/latest).
-2. Install the APK on your Android device (you may need to allow “Install from unknown sources”).
-3. Open **Shizuku** and start the service.
-4. Launch **Shizu CoreFetch** → grant the Shizuku permission when prompted.
-5. You’re all set! Browse the repository or use the wallet to manage your packages.
+<table>
+  <tr>
+    <td width="50%">
+      🎯 <b>Smart App Matching</b><br>
+      A deep device scanner intelligently maps all apps directly from the repo tree without extra API calls. Action buttons are always 100% accurate.
+    </td>
+    <td width="50%">
+      ⚡ <b>Persistent Background Engine</b><br>
+      Downloads and installations run on a standalone Foreground Service. Switch screens or minimize the app flawlessly.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🎨 <b>Modern Compose UI</b><br>
+      Rebuilt from the ground up with Jetpack Compose and Material Design 3 for fluid shimmer animations and seamless screen transitions.
+    </td>
+    <td>
+      🛡️ <b>Silent Operations</b><br>
+      Install, uninstall, and update apps directly at system level via Shizuku. Fully supports Root, Wireless Debugging, and Test-Only packages.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ☁️ <b>Zero-Quota Architecture</b><br>
+      Browse and download seamlessly without hitting GitHub API rate limits. The smart cloud engine handles high traffic effortlessly.
+    </td>
+    <td>
+      📦 <b>Local Storage Wallet</b><br>
+      Store downloaded APKs locally, share them via any app, or open them with external file viewers. Delete packages with a single tap.
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 🧠 How It Works
+## 📱 A Stunning Experience
 
-Shizu CoreFetch uses the Shizuku Binder API to execute privileged commands directly on the Android package manager. This enables:
+<div align="center">
+  <img src="assets/screen/screen1.png" width="22%" style="border-radius: 10px; margin: 0 10px;">
+  <img src="assets/screen/screen2.png" width="22%" style="border-radius: 10px; margin: 0 10px;">
+  <img src="assets/screen/screen3.png" width="22%" style="border-radius: 10px; margin: 0 10px;">
+</div>
 
-- **Silent install** (`pm install`)
-- **Silent uninstall** (`pm uninstall`)
-- **Background updates** without any pop‑ups
+---
 
-The app itself runs without root, making it safe and compliant with modern Android security policies.
+## 🧠 Architecture & Stack
+
+Shizu CoreFetch uses the Shizuku Binder API to execute privileged commands directly on the Android package manager. The app itself runs without root, making it safe and compliant with modern Android security policies.
 
 ```mermaid
 graph LR
@@ -129,97 +127,68 @@ graph LR
    D --> E[Install/Uninstall/Update]
 ```
 
----
-
-## 🌍 Localization
-
-All user‑facing strings are translated into the following languages:
-
-| Language | Status |
-|---|---|
-| العربية (Arabic) | ✅ Complete |
-| English (en) | ✅ Complete |
-| Français (French) | ✅ Complete |
-| Español (Spanish) | ✅ Complete |
-| Português (Portuguese) | ✅ Complete |
-| Русский (Russian) | ✅ Complete |
-| हिन्दी (Hindi) | ✅ Complete |
-| 中文 (Chinese) | ✅ Complete |
-| 日本語 (Japanese) | ✅ Complete |
-| Türkçe (Turkish) | ✅ Complete |
-| Čeština (Czech) | ✅ Complete |
-
----
-
-## 🛠️ Tech Stack
+<details>
+<summary><b>🛠️ Click to view Technical Stack</b></summary>
+<br>
 
 - **Language:** Kotlin
-- **UI Architecture:** Jetpack Compose + Material Design 3 Components (Migrated from legacy XML/Fragments)
+- **UI Architecture:** Jetpack Compose + Material Design 3 Components 
 - **Networking:** Retrofit 2 + OkHttp + Java HttpURLConnection
-- **Local Caching & Storage:** SharedPreferences Architecture (via custom managers with instant load cache)
-- **Concurrency:** Native Kotlin Threads + Standalone DownloadForegroundService
-- **Rich Text Rendering:** Markwon Markdown Library (for Readme displaying)
-- **Image Loading:** Coil (with custom rounded corner transformations)
-- **Cloud Backend:** Google Apps Script + Google Sheets API (for central catalog and smart package mapping)
-- **Build System:** Gradle
+- **Local Caching:** SharedPreferences Architecture (instant load cache)
+- **Concurrency:** Native Kotlin Threads + DownloadForegroundService
+- **Backend:** Google Apps Script + Google Sheets API (Smart package mapping)
+
+</details>
 
 ---
 
-## 🤝 Contributing & Acknowledgments
+## 🚀 Get Started
 
-We welcome contributions! If you’d like to improve Shizu CoreFetch, please follow these steps:
+<details>
+<summary><b>📦 Installation Guide</b></summary>
+<br>
 
-1. Fork the repo
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. **Download the latest APK** from the [Releases page](https://github.com/elhizazi1/ShizuCoreFetch/releases/latest).
+2. Install the APK on your Android device.
+3. Open **Shizuku** and start the service (Root or Wireless ADB).
+4. Launch **Shizu CoreFetch** and grant the Shizuku permission.
+5. You’re all set! Browse and manage your packages silently.
 
-Read the full Contribution Guidelines for details on coding conventions and localization.
+</details>
 
-### 🌟 Community Shoutout
+<details>
+<summary><b>🌍 Supported Languages</b></summary>
+<br>
+
+Available in 11 languages with automatic system language detection: العربية, English, Français, Español, Português, Русский, हिन्दी, 中文, 日本語, Türkçe, Čeština.
+
+</details>
+
+---
+
+## 🤝 Community & Acknowledgments
+
+We welcome contributions! Read our Contribution Guidelines for details on coding conventions. 
+
 A massive thank you to our incredible open-source community! To everyone who has opened an issue, suggested a feature, or tested a release—thank you. (Individual credits for testing and feedback are always highlighted in our [Release Notes](https://github.com/elhizazi1/ShizuCoreFetch/releases)).
-
-Thanks to your dedicated efforts, we have recently expanded our global reach with full native support for new languages. Special thanks to:
 
 * **Turkish (Türkçe):** Translated by [AhmetCanArslan](https://github.com/AhmetCanArslan)
 * **Czech (Čeština):** Translated by [Jakub K. (@kouzelnik3)](https://github.com/kouzelnik3)
 
-Your contributions are what make Shizu CoreFetch a truly global and accessible platform for everyone.
+---
+
+## 📜 Documentation & Developer Integration
+
+For complete documentation on every field, locale, and best practice, visit the official docs:  
+**🔗 [https://docshizu.siwane.xyz/](https://docshizu.siwane.xyz/)**
+
+You don't need to send anything or register. Just add a valid `shizu_store.json` file at the root of your repository!
 
 ---
 
-## 🎨 Design & Architecture
-
-The user interface of Shizu CoreFetch is built entirely using **Jetpack Compose**, ensuring a clean, modern, and highly performant design. All iconography and UI components are native to Compose and Material Design 3, completely eliminating external asset dependencies. This approach guarantees crisp scaling across all screen densities, fluid animations, and maximum memory efficiency on Android.
-
----
-
-## 📜 License
-
-This project is licensed under the GNU General Public License v3.0 – see the [LICENSE](LICENSE) file for details.
-
----
-
-For complete documentation on every field, locale, and best practice, visit the official Shizu CoreFetch docs here:  
-**[https://docshizu.siwane.xyz/](https://docshizu.siwane.xyz/)**
-
-You don't need to send anything or register. Just add a valid `shizu_store.json` file at the root of your repository, and the store will automatically display your app professionally, with localized descriptions and seamless support for your own ads.
-
----
-
-## 👤 Author & Contact
-
-**Jamal El Hizazi**
-
-- **GitHub:** [@elhizazi1](https://github.com/elhizazi1)
-- **Email:** jamal@elhizazi.me
-- **Website:** [Siwane.xyz](https://siwane.xyz)
-
-For support or questions, open an issue on the repository or reach out via email.
-
----
-
-<p align="center">
-Made with ❤️ for the Android community
-</p>
+<div align="center">
+  <b>Jamal El Hizazi</b><br>
+  <a href="https://github.com/elhizazi1">GitHub</a> • <a href="mailto:jamal@elhizazi.me">Email</a> • <a href="https://siwane.xyz">Website</a>
+  <br><br>
+  <p>Made with ❤️ for the Android community</p>
+</div>
