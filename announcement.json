@@ -20,7 +20,7 @@
     },
     {
       "id": 2,
-      "visible": true,
+      "visible": false,
       "type": "warning",
       "is_compact": true,
       "is_outlined": true,
@@ -74,21 +74,21 @@
     },
     {
       "id": 5,
-      "visible": false,
+      "visible": true,
       "type": "update",
       "is_compact": false,
       "is_outlined": true,
-      "en": "A new version of ShizuCoreFetch is available!",
-      "ar": "يتوفر إصدار جديد من التطبيق، يرجى التحديث!",
-      "fr": "Une nouvelle version est disponible !",
-      "es": "¡Una nueva versión está disponible!",
-      "pt": "Uma nova versão está disponível!",
-      "tr": "Yeni bir sürüm mevcut!",
-      "cs": "Je k dispozici nová verze!",
-      "ja": "新しいバージョンが利用可能です！",
-      "hi": "नया संस्करण उपलब्ध है!",
-      "ru": "Доступна новая версия!",
-      "zh": "新版本可用！"
+      "en": "ShizuCoreFetch v2.3.0 is now available! Update for Smart Sync, bandwidth optimization, and core stability improvements.",
+      "ar": "يتوفر الآن الإصدار 2.3.0 من ShizuCoreFetch! قم بالتحديث للحصول على المزامنة الذكية، تقليل استهلاك البيانات، وتحسينات الاستقرار الأساسية.",
+      "fr": "ShizuCoreFetch v2.3.0 est disponible ! Mettez à jour pour la synchronisation intelligente et de meilleures performances.",
+      "es": "¡ShizuCoreFetch v2.3.0 ya está disponible! Actualiza para sincronización inteligente y mejoras de estabilidad.",
+      "pt": "ShizuCoreFetch v2.3.0 já está disponível! Atualize para sincronização inteligente e melhorias de estabilidade.",
+      "tr": "ShizuCoreFetch v2.3.0 artık hazır! Akıllı senkronizasyon ve kararlılık iyileştirmeleri için güncelleyin.",
+      "cs": "ShizuCoreFetch v2.3.0 je nyní k dispozici! Aktualizujte pro chytrou synchronizaci a vylepšení stability.",
+      "ja": "ShizuCoreFetch v2.3.0 が利用可能になりました！スマート同期と安定性向上のためにアップデートしてください。",
+      "hi": "ShizuCoreFetch v2.3.0 अब उपलब्ध है! स्मार्ट सिंक और स्थिरता सुधार के लिए अपडेट करें।",
+      "ru": "ShizuCoreFetch v2.3.0 теперь доступен! Обновитесь для умной синхронизации и улучшенной стабильности.",
+      "zh": "ShizuCoreFetch v2.3.0 现已推出！请更新以获取智能同步和稳定性改进。"
     }
   ]
 }
