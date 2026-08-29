@@ -16,7 +16,9 @@
       "ja": "現在、ダウンロードサーバーに問題が発生しています。",
       "hi": "हम वर्तमान में डाउनलोड सर्वर के साथ समस्याओं का सामना कर रहे हैं।",
       "ru": "В настоящее время у нас проблемы с серверами загрузки.",
-      "zh": "我们目前在下载服务器上遇到问题。"
+      "zh": "我们目前在下载服务器上遇到问题。",
+      "de": "Wir haben derzeit Probleme mit den Download-Servern.",
+      "it": "Attualmente stiamo riscontrando problemi con i server di download."
     },
     {
       "id": 2,
@@ -34,7 +36,9 @@
       "ja": "一部のユーザーで、異なるアプリ間でコメントが重複して表示される場合があります。この問題については把握しており、近日中に修正いたします。ご理解のほどよろしくお願いいたします。",
       "hi": "कुछ उपयोगकर्ताओं को अलग-अलग ऐप्स के बीच टिप्पणियां (comments) आपस में मिलने की समस्या आ सकती है। हम इस समस्या से अवगत हैं और इसे जल्द ही ठीक कर देंगे। समझने के लिए धन्यवाद।",
       "ru": "Некоторые пользователи могут заметить наложение комментариев между разными приложениями. Мы знаем об этой проблеме и скоро ее исправим. Спасибо за понимание.",
-      "zh": "部分用户可能会注意到不同应用之间的评论出现重叠。我们已了解此问题，并会很快修复。感谢您的理解。"
+      "zh": "部分用户可能会注意到不同应用之间的评论出现重叠。我们已了解此问题，并会很快修复。感谢您的理解。",
+      "de": "Einige Benutzer bemerken möglicherweise, dass sich Kommentare zwischen verschiedenen Apps überschneiden. Wir sind uns dieses Problems bewusst und werden es bald beheben. Danke für Ihr Verständnis.",
+      "it": "Alcuni utenti potrebbero notare sovrapposizioni di commenti tra diverse app. Siamo a conoscenza di questo problema e lo risolveremo presto. Grazie per la comprensione."
     },
     {
       "id": 3,
@@ -52,7 +56,9 @@
       "ja": "ストアサービスが完全に復旧しました！",
       "hi": "स्टोर सेवाएं पूरी तरह से बहाल!",
       "ru": "Услуги магазина полностью восстановлены!",
-      "zh": "商店服务已完全恢复！"
+      "zh": "商店服务已完全恢复！",
+      "de": "Store-Dienste vollständig wiederhergestellt!",
+      "it": "Servizi dello store completamente ripristinati!"
     },
     {
       "id": 4,
@@ -70,7 +76,9 @@
       "ja": "ShizuCoreFetchへようこそ！",
       "hi": "ShizuCoreFetch में आपका स्वागत है!",
       "ru": "Добро пожаловать в ShizuCoreFetch!",
-      "zh": "欢迎来到 ShizuCoreFetch！"
+      "zh": "欢迎来到 ShizuCoreFetch！",
+      "de": "Willkommen bei ShizuCoreFetch! Entdecken Sie die neue Benutzeroberfläche.",
+      "it": "Benvenuto su ShizuCoreFetch! Esplora la nuova interfaccia utente."
     },
     {
       "id": 5,
@@ -88,7 +96,9 @@
       "ja": "ShizuCoreFetch v2.3.0 が利用可能になりました！スマート同期と安定性向上のためにアップデートしてください。",
       "hi": "ShizuCoreFetch v2.3.0 अब उपलब्ध है! स्मार्ट सिंक और स्थिरता सुधार के लिए अपडेट करें।",
       "ru": "ShizuCoreFetch v2.3.0 теперь доступен! Обновитесь для умной синхронизации и улучшенной стабильности.",
-      "zh": "ShizuCoreFetch v2.3.0 现已推出！请更新以获取智能同步和稳定性改进。"
+      "zh": "ShizuCoreFetch v2.3.0 现已推出！请更新以获取智能同步和稳定性改进。",
+      "de": "ShizuCoreFetch v2.3.0 ist jetzt verfügbar! Aktualisieren Sie für Smart Sync, Bandbreitenoptimierung und Verbesserungen der Kernstabilität.",
+      "it": "ShizuCoreFetch v2.3.0 è ora disponibile! Aggiorna per Smart Sync, ottimizzazione della larghezza di banda e miglioramenti della stabilità principale."
     }
   ]
 }
