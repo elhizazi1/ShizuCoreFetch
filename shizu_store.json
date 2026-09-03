@@ -12,7 +12,7 @@
   "requires_shizuku": true,
   "open_source": true,
   "store_issue_number": 1,
-  "changelog": "### 🚀 Update v2.3.0 | Smart Sync & Core Stability\n\nThis stable release implements the most requested architectural suggestions, delivering a highly optimized, mature version.\n\n#### ⚡ Optimization & Smart Sync\n*   **ETags:** Validates cached data to reduce bandwidth during pull-to-refresh.\n*   **Manual Sync:** A per-app sync button to force updates without draining API quota.\n*   **Event-Driven:** Uses GitHub Search API (`sort=updated`) to fetch only modified repos.\n*   **Lazy-Load:** Heavy metadata is isolated and lazy-loaded for max responsiveness.",
+  "changelog": "### 🚀 Update v2.4.0 | Store Curation & Smart Profiles\n\nThis release focuses on quality-of-life improvements, bringing highly requested features for better app discovery, a cleaner storefront, and rock-solid stability.\n\n#### ✨ Discovery & Curation\n*   **The \"Newest\" Filter:** Discover fresh tools instantly! Added a smart 14-day discovery filter without consuming GitHub API quotas.\n*   **Decluttered Storefront:** Shizuku & ShizuCoreFetch are now hidden from the main feed to reduce redundancy.\n\n#### 🛠️ Stability & UI Polish\n*   **Crash-Proof Developer Links:** Smart social link parsing to eliminate ActivityNotFoundException crashes.\n*   **Balanced UI Skeletons:** Redesigned loading shimmer effects into a perfect 2x2 grid.\n\n#### 🙏 Community Credits\n*   **@source-sketch** — For the storefront decluttering suggestion.\n*   **@wizzwuz** — For proposing the \"Newest Apps\" section.",
   "tags": [
     "shizuku",
     "app-manager",
@@ -77,7 +77,7 @@
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "أسعى لصناعة أدوات ذكية تمنح المستخدم تحكماً كاملاً في هاتفه. شكراً لدعمكم وثقتكم!",
       "developer_name": "جمال الحزازي",
-      "changelog": "### 🚀 تحديث v2.3.0 | المزامنة الذكية واستقرار النظام\n\nيطبق هذا الإصدار المستقر الاقتراحات الهيكلية الأكثر طلباً، ليقدم نسخة ناضجة ومحسنة بشكل كبير.\n\n#### ⚡ التحسين والمزامنة الذكية\n*   **ETags:** التحقق من البيانات المخبأة لتقليل استهلاك البيانات أثناء التحديث.\n*   **مزامنة يدوية:** زر مخصص لكل تطبيق لفرض التحديثات دون استنزاف حصة API.\n*   **تحديثات مبنية على الأحداث:** استخدام (`sort=updated`) لجلب المستودعات المعدلة فقط.\n*   **تحميل مؤجل:** عزل البيانات الوصفية الثقيلة وتحميلها عند الحاجة لضمان أقصى سرعة استجابة."
+      "changelog": "### 🚀 تحديث v2.4.0 | تنظيم المتجر والملفات الذكية\n\nيركز هذا الإصدار على تحسين تجربة المستخدم، وجلب الميزات المطلوبة بشدة لاكتشاف التطبيقات، وتنظيف الواجهة، وضمان استقرار النظام.\n\n#### ✨ الاستكشاف والتنظيم\n*   **فلتر \"الأحدث\":** اكتشف التطبيقات الجديدة فوراً! تم إضافة فلتر يعرض تطبيقات آخر 14 يوماً بدون استهلاك حصة GitHub API.\n*   **تنظيف المتجر:** إخفاء التطبيقات الأساسية (Shizuku و ShizuCoreFetch) من القائمة الرئيسية لتقليل التكرار.\n\n#### 🛠️ الاستقرار وتحسين الواجهة\n*   **روابط آمنة للمطورين:** نظام ذكي لمعالجة روابط التواصل الاجتماعي لمنع الانهيارات (Crash) عند النقر عليها.\n*   **واجهة تحميل متناسقة:** إعادة تصميم تأثيرات التحميل الوهمية (Skeleton) إلى شبكة متناسقة (2x2).\n\n#### 🙏 شكر خاص للمجتمع\n*   **@source-sketch** — لاقتراح إخفاء التطبيقات الأساسية لتنظيف الواجهة.\n*   **@wizzwuz** — لاقتراح إضافة قسم \"أحدث التطبيقات\" المتميز."
     },
     "fr": {
       "category": "Outils système",
@@ -86,7 +86,7 @@
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "Concevoir des outils intelligents qui donnent aux utilisateurs le contrôle total de leurs appareils. Merci de votre confiance et de votre soutien !",
       "developer_name": "Jamal El Hizazi",
-      "changelog": "### 🚀 Mise à jour v2.3.0 | Synchro Intelligente & Stabilité\n\nCette version stable implémente les suggestions architecturales les plus demandées pour une version hautement optimisée.\n\n#### ⚡ Optimisation & Synchronisation Intelligente\n*   **ETags :** Valide les données en cache pour réduire la bande passante.\n*   **Synchro Manuelle :** Bouton par application pour forcer la mise à jour sans épuiser le quota API.\n*   **Basé sur les Événements :** Utilise l'API GitHub (`sort=updated`) pour récupérer uniquement les dépôts modifiés.\n*   **Lazy-Load :** Les métadonnées lourdes sont isolées et chargées à la demande."
+      "changelog": "### 🚀 Mise à jour v2.4.0 | Organisation de la boutique & Profils intelligents\n\nCette version se concentre sur l'amélioration de l'expérience utilisateur, avec de nouvelles fonctionnalités pour la découverte d'applications, une boutique plus propre et une stabilité à toute épreuve.\n\n#### ✨ Découverte & Organisation\n*   **Filtre \"Les plus récents\" :** Découvrez de nouveaux outils ajoutés dans les 14 derniers jours, sans consommer le quota de l'API GitHub.\n*   **Boutique épurée :** Shizuku et ShizuCoreFetch sont désormais masqués du flux principal pour réduire la redondance.\n\n#### 🛠️ Stabilité & Interface\n*   **Liens développeurs anti-crash :** Analyse intelligente des liens sociaux pour éliminer les plantages (ActivityNotFoundException).\n*   **Squelettes d'interface équilibrés :** Refonte des effets de chargement en une grille 2x2 parfaite.\n\n#### 🙏 Remerciements à la communauté\n*   **@source-sketch** — Pour la suggestion d'épurer la boutique.\n*   **@wizzwuz** — Pour la proposition de la section \"Nouveautés\"."
     },
     "es": {
       "category": "Herramientas del sistema",
@@ -95,7 +95,7 @@
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "Creando herramientas inteligentes que dan a los usuarios control total sobre sus dispositivos. ¡Gracias por tu confianza y apoyo!",
       "developer_name": "Jamal El Hizazi",
-      "changelog": "### 🚀 Actualización v2.3.0 | Sincronización Inteligente y Estabilidad\n\nEsta versión estable implementa las sugerencias arquitectónicas más solicitadas, ofreciendo una versión madura y optimizada.\n\n#### ⚡ Optimización y Sincronización Inteligente\n*   **ETags:** Valida datos en caché para reducir el ancho de banda.\n*   **Sincronización Manual:** Botón por aplicación para forzar actualizaciones sin agotar la cuota de API.\n*   **Basado en Eventos:** Usa la API de GitHub (`sort=updated`) para obtener solo repositorios modificados.\n*   **Lazy-Load:** Los metadatos pesados se aíslan y cargan de forma diferida."
+      "changelog": "### 🚀 Actualización v2.4.0 | Organización de la tienda y perfiles inteligentes\n\nEsta versión se centra en mejoras de calidad de vida, funciones muy solicitadas para el descubrimiento de aplicaciones y una estabilidad sólida.\n\n#### ✨ Descubrimiento y Organización\n*   **Filtro \"Más recientes\":** Descubre nuevas herramientas al instante (últimos 14 días) sin consumir la cuota de la API de GitHub.\n*   **Tienda ordenada:** Shizuku y ShizuCoreFetch ahora están ocultos del feed principal para reducir la redundancia.\n\n#### 🛠️ Estabilidad y UI\n*   **Enlaces de desarrollador a prueba de fallos:** Análisis inteligente de enlaces sociales para eliminar bloqueos (ActivityNotFoundException).\n*   **Esqueletos de UI equilibrados:** Rediseño de los efectos de carga en una cuadrícula perfecta de 2x2.\n\n#### 🙏 Agradecimientos a la comunidad\n*   **@source-sketch** — Por la sugerencia de limpiar la tienda.\n*   **@wizzwuz** — Por proponer la sección de \"Nuevas aplicaciones\"."
     },
     "pt": {
       "category": "Ferramentas do sistema",
@@ -104,7 +104,7 @@
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "Criando ferramentas inteligentes que dão aos usuários controle sobre seus dispositivos. Obrigado pela sua confiança e apoio!",
       "developer_name": "Jamal El Hizazi",
-      "changelog": "### 🚀 Atualização v2.3.0 | Sincronização Inteligente e Estabilidade\n\nEsta versão estável implementa as sugestões arquitetônicas mais solicitadas, entregando uma versão altamente otimizada.\n\n#### ⚡ Otimização e Sincronização Inteligente\n*   **ETags:** Valida dados em cache para reduzir a largura de banda.\n*   **Sincronização Manual:** Botão por aplicativo para forçar atualizações sem esgotar a cota da API.\n*   **Baseado em Eventos:** Usa a API do GitHub (`sort=updated`) para buscar apenas repositórios modificados.\n*   **Lazy-Load:** Metadados pesados são isolados e carregados sob demanda."
+      "changelog": "### 🚀 Atualização v2.4.0 | Curadoria da Loja e Perfis Inteligentes\n\nEsta versão foca em melhorias na qualidade de uso, trazendo recursos muito solicitados para descoberta de apps, uma loja mais limpa e estabilidade sólida.\n\n#### ✨ Descoberta e Curadoria\n*   **Filtro \"Mais recentes\":** Descubra novas ferramentas instantaneamente (últimos 14 dias) sem consumir a cota da API do GitHub.\n*   **Loja organizada:** Shizuku e ShizuCoreFetch agora estão ocultos do feed principal para reduzir a redundância.\n\n#### 🛠️ Estabilidade e Interface\n*   **Links de desenvolvedor à prova de falhas:** Análise inteligente de links sociais para eliminar travamentos (ActivityNotFoundException).\n*   **Esqueletos de UI equilibrados:** Redesign dos efeitos de carregamento em uma grade 2x2 perfeita.\n\n#### 🙏 Agradecimentos à comunidade\n*   **@source-sketch** — Pela sugestão de organizar a loja.\n*   **@wizzwuz** — Por propor a seção de \"Novos apps\"."
     },
     "ru": {
       "category": "Системные инструменты",
@@ -113,7 +113,7 @@
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "Создаём умные инструменты, дающие пользователям полный контроль над их устройствами. Спасибо за доверие и поддержку!",
       "developer_name": "Джамал Эль Хизази",
-      "changelog": "### 🚀 Обновление v2.3.0 | Умная синхронизация и стабильность\n\nЭтот стабильный выпуск реализует самые востребованные архитектурные предложения.\n\n#### ⚡ Оптимизация и Умная синхронизация\n*   **ETags:** Проверка кэшированных данных для снижения расхода трафика.\n*   **Ручная синхронизация:** Кнопка для каждого приложения для принудительного обновления.\n*   **На основе событий:** Использование API GitHub (`sort=updated`) для загрузки только измененных репозиториев.\n*   **Ленивая загрузка (Lazy-Load):** Тяжелые метаданные изолированы и загружаются по мере необходимости."
+      "changelog": "### 🚀 Обновление v2.4.0 | Курирование магазина и умные профили\n\nВ этом выпуске основное внимание уделяется улучшению пользовательского опыта: добавлены функции для поиска приложений, очистки витрины и повышения стабильности.\n\n#### ✨ Поиск и Курирование\n*   **Фильтр «Новинки»:** Мгновенно находите новые приложения (за последние 14 дней) без расхода квоты API GitHub.\n*   **Чистая витрина:** Shizuku и ShizuCoreFetch скрыты из основной ленты, чтобы избежать дублирования.\n\n#### 🛠️ Стабильность и Интерфейс\n*   **Безопасные ссылки разработчиков:** Умный парсинг социальных ссылок для предотвращения сбоев (ActivityNotFoundException).\n*   **Сбалансированные скелетоны:** Эффекты загрузки переработаны в идеальную сетку 2x2.\n\n#### 🙏 Благодарность сообществу\n*   **@source-sketch** — За идею по очистке витрины магазина.\n*   **@wizzwuz** — За предложение добавить раздел «Новинки»."
     },
     "hi": {
       "category": "सिस्टम टूल्स",
@@ -122,7 +122,7 @@
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "ऐसे स्मार्ट उपकरण तैयार करना जो उपयोगकर्ताओं को उनके उपकरणों पर पूर्ण नियंत्रण दें। आपके विश्वास और समर्थन के लिए धन्यवाद!",
       "developer_name": "जमाल एल हिज़ाज़ी",
-      "changelog": "### 🚀 अपडेट v2.3.0 | स्मार्ट सिंक और स्थिरता\n\nयह स्थिर रिलीज़ सबसे अधिक अनुरोधित वास्तुशिल्प सुझावों को लागू करता है।\n\n#### ⚡ अनुकूलन और स्मार्ट सिंक\n*   **ETags:** बैंडविड्थ को कम करने के लिए कैश्ड डेटा को मान्य करता है।\n*   **मैनुअल सिंक:** API कोटा खत्म किए बिना अपडेट को बाध्य करने के लिए प्रति-ऐप सिंक बटन।\n*   **इवेंट-ड्रिवेन:** केवल संशोधित रिपॉजिटरी लाने के लिए GitHub API (`sort=updated`) का उपयोग करता है।\n*   **Lazy-Load:** भारी मेटाडेटा को अलग किया गया है और आवश्यकतानुसार लोड किया जाता है।"
+      "changelog": "### 🚀 अपडेट v2.4.0 | स्टोर क्यूरेशन और स्मार्ट प्रोफाइल\n\nयह रिलीज़ ऐप की खोज, साफ़ स्टोरफ्रंट और बेहतरीन स्थिरता के लिए अत्यधिक अनुरोधित सुविधाएँ लाता है।\n\n#### ✨ खोज और क्यूरेशन\n*   **\"नवीनतम\" फ़िल्टर:** GitHub API कोटा खर्च किए बिना 14 दिनों के स्मार्ट फ़िल्टर के माध्यम से तुरंत नए टूल खोजें।\n*   **व्यवस्थित स्टोरफ्रंट:** अनावश्यकता को कम करने के लिए Shizuku और ShizuCoreFetch को मुख्य फ़ीड से छिपा दिया गया है।\n\n#### 🛠️ स्थिरता और UI सुधार\n*   **क्रैश-प्रूफ डेवलपर लिंक:** ActivityNotFoundException क्रैश को खत्म करने के लिए स्मार्ट सोशल लिंक पार्सिंग।\n*   **संतुलित UI स्केलेटन:** लोडिंग इफ़ेक्ट को 2x2 ग्रिड में फिर से डिज़ाइन किया गया।\n\n#### 🙏 समुदाय को धन्यवाद\n*   **@source-sketch** — स्टोरफ्रंट को साफ़ करने के सुझाव के लिए।\n*   **@wizzwuz** — \"नवीनतम ऐप्स\" अनुभाग का प्रस्ताव देने के लिए।"
     },
     "zh": {
       "category": "系统工具",
@@ -131,7 +131,7 @@
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "打造让用户完全掌控设备的智能工具。感谢您的信任与支持！",
       "developer_name": "贾马尔·埃尔·希扎齐",
-      "changelog": "### 🚀 更新 v2.3.0 | 智能同步与核心稳定性\n\n这个稳定版本实现了最受欢迎的架构建议，提供了一个高度优化的成熟版本。\n\n#### ⚡ 优化与智能同步\n*   **ETags：** 验证缓存数据以减少刷新时的带宽。\n*   **手动同步：** 每个应用专属的同步按钮，可强制更新而不会耗尽 API 配额。\n*   **事件驱动：** 使用 GitHub API (`sort=updated`) 仅获取修改过的存储库。\n*   **延迟加载 (Lazy-Load)：** 繁重的元数据被隔离并延迟加载以实现最快响应。"
+      "changelog": "### 🚀 更新 v2.4.0 | 商店精选与智能配置文件\n\n此版本专注于提升用户体验，带来了备受期待的应用发现功能、更整洁的店面和坚如磐石的稳定性。\n\n#### ✨ 发现与精选\n*   **“最新”过滤器：** 通过智能的 14 天发现过滤器即时发现新工具，且不消耗 GitHub API 配额。\n*   **整洁的店面：** Shizuku 和 ShizuCoreFetch 现已从主信息流中隐藏，以减少冗余。\n\n#### 🛠️ 稳定性与 UI 优化\n*   **防崩溃的开发者链接：** 智能社交链接解析，消除 ActivityNotFoundException 崩溃。\n*   **平衡的 UI 骨架：** 将加载闪烁效果重新设计为完美的 2x2 网格。\n\n#### 🙏 社区致谢\n*   **@source-sketch** — 感谢提供整洁店面的建议。\n*   **@wizzwuz** — 感谢提议增加“最新应用”部分。"
     },
     "ja": {
       "category": "システムツール",
@@ -140,7 +140,7 @@
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "ユーザーがデバイスを完全に制御できるスマートツールを開発しています。信頼とサポートに感謝します！",
       "developer_name": "ジャマル・エル・ヒザジ",
-      "changelog": "### 🚀 アップデート v2.3.0 | スマート同期と安定性\n\nこの安定版では、最も要望の多かったアーキテクチャの提案を実装し、高度に最適化されています。\n\n#### ⚡ 最適化とスマート同期\n*   **ETags:** キャッシュされたデータを検証し、帯域幅を削減します。\n*   **手動同期:** APIクォータを消費せずに更新を強制するアプリごとの同期ボタン。\n*   **イベント駆動:** GitHub API (`sort=updated`) を使用して、変更されたリポジトリのみをフェッチします。\n*   **遅延読み込み:** 重いメタデータは分離され、必要な場合にのみ読み込まれます。"
+      "changelog": "### 🚀 アップデート v2.4.0 | ストアのキュレーションとスマートプロファイル\n\nこのリリースでは、ユーザーエクスペリエンスの向上に焦点を当て、アプリの発見、クリーンなストアフロント、および強固な安定性のための機能が追加されました。\n\n#### ✨ 発見とキュレーション\n*   **「最新」フィルター：** GitHub API クォータを消費することなく、14日間のスマートフィルターを介して新しいツールを即座に発見します。\n*   **整理されたストアフロント：** 冗長性を減らすため、Shizuku と ShizuCoreFetch をメインフィードから非表示にしました。\n\n#### 🛠️ 安定性と UI の改善\n*   **クラッシュ防止の開発者リンク：** ActivityNotFoundException クラッシュを排除するスマートなソーシャルリンク解析。\n*   **バランスの取れた UI スケルトン：** ロード効果を完璧な 2x2 グリッドに再設計。\n\n#### 🙏 コミュニティへの感謝\n*   **@source-sketch** — ストアフロントの整理の提案に感謝します。\n*   **@wizzwuz** — 「最新アプリ」セクションの提案に感謝します。"
     },
     "tr": {
       "category": "Sistem Araçları",
@@ -149,7 +149,7 @@
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "Kullanıcılara cihazları üzerinde tam kontrol sağlayan akıllı araçlar üretiyoruz. Güveniniz ve desteğiniz için teşekkür ederiz!",
       "developer_name": "Jamal El Hizazi",
-      "changelog": "### 🚀 Güncelleme v2.3.0 | Akıllı Senkronizasyon ve Kararlılık\n\nBu kararlı sürüm, en çok istenen mimari önerileri uygulayarak son derece optimize edilmiş bir sürüm sunar.\n\n#### ⚡ Optimizasyon ve Akıllı Senkronizasyon\n*   **ETags:** Bant genişliğini azaltmak için önbelleğe alınmış verileri doğrular.\n*   **Manuel Senkronizasyon:** API kotasını tüketmeden güncellemeleri zorlamak için uygulamaya özel buton.\n*   **Olay Odaklı:** Yalnızca değiştirilmiş depoları getirmek için GitHub API'sini (`sort=updated`) kullanır.\n*   **Tembel Yükleme (Lazy-Load):** Ağır meta veriler izole edilir ve isteğe bağlı olarak yüklenir."
+      "changelog": "### 🚀 Güncelleme v2.4.0 | Mağaza Düzeni ve Akıllı Profiller\n\nBu sürüm, daha iyi uygulama keşfi, daha temiz bir vitrin ve sağlam bir kararlılık için çok istenen özellikleri getirerek kullanıcı deneyimine odaklanıyor.\n\n#### ✨ Keşif ve Düzen\n*   **\"En Yeni\" Filtresi:** GitHub API kotasını tüketmeden 14 günlük akıllı filtre ile yeni araçları anında keşfedin.\n*   **Temiz Vitrin:** Kalabalığı azaltmak için Shizuku ve ShizuCoreFetch ana akıştan gizlendi.\n\n#### 🛠️ Kararlılık ve Arayüz\n*   **Çökmeyi Önleyen Geliştirici Bağlantıları:** ActivityNotFoundException çökmelerini ortadan kaldırmak için akıllı sosyal bağlantı ayrıştırması.\n*   **Dengeli UI İskeletleri:** Yükleme efektleri mükemmel bir 2x2 ızgara olarak yeniden tasarlandı.\n\n#### 🙏 Topluluğa Teşekkürler\n*   **@source-sketch** — Vitrin düzenleme önerisi için.\n*   **@wizzwuz** — \"En Yeni Uygulamalar\" bölümünü önerdiği için."
     },
     "cs": {
       "category": "Systémové nástroje",
@@ -158,7 +158,7 @@
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "Vytváříme chytré nástroje, které uživatelům poskytují plnou kontrolu nad jejich zařízeními. Děkujeme za vaši důvěru a podporu!",
       "developer_name": "Jamal El Hizazi",
-      "changelog": "### 🚀 Aktualizace v2.3.0 | Chytrá synchronizace a stabilita\n\nToto stabilní vydání implementuje nejžádanější architektonické návrhy a přináší vysoce optimalizovanou verzi.\n\n#### ⚡ Optimalizace a chytrá synchronizace\n*   **ETags:** Ověřuje data v mezipaměti pro snížení šířky pásma.\n*   **Ruční synchronizace:** Tlačítko pro každou aplikaci k vynucení aktualizace.\n*   **Řízeno událostmi:** Používá GitHub API (`sort=updated`) k načítání pouze upravených repozitářů.\n*   **Lazy-Load:** Těžká metadata jsou izolována a načítána líně."
+      "changelog": "### 🚀 Aktualizace v2.4.0 | Kurátorství obchodu a chytré profily\n\nToto vydání se zaměřuje na zlepšení uživatelského prostředí, přináší žádané funkce pro objevování aplikací, čistší obchod a maximální stabilitu.\n\n#### ✨ Objevování a Kurátorství\n*   **Filtr \"Nejnovější\":** Okamžitě objevte nové nástroje (za posledních 14 dní) bez spotřeby kvót GitHub API.\n*   **Čistší obchod:** Shizuku a ShizuCoreFetch jsou nyní skryty z hlavního kanálu, aby se omezila duplicita.\n\n#### 🛠️ Stabilita a UI\n*   **Odkazy vývojářů odolné proti pádům:** Chytré parsování sociálních odkazů pro eliminaci pádů (ActivityNotFoundException).\n*   **Vyvážené UI kostry:** Přepracované efekty načítání do perfektní mřížky 2x2.\n\n#### 🙏 Poděkování komunitě\n*   **@source-sketch** — Za návrh na pročištění obchodu.\n*   **@wizzwuz** — Za návrh sekce \"Nejnovější aplikace\"."
     },
     "de": {
       "category": "Systemwerkzeuge",
@@ -167,7 +167,7 @@
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "Wir entwickeln intelligente Tools, die den Nutzern die volle Kontrolle über ihre Geräte geben. Danke für dein Vertrauen und deine Unterstützung!",
       "developer_name": "Jamal El Hizazi",
-      "changelog": "### 🚀 Update v2.3.0 | Smart Sync & Kernstabilität\n\nDiese stabile Version implementiert die am häufigsten nachgefragten Architekturvorschläge und liefert eine hochoptimierte Version.\n\n#### ⚡ Optimierung & Smart Sync\n*   **ETags:** Validiert zwischengespeicherte Daten, um die Bandbreite zu reduzieren.\n*   **Manuelle Synchronisierung:** Ein Sync-Button pro App, um Updates zu erzwingen, ohne das API-Kontingent zu belasten.\n*   **Ereignisgesteuert:** Verwendet die GitHub-API (`sort=updated`), um nur geänderte Repositories abzurufen.\n*   **Lazy-Load:** Schwere Metadaten werden isoliert und bei Bedarf geladen (Lazy-Load)."
+      "changelog": "### 🚀 Update v2.4.0 | Store-Kuration & Smart Profiles\n\nDieses Release konzentriert sich auf die Verbesserung der Benutzererfahrung und bringt stark nachgefragte Funktionen für eine bessere App-Entdeckung, eine übersichtlichere Storefront und felsenfeste Stabilität.\n\n#### ✨ Entdeckung & Kuration\n*   **Der \"Neueste\" Filter:** Entdecke sofort neue Tools (letzte 14 Tage), ohne GitHub-API-Kontingente zu verbrauchen.\n*   **Aufgeräumte Storefront:** Shizuku und ShizuCoreFetch sind jetzt aus dem Haupt-Feed ausgeblendet, um Redundanzen zu reduzieren.\n\n#### 🛠️ Stabilität & UI-Feinschliff\n*   **Absturzsichere Entwickler-Links:** Intelligentes Parsing von Social-Links zur Vermeidung von Abstürzen (ActivityNotFoundException).\n*   **Ausgewogene UI-Skelette:** Neugestaltung der Ladeeffekte in einem perfekten 2x2-Raster.\n\n#### 🙏 Dank an die Community\n*   **@source-sketch** — Für den Vorschlag zur Aufräumung der Storefront.\n*   **@wizzwuz** — Für den Vorschlag des Bereichs \"Neueste Apps\"."
     },
     "it": {
       "category": "Strumenti di sistema",
@@ -176,7 +176,7 @@
       "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
       "developer_message": "Creare strumenti intelligenti che diano agli utenti il pieno controllo sui propri dispositivi. Grazie per la fiducia e il supporto!",
       "developer_name": "Jamal El Hizazi",
-      "changelog": "### 🚀 Aggiornamento v2.3.0 | Smart Sync e Stabilità Principale\n\nQuesta versione stabile implementa i suggerimenti architettonici più richiesti, offrendo una versione altamente ottimizzata.\n\n#### ⚡ Ottimizzazione e Smart Sync\n*   **ETags:** Convalida i dati memorizzati nella cache per ridurre la larghezza di banda.\n*   **Sincronizzazione Manuale:** Un pulsante di sincronizzazione per ogni app per forzare gli aggiornamenti.\n*   **Basato sugli Eventi:** Utilizza l'API di GitHub (`sort=updated`) per recuperare solo i repository modificati.\n*   **Lazy-Load:** I metadati pesanti sono isolati e caricati in modo asincrono."
+      "changelog": "### 🚀 Aggiornamento v2.4.0 | Curatela dello Store e Profili Intelligenti\n\nQuesta versione si concentra sul miglioramento dell'esperienza utente, introducendo funzionalità molto richieste per la scoperta delle app, una vetrina più pulita e una stabilità solida.\n\n#### ✨ Scoperta e Curatela\n*   **Filtro \"Più recenti\":** Scopri istantaneamente nuovi strumenti (ultimi 14 giorni) senza consumare le quote dell'API di GitHub.\n*   **Vetrina ordinata:** Shizuku e ShizuCoreFetch sono ora nascosti dal feed principale per ridurre la ridondanza.\n\n#### 🛠️ Stabilità e UI\n*   **Link sviluppatori a prova di crash:** Analisi intelligente dei link social per eliminare i crash (ActivityNotFoundException).\n*   **Scheletri UI bilanciati:** Riprogettazione degli effetti di caricamento in una griglia perfetta 2x2.\n\n#### 🙏 Ringraziamenti alla comunità\n*   **@source-sketch** — Per il suggerimento di pulire la vetrina.\n*   **@wizzwuz** — Per aver proposto la sezione \"Nuove app\"."
     }
   }
 }
