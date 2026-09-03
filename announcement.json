@@ -86,19 +86,20 @@
       "type": "update",
       "is_compact": false,
       "is_outlined": true,
-      "en": "ShizuCoreFetch v2.3.0 is now available! Update for Smart Sync, bandwidth optimization, and core stability improvements.",
-      "ar": "يتوفر الآن الإصدار 2.3.0 من ShizuCoreFetch! قم بالتحديث للحصول على المزامنة الذكية، تقليل استهلاك البيانات، وتحسينات الاستقرار الأساسية.",
-      "fr": "ShizuCoreFetch v2.3.0 est disponible ! Mettez à jour pour la synchronisation intelligente et de meilleures performances.",
-      "es": "¡ShizuCoreFetch v2.3.0 ya está disponible! Actualiza para sincronización inteligente y mejoras de estabilidad.",
-      "pt": "ShizuCoreFetch v2.3.0 já está disponível! Atualize para sincronização inteligente e melhorias de estabilidade.",
-      "tr": "ShizuCoreFetch v2.3.0 artık hazır! Akıllı senkronizasyon ve kararlılık iyileştirmeleri için güncelleyin.",
-      "cs": "ShizuCoreFetch v2.3.0 je nyní k dispozici! Aktualizujte pro chytrou synchronizaci a vylepšení stability.",
-      "ja": "ShizuCoreFetch v2.3.0 が利用可能になりました！スマート同期と安定性向上のためにアップデートしてください。",
-      "hi": "ShizuCoreFetch v2.3.0 अब उपलब्ध है! स्मार्ट सिंक और स्थिरता सुधार के लिए अपडेट करें।",
-      "ru": "ShizuCoreFetch v2.3.0 теперь доступен! Обновитесь для умной синхронизации и улучшенной стабильности.",
-      "zh": "ShizuCoreFetch v2.3.0 现已推出！请更新以获取智能同步和稳定性改进。",
-      "de": "ShizuCoreFetch v2.3.0 ist jetzt verfügbar! Aktualisieren Sie für Smart Sync, Bandbreitenoptimierung und Verbesserungen der Kernstabilität.",
-      "it": "ShizuCoreFetch v2.3.0 è ora disponibile! Aggiorna per Smart Sync, ottimizzazione della larghezza di banda e miglioramenti della stabilità principale."
+      "en": "ShizuCoreFetch v2.4.0 is now available! Update for the new 14-day discovery filter, decluttered storefront, and crash-proof developer profiles.",
+      "ar": "يتوفر الآن الإصدار 2.4.0 من ShizuCoreFetch! قم بالتحديث لاكتشاف أحدث التطبيقات بسهولة، تنظيم واجهة المتجر، وتحسين استقرار الملفات الشخصية للمطورين.",
+      "fr": "ShizuCoreFetch v2.4.0 est disponible ! Mettez à jour pour le nouveau filtre de nouveautés, une boutique épurée et des profils développeurs plus stables.",
+      "es": "¡ShizuCoreFetch v2.4.0 ya está disponible! Actualiza para descubrir nuevas aplicaciones, una tienda más limpia y perfiles de desarrollador a prueba de fallos.",
+      "pt": "ShizuCoreFetch v2.4.0 já está disponível! Atualize para descobrir novos apps, uma loja mais limpa e perfis de desenvolvedor à prova de falhas.",
+      "tr": "ShizuCoreFetch v2.4.0 artık hazır! Yeni uygulamaları keşfetmek, daha temiz bir mağaza ve çökme korumalı profiller için güncelleyin.",
+      "cs": "ShizuCoreFetch v2.4.0 je nyní k dispozici! Aktualizujte pro objevování nových aplikací, čistší obchod a stabilní profily vývojářů.",
+      "ja": "ShizuCoreFetch v2.4.0 が利用可能になりました！新着アプリの発見、整理されたストア、クラッシュ防止プロファイルのためにアップデートしてください。",
+      "hi": "ShizuCoreFetch v2.4.0 अब उपलब्ध है! नए ऐप्स खोजने, साफ़ स्टोर और क्रैश-प्रूफ डेवलपर प्रोफाइल के लिए अपडेट करें।",
+      "ru": "ShizuCoreFetch v2.4.0 теперь доступен! Обновитесь для фильтра новинок, чистой витрины и безопасных профилей разработчиков.",
+      "zh": "ShizuCoreFetch v2.4.0 现已推出！请更新以体验最新应用发现功能、更整洁的商店和防崩溃的开发者配置文件。",
+      "de": "ShizuCoreFetch v2.4.0 ist jetzt verfügbar! Aktualisieren Sie für den neuen Filter für aktuelle Apps, einen aufgeräumten Store und absturzsichere Entwicklerprofile.",
+      "it": "ShizuCoreFetch v2.4.0 è ora disponibile! Aggiorna per scoprire le nuove app, uno store più pulito e profili sviluppatore a prova di crash."
     }
+
   ]
 }
