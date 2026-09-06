@@ -62,7 +62,7 @@ With Shizu CoreFetch rapidly expanding, now is the perfect time to optimize how 
 - 🇪🇸 **[El Androide Feliz](https://youtu.be/NjFIz_oBKEs)** – *10 NUEVAS APKs para SHIZUKU que ponen tu Android al 100%*
 - 🌍 **[TechyNoob](https://youtu.be/PMiUF1b26yY)** – *Top 3 Shizuku Apps to Unlock Android's True Power!*
 - 🇲🇦 **[Mounir Tech](https://youtu.be/yiRi87Yieo8)** – *افضل 7 تطبيقات الجيل الجديد 2026 | تطبيقات شيزوكو*
-
+- 🇮🇳 **[Karan Arora](https://youtu.be/5eg2Y5cZ7bM)** – *🚀 Shizuku supported Apps? Grab here 🔥*
 
 ---
 
